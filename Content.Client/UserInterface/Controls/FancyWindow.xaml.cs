@@ -22,11 +22,10 @@ namespace Content.Client.UserInterface.Controls
         private const int DRAG_MARGIN_SIZE = 7;
         public const string StyleClassWindowHelpButton = "windowHelpButton";
 
-        private AnimationExtend<Vector2> OpenAnimation;
-        private AnimationExtend<float> FadeAnimation;
-        private AnimationExtend<float> UnfadeAnimation;
-
-        private static readonly float[] KeyFrames = [0f, 0.15f, 0.25f,];
+        // private AnimationExtend<Vector2> OpenAnimation;
+        // private AnimationExtend<float> FadeAnimation;
+        // private AnimationExtend<float> UnfadeAnimation;
+        // private static readonly float[] KeyFrames = [0f, 0.15f, 0.25f,];
 
         public FancyWindow()
         {
@@ -36,7 +35,7 @@ namespace Content.Client.UserInterface.Controls
             HelpButton.OnPressed += _ => Help();
             XamlChildren = ContentsContainer.Children;
 
-            // WWDP EDIT START
+            /*
             OpenAnimation = new(
                 RecenterWindow,
                 this,
@@ -72,18 +71,19 @@ namespace Content.Client.UserInterface.Controls
                     new(1f,KeyFrames[2])
                 }
             );
+            */
         }
-
-        // WWDP EDIT END
 
         protected override void Opened()
         {
             base.Opened();
-            OpenAnimation.PlayAnimation(); // WWDP EDIT
-            UnfadeAnimation.PlayAnimation(); // WWDP EDIT
+            
+            // OpenAnimation.PlayAnimation(); // WWDP EDIT - УДАЛЕН
+            // UnfadeAnimation.PlayAnimation(); // WWDP EDIT - УДАЛЕН
         }
-        // WWDP EDIT START
-        // TODO: make FancyClose when not shitty timer appears
+
+        //
+        /*
         private void FancyClose()
         {
             var pos = (Position + DesiredSize / 2) / Parent!.Size;
@@ -101,12 +101,16 @@ namespace Content.Client.UserInterface.Controls
             ).PlayAnimation();
             FadeAnimation.PlayAnimation();
         }
+        */
 
+        //
+        /*
         private void SetVisibility(float percent)
         {
             Modulate = new(1,1,1,Math.Clamp(percent,0,1));
         }
-        // WWDP EDIT END
+        */
+
         public string? Title
         {
             get => WindowTitle.Text;
@@ -124,7 +128,7 @@ namespace Content.Client.UserInterface.Controls
                 HelpButton.Visible = !HelpButton.Disabled;
             }
         }
-        // WWDP EDIT
+
         public void AppendStyleClass(string styleClass)
         {
             WindowsHeadingBackground.StyleClasses.Add(styleClass);
@@ -140,16 +144,6 @@ namespace Content.Client.UserInterface.Controls
                 return;
             _guidebookSystem ??= _sysMan.GetEntitySystem<GuidebookSystem>();
             _guidebookSystem.OpenHelp(HelpGuidebookIds);
-        }
-
-        // WWDP EDIT
-        public void AppendStyleClass(string styleClass)
-        {
-            WindowsHeadingBackground.StyleClasses.Add(styleClass);
-            WindowsPanelBackground.StyleClasses.Add(styleClass);
-            WindowTitle.StyleClasses.Add(styleClass);
-            CloseButton.StyleClasses.Add(styleClass);
-            HelpButton.StyleClasses.Add(styleClass);
         }
 
         protected override DragMode GetDragModeFor(Vector2 relativeMousePos)

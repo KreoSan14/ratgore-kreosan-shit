@@ -1,3 +1,4 @@
+using Content.Client._NF.Latejoin;
 using Content.Client.Audio;
 using Content.Client.GameTicking.Managers;
 using Content.Client.LateJoin;
@@ -51,11 +52,11 @@ namespace Content.Client.Lobby
 
             _voteManager.SetPopupContainer(Lobby.VoteContainer);
             LayoutContainer.SetAnchorPreset(Lobby, LayoutContainer.LayoutPreset.Wide);
-            Lobby.ServerName.Text = _baseClient.GameInfo?.ServerName; // The eye of refactor gazes upon you...
+            Lobby.ServerName.Text = _baseClient.GameInfo?.ServerName; 
 
             UpdateLobbyUi();
 
-            // Lobby.CharacterPreview.CharacterSetupButton.OnPressed += OnSetupPressed; //WD EDIT
+            Lobby.CharacterSetupButton.OnPressed += OnSetupPressed;
             Lobby.ManifestButton.OnPressed += OnManifestPressed;
             Lobby.ReadyButton.OnPressed += OnReadyPressed;
             Lobby.ReadyButton.OnToggled += OnReadyToggled;
@@ -76,17 +77,20 @@ namespace Content.Client.Lobby
 
             _voteManager.ClearPopupContainer();
 
-            Lobby!.CharacterPreview.CharacterSetupButton.OnPressed -= OnSetupPressed;
-            Lobby!.ManifestButton.OnPressed -= OnManifestPressed;
-            Lobby!.ReadyButton.OnPressed -= OnReadyPressed;
-            Lobby!.ReadyButton.OnToggled -= OnReadyToggled;
+            if (Lobby != null)
+            {
+                // ИСПРАВЛЕНО: Кнопка теперь в Lobby
+                Lobby.CharacterSetupButton.OnPressed -= OnSetupPressed;
+                Lobby.ManifestButton.OnPressed -= OnManifestPressed;
+                Lobby.ReadyButton.OnPressed -= OnReadyPressed;
+                Lobby.ReadyButton.OnToggled -= OnReadyToggled;
+            }
 
             Lobby = null;
         }
 
         public void SwitchState(LobbyGui.LobbyGuiState state)
         {
-            // Yeah I hate this but LobbyState contains all the badness for now
             Lobby?.SwitchState(state);
         }
 
@@ -116,22 +120,24 @@ namespace Content.Client.Lobby
 
         public override void FrameUpdate(FrameEventArgs e)
         {
+            if (Lobby == null) return;
+
             if (_gameTicker.IsGameStarted)
             {
-                Lobby!.StartTime.Text = string.Empty;
+                Lobby.StartTime.Text = string.Empty;
                 var roundTime = _gameTiming.CurTime.Subtract(_gameTicker.RoundStartTimeSpan);
-                Lobby!.StationTime.Text = Loc.GetString("lobby-state-player-status-round-time", ("hours", roundTime.Hours), ("minutes", roundTime.Minutes));
+                Lobby.StationTime.Text = Loc.GetString("lobby-state-player-status-round-time", ("hours", roundTime.Hours), ("minutes", roundTime.Minutes));
                 return;
             }
 
-            Lobby!.StationTime.Text = Loc.GetString("lobby-state-player-status-round-not-started");
+            Lobby.StationTime.Text = Loc.GetString("lobby-state-player-status-round-not-started");
             string text;
 
             if (_gameTicker.Paused)
                 text = Loc.GetString("lobby-state-paused");
             else if (_gameTicker.StartTime < _gameTiming.CurTime)
             {
-                Lobby!.StartTime.Text = Loc.GetString("lobby-state-soon");
+                Lobby.StartTime.Text = Loc.GetString("lobby-state-soon");
                 return;
             }
             else
@@ -146,7 +152,7 @@ namespace Content.Client.Lobby
                     text = $"{difference.Minutes}:{difference.Seconds:D2}";
             }
 
-            Lobby!.StartTime.Text = Loc.GetString("lobby-state-round-start-countdown-text", ("timeLeft", text));
+            Lobby.StartTime.Text = Loc.GetString("lobby-state-round-start-countdown-text", ("timeLeft", text));
         }
 
         private void LobbyStatusUpdated()
@@ -157,90 +163,77 @@ namespace Content.Client.Lobby
 
         private void LobbyLateJoinStatusUpdated()
         {
-            Lobby!.ReadyButton.Disabled = _gameTicker.DisallowedLateJoin;
+            if (Lobby != null)
+                Lobby.ReadyButton.Disabled = _gameTicker.DisallowedLateJoin;
         }
 
         private void UpdateLobbyUi()
         {
+            if (Lobby == null) return;
+
             if (_gameTicker.IsGameStarted)
             {
-                Lobby!.ReadyButton.Text = Loc.GetString("lobby-state-ready-button-join-state");
-                Lobby!.ReadyButton.ToggleMode = false;
-                Lobby!.ReadyButton.Pressed = false;
-                Lobby!.ObserveButton.Disabled = false;
-                Lobby!.ManifestButton.Disabled = true;
+                Lobby.ReadyButton.Text = Loc.GetString("lobby-state-ready-button-join-state");
+                Lobby.ReadyButton.ToggleMode = false;
+                Lobby.ReadyButton.Pressed = false;
+                Lobby.ObserveButton.Disabled = false;
+                Lobby.ManifestButton.Disabled = true;
             }
             else
             {
-                Lobby!.StartTime.Text = string.Empty;
-                Lobby!.ReadyButton.Text = Loc.GetString(Lobby!.ReadyButton.Pressed ? "lobby-state-player-status-ready" : "lobby-state-player-status-not-ready");
-                Lobby!.ReadyButton.ToggleMode = true;
-                Lobby!.ReadyButton.Disabled = false;
-                Lobby!.ReadyButton.Pressed = _gameTicker.AreWeReady;
-                Lobby!.ManifestButton.Disabled = false;
-                Lobby!.ObserveButton.Disabled = true;
+                Lobby.StartTime.Text = string.Empty;
+                Lobby.ReadyButton.Text = Loc.GetString(Lobby.ReadyButton.Pressed ? "lobby-state-player-status-ready" : "lobby-state-player-status-not-ready");
+                Lobby.ReadyButton.ToggleMode = true;
+                Lobby.ReadyButton.Disabled = false;
+                Lobby.ReadyButton.Pressed = _gameTicker.AreWeReady;
+                Lobby.ManifestButton.Disabled = false;
+                Lobby.ObserveButton.Disabled = true;
             }
 
             if (_gameTicker.ServerInfoBlob != null)
-                Lobby!.ServerInfo.SetInfoBlob(_gameTicker.ServerInfoBlob);
-
-            Lobby!.LabelName.SetMarkup("[font=\"Bedstead\" size=20] White Dream [/font]"); // WD EDIT
-            //Lobby!.ChangelogLabel.SetMarkup(Loc.GetString("ui-lobby-changelog")); // WD EDIT
+                Lobby.ServerInfo.SetInfoBlob(_gameTicker.ServerInfoBlob);
         }
 
         private void UpdateLobbySoundtrackInfo(LobbySoundtrackChangedEvent ev)
         {
+            // LobbySong
+            /*
+            if (Lobby == null) return;
             if (ev.SoundtrackFilename == null)
-                Lobby!.LobbySong.SetMarkup(Loc.GetString("lobby-state-song-no-song-text"));
+                Lobby.LobbySong.SetMarkup(Loc.GetString("lobby-state-song-no-song-text"));
             else if (ev.SoundtrackFilename != null
                 && _resourceCache.TryGetResource<AudioResource>(ev.SoundtrackFilename, out var lobbySongResource))
             {
                 var lobbyStream = lobbySongResource.AudioStream;
-
-                var title = string.IsNullOrEmpty(lobbyStream.Title)
-                    ? Loc.GetString("lobby-state-song-unknown-title")
-                    : lobbyStream.Title;
-
-                var artist = string.IsNullOrEmpty(lobbyStream.Artist)
-                    ? Loc.GetString("lobby-state-song-unknown-artist")
-                    : lobbyStream.Artist;
-
-                var markup = Loc.GetString("lobby-state-song-text",
-                    ("songTitle", title),
-                    ("songArtist", artist));
-
-                Lobby!.LobbySong.SetMarkup(markup);
+                var title = string.IsNullOrEmpty(lobbyStream.Title) ? Loc.GetString("lobby-state-song-unknown-title") : lobbyStream.Title;
+                var artist = string.IsNullOrEmpty(lobbyStream.Artist) ? Loc.GetString("lobby-state-song-unknown-artist") : lobbyStream.Artist;
+                var markup = Loc.GetString("lobby-state-song-text", ("songTitle", title), ("songArtist", artist));
+                Lobby.LobbySong.SetMarkup(markup);
             }
+            */
         }
 
         private void UpdateLobbyBackground()
         {
+            if (Lobby == null) return;
+
             if (_gameTicker.LobbyBackground != null)
             {
-                Lobby!.Background.Texture = _resourceCache.GetResource<TextureResource>(_gameTicker.LobbyBackground.Background);
-
+                Lobby.Background.Texture = _resourceCache.GetResource<TextureResource>(_gameTicker.LobbyBackground.Background);
+                
+                // LobbyBackground
+                /*
                 var lobbyBackground = _gameTicker.LobbyBackground;
-
-                var name = string.IsNullOrEmpty(lobbyBackground.Name)
-                    ? Loc.GetString("lobby-state-background-unknown-title")
-                    : lobbyBackground.Name;
-
-                var artist = string.IsNullOrEmpty(lobbyBackground.Artist)
-                    ? Loc.GetString("lobby-state-background-unknown-artist")
-                    : lobbyBackground.Artist;
-
-                var markup = Loc.GetString("lobby-state-background-text",
-                    ("backgroundName", name),
-                    ("backgroundArtist", artist));
-
-                Lobby!.LobbyBackground.SetMarkup(markup);
-
+                var name = string.IsNullOrEmpty(lobbyBackground.Name) ? Loc.GetString("lobby-state-background-unknown-title") : lobbyBackground.Name;
+                var artist = string.IsNullOrEmpty(lobbyBackground.Artist) ? Loc.GetString("lobby-state-background-unknown-artist") : lobbyBackground.Artist;
+                var markup = Loc.GetString("lobby-state-background-text", ("backgroundName", name), ("backgroundArtist", artist));
+                Lobby.LobbyBackground.SetMarkup(markup);
+                */
                 return;
             }
 
             _sawmill.Warning("_gameTicker.LobbyBackground was null! No lobby background selected.");
-            Lobby!.Background.Texture = null;
-            Lobby!.LobbyBackground.SetMarkup(Loc.GetString("lobby-state-background-no-background-text"));
+            Lobby.Background.Texture = null;
         }
 
         private void SetReady(bool newReady)
@@ -250,8 +243,5 @@ namespace Content.Client.Lobby
 
             _consoleHost.ExecuteCommand($"toggleready {newReady}");
         }
-
-        // Removed some function for icon. If needed then get it from git version
-        // WD EDIT END
     }
 }

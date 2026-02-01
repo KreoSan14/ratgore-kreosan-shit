@@ -2,19 +2,26 @@
     xmlns="https://spacestation14.io"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls">
-    <BoxContainer Name="VBox" Orientation="Vertical">
-        <Label Name="Header" Text="{Loc 'lobby-character-preview-panel-header'}" Visible="False" StyleClasses="MenuLabel15"/>
+    
+    <BoxContainer Name="VBox" Orientation="Vertical" HorizontalExpand="True" VerticalExpand="True">
+        <BoxContainer Name="Loaded" Orientation="Vertical" Visible="False" HorizontalExpand="True" VerticalExpand="True">
+            
+            <Label Name="Summary" HorizontalAlignment="Center" Margin="0 5" StyleClasses="LabelBig" />
+            
+            <BoxContainer Name="ViewBox" 
+                          Orientation="Horizontal" 
+                          HorizontalAlignment="Center" 
+                          VerticalExpand="True"
+                          Margin="10">
+                </BoxContainer>
 
-        <BoxContainer Name="Loaded" Orientation="Vertical" Visible="False">
-
-            <BoxContainer Name="ViewBox" Orientation="Horizontal" HorizontalAlignment="Right">
-
-            </BoxContainer>
-            <Label StyleClasses="MenuLabel15" Name="Summary" HorizontalAlignment="Center" Margin="3 3"/>
-            <!-- <controls:VSpacer/> -->
-            <!-- <Button Name="CharacterSetup" Text="{Loc 'lobby-character-preview-panel-character-setup-button'}" -->
-            <!--     HorizontalAlignment="Center" Margin="0 5 0 0"/> -->
+            <controls:VSpacer/>
         </BoxContainer>
-        <Label Name="Unloaded" Text="{Loc 'lobby-character-preview-panel-unloaded-preferences-label'}"/>
+        
+        <Label Name="Unloaded" 
+               Text="{Loc 'lobby-character-preview-panel-unloaded-preferences-label'}" 
+               HorizontalAlignment="Center" 
+               VerticalAlignment="Center"
+               VerticalExpand="True"/>
     </BoxContainer>
 </Control>
