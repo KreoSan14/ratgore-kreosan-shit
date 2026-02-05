@@ -9,7 +9,7 @@
 
 - type: gameMap
   id: Fujin
-  mapName: 'СКБ Фуджин'
+  mapName: 'ШКБ Фуджин'
   mapPath: /Maps/_Crescent/Shuttles/SHI/fujin.yml
   minPlayers: 0
   stations:
