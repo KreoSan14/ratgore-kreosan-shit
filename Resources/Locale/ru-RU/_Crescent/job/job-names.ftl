@@ -63,7 +63,7 @@ job-name-advocatustemplar = Рыцарь-тамплиер
 job-name-tender = Смотритель
 job-name-acolyte = Охотник-ученик
 job-name-hunter = Охотник
-job-name-montagne = Охотник Montagne
+job-name-montagne = Охотник Монтань
 job-name-overseer = Надзиратель охоты
 
 # shi
@@ -97,6 +97,8 @@ job-name-hangartech = Техник ангара Туккера
 job-name-beltrunner = Поясник Издари
 job-name-draugr = Драугр Аль'Сеик
 job-name-servile = Слуга Аль'Сеик
+job-name-antiquarian = Антиквар Издари
+
 # ath
 job-name-kommandant = Контр-адмирал
 job-name-leutnant = Лейтнант
@@ -114,7 +116,6 @@ job-name-arbeiter = Арбайтер
 
 # misc
 
-job-name-antiquarian = Антиквар Izdari
 job-name-spacer = Космонавт
 job-name-gliess-dockhand = Доковый рабочий
 job-name-gliess-sheriff = Шериф
@@ -123,8 +124,8 @@ job-name-gliess-dockmaster = Докмастер
 
 # conscript-ncwl - for PLANETFALL
 
-job-name-conscript-ncwl-ship-captain = Адмирал Clementine
-job-name-conscript-ncwl-ship-crew = Мастер Clementine
+job-name-conscript-ncwl-ship-captain = Адмирал Клементин
+job-name-conscript-ncwl-ship-crew = Мастер Клементин
 job-name-conscript-ncwl-leader = Майор
 job-name-conscript-ncwl-officer = Комиссар
 job-name-conscript-ncwl-amr = Специалист (AMR)
@@ -137,8 +138,8 @@ job-name-conscript-ncwl-cadet = Кадет
 
 # conscript-dsm - for PLANETFALL
 
-job-name-conscript-dsm-ship-captain = Великий управляющий Nemesis
-job-name-conscript-dsm-ship-crew = Управляющий Nemesis
+job-name-conscript-dsm-ship-captain = Великий управляющий Немезис
+job-name-conscript-dsm-ship-crew = Управляющий Немезис
 job-name-conscript-dsm-leader = Рыцарь-баннарет
 job-name-conscript-dsm-officer = Рыцарь
 job-name-conscript-dsm-amr = Подопечный (AMR)

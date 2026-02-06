@@ -1,6 +1,6 @@
 - type: vessel
   id: Chanchu
-  name: SHI Chanchu
+  name: ТПШ Чанчи
   description: A lightly armed trade vessel with prestocked empty armory cases and defensive measures.
   price: 160000
   category: Medium
@@ -9,7 +9,7 @@
 
 - type: gameMap
   id: Chanchu
-  mapName: 'SHI Chanchu'
+  mapName: 'ТПШ Чанчи'
   mapPath: /Maps/_Crescent/Shuttles/SHI/chanchu.yml
   minPlayers: 0
   stations:
@@ -21,7 +21,7 @@
             sprite: _Crescent/ShipIcons/ifficons.rsi
             state: civilian
         - type: StationNameSetup
-          mapNameTemplate: 'SHI Chanchu {1}'
+          mapNameTemplate: 'ТПШ Чанчи {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

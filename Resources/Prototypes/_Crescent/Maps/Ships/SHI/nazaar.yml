@@ -1,6 +1,6 @@
 - type: vessel
   id: Nazaar
-  name: СКБ Назар
+  name: ШКБ Назар
   description: Патрульный канонерский катер Корпоративной Безопасности.
   price: 27500
   category: Small
@@ -9,7 +9,7 @@
 
 - type: gameMap
   id: Nazaar
-  mapName: 'СКБ Назар'
+  mapName: 'ШКБ Назар'
   mapPath: /Maps/_Crescent/Shuttles/SHI/nazaar.yml
   minPlayers: 0
   stations:
@@ -21,7 +21,7 @@
             sprite: _Crescent/ShipIcons/ifficons.rsi
             state: fighter
         - type: StationNameSetup
-          mapNameTemplate: 'СКБ Назар {1}'
+          mapNameTemplate: 'ШКБ Назар {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

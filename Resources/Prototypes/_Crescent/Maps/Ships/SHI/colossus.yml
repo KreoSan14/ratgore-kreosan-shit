@@ -1,7 +1,7 @@
 - type: vessel
   id: colossus
-  name: СТП Колосс
-  description: СТП "Колосс" — мать всех грузовых перевозчиков.
+  name: ТПШ Колосс
+  description: ТПШ "Колосс" — мать всех грузовых перевозчиков.
   price: 125000
   category: Large
   group: None
@@ -9,7 +9,7 @@
 
 - type: gameMap
   id: colossus
-  mapName: 'СТП Колосс'
+  mapName: 'ТПШ Колосс'
   mapPath: /Maps/_Crescent/Shuttles/SHI/colossus.yml
   minPlayers: 0
   stations:
@@ -21,7 +21,7 @@
             sprite: _Crescent/ShipIcons/ifficons.rsi
             state: large_industrial
         - type: StationNameSetup
-          mapNameTemplate: 'СТП Колосс {1}'
+          mapNameTemplate: 'ТПШ Колосс {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

@@ -1,0 +1,57 @@
+# region Empire
+- type: entity
+  parent: RubberStampBase
+  id: RatRubberStampEmpireVestmar
+  name: imperial vetsmar rubber stamp
+  suffix: DoNotMap
+  components:
+  - type: Stamp
+    stampedName: rat-stamp-name-empire-vestmar
+    stampedColor: "#432d51"
+    stampState: "paper_stamp_rat-empire"
+  - type: Sprite
+    sprite: _Crescent/Objects/Misc/stamps.rsi
+    state: empire
+
+- type: entity
+  parent: RubberStampBase
+  id: RatRubberStampEmpireCargo
+  name: imperial cargo rubber stamp
+  suffix: DoNotMap
+  components:
+  - type: Stamp
+    stampedName: rat-stamp-name-empire-cargo
+    stampedColor: "#432d51"
+    stampState: "paper_stamp_rat-empialt"
+  - type: Sprite
+    sprite: _Rat/Objects/Misc/stamps.rsi
+    state: stamp-empire
+
+# region Shinohara
+- type: entity
+  parent: RubberStampBase
+  id: RatRubberStampShinoharaAlt
+  name: Shinohara rubber stamp
+  suffix: DoNotMap
+  components:
+  - type: Stamp
+    stampedName: stamp-component-stamped-name-shinohara
+    stampedColor: "#8a8a8a"
+    stampState: "paper_stamp_rat-shialt"
+  - type: Sprite
+    sprite: _Rat/Objects/Misc/stamps.rsi
+    state: stamp-shi
+
+- type: entity
+  parent: RubberStampBase
+  id: RatRubberStampShinoharaCorps
+  name: SHI CorpSec rubber stamp
+  suffix: DoNotMap
+  components:
+  - type: Stamp
+    stampedName: rat-stamp-name-shinohara-corpsec
+    stampedColor: "#8a8a8a"
+    stampState: "paper_stamp_rat-corpsec"
+  - type: Sprite
+    sprite: _Rat/Objects/Misc/stamps.rsi
+    state: stamp-shi-corp

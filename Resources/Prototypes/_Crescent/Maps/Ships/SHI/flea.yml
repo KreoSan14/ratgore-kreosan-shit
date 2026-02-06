@@ -1,6 +1,6 @@
 - type: vessel
   id: Flea
-  name: СТП Блоха
+  name: ШКБ Блоха
   description: Модернизированный "Термит", "Блоха" выполняет роль скрытного абордажного модуля.
   price: 22500
   category: Small
@@ -9,7 +9,7 @@
 
 - type: gameMap
   id: Flea
-  mapName: 'СТП Блоха'
+  mapName: 'ШКБ Блоха'
   mapPath: /Maps/_Crescent/Shuttles/SHI/flea.yml
   minPlayers: 0
   stations:
@@ -21,7 +21,7 @@
             sprite: _Crescent/ShipIcons/ifficons.rsi
             state: fighter
         - type: StationNameSetup
-          mapNameTemplate: 'СКБ Блоха {1}'
+          mapNameTemplate: 'ШКБ Блоха {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

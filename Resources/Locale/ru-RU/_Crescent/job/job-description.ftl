@@ -61,8 +61,8 @@ job-description-montagne = Помогай своему Надсмотрщику 
 job-description-overseer = Руководи Великой Охотой.
 
 # shi
-job-description-executive = Управляй активами Shinohara в пределах Тайпана.
-job-description-board = Помогай своему Управляющему координировать активы Shinohara в системе.
+job-description-executive = Управляй активами «Шиногара» в пределах Тайпана.
+job-description-board = Помогай своему Управляющему координировать активы «Шиногара» в системе.
 job-description-corpsec = Охраняй активы корпорации. Задерживай буйных клиентов или сотрудников.
 job-description-highsec = Защищай военные интересы корпорации. Реагируй на высокорисковые задания.
 job-description-boardhr = Следи за соблюдением корпоративных стандартов и занимайся связями с общественностью.

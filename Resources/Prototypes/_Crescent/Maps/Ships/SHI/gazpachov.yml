@@ -1,7 +1,7 @@
 - type: vessel
   id: gazpachov
-  name: СТП Газпачов
-  description: СТП "Газпачов" — экономичное добывающее судно, предназначенное для 2 шахтеров и одного бригадира.
+  name: ТПШ Газпачов
+  description: ТПШ "Газпачов" - экономичное добывающее судно, предназначенное для 2 шахтеров и одного бригадира.
   price: 52000
   category: Small
   group: Civilian
@@ -9,7 +9,7 @@
 
 - type: gameMap
   id: gazpachov
-  mapName: 'СТП Газпачов'
+  mapName: 'ТПШ Газпачов'
   mapPath: /Maps/_Crescent/Shuttles/SHI/gazpachov.yml
   minPlayers: 0
   stations:
@@ -21,7 +21,7 @@
             sprite: _Crescent/ShipIcons/ifficons.rsi
             state: miner
         - type: StationNameSetup
-          mapNameTemplate: 'СТП Газпачов {1}'
+          mapNameTemplate: 'ТПШ Газпачов {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

@@ -31,6 +31,6 @@
   - type: Stamp
     stampedName: stamp-component-stamped-name-hos
     stampedColor: "#4c653a"
-    stampState: "paper_stamp-sheriff"
+    stampState: "paper_stamp-nf-sheriff"
   - type: Sprite
     state: stamp-sheriff

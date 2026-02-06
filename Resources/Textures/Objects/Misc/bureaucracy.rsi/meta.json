@@ -301,6 +301,30 @@
         },
         {
             "name": "paper_stamp-corporate-eastorioncompany"
+        },
+        {
+            "name": "paper_stamp_rat-ncwl"
+        },
+        {
+            "name": "paper_stamp_rat-empire"
+        },
+        {
+            "name": "paper_stamp_rat-hunter"
+        },
+        {
+            "name": "paper_stamp_rat-shi"
+        },
+        {
+            "name": "paper_stamp_rat-empialt"
+        },
+        {
+            "name": "paper_stamp_rat-shialt"
+        },
+        {
+            "name": "paper_stamp_rat-corpsec"
+        },
+        {
+            "name": "paper_stamp-nf-sheriff"
         }
     ]
 }

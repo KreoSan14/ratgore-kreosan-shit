@@ -1,7 +1,7 @@
 - type: vessel
   id: Probe
-  name: СТП Зонд
-  description: СТП "Зонд" — экономичное исследовательское судно, предназначенное для краткосрочного развертывания.
+  name: ТПШ Зонд
+  description: ТПШ "Зонд" — экономичное исследовательское судно, предназначенное для краткосрочного развертывания.
   price: 20000
   category: Small
   group: None
@@ -9,7 +9,7 @@
 
 - type: gameMap
   id: Probe
-  mapName: 'СТП Зонд'
+  mapName: 'ТПШ Зонд'
   mapPath: /Maps/_Crescent/Shuttles/SHI/probe.yml
   minPlayers: 0
   stations:
@@ -21,7 +21,7 @@
             sprite: _Crescent/ShipIcons/ifficons.rsi
             state: civilian
         - type: StationNameSetup
-          mapNameTemplate: 'СТП Зонд {1}'
+          mapNameTemplate: 'ТПШ Зонд {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

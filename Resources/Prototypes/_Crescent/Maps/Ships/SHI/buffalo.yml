@@ -1,7 +1,7 @@
 - type: vessel
   id: buffalo
-  name: СТП Буффало
-  description: СТП "Буффало" — это экономичное грузовое судно, предназначенное для двух техников, одного бригадира и офицера КорпСек по борьбе с абордажем.
+  name: ТПШ Буффало
+  description: ТПШ "Буффало" — это экономичное грузовое судно, предназначенное для двух техников, одного бригадира и офицера КорпСек по борьбе с абордажем.
   price: 40000
   category: Medium
   group: None
@@ -9,7 +9,7 @@
 
 - type: gameMap
   id: buffalo
-  mapName: 'СТП Буффало'
+  mapName: 'ТПШ Буффало'
   mapPath: /Maps/_Crescent/Shuttles/SHI/buffalo.yml
   minPlayers: 0
   stations:
@@ -21,7 +21,7 @@
             sprite: _Crescent/ShipIcons/ifficons.rsi
             state: hauler
         - type: StationNameSetup
-          mapNameTemplate: 'СТП Буффало {1}'
+          mapNameTemplate: 'ТПШ Буффало {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

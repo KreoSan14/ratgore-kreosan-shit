@@ -6,8 +6,8 @@
   components:
   - type: Stamp
     stampedName: stamp-component-stamped-name-ncwl
-    stampedColor: "#ffd580"
-    stampState: "paper_stamp-ncwl"
+    stampedColor: "#f07854"
+    stampState: "paper_stamp_rat-ncwl"
   - type: Sprite
     sprite: _Crescent/Objects/Misc/stamps.rsi
     state: stampncwl
@@ -21,7 +21,7 @@
   - type: Stamp
     stampedName: stamp-component-stamped-name-empire
     stampedColor: "#432d51"
-    stampState: "paper_stamp-empire"
+    stampState: "paper_stamp_rat-empire"
   - type: Sprite
     sprite: _Crescent/Objects/Misc/stamps.rsi
     state: empire
@@ -35,7 +35,7 @@
   - type: Stamp
     stampedName: stamp-component-stamped-name-hunters
     stampedColor: "#4a6741"
-    stampState: "paper_stamp-hunter"
+    stampState: "paper_stamp_rat-hunter"
   - type: Sprite
     sprite: _Crescent/Objects/Misc/stamps.rsi
     state: empire
@@ -49,7 +49,7 @@
   - type: Stamp
     stampedName: stamp-component-stamped-name-shinohara
     stampedColor: "#bb9042"
-    stampState: "paper_stamp-shi"
+    stampState: "paper_stamp_rat-shi"
   - type: Sprite
     sprite: _Crescent/Objects/Misc/stamps.rsi
     state: stamp-shi

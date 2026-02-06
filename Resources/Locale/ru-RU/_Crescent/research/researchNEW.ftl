@@ -8,7 +8,7 @@ research-discipline-interdyne = Interdyne
 research-discipline-cyberdawn = Cyberdawn
 research-discipline-communard = Коммунары
 research-discipline-imperial = Имперские
-research-discipline-corporate = Shinohara
+research-discipline-corporate = «Шиногара»
 
 # Node Names
 

@@ -1,6 +1,6 @@
 - type: vessel
   id: Musinyane
-  name:  СТП Мяне
+  name:  ШКБ Мяне
   description: Патрульный корвет Корпоративной Безопасности.
   price: 75000
   category: Medium
@@ -9,7 +9,7 @@
 
 - type: gameMap
   id: Musinyane
-  mapName: 'СТП Мяне'
+  mapName: 'ШКБ Мяне'
   mapPath: /Maps/_Crescent/Shuttles/SHI/musinyane.yml
   minPlayers: 0
   stations:
@@ -21,7 +21,7 @@
             sprite: _Crescent/ShipIcons/ifficons.rsi
             state: corvette
         - type: StationNameSetup
-          mapNameTemplate: 'СКБ Мяне {1}'
+          mapNameTemplate: 'ШКБ Мяне {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

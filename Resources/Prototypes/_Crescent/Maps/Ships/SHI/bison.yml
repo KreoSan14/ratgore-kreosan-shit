@@ -1,6 +1,6 @@
 - type: vessel
   id: Bison
-  name: СТП Бизон
+  name: ТПШ Бизон
   description: Тяжелый блокадопрорыватель, "Бизон" в основном служит кораблем задней линии для команды Корпоративной Безопасности, а также транспортным средством для контрабандистов-перевозчиков.
   price: 61000
   category: Medium
@@ -9,7 +9,7 @@
 
 - type: gameMap
   id: Bison
-  mapName: 'СТП Бизон'
+  mapName: 'ТПШ Бизон'
   mapPath: /Maps/_Crescent/Shuttles/SHI/buffalo.yml
   minPlayers: 0
   stations:
@@ -21,7 +21,7 @@
             sprite: _Crescent/ShipIcons/ifficons.rsi
             state: corvette
         - type: StationNameSetup
-          mapNameTemplate: 'СКБ Бизон {1}'
+          mapNameTemplate: 'ТПШ Бизон {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

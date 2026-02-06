@@ -1,6 +1,6 @@
 - type: gameMap
   id: Tatsumoto
-  mapName: 'СТП Татсумото'
+  mapName: 'ТПШ Татсумото'
   mapPath: /Maps/_Crescent/Stations/tatsumoto.yml
   minPlayers: 0
   stations:
@@ -15,7 +15,7 @@
             state: outpost
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'СТП Татсумо'
+          mapNameTemplate: 'ТПШ Татсумо'
         - type: VesselDesignation
           designation: vessel-designation-headquarters
         - type: VesselDescription
@@ -30,7 +30,7 @@
           availableJobs:
             ExecutiveSHI: [ 1, 1 ]
             BoardHRSHI: [ 1, 1 ]
-            BoardSHI: [ 1, 1 ] 
+            BoardSHI: [ 1, 1 ]
             HosSHI: [ 1, 1 ]
             HighsecSHI: [ 2, 2 ]
             CorpsecSHI: [ 5, 5 ]
