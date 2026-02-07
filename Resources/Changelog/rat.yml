@@ -1,332 +1,309 @@
-﻿Entries:
-- author: Odleer
-  changes:
-  - message: Update README.md
-    type: Tweak
-  id: 1
-  time: '2025-12-23T16:00:12Z'
-  url: null
-- author: Odleer
-  changes:
-  - message: Fix
-    type: Tweak
-  id: 2
-  time: '2025-12-25T11:20:12Z'
-  url: null
-- author: Odleer
-  changes:
-  - message: fix
-    type: Tweak
-  id: 3
-  time: '2025-12-25T16:26:32Z'
-  url: null
-- author: Odleer
-  changes:
-  - message: "Add: \u041B\u043E\u043A\u0430\u043B\u044C"
-    type: Tweak
-  id: 4
-  time: '2025-12-26T10:08:00Z'
-  url: null
-- author: Odleer
-  changes:
-  - message: Fix
-    type: Tweak
-  id: 5
-  time: '2025-12-26T11:57:25Z'
-  url: null
-- author: Odleer
-  changes:
-  - message: Upstream
-    type: Tweak
-  id: 6
-  time: '2025-12-27T11:01:19Z'
-  url: null
-- author: Odleer
-  changes:
-  - message: "\u0424\u0438\u043A\u0441"
-    type: Tweak
-  id: 7
-  time: '2025-12-30T09:34:57Z'
-  url: null
-- author: Odleer
-  changes:
-  - message: upstream
-    type: Tweak
-  id: 8
-  time: '2026-01-04T12:21:06Z'
-  url: null
-- author: Odleer
-  changes:
-  - message: "\u041F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0430 \u043A\
-      \ \u0442\u0435\u0441\u0442\u0443 \u0438 \u0440\u0435\u0441\u043F\u0440\u0430\
-      \u0439\u0442 \u0449\u0438\u0442\u0430"
-    type: Tweak
-  id: 9
-  time: '2026-01-05T13:41:21Z'
-  url: null
-- author: Odleer
-  changes:
-  - message: "\u041B\u043E\u043A\u0430\u043B\u044C, \u0444\u0438\u043A\u0441\u044B\
-      \ \u0438 \u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0443 \u043A\
-      \ \u0437\u0430\u043F\u0443\u0441\u043A\u0443"
-    type: Tweak
-  id: 10
-  time: '2026-01-06T11:22:25Z'
-  url: null
-- author: Odleer
-  changes:
-  - message: Update factions.yml
-    type: Tweak
-  id: 11
-  time: '2026-01-06T14:27:40Z'
-  url: null
-- author: Odleer
-  changes:
-  - message: "\u0412\u043E\u0438\u0434\u0431\u043E\u0440\u043D\u044B \u0443\u0434\u0430\
-      \u043B\u0435\u043D\u044B \u0438\u0437 \u0432\u044B\u0431\u043E\u0440\u0430 \u0440\
-      \u0430\u0441"
-    type: Remove
-  id: 12
-  time: '2026-01-07T08:51:23Z'
-  url: null
-- author: Odleer
-  changes:
-  - message: upstream
-    type: Tweak
-  id: 13
-  time: '2026-01-09T13:01:11Z'
-  url: null
-- author: Odleer
-  changes:
-  - message: Fix
-    type: Tweak
-  id: 14
-  time: '2026-01-09T13:12:08Z'
-  url: null
-- author: Odleer
-  changes:
-  - message: "\u041F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0430 \u043A\
-      \ \u0437\u0430\u043F\u0443\u0441\u043A\u0443"
-    type: Tweak
-  id: 15
-  time: '2026-01-10T12:55:42Z'
-  url: null
-- author: Odleer
-  changes:
-  - message: "\u0424\u0438\u043A\u0441\u044B"
-    type: Tweak
-  id: 16
-  time: '2026-01-10T13:29:13Z'
-  url: null
-- author: Odleer
-  changes:
-  - message: "\u0424\u0438\u043A\u0441\u044B, \u043B\u043E\u043A\u0430\u043B\u0438\
-      \u0437\u0430\u0446\u0438\u044F"
-    type: Tweak
-  id: 17
-  time: '2026-01-11T10:38:46Z'
-  url: null
-- author: Odleer
-  changes:
-  - message: upstream
-    type: Tweak
-  id: 18
-  time: '2026-01-11T10:56:20Z'
-  url: null
-- author: Odleer
-  changes:
-  - message: "\u043F\u0443\u043F\u0443\u043F\u0443"
-    type: Tweak
-  id: 19
-  time: '2026-01-11T14:28:42Z'
-  url: null
-- author: Odleer
-  changes:
-  - message: "\u0415\u0449\u0435 \u0440\u0430\u0437 \u043F\u043E\u0434\u0433\u043E\
-      \u0442\u043E\u0432\u043A\u0430"
-    type: Tweak
-  id: 20
-  time: '2026-01-11T14:38:06Z'
-  url: null
-- author: Odleer
-  changes:
-  - message: "\u041F\u043F\u0443\u043F"
-    type: Tweak
-  id: 21
-  time: '2026-01-11T14:50:27Z'
-  url: null
-- author: Odleer
-  changes:
-  - message: "\u041F\u043E\u043F\u0440\u0430\u0432\u0438\u043B \u0446\u0435\u043D\u044B"
-    type: Tweak
-  id: 22
-  time: '2026-01-13T06:47:03Z'
-  url: null
-- author: Odleer
-  changes:
-  - message: Upstream
-    type: Tweak
-  id: 23
-  time: '2026-01-13T07:12:18Z'
-  url: null
-- author: Odleer
-  changes:
-  - message: "\u043F\u0443\u043F\u0443\u043F"
-    type: Tweak
-  id: 24
-  time: '2026-01-13T11:44:34Z'
-  url: null
-- author: Odleer
-  changes:
-  - message: Fix
-    type: Tweak
-  id: 25
-  time: '2026-01-13T19:01:37Z'
-  url: null
-- author: Odleer
-  changes:
-  - message: "\u042F \u0443\u0436\u0435 \u0437\u0430\u0435\u0431\u0430\u043B\u0441\
-      \u044F \u0438\u0437-\u0437\u0430 \u0442\u0435\u0431\u044F \u043B\u0438\u0448\
-      \u043D\u0438\u0435 \u043A\u043E\u043C\u043C\u0438\u0442\u044B \u0434\u0435\u043B\
-      \u0430\u0442\u044C"
-    type: Tweak
-  id: 26
-  time: '2026-01-14T11:45:50Z'
-  url: null
-- author: Odleer
-  changes:
-  - message: "\u041F\u0443\u043F\u0443\u043F\u0443"
-    type: Tweak
-  id: 27
-  time: '2026-01-15T09:32:20Z'
-  url: null
-- author: Odleer
-  changes:
-  - message: Upstream
-    type: Tweak
-  id: 28
-  time: '2026-01-15T09:33:54Z'
-  url: null
-- author: Odleer
-  changes:
-  - message: Upstream
-    type: Tweak
-  id: 29
-  time: '2026-01-16T05:22:49Z'
-  url: null
-- author: Odleer
-  changes:
-  - message: "\u041E\u0442\u043A\u0430\u0442 \u0441\u043A\u043E\u0440\u043E\u0441\u0442\
-      \u0438 \u043F\u0440\u043E\u0434\u0436\u0435\u043A\u0442\u0430\u0439\u043B\u043E\
-      \u0432"
-    type: Tweak
-  id: 30
-  time: '2026-01-16T05:25:03Z'
-  url: null
-- author: Odleer
-  changes:
-  - message: "\u0420\u0435\u0441\u043F\u0440\u0430\u0439\u0442 \u0438\u043A\u043E\u043D\
-      \u043E\u043A iff \u0438 \u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\
-      \u0430 \u043A \u0437\u0430\u043F\u0443\u0441\u043A\u0443"
-    type: Tweak
-  id: 31
-  time: '2026-01-16T14:07:52Z'
-  url: null
-- author: Odleer
-  changes:
-  - message: Fix
-    type: Tweak
-  id: 32
-  time: '2026-01-16T14:32:48Z'
-  url: null
-- author: Odleer
-  changes:
-  - message: "\u0410\u0412\u0424\u0410"
-    type: Tweak
-  id: 33
-  time: '2026-01-17T11:55:17Z'
-  url: null
-- author: cryals
-  changes:
-  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u043E \u0432\u0435\u0441\
-      \u0435\u043B\u044C\u0435!"
-    type: Add
-  - message: "\u0423\u0431\u0440\u0430\u043D\u043E \u0432\u0435\u0441\u0435\u043B\u044C\
-      \u0435!"
-    type: Remove
-  - message: "\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u043E \u0432\u0435\u0441\u0435\
-      \u043B\u044C\u0435!"
-    type: Tweak
-  - message: "\u0418\u0441\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u043E \u0432\u0435\
-      \u0441\u0435\u043B\u044C\u0435!"
-    type: Fix
-  id: 34
-  time: '2026-01-17T17:28:01.0000000+00:00'
-  url: https://github.com/ss14-art/ratgore/pull/1
-- author: cryals
-  changes:
-  - message: rss
-    type: Fix
-  id: 35
-  time: '2026-01-17T19:14:03.0000000+00:00'
-  url: https://github.com/ss14-art/ratgore/pull/2
-- author: cryals
-  changes:
-  - message: "\u041D\u043E\u0440\u043C\u0430\u043B\u044C\u043D\u0430\u044F \u0441\u043A\
-      \u043E\u0440\u043E\u0441\u0442\u044C \u0430\u0434\u043C\u0438\u043D \u0433\u043E\
-      \u0441\u0442\u0430"
-    type: Tweak
-  id: 36
-  time: '2026-01-18T15:09:16.0000000+00:00'
-  url: https://github.com/ss14-art/ratgore/pull/3
-- author: Odleer
-  changes:
-  - message: "\u041D\u043E\u0432\u0430\u044F \u043A\u0430\u0440\u0442\u0430!"
-    type: Add
-  id: 37
-  time: '2026-01-19T18:04:39.0000000+00:00'
-  url: https://github.com/ss14-art/ratgore/pull/4
-- author: cryals
-  changes:
-  - message: "MD \u0444\u0430\u0439\u043B\u044B"
-    type: Tweak
-  id: 38
-  time: '2026-01-21T16:41:28.0000000+00:00'
-  url: https://github.com/ss14-art/ratgore/pull/6
-- author: cryals
-  changes:
-  - message: "CDN, \u0443\u0441\u043A\u043E\u0440\u0435\u043D\u0430 \u0441\u043A\u043E\
-      \u0440\u043E\u0441\u0442\u044C \u0437\u0430\u0433\u0440\u0443\u0437\u043A\u0438\
-      \ \u043A\u043E\u043D\u0442\u0435\u043D\u0442\u0430 \u0441\u0435\u0440\u0432\u0435\
-      \u0440\u0430. \u041E\u0441\u043D\u043E\u0432\u0430 \u0434\u043B\u044F \u0431\
-      \u0443\u0434\u0443\u044E\u0449\u0438\u0445 \u0440\u0435\u043F\u043B\u0435\u0435\
-      \u0432"
-    type: Add
-  id: 39
-  time: '2026-01-21T18:57:22.0000000+00:00'
-  url: https://github.com/ss14-art/ratgore/pull/7
-- author: cryals
-  changes:
-  - message: "CDN \u043F\u0443\u0431\u043B\u0438\u043A\u0430\u0446\u0438\u044F"
-    type: Tweak
-  id: 40
-  time: '2026-01-24T14:09:18.0000000+00:00'
-  url: https://github.com/ss14-art/ratgore/pull/10
-- author: cryals
-  changes:
-  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u043E \u0434\u0435\u0442\
-      \u0430\u043B\u044C\u043D\u043E\u0435 \u043B\u043E\u0433\u0438\u0440\u043E\u0432\
-      \u0430\u043D\u0438\u0435 \u0432 \u0441\u043A\u0440\u0438\u043F\u0442 \u043E\u0431\
-      \u0440\u0430\u0431\u043E\u0442\u043A\u0438 \u0447\u0435\u043D\u0434\u0436\u043B\
-      \u043E\u0433\u0430 \u0434\u043B\u044F GitHub Actions"
-    type: Add
-  - message: "\u0423\u043B\u0443\u0447\u0448\u0435\u043D\u0430 \u043E\u0431\u0440\u0430\
-      \u0431\u043E\u0442\u043A\u0430 \u043E\u0448\u0438\u0431\u043E\u043A \u043F\u0440\
-      \u0438 \u0437\u0430\u0433\u0440\u0443\u0437\u043A\u0435 YAML \u0444\u0430\u0439\
-      \u043B\u043E\u0432 \u0447\u0435\u043D\u0434\u0436\u043B\u043E\u0433\u0430"
-    type: Tweak
-  id: 41
-  time: '2026-01-25T10:13:13.0000000+00:00'
-  url: https://github.com/ss14-art/ratgore/pull/11
+Entries:
+  - author: Odleer
+    changes:
+      - message: Update README.md
+        type: Tweak
+    id: 1
+    time: '2025-12-23T16:00:12Z'
+    url: null
+  - author: Odleer
+    changes:
+      - message: Fix
+        type: Tweak
+    id: 2
+    time: '2025-12-25T11:20:12Z'
+    url: null
+  - author: Odleer
+    changes:
+      - message: fix
+        type: Tweak
+    id: 3
+    time: '2025-12-25T16:26:32Z'
+    url: null
+  - author: Odleer
+    changes:
+      - message: 'Add: Локаль'
+        type: Tweak
+    id: 4
+    time: '2025-12-26T10:08:00Z'
+    url: null
+  - author: Odleer
+    changes:
+      - message: Fix
+        type: Tweak
+    id: 5
+    time: '2025-12-26T11:57:25Z'
+    url: null
+  - author: Odleer
+    changes:
+      - message: Upstream
+        type: Tweak
+    id: 6
+    time: '2025-12-27T11:01:19Z'
+    url: null
+  - author: Odleer
+    changes:
+      - message: Фикс
+        type: Tweak
+    id: 7
+    time: '2025-12-30T09:34:57Z'
+    url: null
+  - author: Odleer
+    changes:
+      - message: upstream
+        type: Tweak
+    id: 8
+    time: '2026-01-04T12:21:06Z'
+    url: null
+  - author: Odleer
+    changes:
+      - message: Подготовка к тесту и респрайт щита
+        type: Tweak
+    id: 9
+    time: '2026-01-05T13:41:21Z'
+    url: null
+  - author: Odleer
+    changes:
+      - message: Локаль, фиксы и подготовку к запуску
+        type: Tweak
+    id: 10
+    time: '2026-01-06T11:22:25Z'
+    url: null
+  - author: Odleer
+    changes:
+      - message: Update factions.yml
+        type: Tweak
+    id: 11
+    time: '2026-01-06T14:27:40Z'
+    url: null
+  - author: Odleer
+    changes:
+      - message: Воидборны удалены из выбора рас
+        type: Remove
+    id: 12
+    time: '2026-01-07T08:51:23Z'
+    url: null
+  - author: Odleer
+    changes:
+      - message: upstream
+        type: Tweak
+    id: 13
+    time: '2026-01-09T13:01:11Z'
+    url: null
+  - author: Odleer
+    changes:
+      - message: Fix
+        type: Tweak
+    id: 14
+    time: '2026-01-09T13:12:08Z'
+    url: null
+  - author: Odleer
+    changes:
+      - message: Подготовка к запуску
+        type: Tweak
+    id: 15
+    time: '2026-01-10T12:55:42Z'
+    url: null
+  - author: Odleer
+    changes:
+      - message: Фиксы
+        type: Tweak
+    id: 16
+    time: '2026-01-10T13:29:13Z'
+    url: null
+  - author: Odleer
+    changes:
+      - message: Фиксы, локализация
+        type: Tweak
+    id: 17
+    time: '2026-01-11T10:38:46Z'
+    url: null
+  - author: Odleer
+    changes:
+      - message: upstream
+        type: Tweak
+    id: 18
+    time: '2026-01-11T10:56:20Z'
+    url: null
+  - author: Odleer
+    changes:
+      - message: пупупу
+        type: Tweak
+    id: 19
+    time: '2026-01-11T14:28:42Z'
+    url: null
+  - author: Odleer
+    changes:
+      - message: Еще раз подготовка
+        type: Tweak
+    id: 20
+    time: '2026-01-11T14:38:06Z'
+    url: null
+  - author: Odleer
+    changes:
+      - message: Ппуп
+        type: Tweak
+    id: 21
+    time: '2026-01-11T14:50:27Z'
+    url: null
+  - author: Odleer
+    changes:
+      - message: Поправил цены
+        type: Tweak
+    id: 22
+    time: '2026-01-13T06:47:03Z'
+    url: null
+  - author: Odleer
+    changes:
+      - message: Upstream
+        type: Tweak
+    id: 23
+    time: '2026-01-13T07:12:18Z'
+    url: null
+  - author: Odleer
+    changes:
+      - message: пупуп
+        type: Tweak
+    id: 24
+    time: '2026-01-13T11:44:34Z'
+    url: null
+  - author: Odleer
+    changes:
+      - message: Fix
+        type: Tweak
+    id: 25
+    time: '2026-01-13T19:01:37Z'
+    url: null
+  - author: Odleer
+    changes:
+      - message: Я уже заебался из-за тебя лишние коммиты делать
+        type: Tweak
+    id: 26
+    time: '2026-01-14T11:45:50Z'
+    url: null
+  - author: Odleer
+    changes:
+      - message: Пупупу
+        type: Tweak
+    id: 27
+    time: '2026-01-15T09:32:20Z'
+    url: null
+  - author: Odleer
+    changes:
+      - message: Upstream
+        type: Tweak
+    id: 28
+    time: '2026-01-15T09:33:54Z'
+    url: null
+  - author: Odleer
+    changes:
+      - message: Upstream
+        type: Tweak
+    id: 29
+    time: '2026-01-16T05:22:49Z'
+    url: null
+  - author: Odleer
+    changes:
+      - message: Откат скорости проджектайлов
+        type: Tweak
+    id: 30
+    time: '2026-01-16T05:25:03Z'
+    url: null
+  - author: Odleer
+    changes:
+      - message: Респрайт иконок iff и подготовка к запуску
+        type: Tweak
+    id: 31
+    time: '2026-01-16T14:07:52Z'
+    url: null
+  - author: Odleer
+    changes:
+      - message: Fix
+        type: Tweak
+    id: 32
+    time: '2026-01-16T14:32:48Z'
+    url: null
+  - author: Odleer
+    changes:
+      - message: АВФА
+        type: Tweak
+    id: 33
+    time: '2026-01-17T11:55:17Z'
+    url: null
+  - author: cryals
+    changes:
+      - message: Добавлено веселье!
+        type: Add
+      - message: Убрано веселье!
+        type: Remove
+      - message: Изменено веселье!
+        type: Tweak
+      - message: Исправлено веселье!
+        type: Fix
+    id: 34
+    time: '2026-01-17T17:28:01.0000000+00:00'
+    url: https://github.com/ss14-art/ratgore/pull/1
+  - author: cryals
+    changes:
+      - message: rss
+        type: Fix
+    id: 35
+    time: '2026-01-17T19:14:03.0000000+00:00'
+    url: https://github.com/ss14-art/ratgore/pull/2
+  - author: cryals
+    changes:
+      - message: Нормальная скорость админ госта
+        type: Tweak
+    id: 36
+    time: '2026-01-18T15:09:16.0000000+00:00'
+    url: https://github.com/ss14-art/ratgore/pull/3
+  - author: Odleer
+    changes:
+      - message: Новая карта!
+        type: Add
+    id: 37
+    time: '2026-01-19T18:04:39.0000000+00:00'
+    url: https://github.com/ss14-art/ratgore/pull/4
+  - author: cryals
+    changes:
+      - message: MD файлы
+        type: Tweak
+    id: 38
+    time: '2026-01-21T16:41:28.0000000+00:00'
+    url: https://github.com/ss14-art/ratgore/pull/6
+  - author: cryals
+    changes:
+      - message: CDN, ускорена скорость загрузки контента сервера. Основа для будующих реплеев
+        type: Add
+    id: 39
+    time: '2026-01-21T18:57:22.0000000+00:00'
+    url: https://github.com/ss14-art/ratgore/pull/7
+  - author: cryals
+    changes:
+      - message: CDN публикация
+        type: Tweak
+    id: 40
+    time: '2026-01-24T14:09:18.0000000+00:00'
+    url: https://github.com/ss14-art/ratgore/pull/10
+  - author: cryals
+    changes:
+      - message: Добавлено детальное логирование в скрипт обработки ченджлога для GitHub Actions
+        type: Add
+      - message: Улучшена обработка ошибок при загрузке YAML файлов ченджлога
+        type: Tweak
+    id: 41
+    time: '2026-01-25T10:13:13.0000000+00:00'
+    url: https://github.com/ss14-art/ratgore/pull/11
+  - author: cryals
+    changes:
+      - type: Add
+        message: Ratgore Lobby
+      - type: Add
+        message: New UI
+      - type: Add
+        message: Rofls
+    id: 42
+    time: '2026-02-07T09:46:21.0000000+00:00'
+    url: https://github.com/ss14-art/ratgore/pull/29
 Name: Rat
 Order: -1
