@@ -31,7 +31,7 @@
     - type: Gun
       fireOnDropChance: 0
       fireRate: 4
-      projectileSpeed: 100
+      projectileSpeed: 150
       selectedMode: FullAuto
       availableModes:
         - FullAuto
@@ -92,7 +92,7 @@
     - type: Gun
       fireOnDropChance: 0
       fireRate: 4.5
-      projectileSpeed: 100
+      projectileSpeed: 150
       selectedMode: FullAuto
       availableModes:
         - FullAuto
@@ -152,7 +152,7 @@
     - type: MagazineAmmoProvider
     - type: Gun
       fireOnDropChance: 0
-      projectileSpeed: 80
+      projectileSpeed: 130
       fireRate: 5.5
       selectedMode: FullAuto
       availableModes:
@@ -216,7 +216,7 @@
                 collection: MetalGlassBreak
     - type: Gun
       fireOnDropChance: 0
-      projectileSpeed: 85
+      projectileSpeed: 100
       fireRate: 2.5
       selectedMode: FullAuto
       availableModes:
@@ -279,7 +279,7 @@
                 collection: MetalGlassBreak
     - type: Gun
       fireOnDropChance: 0
-      projectileSpeed: 85
+      projectileSpeed: 100
       fireRate: 2.0
       selectedMode: FullAuto
       availableModes:
@@ -397,7 +397,7 @@
                 collection: MetalGlassBreak
     - type: Gun
       fireOnDropChance: 0
-      projectileSpeed: 70
+      projectileSpeed: 150
       fireRate: 2.5
       selectedMode: FullAuto
       availableModes:
@@ -442,7 +442,7 @@
       powerLoad: 800
     - type: Gun
       fireOnDropChance: 0
-      projectileSpeed: 70
+      projectileSpeed: 150
       fireRate: 2.8
       selectedMode: FullAuto
       availableModes:
@@ -485,7 +485,7 @@
         ballistic-ammo: !type:Container
     - type: Gun
       fireOnDropChance: 0
-      projectileSpeed: 300
+      projectileSpeed: 250
       fireRate: 0.2
       selectedMode: SemiAuto
       availableModes:
@@ -522,7 +522,7 @@
         - state: ncwl-howitzer
     - type: Gun
       fireOnDropChance: 0
-      projectileSpeed: 300
+      projectileSpeed: 250
       fireRate: 0.2
       selectedMode: FullAuto
       availableModes:
@@ -568,7 +568,7 @@
           ents: []
     - type: Gun
       fireOnDropChance: 0
-      projectileSpeed: 50
+      projectileSpeed: 100
       fireRate: 3
       selectedMode: FullAuto
       availableModes:

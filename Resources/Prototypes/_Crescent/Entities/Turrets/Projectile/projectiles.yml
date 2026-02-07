@@ -20,7 +20,7 @@
     color: orange
     energy: 0.5
   - type: TimedDespawn
-    lifetime: 10 #1000m
+    lifetime: 10 #1500m
   - type: Sprite
     sprite: _NF/Objects/SpaceArtillery/pdtcasing.rsi
     layers:
@@ -42,14 +42,14 @@
     ignoreWeaponGrid: true
     damage:
       types:
-        Structural: 20
+        Structural: 10
         Piercing: 50
   - type: PointLight
     radius: 3.5
     color: orange
     energy: 0.5
   - type: TimedDespawn
-    lifetime: 12 #1200m
+    lifetime: 12 #1800m
   - type: Sprite
     sprite: _NF/Objects/SpaceArtillery/pdtcasing.rsi
     layers:
@@ -71,7 +71,7 @@
     ignoreWeaponGrid: true
     damage:
       types:
-        Structural: 20
+        Structural: 5
         Piercing: 20
   - type: ExplodeOnTrigger
   - type: Explosive
@@ -85,7 +85,7 @@
     color: orange
     energy: 0.5
   - type: TimedDespawn
-    lifetime: 6 #600m
+    lifetime: 6 #900m
   - type: Sprite
     sprite: _NF/Objects/SpaceArtillery/pdtcasing.rsi
     layers:
@@ -113,7 +113,7 @@
     color: orange
     energy: 0.5
   - type: TimedDespawn
-    lifetime: 9 #720m
+    lifetime: 9 #1170m
   - type: Sprite
     sprite: _NF/Objects/SpaceArtillery/pdtcasing.rsi
     layers:
@@ -135,14 +135,14 @@
     ignoreWeaponGrid: true
     damage:
       types:
-        Structural: 35
+        Structural: 25
         Piercing: 75
   - type: PointLight
     radius: 3.5
     color: orange
     energy: 0.5
   - type: TimedDespawn
-    lifetime: 12 #960m
+    lifetime: 12 #1560m
   - type: Sprite
     sprite: _NF/Objects/SpaceArtillery/pdtcasing.rsi
     layers:
@@ -164,7 +164,7 @@
     ignoreWeaponGrid: true
     damage:
       types:
-        Structural: 30
+        Structural: 10
         Piercing: 45
   - type: ExplodeOnTrigger
   - type: Explosive
@@ -178,7 +178,7 @@
     color: orange
     energy: 0.5
   - type: TimedDespawn
-    lifetime: 5 #400m
+    lifetime: 5 #650
   - type: Sprite
     sprite: _NF/Objects/SpaceArtillery/pdtcasing.rsi
     layers:
@@ -209,7 +209,7 @@
     color: orange
     energy: 0.5
   - type: TimedDespawn
-    lifetime: 19 #1615m
+    lifetime: 19 #1900
   - type: Sprite
     sprite: _NF/Objects/SpaceArtillery/pdtcasing.rsi
     layers:
@@ -230,14 +230,14 @@
     ignoreWeaponGrid: true
     damage:
       types:
-        Structural: 80
+        Structural: 50
         Piercing: 50
   - type: PointLight
     radius: 3.5
     color: orange
     energy: 0.5
   - type: TimedDespawn
-    lifetime: 24 #2040m
+    lifetime: 24 #2400m
   - type: Sprite
     sprite: _NF/Objects/SpaceArtillery/pdtcasing.rsi
     layers:
@@ -258,7 +258,7 @@
     ignoreWeaponGrid: true
     damage:
       types:
-        Structural: 50
+        Structural: 25
         Piercing: 30
   - type: ExplodeOnTrigger
   - type: Explosive
@@ -272,7 +272,7 @@
     color: orange
     energy: 0.5
   - type: TimedDespawn
-    lifetime: 10 #850
+    lifetime: 10 #1000m
   - type: Sprite
     sprite: _NF/Objects/SpaceArtillery/pdtcasing.rsi
     layers:
@@ -309,7 +309,7 @@
     color: orange
     energy: 0.5
   - type: TimedDespawn
-    lifetime: 8 #640
+    lifetime: 8 #1200m
   - type: Sprite
     sprite: _NF/Objects/SpaceArtillery/mortarcasing.rsi
     layers:
@@ -344,7 +344,7 @@
     color: orange
     energy: 0.5
   - type: TimedDespawn
-    lifetime: 25 #2000m
+    lifetime: 25 #3750m
   - type: Sprite
     sprite: _NF/Objects/SpaceArtillery/mortarcasing.rsi
     layers:
@@ -379,7 +379,7 @@
     color: orange
     energy: 0.5
   - type: TimedDespawn
-    lifetime: 15 #1200m
+    lifetime: 15 #2250
   - type: Sprite
     sprite: _NF/Objects/SpaceArtillery/mortarcasing.rsi
     layers:
@@ -544,7 +544,7 @@
     tags:
       - FlakShell
   - type: TimedDespawn
-    lifetime: 10 #500m
+    lifetime: 10 #1000m
   - type: Sprite
     sprite: _Crescent/Objects/ShuttleWeapons/flak.rsi
     layers:

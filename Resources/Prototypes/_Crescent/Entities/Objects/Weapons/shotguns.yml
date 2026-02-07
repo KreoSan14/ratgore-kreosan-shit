@@ -33,7 +33,7 @@
   name: NCWL Toz-97 Proletar 12g
   parent: [BaseWeaponShotgun, BaseGunWieldable]
   id: WeaponShotgunProletar
-  description: A 12-gauge pump-action shotgun with the magazine tube mounted above the barrel and a reversed pumping action.
+  description: A 12-gauge pump-action shotgun with the magazine tube mounted above the barrel and a reversed pumping action. Comes with an extended tube.
   components:
   - type: Item
     size: Normal
@@ -45,8 +45,10 @@
   - type: Clothing
     sprite: _Crescent/Objects/Weapons/Guns/proletar.rsi
   - type: GunRequiresWield
+  - type: Gun
+    damageModifier: 1.25 #its a pumper so its reasonable
   - type: BallisticAmmoProvider
-    capacity: 6
+    capacity: 8
     autoCycle: false
   - type: Tag
     tags:
@@ -212,6 +214,7 @@
       gun_magazine: !type:ContainerSlot
       gun_chamber: !type:ContainerSlot
   - type: ChamberMagazineAmmoProvider
+    autoCycle: false #its a lever gun its not semi auto....
     autoEject: true
     soundAutoEject:
       path: /Audio/Weapons/Guns/EmptyAlarm/M1_empty_alarm.ogg
@@ -291,6 +294,7 @@
   - type: BallisticAmmoProvider
   - type: StaticPrice
     price: 1500
+  - type: GunRequiresWield #which chuddy didnt include wielding on this..
 
 - type: entity
   name: NT SPAS-13 12g

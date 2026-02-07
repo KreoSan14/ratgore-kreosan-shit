@@ -684,12 +684,3 @@
   materials:
     BasicMechatronics:  1000
     Steel: 2500
-
-- type: latheRecipe
-  id: HardsuitElectronicsDSM
-  result: HardsuitElectronics1
-  completetime: 2
-  materials:
-    BasicElectronics: 1500
-    Silver: 1500
-    Gold: 1000

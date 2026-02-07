@@ -252,7 +252,7 @@
       - state: frag
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: Fragmentation
+    explosionType: Thermobaric
     maxIntensity: 100
     intensitySlope: 4
     totalIntensity: 100

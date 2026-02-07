@@ -30,7 +30,7 @@
           ents: []
     - type: Gun
       fireOnDropChance: 0
-      projectileSpeed: 60
+      projectileSpeed: 120
       fireRate: 1
       selectedMode: FullAuto
       availableModes:
@@ -89,7 +89,7 @@
           ents: []
     - type: Gun
       fireOnDropChance: 0
-      projectileSpeed: 60
+      projectileSpeed: 120
       fireRate: 2.2
       selectedMode: FullAuto
       availableModes:
@@ -150,7 +150,7 @@
           ents: []
     - type: Gun
       fireOnDropChance: 0
-      projectileSpeed: 110
+      projectileSpeed: 180
       fireRate: 25
       selectedMode: FullAuto
       availableModes:
@@ -209,7 +209,7 @@
           ents: []
     - type: Gun
       fireOnDropChance: 0
-      projectileSpeed: 110
+      projectileSpeed: 180
       fireRate: 25
       selectedMode: FullAuto
       availableModes:
@@ -266,11 +266,11 @@
           ents: []
     - type: Gun
       fireOnDropChance: 0
-      projectileSpeed: 70
+      projectileSpeed: 140
       fireRate: 3
-      selectedMode: FullAuto
+      selectedMode: Burst
       availableModes:
-        - FullAuto
+        - Burst
       angleDecay: 0
       minAngle: 0
       maxAngle: 0
@@ -327,12 +327,12 @@
       fireOnDropChance: 0
       projectileSpeed: 70
       fireRate: 3.5
-      selectedMode: FullAuto
+      selectedMode: Burst
       availableModes:
-        - FullAuto
-      angleDecay: 25
-      minAngle: 2
-      maxAngle: 8
+        - Burst
+      angleDecay: 0
+      minAngle: 0
+      maxAngle: 0
       soundGunshot:
         path: /Audio/Weapons/Guns/Gunshots/lasergatling.ogg
         params:
@@ -386,7 +386,7 @@
           ents: []
     - type: Gun
       fireOnDropChance: 0
-      projectileSpeed: 60
+      projectileSpeed: 200
       fireRate: 1
       selectedMode: FullAuto
       availableModes:
@@ -442,7 +442,7 @@
           ents: []
     - type: Gun
       fireOnDropChance: 0
-      projectileSpeed: 60
+      projectileSpeed: 200
       fireRate: 1
       selectedMode: FullAuto
       availableModes:

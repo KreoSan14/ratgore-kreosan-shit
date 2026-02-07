@@ -223,23 +223,13 @@
     BallisticCycler: 500
 
 - type: latheRecipe
-  id: WeaponPistolSmartpistol
+  id: WeaponPistolSmartpistolSHI
   result: WeaponPistolSmartpistol
   completetime: 2
   materials:
     Steel: 2500
     Plastic: 500
     AdvancedElectronics: 500
-    BallisticCycler: 500
-
-- type: latheRecipe
-  id: WeaponShotgunEnforcer
-  result: WeaponShotgunEnforcer
-  completetime: 2
-  materials:
-    Steel: 2500
-    Plastic: 1000
-    BallisticCycler: 500
 
 - type: latheRecipe
   id: WeaponShotgunSHIDoubleBarreled4g
@@ -307,6 +297,15 @@
     BallisticCycler: 500
 
 - type: latheRecipe
+  id: WeaponShotgunEnforcer
+  result: WeaponShotgunEnforcer
+  completetime: 2
+  materials:
+    Steel: 3000
+    Plastic: 1500
+    TubeLoader: 500
+
+- type: latheRecipe
   id: WeaponLightMachineGunL6
   result: WeaponLightMachineGunL6
   completetime: 2
@@ -364,6 +363,15 @@
     Silver: 1000
     TubeLoader: 500
     AdvancedElectronics: 1000
+
+- type: latheRecipe
+  id: CartridgeHammerheadRocket
+  result: CartridgeHammerheadRocket
+  completetime: 2
+  materials:
+    Steel: 1000
+    Gold: 250
+    Plasma: 1000
 
 - type: latheRecipe
   id: WeaponLauncherMilkor
@@ -883,6 +891,40 @@
     Plasma: 500
     Steel: 100
 
+- type: latheRecipe
+  id: SHIHG3TearGasHandgrenade
+  result: SHIHG3TearGasHandgrenade
+  completetime: 2
+  materials:
+    Plastic: 100
+    Steel: 100
+
+- type: latheRecipe
+  id: SHIHG7FlashbangHandgrenade
+  result: SHIHG7FlashbangHandgrenade
+  completetime: 2
+  materials:
+    Plastic: 100
+    Plasma: 50
+    Steel: 150
+
+- type: latheRecipe
+  id: SHIHG19SmartHandgrenadeEMP
+  result: SHIHG19SmartHandgrenadeEMP
+  completetime: 2
+  materials:
+    Gold: 150
+    Plasma: 100
+    Steel: 100
+
+
+- type: latheRecipe
+  id: HG13M2MiniHandgrenade
+  result: HG13M2MiniHandgrenade
+  completetime: 2
+  materials:
+    Plasma: 250
+    Steel: 100
 #mark cases
 
 - type: latheRecipe

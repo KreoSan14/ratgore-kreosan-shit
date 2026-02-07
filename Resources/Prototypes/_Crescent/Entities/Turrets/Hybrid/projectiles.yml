@@ -20,7 +20,7 @@
     color: purple
     energy: 0.5
   - type: TimedDespawn
-    lifetime: 9 #675m
+    lifetime: 9 #1260
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/magic.rsi
     layers:
@@ -56,7 +56,7 @@
     color: orange
     energy: 0.5
   - type: TimedDespawn
-    lifetime: 16 #800m
+    lifetime: 16 #2240m
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/magic.rsi
     layers:
@@ -91,7 +91,7 @@
     color: orange
     energy: 0.5
   - type: TimedDespawn
-    lifetime: 9 #540m
+    lifetime: 9 #720m
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/magic.rsi
     layers:

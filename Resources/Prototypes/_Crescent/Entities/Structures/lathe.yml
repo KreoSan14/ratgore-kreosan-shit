@@ -751,10 +751,8 @@
       - LaserLocus1
       - BallisticCyclerNCWL
       - TubeLoaderNCWL
-      - HardsuitElectronicsNCWL
       - BallisticCyclerDSM
       - TubeLoaderDSM
-      - HardsuitElectronicsDSM
       - MagwellFlatpack
       - IdnaFlatpack
       - IdnaTorpedo
@@ -765,6 +763,14 @@
       - WeaponSubMachineGunSabre
       - WeaponLightMachineGunL6
       - WeaponLauncherMilkor
+      - GrenadeSHIHG17Smart
+      - HG13M2MiniHandgrenade
+      - SHIHG19SmartHandgrenadeEMP
+      - SHIHG7FlashbangHandgrenade
+      - SHIHG3TearGasHandgrenade
+      - WeaponPistolSmartpistolSHI
+      - WeaponShotgunEnforcer
+      - CartridgeHammerheadRocket
       - BoriaticComposterFlatpack
       - CyberneticsMantisBladeRight
       - CyberneticsMantisBladeLeft

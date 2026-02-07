@@ -16,7 +16,7 @@
       thresholds:
         - trigger:
             !type:DamageTrigger
-            damage: 800
+            damage: 600
           # TODO: Construction graph
           behaviors:
             - !type:ChangeConstructionNodeBehavior
@@ -30,20 +30,20 @@
           ents: []
     - type: Gun
       fireOnDropChance: 0
-      projectileSpeed: 75
-      fireRate: 4
+      projectileSpeed: 140
+      fireRate: 6
       selectedMode: FullAuto
       availableModes:
         - FullAuto
-      angleDecay: 45
-      minAngle: 5
-      maxAngle: 15
+      angleDecay: 15
+      minAngle: 10
+      maxAngle: 22.5
       soundGunshot:
         path: /Audio/Weapons/Guns/Gunshots/laserturret.ogg
         params:
           variation: 0.12
     - type: RechargeBasicEntityAmmo
-      rechargeCooldown: 2
+      rechargeCooldown: .5
       rechargeSound:
         path: /Audio/Weapons/Guns/Bolt/lmg_bolt_closed.ogg
         params:
@@ -52,7 +52,7 @@
     - type: BasicEntityAmmoProvider
       proto: BulletPlasmaGatling
       capacity: 50
-      count: 10
+      count: 1
     - type: ApcPowerReceiver
       powerLoad: 2500
     - type: HardpointAnchorableOnly
@@ -91,14 +91,14 @@
           ents: []
     - type: Gun
       fireOnDropChance: 0
-      projectileSpeed: 50
+      projectileSpeed: 100
       fireRate: 0.5
       selectedMode: FullAuto
       availableModes:
         - FullAuto
-      angleDecay: 25
-      minAngle: 2
-      maxAngle: 8
+      angleDecay: 15
+      minAngle: 10
+      maxAngle: 22.5
       soundGunshot:
         path: /Audio/Weapons/Guns/Gunshots/lasergatling.ogg
         params:
@@ -152,7 +152,7 @@
           ents: []
     - type: Gun
       fireOnDropChance: 0
-      projectileSpeed: 60
+      projectileSpeed: 80
       fireRate: 0.5
       selectedMode: FullAuto
       availableModes:
