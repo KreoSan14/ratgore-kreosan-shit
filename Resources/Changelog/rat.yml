@@ -319,5 +319,12 @@ Entries:
     id: 44
     time: '2026-02-08T12:25:49.0000000+00:00'
     url: https://github.com/ss14-art/ratgore/pull/32
+  - author: 1Mentor5
+    changes:
+      - type: Fix
+        message: Производственные машины Шиногары теперь имеют общее хранилище ресурсов
+    id: 45
+    time: '2026-02-09T07:41:16.0000000+00:00'
+    url: https://github.com/ss14-art/ratgore/pull/33
 Name: Rat
 Order: -1
