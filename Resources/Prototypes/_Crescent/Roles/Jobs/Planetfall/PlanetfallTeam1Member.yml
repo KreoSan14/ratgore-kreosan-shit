@@ -4,7 +4,7 @@
   description: job-description-planetfall-team1-member
   playTimeTracker: ConscriptDSM
   weight: 2
-  startingGear: PlanetfallMemberGear
+  startingGear: PlanetfallT1MemberGear
   alwaysUseSpawner: true
   icon: "JobIconUnionfallDSMRifleman"
   requirements:
@@ -40,28 +40,14 @@
   - Empire
 
 - type: startingGear
-  id: PlanetfallMemberGear
+  id: PlanetfallT1MemberGear
   equipment:
-    head: ClothingHeadHatDSMCapsoft
-    neck: ClothingNeckIFFCyan
-    jumpsuit: ClothingUniformJumpsuitImperialCombat
-    outerClothing: ClothingOuterHardsuitImperialSoldier
-    shoes: ClothingShoesBootsMagDSM
-    belt: ClothingBeltAssaultFilledRifleman
-    gloves: ClothingHandsGlovesImperialLonggloves
-    back: ClothingBackpackDSM
-    pocket1: DoubleEmergencyOxygenTankFilled
-    pocket2: ExGrenade
-    ears: ClothingHeadsetEmpire
-    id: LevymanPDA
-    suitstorage: WeaponSniperDSMLegax
-    eyes: ClothingEyesHudSecurity
-  inhand:
-    - BookUnionfallDSMGuide
-    - JetpackBlackFilled
-  storage:
-    back:
-      - BoxMRE
-      - WeaponPistolComplianceImperial
-      - CrowbarRed
-      - HandHeldMassScannerEE
+    jumpsuit: ClothingUniformJumpsuitShinoharaSecurity
+    shoes: ClothingShoesBootsCombat
+    gloves: ClothingHandsGlovesCombat
+    id: CorpsecPDA
+    ears: ClothingHeadsetShinohara
+    pocket1: WeaponPistolLiquidator
+    back: ClothingBackpackSHISatchel
+    head: ClothingHeadHatShinoharaBeretUA
+    belt: ClothingBeltSecurityFilled

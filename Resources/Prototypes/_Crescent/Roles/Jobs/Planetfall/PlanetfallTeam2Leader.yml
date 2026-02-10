@@ -15,7 +15,7 @@
         - Pacifist
         - WheelchairBound
   weight: 9
-  startingGear: PlanetfallLeaderGear
+  startingGear: PlanetfallT2LeaderGear
   alwaysUseSpawner: true
   icon: "JobIconUnionfallDSMLeader"
   requireAdminNotify: true
@@ -74,26 +74,17 @@
 
 #testshit
 - type: startingGear
-  id: PlanetfallLeaderGear
+  id: PlanetfallT2LeaderGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitImperialGovernor
-    neck: ClothingNeckIFFCyan
-    back: ClothingBackpackDSM
-    shoes: ClothingShoesBootsMagDSM
-    head: ClothingHeadHatImperialBicorne
-    outerClothing: ClothingOuterHardsuitImperialKnight
-    id: KnightPDA
-    belt: ClothingBeltAssaultFilledAdjutant
-    pocket1: DoubleEmergencyOxygenTankFilled
     pocket2: SyndicateWhistle
-    ears: ClothingHeadsetEmpire
-    suitstorage: WeaponSniperDSMLegax
+    jumpsuit: ClothingUniformJumpsuitSyndicateSuit
+    shoes: ClothingShoesBootsCombat
+    gloves: ClothingHandsGlovesCombat
+    back: ClothingBackpackNCSP
+    ears: ClothingHeadsetEmpire #FIXTHIS!!!!
+    id: SpacerPDA
     eyes: ClothingEyesHudSecurity
-  inhand:
-    - JetpackBlackFilled
   storage:
     back:
       - BoxMRE
-      - WeaponPistolNeoVolker
       - CrowbarRed
-      - HandHeldMassScannerEE
