@@ -8,8 +8,8 @@
     shuttles:
     - Vanguard
     - Lodka
-    - Ivarod
-    - Stern
+    #- Ivarod
+    #- Stern
     - Gargut
     - Hind
     - Vasinya
