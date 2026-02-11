@@ -326,5 +326,12 @@ Entries:
     id: 45
     time: '2026-02-09T07:41:16.0000000+00:00'
     url: https://github.com/ss14-art/ratgore/pull/33
+  - author: freycyik
+    changes:
+      - type: Remove
+        message: Убран Стерн и Иварод с раундстартовой консоли
+    id: 46
+    time: '2026-02-11T05:09:27.0000000+00:00'
+    url: https://github.com/ss14-art/ratgore/pull/37
 Name: Rat
 Order: -1
