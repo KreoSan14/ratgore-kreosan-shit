@@ -333,5 +333,12 @@ Entries:
     id: 46
     time: '2026-02-11T05:09:27.0000000+00:00'
     url: https://github.com/ss14-art/ratgore/pull/37
+  - author: freycyik
+    changes:
+      - type: Tweak
+        message: Изменено дистанция плазменных снарядов. Они теперь стреляют в несколько раз меньшую дистанцию
+    id: 47
+    time: '2026-02-11T05:09:43.0000000+00:00'
+    url: https://github.com/ss14-art/ratgore/pull/38
 Name: Rat
 Order: -1
