@@ -25,6 +25,9 @@ public sealed class ShipDrillSystem : EntitySystem
 
     private EntityQuery<GatherableComponent> _gatherQuery;
 
+    // ID тайла, который разрешено ломать
+    private const string TargetTileId = "FloorAsteroidSand";
+
     public override void Initialize()
     {
         SubscribeLocalEvent<ShipDrillComponent, PowerChangedEvent>(OnPowerChange);
@@ -96,6 +99,9 @@ public sealed class ShipDrillSystem : EntitySystem
         {
             var tileRef = _map.GetTileRef(gridUid, mapGrid, coordinates);
             var tileDef = (ContentTileDefinition) _tileDefinitionManager[tileRef.Tile.TypeId];
+
+            if (tileDef.ID != TargetTileId)
+                return; 
 
             var ev = new FloorTileAttemptEvent();
             RaiseLocalEvent(gridUid, ref ev);
