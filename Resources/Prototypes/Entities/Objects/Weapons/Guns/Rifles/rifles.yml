@@ -166,7 +166,6 @@
       path: /Audio/_Crescent/Weapons/Guns/AK_74/rifle_gunshot_1.ogg
     fireOnDropChance: 0.5
   - type: ChamberMagazineAmmoProvider
-    boltClosed: null # means the bolt doesnt lock back like M16 pattern rifles, also means you need to cycle the gun after an empty mag
     soundRack:
       path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg
   - type: ItemSlots

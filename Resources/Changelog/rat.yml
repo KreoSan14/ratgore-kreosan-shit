@@ -356,5 +356,14 @@ Entries:
     id: 49
     time: '2026-02-13T12:05:56.0000000+00:00'
     url: https://github.com/ss14-art/ratgore/pull/40
+  - author: shad4338
+    changes:
+      - type: Fix
+        message: Теперь можно дёргать затворы у АКМС, Кринкова, Сайги-12К, Батяни и Фалина.
+      - type: Tweak
+        message: Переведены красные скафандры за очки у Интердайн и Горлекса
+    id: 50
+    time: '2026-02-14T11:53:51.0000000+00:00'
+    url: https://github.com/ss14-art/ratgore/pull/41
 Name: Rat
 Order: -1
