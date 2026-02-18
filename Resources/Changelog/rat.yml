@@ -356,5 +356,12 @@ Entries:
     id: 49
     time: '2026-02-13T12:05:56.0000000+00:00'
     url: https://github.com/ss14-art/ratgore/pull/40
+  - author: shad4338
+    changes:
+      - type: Add
+        message: В лобби и боевом режиме Интердайн играет новая музыка
+    id: 50
+    time: '2026-02-18T14:38:34.0000000+00:00'
+    url: https://github.com/ss14-art/ratgore/pull/45
 Name: Rat
 Order: -1
