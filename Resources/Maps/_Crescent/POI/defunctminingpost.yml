@@ -25245,19 +25245,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 19.5,25.5
       parent: 1
-- proto: PaperScrap
-  entities:
-  - uid: 3038
-    components:
-    - type: Transform
-      pos: -1.6982968,1.0874915
-      parent: 1
-    - type: Paper
-      content: >-
-        THIS IS NUKE IS FUCKING FAKE!!
-
-
-        CURSE YOU CENTCOM!!!
 - proto: PartRodMetal
   entities:
   - uid: 3039
