@@ -25,7 +25,9 @@ namespace Content.Client.Stylesheets
         {
             var ds = display ? "Display" : "";
             var sv = variation.StartsWith("Bold", StringComparison.Ordinal) ? "Bold" : "Regular";
-            return resCache.GetFont(
+            return resCache.GetFont
+            (
+                // Ew, but ok
                 new[]
                 {
                     $"/Fonts/NotoSans{ds}/NotoSans{ds}-{variation}.ttf",
@@ -34,9 +36,11 @@ namespace Content.Client.Stylesheets
                 },
                 size
             );
-        }
-    }
 
+        }
+
+    }
+    // STLYE SHEETS WERE A MISTAKE. KILL ALL OF THIS WITH FIRE
     public sealed class StyleNano : StyleBase
     {
         public const string StyleClassBorderedWindowPanel = "BorderedWindowPanel";
@@ -135,9 +139,9 @@ namespace Content.Client.Stylesheets
         public static readonly Color ExamineButtonColorContextDisabled = Color.FromHex("#5A5A5A");
 
         // Fancy Tree elements
-        public static readonly Color FancyTreeEvenRowColor = Color.FromHex("#1e1e21");
+        public static readonly Color FancyTreeEvenRowColor = Color.FromHex("#25252A");
         public static readonly Color FancyTreeOddRowColor = FancyTreeEvenRowColor * new Color(0.8f, 0.8f, 0.8f);
-        public static readonly Color FancyTreeSelectedRowColor = FancyTreeEvenRowColor * new Color(0.5f, 0.5f, 0.5f);
+        public static readonly Color FancyTreeSelectedRowColor = new Color(55, 55, 68);
 
         //Used by the APC and SMES menus
         public const string StyleClassPowerStateNone = "PowerStateNone";
@@ -157,20 +161,6 @@ namespace Content.Client.Stylesheets
         public const string StyleClassButtonColorGreen = "ButtonColorGreen";
 
         public static readonly Color ChatBackgroundColor = Color.FromHex("#25252ADD");
-
-        // NovaUI Chat styles
-        public const string StyleClassNovaChatPanel = "NovaChatPanel";
-        public const string StyleClassNovaChatInputContainer = "NovaChatInputContainer";
-        public const string StyleClassNovaChatInput = "NovaChatInput";
-        public const string StyleClassNovaChatButton = "NovaChatButton";
-        public const string StyleClassNovaChatButtonContainer = "NovaChatButtonContainer";
-
-        // NovaUI Lobby styles
-        public const string StyleClassNovaLobbyButton = "NovaLobbyButton";
-        public const string StyleClassNovaLobbyButtonContainer = "NovaLobbyButtonContainer";
-
-        // Server Info Background
-        public const string StyleClassServerInfoBackground = "ServerInfoBackground";
 
         // DeltaV - AAC button variables
         public static readonly string CommandButtonClass = "CommandButton";
@@ -199,10 +189,12 @@ namespace Content.Client.Stylesheets
         public static readonly Color SecurityColorHovered = Color.FromHex("#745370");
         public static readonly Color ServiceButtonColorDefault = Color.FromHex("#607952");
         public static readonly Color ServiceColorHovered = Color.FromHex("#667A76");
+        // End DeltaV
 
         //Bwoink
         public const string StyleClassPinButtonPinned = "pinButtonPinned";
         public const string StyleClassPinButtonUnpinned = "pinButtonUnpinned";
+
 
         public override Stylesheet Stylesheet { get; }
 
@@ -452,65 +444,6 @@ namespace Content.Client.Stylesheets
                 BackgroundColor = new Color(0.25f, 0.50f, 0.25f)
             };
             progressBarForeground.SetContentMarginOverride(StyleBox.Margin.Vertical, 14.5f);
-
-            // NovaUI Chat textures
-            var novaChatPanelTex = resCache.GetTexture("/Textures/_White/NovaUI/Chat/chat-panel.png");
-            var novaChatPanel = new StyleBoxTexture
-            {
-                Texture = novaChatPanelTex,
-            };
-            novaChatPanel.SetPatchMargin(StyleBox.Margin.All, 2);
-
-            var novaChatInputContainerTex = resCache.GetTexture("/Textures/_White/NovaUI/Chat/input-container.png");
-            var novaChatInputContainer = new StyleBoxTexture
-            {
-                Texture = novaChatInputContainerTex,
-            };
-            novaChatInputContainer.SetPatchMargin(StyleBox.Margin.All, 2);
-
-            var novaChatInputTex = resCache.GetTexture("/Textures/_White/NovaUI/Chat/input.png");
-            var novaChatInput = new StyleBoxTexture
-            {
-                Texture = novaChatInputTex,
-            };
-            novaChatInput.SetPatchMargin(StyleBox.Margin.All, 2);
-
-            var novaChatButtonTex = resCache.GetTexture("/Textures/_White/NovaUI/Chat/simple-buton.png");
-            var novaChatButton = new StyleBoxTexture
-            {
-                Texture = novaChatButtonTex,
-            };
-            novaChatButton.SetPatchMargin(StyleBox.Margin.All, 2);
-
-            var novaChatButtonContainerTex = resCache.GetTexture("/Textures/_White/NovaUI/Chat/button-container.png");
-            var novaChatButtonContainer = new StyleBoxTexture
-            {
-                Texture = novaChatButtonContainerTex,
-            };
-            novaChatButtonContainer.SetPatchMargin(StyleBox.Margin.All, 2);
-
-            // NovaUI Lobby textures
-            var novaLobbyButtonTex = resCache.GetTexture("/Textures/_White/NovaUI/Chat/button.png");
-            var novaLobbyButton = new StyleBoxTexture
-            {
-                Texture = novaLobbyButtonTex,
-            };
-            novaLobbyButton.SetPatchMargin(StyleBox.Margin.All, 2);
-
-            var novaLobbyButtonContainerTex = resCache.GetTexture("/Textures/_White/NovaUI/Chat/button-container.png");
-            var novaLobbyButtonContainer = new StyleBoxTexture
-            {
-                Texture = novaLobbyButtonContainerTex,
-            };
-            novaLobbyButtonContainer.SetPatchMargin(StyleBox.Margin.All, 2);
-
-            // Server Info Background
-            var serverInfoBackgroundTex = resCache.GetTexture("/Textures/Interface/Nano/shaded_lobby.png");
-            var serverInfoBackground = new StyleBoxTexture
-            {
-                Texture = serverInfoBackgroundTex,
-            };
-            serverInfoBackground.SetPatchMargin(StyleBox.Margin.All, 2);
 
             // CheckBox
             var checkBoxTextureChecked = resCache.GetTexture("/Textures/Interface/Nano/checkbox_checked.svg.96dpi.png");
@@ -936,8 +869,7 @@ namespace Content.Client.Stylesheets
                 Element<ContainerButton>().Class(StyleClassStorageButton)
                     .Pseudo(ContainerButton.StylePseudoClassDisabled)
                     .Prop(Control.StylePropertyModulateSelf, ButtonColorDisabled),
-
-                // ListContainer
+// ListContainer
                 Element<ContainerButton>().Class(ListContainer.StyleClassListContainerButton)
                     .Prop(ContainerButton.StylePropertyStyleBox, listContainerButton),
 
@@ -1502,6 +1434,7 @@ namespace Content.Client.Stylesheets
                 new StyleRule(new SelectorElement(typeof(TextureRect), new[] {OptionButton.StyleClassOptionTriangle}, null, null), new[]
                 {
                     new StyleProperty(TextureRect.StylePropertyTexture, textureInvertedTriangle),
+                    //new StyleProperty(Control.StylePropertyModulateSelf, Color.FromHex("#FFFFFF")),
                 }),
 
                 new StyleRule(new SelectorElement(typeof(Label), new[] { OptionButton.StyleClassOptionButton }, null, null), new[]
@@ -1866,65 +1799,80 @@ namespace Content.Client.Stylesheets
                     .Class(JusticeButtonClass)
                     .Pseudo(ContainerButton.StylePseudoClassHover)
                     .Prop(Control.StylePropertyModulateSelf, JusticeColorHovered),
+                // End DeltaV
 
-                // NovaUI Lobby styles
+                // Silicon law edit ui
+                Element<Label>().Class(SiliconLawContainer.StyleClassSiliconLawPositionLabel)
+                    .Prop(Label.StylePropertyFontColor, NanoGold),
+                // Pinned button style
                 new StyleRule(
-                    new SelectorElement(typeof(Button), new[] {StyleClassNovaLobbyButton}, null, null),
+                    new SelectorElement(typeof(TextureButton), new[] { StyleClassPinButtonPinned }, null, null),
                     new[]
                     {
-                        new StyleProperty(Button.StylePropertyStyleBox, novaLobbyButton),
+                        new StyleProperty(TextureButton.StylePropertyTexture, resCache.GetTexture("/Textures/Interface/Bwoink/pinned.png"))
                     }),
 
+                // Unpinned button style
                 new StyleRule(
-                    new SelectorElement(typeof(PanelContainer), new[] {StyleClassNovaLobbyButtonContainer}, null, null),
+                    new SelectorElement(typeof(TextureButton), new[] { StyleClassPinButtonUnpinned }, null, null),
                     new[]
                     {
-                        new StyleProperty(PanelContainer.StylePropertyPanel, novaLobbyButtonContainer),
+                        new StyleProperty(TextureButton.StylePropertyTexture, resCache.GetTexture("/Textures/Interface/Bwoink/un_pinned.png"))
                     }),
+                // Shitmed Change Start
+                Element<TextureButton>().Class("TargetDollButtonHead")
+                    .Pseudo(TextureButton.StylePseudoClassHover)
+                    .Prop(TextureButton.StylePropertyTexture, resCache.GetTexture("/Textures/_Shitmed/Interface/Targeting/Doll/head_hover.png")),
 
-                // Server Info Background
-                new StyleRule(
-                    new SelectorElement(typeof(PanelContainer), new[] {StyleClassServerInfoBackground}, null, null),
-                    new[]
-                    {
-                        new StyleProperty(PanelContainer.StylePropertyPanel, serverInfoBackground),
-                    }),
+                Element<TextureButton>().Class("TargetDollButtonChest")
+                    .Pseudo(TextureButton.StylePseudoClassHover)
+                    .Prop(TextureButton.StylePropertyTexture, resCache.GetTexture("/Textures/_Shitmed/Interface/Targeting/Doll/torso_hover.png")),
 
-                // NovaUI Chat styles
-                new StyleRule(
-                    new SelectorElement(typeof(PanelContainer), new[] {StyleClassNovaChatPanel}, null, null),
-                    new[]
-                    {
-                        new StyleProperty(PanelContainer.StylePropertyPanel, novaChatPanel),
-                    }),
+                Element<TextureButton>().Class("TargetDollButtonGroin")
+                    .Pseudo(TextureButton.StylePseudoClassHover)
+                    .Prop(TextureButton.StylePropertyTexture, resCache.GetTexture("/Textures/_Shitmed/Interface/Targeting/Doll/groin_hover.png")),
 
-                new StyleRule(
-                    new SelectorElement(typeof(PanelContainer), new[] {StyleClassNovaChatInputContainer}, null, null),
-                    new[]
-                    {
-                        new StyleProperty(PanelContainer.StylePropertyPanel, novaChatInputContainer),
-                    }),
+                Element<TextureButton>().Class("TargetDollButtonLeftArm")
+                    .Pseudo(TextureButton.StylePseudoClassHover)
+                    .Prop(TextureButton.StylePropertyTexture, resCache.GetTexture("/Textures/_Shitmed/Interface/Targeting/Doll/leftarm_hover.png")),
 
-                new StyleRule(
-                    new SelectorElement(typeof(LineEdit), new[] {StyleClassNovaChatInput}, null, null),
-                    new[]
-                    {
-                        new StyleProperty(LineEdit.StylePropertyStyleBox, novaChatInput),
-                    }),
+                Element<TextureButton>().Class("TargetDollButtonLeftHand")
+                    .Pseudo(TextureButton.StylePseudoClassHover)
+                    .Prop(TextureButton.StylePropertyTexture, resCache.GetTexture("/Textures/_Shitmed/Interface/Targeting/Doll/lefthand_hover.png")),
 
-                new StyleRule(
-                    new SelectorElement(typeof(Button), new[] {StyleClassNovaChatButton}, null, null),
-                    new[]
-                    {
-                        new StyleProperty(Button.StylePropertyStyleBox, novaChatButton),
-                    }),
+                Element<TextureButton>().Class("TargetDollButtonRightArm")
+                    .Pseudo(TextureButton.StylePseudoClassHover)
+                    .Prop(TextureButton.StylePropertyTexture, resCache.GetTexture("/Textures/_Shitmed/Interface/Targeting/Doll/rightarm_hover.png")),
 
-                new StyleRule(
-                    new SelectorElement(typeof(PanelContainer), new[] {StyleClassNovaChatButtonContainer}, null, null),
-                    new[]
-                    {
-                        new StyleProperty(PanelContainer.StylePropertyPanel, novaChatButtonContainer),
-                    }),
+                Element<TextureButton>().Class("TargetDollButtonRightHand")
+                    .Pseudo(TextureButton.StylePseudoClassHover)
+                    .Prop(TextureButton.StylePropertyTexture, resCache.GetTexture("/Textures/_Shitmed/Interface/Targeting/Doll/righthand_hover.png")),
+
+                Element<TextureButton>().Class("TargetDollButtonLeftLeg")
+                    .Pseudo(TextureButton.StylePseudoClassHover)
+                    .Prop(TextureButton.StylePropertyTexture, resCache.GetTexture("/Textures/_Shitmed/Interface/Targeting/Doll/leftleg_hover.png")),
+
+                Element<TextureButton>().Class("TargetDollButtonLeftFoot")
+                    .Pseudo(TextureButton.StylePseudoClassHover)
+                    .Prop(TextureButton.StylePropertyTexture, resCache.GetTexture("/Textures/_Shitmed/Interface/Targeting/Doll/leftfoot_hover.png")),
+
+                Element<TextureButton>().Class("TargetDollButtonRightLeg")
+                    .Pseudo(TextureButton.StylePseudoClassHover)
+                    .Prop(TextureButton.StylePropertyTexture, resCache.GetTexture("/Textures/_Shitmed/Interface/Targeting/Doll/rightleg_hover.png")),
+
+                Element<TextureButton>().Class("TargetDollButtonRightFoot")
+                    .Pseudo(TextureButton.StylePseudoClassHover)
+                    .Prop(TextureButton.StylePropertyTexture, resCache.GetTexture("/Textures/_Shitmed/Interface/Targeting/Doll/rightfoot_hover.png")),
+
+                Element<TextureButton>().Class("TargetDollButtonEyes")
+                    .Pseudo(TextureButton.StylePseudoClassHover)
+                    .Prop(TextureButton.StylePropertyTexture, resCache.GetTexture("/Textures/_Shitmed/Interface/Targeting/Doll/eyes_hover.png")),
+
+                Element<TextureButton>().Class("TargetDollButtonMouth")
+                    .Pseudo(TextureButton.StylePseudoClassHover)
+                    .Prop(TextureButton.StylePropertyTexture, resCache.GetTexture("/Textures/_Shitmed/Interface/Targeting/Doll/mouth_hover.png")),
+                // Shitmed Change End
+
             }).ToList());
         }
     }

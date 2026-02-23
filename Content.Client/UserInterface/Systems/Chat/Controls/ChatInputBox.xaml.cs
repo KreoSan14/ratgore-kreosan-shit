@@ -1,7 +1,6 @@
 ﻿using Content.Client.Stylesheets;
 using Content.Shared.Chat;
 using Content.Shared.Input;
-using Robust.Client.Graphics;
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controls;
 
@@ -21,8 +20,7 @@ public class ChatInputBox : PanelContainer
         Container = new BoxContainer
         {
             Orientation = BoxContainer.LayoutOrientation.Horizontal,
-            SeparationOverride = 4,
-            MinHeight = 30
+            SeparationOverride = 4
         };
         AddChild(Container);
 
@@ -31,7 +29,6 @@ public class ChatInputBox : PanelContainer
             Name = "ChannelSelector",
             ToggleMode = true,
             StyleClasses = {"chatSelectorOptionButton"},
-            Margin = new Thickness(5,0,2,0), // WWDP EDIT
             MinWidth = 75
         };
         Container.AddChild(ChannelSelector);
@@ -46,8 +43,7 @@ public class ChatInputBox : PanelContainer
         FilterButton = new ChannelFilterButton
         {
             Name = "FilterButton",
-            Margin = new Thickness(2,0,5,0), // WWDP EDIT
-            StyleBoxOverride = new StyleBoxEmpty() // WWDP EDIT
+            StyleClasses = {"chatFilterOptionButton"}
         };
         Container.AddChild(FilterButton);
         AddStyleClass(StyleNano.StyleClassChatSubPanel);

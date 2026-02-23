@@ -22,12 +22,9 @@ namespace Content.Client.Info
             };
             AddChild(_richTextLabel);
         }
-
         public void SetInfoBlob(string markup)
         {
-            // ratgore - white text
-            var message = FormattedMessage.FromMarkup("[font=\"Bedstead\" size=12][color=#d3d3d3]" + markup + "[/color][/font]");
-            _richTextLabel.SetMessage(message);
+            _richTextLabel.SetMessage(FormattedMessage.FromMarkup(markup));
         }
     }
 }

@@ -54,6 +54,8 @@ namespace Content.Client.Credits
             {
                 licensesContainer.AddChild(new Label {StyleClasses = {StyleBase.StyleClassLabelHeading}, Text = entry.Name});
 
+                // We split these line by line because otherwise
+                // the LGPL causes Clyde to go out of bounds in the rendering code.
                 foreach (var line in entry.License.Split("\n"))
                 {
                     licensesContainer.AddChild(new Label {Text = line, FontColorOverride = new Color(200, 200, 200)});
@@ -64,8 +66,10 @@ namespace Content.Client.Credits
         private void PopulatePatrons(BoxContainer patronsContainer)
         {
             var patrons = LoadPatrons();
+
+            // Do not show "become a patron" button on Steam builds
+            // since Patreon violates Valve's rules about alternative storefronts.
             var linkPatreon = _cfg.GetCVar(CCVars.InfoLinksPatreon);
-            
             if (!_cfg.GetCVar(CCVars.BrandingSteam) && linkPatreon != "")
             {
                 Button patronButton;
@@ -75,11 +79,12 @@ namespace Content.Client.Credits
                     HorizontalAlignment = HAlignment.Center
                 });
 
-                patronButton.OnPressed += _ => IoCManager.Resolve<IUriOpener>().OpenUri(linkPatreon);
+                patronButton.OnPressed +=
+                    _ => IoCManager.Resolve<IUriOpener>().OpenUri(linkPatreon);
             }
 
             var first = true;
-            foreach (var tier in patrons.GroupBy(p => p.Tier).OrderBy(p => PatronTierPriority.GetValueOrDefault(p.Key, 99)))
+            foreach (var tier in patrons.GroupBy(p => p.Tier).OrderBy(p => PatronTierPriority[p.Key]))
             {
                 if (!first)
                 {
@@ -90,8 +95,10 @@ namespace Content.Client.Credits
                 patronsContainer.AddChild(new Label {StyleClasses = {StyleBase.StyleClassLabelHeading}, Text = $"{tier.Key}"});
 
                 var msg = string.Join(", ", tier.OrderBy(p => p.Name).Select(p => p.Name));
+
                 var label = new RichTextLabel();
                 label.SetMessage(msg);
+
                 patronsContainer.AddChild(label);
             }
         }
@@ -109,6 +116,7 @@ namespace Content.Client.Credits
         private void PopulateContributors(BoxContainer ss14ContributorsContainer)
         {
             Button contributeButton;
+
             ss14ContributorsContainer.AddChild(new BoxContainer
             {
                 Orientation = LayoutOrientation.Horizontal,
@@ -122,10 +130,13 @@ namespace Content.Client.Credits
             });
 
             var first = true;
+
             void AddSection(string title, string path, bool markup = false)
             {
                 if (!first)
+                {
                     ss14ContributorsContainer.AddChild(new Control {MinSize = new Vector2(0, 10)});
+                }
 
                 first = false;
                 ss14ContributorsContainer.AddChild(new Label {StyleClasses = {StyleBase.StyleClassLabelHeading}, Text = title});
@@ -133,9 +144,13 @@ namespace Content.Client.Credits
                 var label = new RichTextLabel();
                 var text = _resourceManager.ContentFileReadAllText($"/Credits/{path}");
                 if (markup)
+                {
                     label.SetMessage(FormattedMessage.FromMarkup(text.Trim()));
+                }
                 else
+                {
                     label.SetMessage(text);
+                }
 
                 ss14ContributorsContainer.AddChild(label);
             }
@@ -146,7 +161,9 @@ namespace Content.Client.Credits
             AddSection(Loc.GetString("credits-window-special-thanks-section-title"), "SpecialThanks.txt", true);
 
             var linkGithub = _cfg.GetCVar(CCVars.InfoLinksGithub);
-            contributeButton.OnPressed += _ => IoCManager.Resolve<IUriOpener>().OpenUri(linkGithub);
+
+            contributeButton.OnPressed += _ =>
+                IoCManager.Resolve<IUriOpener>().OpenUri(linkGithub);
 
             if (linkGithub == "")
                 contributeButton.Visible = false;

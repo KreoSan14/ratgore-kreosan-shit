@@ -49,12 +49,8 @@ public sealed partial class DiscordAuthManager : IPostInjectInit
 
         _netMgr.RegisterNetMessage<MsgDiscordAuthRequired>();
         _netMgr.RegisterNetMessage<MsgSyncSponsorData>();
-        // ratgore start
         _netMgr.RegisterNetMessage<MsgDiscordAuthCheck>(OnAuthCheck);
-        _netMgr.RegisterNetMessage<MsgDiscordAuthRequest>(OnAuthRequest);
-        // ratgore end
         _netMgr.RegisterNetMessage<MsgDiscordAuthSkip>(OnAuthSkip);
-        _netMgr.RegisterNetMessage<MsgDiscordStatusResponse>();
         _netMgr.Disconnect += OnDisconnect;
 
         _playerMgr.PlayerStatusChanged += OnPlayerStatusChanged;
@@ -72,46 +68,15 @@ public sealed partial class DiscordAuthManager : IPostInjectInit
         PlayerVerified?.Invoke(this, session);
     }
 
-    // ratgore start
     private async void OnAuthCheck(MsgDiscordAuthCheck msg)
     {
-        var userId = msg.MsgChannel.UserId;
-        var data = await IsVerified(userId);
-
-        var response = new MsgDiscordStatusResponse
-        {
-            IsLinked = data.Status,
-            DiscordId = data.UserData?.DiscordId ?? string.Empty
-        };
-        _netMgr.ServerSendMessage(response, msg.MsgChannel);
-
-        if (data.Status)
-        {
-            var session = _playerMgr.GetSessionById(userId);
-            PlayerVerified?.Invoke(this, session);
-        }
-    }
-
-    private async void OnAuthRequest(MsgDiscordAuthRequest msg)
-    {
-        if (!_enabled)
+        var data = await IsVerified(msg.MsgChannel.UserId);
+        if (!data.Status)
             return;
 
-        var userId = msg.MsgChannel.UserId;
-        var data = await IsVerified(userId);
-        var link = await GenerateLink(userId);
-        var qrCode = await GenerateQrCode(link ?? string.Empty);
-
-        var message = new MsgDiscordAuthRequired
-        {
-            Link = link ?? string.Empty,
-            ErrorMessage = data.ErrorMessage ?? string.Empty,
-            QrCodeBytes = qrCode
-        };
-
-        _netMgr.ServerSendMessage(message, msg.MsgChannel);
+        var session = _playerMgr.GetSessionById(msg.MsgChannel.UserId);
+        PlayerVerified?.Invoke(this, session);
     }
-    // ratgore end
 
     private async void OnPlayerStatusChanged(object? sender, SessionStatusEventArgs args)
     {

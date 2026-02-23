@@ -69,7 +69,7 @@ public static class ClientPackaging
             inputPass,
             contentDir,
             "Content.Client",
-            new[] { "Content.Client", "Content.Shared", "Content.Shared.Database", "Content.StyleSheetify.Client", "Content.StyleSheetify.Shared" },
+            new[] { "Content.Client", "Content.Shared", "Content.Shared.Database" },
             cancel: cancel);
 
         await RobustClientPackaging.WriteClientResources(contentDir, pass, cancel);

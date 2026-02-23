@@ -19,7 +19,6 @@ public sealed class DiscordAuthManager
     public void Initialize()
     {
         _net.RegisterNetMessage<MsgDiscordAuthRequired>(OnDiscordAuthRequired);
-        _net.RegisterNetMessage<MsgDiscordAuthRequest>();
     }
 
     public void OnDiscordAuthRequired(MsgDiscordAuthRequired args)

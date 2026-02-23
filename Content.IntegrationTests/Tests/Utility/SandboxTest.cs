@@ -1,6 +1,5 @@
 using Content.Client.IoC;
 using Content.Client.Parallax.Managers;
-using Content.Client.Stylesheets;
 using Robust.Client;
 using Robust.Shared.Configuration;
 using Robust.Shared.ContentPack;
@@ -28,10 +27,7 @@ public sealed class SandboxTest
             ContentAssemblies = new[]
             {
                 typeof(Shared.Entry.EntryPoint).Assembly,
-                typeof(Client.Entry.EntryPoint).Assembly,
-
-                typeof(StyleSheetify.Client.EntryPoint).Assembly,
-                typeof(StyleSheetify.Shared.StylePrototypeIgnorance).Assembly,
+                typeof(Client.Entry.EntryPoint).Assembly
             },
             Options = new GameControllerOptions { LoadConfigAndUserData = false }
         };
@@ -43,7 +39,6 @@ public sealed class SandboxTest
                 ClientBeforeIoC = () =>
                 {
                     IoCManager.Register<IParallaxManager, DummyParallaxManager>(true);
-                    IoCManager.Register<IStylesheetManager, DummyStylesheetManager>(true); //WWDP EDIT
                     IoCManager.Resolve<ILogManager>().GetSawmill("loc").Level = LogLevel.Error;
                     IoCManager.Resolve<IConfigurationManager>()
                         .OnValueChanged(RTCVars.FailureLogLevel, value => logHandler.FailureLevel = value, true);

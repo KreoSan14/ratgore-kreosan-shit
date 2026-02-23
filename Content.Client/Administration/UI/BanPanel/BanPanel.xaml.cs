@@ -110,12 +110,7 @@ public sealed partial class BanPanel : DefaultWindow
         };
         SubmitButton.OnPressed += SubmitButtonOnOnPressed;
 
-        // ratgore start
-        IpCheckbox.Pressed = false;
-        IpCheckbox.Disabled = true;
-        IpLine.Editable = false;
-        // ratgore end
-
+        IpCheckbox.Pressed = _cfg.GetCVar(CCVars.ServerBanIpBanDefault);
         HwidCheckbox.Pressed = _cfg.GetCVar(CCVars.ServerBanHwidBanDefault);
         LastConnCheckbox.Pressed = _cfg.GetCVar(CCVars.ServerBanUseLastDetails);
         EraseCheckbox.Pressed = _cfg.GetCVar(CCVars.ServerBanErasePlayer);
