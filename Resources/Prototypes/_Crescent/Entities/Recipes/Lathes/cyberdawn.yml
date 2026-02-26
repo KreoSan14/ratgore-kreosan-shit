@@ -584,7 +584,7 @@
     Plastic: 500
 
 - type: latheRecipe
-  id: DeathacidifierImplanter
+  id: DeathAcidifierImplanter
   result: DeathAcidifierImplanter
   completetime: 1.5
   materials:
