@@ -249,7 +249,7 @@
 #     deleteOnSpawn: true
 #     proto: Bullet35mmPlasma
 #   - type: Sprite
-#     sprite: _Crescent/Objects/Turrets/Ammunition/Cartridge/Striker.rsi
+#     sprite: _Crescent/Objects/Turrets/Ammunition/Cartridge/striker.rsi
 #     layers:
 #     - state: heat
 #       map: ["enum.AmmoVisualLayers.Base"]

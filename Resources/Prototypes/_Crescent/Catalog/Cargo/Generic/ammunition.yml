@@ -281,7 +281,7 @@
 - type: cargoProduct
   id: Shuttle35mmAmmoGeneric
   icon:
-    sprite: _Crescent/Objects/Turrets/Ammunition/Magazine/Striker.rsi
+    sprite: _Crescent/Objects/Turrets/Ammunition/Magazine/striker.rsi
     state: base
   product: Crate35mmAmmo
   cost: 2500
@@ -291,7 +291,7 @@
 - type: cargoProduct
   id: Shuttle35mmAmmoPlasmaGeneric
   icon:
-    sprite: _Crescent/Objects/Turrets/Ammunition/Magazine/Striker.rsi
+    sprite: _Crescent/Objects/Turrets/Ammunition/Magazine/striker.rsi
     state: base-plasma
   product: Crate35mmAmmoPlasma
   cost: 5000
@@ -301,7 +301,7 @@
 - type: cargoProduct
   id: Shuttle35mmAmmoGyrostableGeneric
   icon:
-    sprite: _Crescent/Objects/Turrets/Ammunition/Magazine/Striker.rsi
+    sprite: _Crescent/Objects/Turrets/Ammunition/Magazine/striker.rsi
     state: base-gyrostable
   product: Crate35mmAmmoGyrostable
   cost: 7500
@@ -325,7 +325,7 @@
 - type: cargoProduct
   id: Shuttle50mmAmmoGeneric
   icon:
-    sprite: _Crescent/Objects/Turrets/Ammunition/Magazine/Striker.rsi
+    sprite: _Crescent/Objects/Turrets/Ammunition/Magazine/striker.rsi
     state: base
   product: Crate50mmAmmo
   cost: 3000
@@ -335,7 +335,7 @@
 - type: cargoProduct
   id: Shuttle50mmAmmoPlasmaGeneric
   icon:
-    sprite: _Crescent/Objects/Turrets/Ammunition/Magazine/Striker.rsi
+    sprite: _Crescent/Objects/Turrets/Ammunition/Magazine/striker.rsi
     state: base-plasma
   product: Crate50mmAmmoPlasma
   cost: 6000
@@ -345,7 +345,7 @@
 - type: cargoProduct
   id: Shuttle50mmAmmoGyrostableGeneric
   icon:
-    sprite: _Crescent/Objects/Turrets/Ammunition/Magazine/Striker.rsi
+    sprite: _Crescent/Objects/Turrets/Ammunition/Magazine/striker.rsi
     state: base-gyrostable
   product: Crate50mmAmmoGyrostable
   cost: 9000
@@ -381,7 +381,7 @@
 - type: cargoProduct
   id: Shuttle90mmAmmoGeneric
   icon:
-    sprite: _Crescent/Objects/Turrets/Ammunition/Magazine/Resolute.rsi
+    sprite: _Crescent/Objects/Turrets/Ammunition/Magazine/resolute.rsi
     state: base
   product: Crate90mmAmmo
   cost: 6000
@@ -391,7 +391,7 @@
 - type: cargoProduct
   id: Shuttle90mmAmmoPlasmaGeneric
   icon:
-    sprite: _Crescent/Objects/Turrets/Ammunition/Magazine/Resolute.rsi
+    sprite: _Crescent/Objects/Turrets/Ammunition/Magazine/resolute.rsi
     state: base-plasma
   product: Crate90mmAmmoPlasma
   cost: 12000
@@ -401,7 +401,7 @@
 - type: cargoProduct
   id: Shuttle90mmAmmoGyrostableGeneric
   icon:
-    sprite: _Crescent/Objects/Turrets/Ammunition/Magazine/Resolute.rsi
+    sprite: _Crescent/Objects/Turrets/Ammunition/Magazine/resolute.rsi
     state: base-gyrostable
   product: Crate90mmAmmoGyrostable
   cost: 18000
@@ -425,7 +425,7 @@
 - type: cargoProduct
   id: Shuttle120mmAmmoGeneric
   icon:
-    sprite: _Crescent/Objects/Turrets/Ammunition/Cartridge/Anvil.rsi
+    sprite: _Crescent/Objects/Turrets/Ammunition/Cartridge/anvil.rsi
     state: apds
   product: Crate120mmAmmo
   cost: 7000
@@ -435,7 +435,7 @@
 - type: cargoProduct
   id: Shuttle120mmAmmoPlasmaGeneric
   icon:
-    sprite: _Crescent/Objects/Turrets/Ammunition/Cartridge/Anvil.rsi
+    sprite: _Crescent/Objects/Turrets/Ammunition/Cartridge/anvil.rsi
     state: heat
   product: Crate120mmAmmoPlasma
   cost: 14000
@@ -445,7 +445,7 @@
 - type: cargoProduct
   id: Shuttle120mmAmmoGyrostableGeneric
   icon:
-    sprite: _Crescent/Objects/Turrets/Ammunition/Cartridge/Anvil.rsi
+    sprite: _Crescent/Objects/Turrets/Ammunition/Cartridge/anvil.rsi
     state: gyro
   product: Crate120mmAmmoGyrostable
   cost: 21000
@@ -469,7 +469,7 @@
 - type: cargoProduct
   id: Shuttle300mmAmmoGeneric
   icon:
-    sprite: _Crescent/Objects/Turrets/Ammunition/Cartridge/Leviathan.rsi
+    sprite: _Crescent/Objects/Turrets/Ammunition/Cartridge/leviathan.rsi
     state: ap
   product: Crate300mmAmmo
   cost: 16000
