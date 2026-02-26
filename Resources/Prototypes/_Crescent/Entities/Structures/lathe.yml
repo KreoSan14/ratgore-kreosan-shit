@@ -224,7 +224,7 @@
 
 - type: entity
   id: PristineMicroforge
-  parent: BaseLathe
+  parent: [BaseLathe, BaseMaterialSiloUtilizer]
   name: pristine microforge
   description: Used to print equipment discovered through techdisks, or researched.
   components:
