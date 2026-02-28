@@ -7139,6 +7139,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
 - proto: AAAHardpointSmallBallistic
   entities:
   - uid: 3
@@ -7149,6 +7151,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
   - uid: 4
     components:
     - type: Transform
@@ -7157,6 +7161,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
   - uid: 5
     components:
     - type: Transform
@@ -7165,6 +7171,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
   - uid: 6
     components:
     - type: Transform
@@ -7173,6 +7181,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
   - uid: 7
     components:
     - type: Transform
@@ -7181,6 +7191,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
   - uid: 8
     components:
     - type: Transform
@@ -7189,6 +7201,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
   - uid: 9
     components:
     - type: Transform
@@ -7197,6 +7211,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
   - uid: 10
     components:
     - type: Transform
@@ -7205,6 +7221,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
   - uid: 11
     components:
     - type: Transform
@@ -7213,6 +7231,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
   - uid: 12
     components:
     - type: Transform
@@ -7221,6 +7241,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
   - uid: 13
     components:
     - type: Transform
@@ -7229,6 +7251,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
   - uid: 14
     components:
     - type: Transform
@@ -7237,6 +7261,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
   - uid: 15
     components:
     - type: Transform
@@ -7245,6 +7271,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
   - uid: 16
     components:
     - type: Transform
@@ -7252,6 +7280,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
   - uid: 17
     components:
     - type: Transform
@@ -7260,6 +7290,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
   - uid: 18
     components:
     - type: Transform
@@ -7268,6 +7300,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
   - uid: 19
     components:
     - type: Transform
@@ -7276,6 +7310,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
   - uid: 3931
     components:
     - type: Transform
@@ -7284,6 +7320,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
   - uid: 3932
     components:
     - type: Transform
@@ -7292,6 +7330,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
 - proto: ActionToggleInternals
   entities:
   - uid: 22
@@ -8044,6 +8084,8 @@ entities:
       linkedConsoleIds:
       - 1900
       linkedConsoleId: 1900
+    - type: Anchorable
+      flags: None
 - proto: Bed
   entities:
   - uid: 172
@@ -30614,6 +30656,8 @@ entities:
           showEnts: False
           occludes: True
           ent: null
+    - type: Anchorable
+      flags: None
   - uid: 3852
     components:
     - type: Transform
@@ -30638,6 +30682,8 @@ entities:
           showEnts: False
           occludes: True
           ent: null
+    - type: Anchorable
+      flags: None
   - uid: 3853
     components:
     - type: Transform
@@ -30662,6 +30708,8 @@ entities:
           showEnts: False
           occludes: True
           ent: null
+    - type: Anchorable
+      flags: None
   - uid: 3854
     components:
     - type: Transform
@@ -30686,6 +30734,8 @@ entities:
           showEnts: False
           occludes: True
           ent: null
+    - type: Anchorable
+      flags: None
   - uid: 3855
     components:
     - type: Transform
@@ -30710,6 +30760,8 @@ entities:
           showEnts: False
           occludes: True
           ent: null
+    - type: Anchorable
+      flags: None
   - uid: 3856
     components:
     - type: Transform
@@ -30734,6 +30786,8 @@ entities:
           showEnts: False
           occludes: True
           ent: null
+    - type: Anchorable
+      flags: None
   - uid: 3857
     components:
     - type: Transform
@@ -30758,6 +30812,8 @@ entities:
           showEnts: False
           occludes: True
           ent: null
+    - type: Anchorable
+      flags: None
   - uid: 3858
     components:
     - type: Transform
@@ -30778,6 +30834,8 @@ entities:
           showEnts: False
           occludes: True
           ent: null
+    - type: Anchorable
+      flags: None
   - uid: 3859
     components:
     - type: Transform
@@ -30798,6 +30856,8 @@ entities:
           showEnts: False
           occludes: True
           ent: null
+    - type: Anchorable
+      flags: None
   - uid: 3860
     components:
     - type: Transform
@@ -30818,6 +30878,8 @@ entities:
           showEnts: False
           occludes: True
           ent: null
+    - type: Anchorable
+      flags: None
   - uid: 3861
     components:
     - type: Transform
@@ -30838,6 +30900,8 @@ entities:
           showEnts: False
           occludes: True
           ent: null
+    - type: Anchorable
+      flags: None
   - uid: 3862
     components:
     - type: Transform
@@ -30858,6 +30922,8 @@ entities:
           showEnts: False
           occludes: True
           ent: null
+    - type: Anchorable
+      flags: None
   - uid: 3863
     components:
     - type: Transform
@@ -30878,6 +30944,8 @@ entities:
           showEnts: False
           occludes: True
           ent: null
+    - type: Anchorable
+      flags: None
   - uid: 3864
     components:
     - type: Transform
@@ -30898,6 +30966,8 @@ entities:
           showEnts: False
           occludes: True
           ent: null
+    - type: Anchorable
+      flags: None
   - uid: 3865
     components:
     - type: Transform
@@ -30918,6 +30988,8 @@ entities:
           showEnts: False
           occludes: True
           ent: null
+    - type: Anchorable
+      flags: None
   - uid: 3866
     components:
     - type: Transform
@@ -30938,6 +31010,8 @@ entities:
           showEnts: False
           occludes: True
           ent: null
+    - type: Anchorable
+      flags: None
   - uid: 3933
     components:
     - type: Transform
@@ -30958,6 +31032,8 @@ entities:
           showEnts: False
           occludes: True
           ent: null
+    - type: Anchorable
+      flags: None
   - uid: 3934
     components:
     - type: Transform
@@ -30978,4 +31054,6 @@ entities:
           showEnts: False
           occludes: True
           ent: null
+    - type: Anchorable
+      flags: None
 ...

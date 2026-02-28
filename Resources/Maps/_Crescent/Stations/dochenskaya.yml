@@ -31821,6 +31821,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
 - proto: AAAHardpointLargeMissile
   entities:
   - uid: 3
@@ -31831,6 +31833,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
   - uid: 4
     components:
     - type: Transform
@@ -31839,6 +31843,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
 - proto: AAAHardpointMediumEnergy
   entities:
   - uid: 5
@@ -31849,6 +31855,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
   - uid: 6
     components:
     - type: Transform
@@ -31857,6 +31865,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
   - uid: 7
     components:
     - type: Transform
@@ -31864,6 +31874,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
   - uid: 8
     components:
     - type: Transform
@@ -31872,6 +31884,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
   - uid: 9
     components:
     - type: Transform
@@ -31880,6 +31894,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
   - uid: 10
     components:
     - type: Transform
@@ -31888,6 +31904,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
   - uid: 11
     components:
     - type: Transform
@@ -31895,6 +31913,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
   - uid: 12
     components:
     - type: Transform
@@ -31903,6 +31923,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
   - uid: 13
     components:
     - type: Transform
@@ -31911,6 +31933,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
   - uid: 14
     components:
     - type: Transform
@@ -31919,6 +31943,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
 - proto: AirAlarm
   entities:
   - uid: 15
@@ -33677,6 +33703,8 @@ entities:
       - 347
       - 348
       - 349
+    - type: Anchorable
+      flags: None
   - uid: 350
     components:
     - type: Transform
@@ -33701,6 +33729,8 @@ entities:
       - 351
       - 352
       - 353
+    - type: Anchorable
+      flags: None
 - proto: BenchSofaCorpLeft
   entities:
   - uid: 354
@@ -49681,58 +49711,78 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 13.5,14.5
       parent: 1
+    - type: Anchorable
+      flags: None
   - uid: 3002
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 9.5,45.5
       parent: 1
+    - type: Anchorable
+      flags: None
   - uid: 3003
     components:
     - type: Transform
       pos: 4.5,-13.5
       parent: 1
+    - type: Anchorable
+      flags: None
   - uid: 3004
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -10.5,9.5
       parent: 1
+    - type: Anchorable
+      flags: None
   - uid: 3005
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 9.5,0.5
       parent: 1
+    - type: Anchorable
+      flags: None
   - uid: 3006
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 11.5,9.5
       parent: 1
+    - type: Anchorable
+      flags: None
   - uid: 3007
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -24.5,14.5
       parent: 1
+    - type: Anchorable
+      flags: None
   - uid: 3008
     components:
     - type: Transform
       pos: -3.5,-13.5
       parent: 1
+    - type: Anchorable
+      flags: None
   - uid: 3009
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -8.5,0.5
       parent: 1
+    - type: Anchorable
+      flags: None
   - uid: 3010
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -8.5,45.5
       parent: 1
+    - type: Anchorable
+      flags: None
 - proto: WeaponTurretLargeMachinegun
   entities:
   - uid: 1335
@@ -49758,6 +49808,8 @@ entities:
           showEnts: False
           occludes: True
           ent: 1336
+    - type: Anchorable
+      flags: None
 - proto: Welder
   entities:
   - uid: 3011

@@ -100,6 +100,7 @@ entities:
     - type: OccluderTree
     - type: SpreaderGrid
     - type: Shuttle
+      baseMaxLinearVelocity: 0
     - type: GridPathfinding
     - type: Gravity
       gravityShakeSound: !type:SoundPathSpecifier
@@ -12934,6 +12935,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
 - proto: AAAHardpointMediumEnergy
   entities:
   - uid: 3
@@ -12944,6 +12947,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
   - uid: 4
     components:
     - type: Transform
@@ -12952,6 +12957,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
   - uid: 5
     components:
     - type: Transform
@@ -12960,6 +12967,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
   - uid: 6
     components:
     - type: Transform
@@ -12968,6 +12977,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
   - uid: 7
     components:
     - type: Transform
@@ -12976,6 +12987,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
   - uid: 8
     components:
     - type: Transform
@@ -12984,6 +12997,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
   - uid: 9
     components:
     - type: Transform
@@ -12992,6 +13007,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
   - uid: 10
     components:
     - type: Transform
@@ -13000,6 +13017,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
 - proto: AAAHardpointSmallEnergy
   entities:
   - uid: 11
@@ -13010,6 +13029,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
   - uid: 12
     components:
     - type: Transform
@@ -13018,6 +13039,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
   - uid: 13
     components:
     - type: Transform
@@ -13026,6 +13049,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
   - uid: 14
     components:
     - type: Transform
@@ -13034,6 +13059,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
   - uid: 15
     components:
     - type: Transform
@@ -13042,6 +13069,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
   - uid: 16
     components:
     - type: Transform
@@ -13050,6 +13079,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
   - uid: 17
     components:
     - type: Transform
@@ -13058,6 +13089,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
   - uid: 18
     components:
     - type: Transform
@@ -13066,6 +13099,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
   - uid: 19
     components:
     - type: Transform
@@ -13073,6 +13108,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
   - uid: 20
     components:
     - type: Transform
@@ -13080,6 +13117,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
   - uid: 21
     components:
     - type: Transform
@@ -13087,6 +13126,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
   - uid: 22
     components:
     - type: Transform
@@ -13094,6 +13135,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
   - uid: 23
     components:
     - type: Transform
@@ -13101,6 +13144,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
   - uid: 24
     components:
     - type: Transform
@@ -13109,6 +13154,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
   - uid: 25
     components:
     - type: Transform
@@ -13117,6 +13164,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
   - uid: 26
     components:
     - type: Transform
@@ -13125,6 +13174,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
+    - type: Anchorable
+      flags: None
 - proto: AccessElevatorCD
   entities:
   - uid: 28
@@ -30028,6 +30079,8 @@ entities:
       parent: 1
     - type: PointCannon
       linkedConsoleId: 1426
+    - type: Anchorable
+      flags: None
   - uid: 2882
     components:
     - type: Transform
@@ -30036,6 +30089,8 @@ entities:
       parent: 1
     - type: PointCannon
       linkedConsoleId: 1426
+    - type: Anchorable
+      flags: None
   - uid: 2883
     components:
     - type: Transform
@@ -30044,6 +30099,8 @@ entities:
       parent: 1
     - type: PointCannon
       linkedConsoleId: 1426
+    - type: Anchorable
+      flags: None
   - uid: 2884
     components:
     - type: Transform
@@ -30052,6 +30109,8 @@ entities:
       parent: 1
     - type: PointCannon
       linkedConsoleId: 1426
+    - type: Anchorable
+      flags: None
   - uid: 2885
     components:
     - type: Transform
@@ -30060,6 +30119,8 @@ entities:
       parent: 1
     - type: PointCannon
       linkedConsoleId: 1426
+    - type: Anchorable
+      flags: None
   - uid: 2886
     components:
     - type: Transform
@@ -30068,6 +30129,8 @@ entities:
       parent: 1
     - type: PointCannon
       linkedConsoleId: 1426
+    - type: Anchorable
+      flags: None
   - uid: 2887
     components:
     - type: Transform
@@ -30076,6 +30139,8 @@ entities:
       parent: 1
     - type: PointCannon
       linkedConsoleId: 1426
+    - type: Anchorable
+      flags: None
   - uid: 2888
     components:
     - type: Transform
@@ -30084,6 +30149,8 @@ entities:
       parent: 1
     - type: PointCannon
       linkedConsoleId: 1426
+    - type: Anchorable
+      flags: None
 - proto: WeaponTurretDamnation
   entities:
   - uid: 2889
@@ -30094,6 +30161,8 @@ entities:
       parent: 1
     - type: PointCannon
       linkedConsoleId: 1426
+    - type: Anchorable
+      flags: None
 - proto: WeaponTurretRetribution
   entities:
   - uid: 2890
@@ -30104,6 +30173,8 @@ entities:
       parent: 1
     - type: PointCannon
       linkedConsoleId: 1426
+    - type: Anchorable
+      flags: None
   - uid: 2891
     components:
     - type: Transform
@@ -30112,6 +30183,8 @@ entities:
       parent: 1
     - type: PointCannon
       linkedConsoleId: 1426
+    - type: Anchorable
+      flags: None
   - uid: 2892
     components:
     - type: Transform
@@ -30120,6 +30193,8 @@ entities:
       parent: 1
     - type: PointCannon
       linkedConsoleId: 1426
+    - type: Anchorable
+      flags: None
   - uid: 2893
     components:
     - type: Transform
@@ -30128,6 +30203,8 @@ entities:
       parent: 1
     - type: PointCannon
       linkedConsoleId: 1426
+    - type: Anchorable
+      flags: None
   - uid: 2894
     components:
     - type: Transform
@@ -30136,6 +30213,8 @@ entities:
       parent: 1
     - type: PointCannon
       linkedConsoleId: 1426
+    - type: Anchorable
+      flags: None
   - uid: 2895
     components:
     - type: Transform
@@ -30144,6 +30223,8 @@ entities:
       parent: 1
     - type: PointCannon
       linkedConsoleId: 1426
+    - type: Anchorable
+      flags: None
   - uid: 2896
     components:
     - type: Transform
@@ -30152,6 +30233,8 @@ entities:
       parent: 1
     - type: PointCannon
       linkedConsoleId: 1426
+    - type: Anchorable
+      flags: None
   - uid: 2897
     components:
     - type: Transform
@@ -30159,6 +30242,8 @@ entities:
       parent: 1
     - type: PointCannon
       linkedConsoleId: 1426
+    - type: Anchorable
+      flags: None
   - uid: 2898
     components:
     - type: Transform
@@ -30167,6 +30252,8 @@ entities:
       parent: 1
     - type: PointCannon
       linkedConsoleId: 1426
+    - type: Anchorable
+      flags: None
   - uid: 2899
     components:
     - type: Transform
@@ -30174,6 +30261,8 @@ entities:
       parent: 1
     - type: PointCannon
       linkedConsoleId: 1426
+    - type: Anchorable
+      flags: None
   - uid: 2900
     components:
     - type: Transform
@@ -30181,6 +30270,8 @@ entities:
       parent: 1
     - type: PointCannon
       linkedConsoleId: 1426
+    - type: Anchorable
+      flags: None
   - uid: 2901
     components:
     - type: Transform
@@ -30188,6 +30279,8 @@ entities:
       parent: 1
     - type: PointCannon
       linkedConsoleId: 1426
+    - type: Anchorable
+      flags: None
   - uid: 2902
     components:
     - type: Transform
@@ -30195,6 +30288,8 @@ entities:
       parent: 1
     - type: PointCannon
       linkedConsoleId: 1426
+    - type: Anchorable
+      flags: None
   - uid: 2903
     components:
     - type: Transform
@@ -30203,6 +30298,8 @@ entities:
       parent: 1
     - type: PointCannon
       linkedConsoleId: 1426
+    - type: Anchorable
+      flags: None
   - uid: 2904
     components:
     - type: Transform
@@ -30211,12 +30308,16 @@ entities:
       parent: 1
     - type: PointCannon
       linkedConsoleId: 1426
+    - type: Anchorable
+      flags: None
   - uid: 2905
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -13.5,3.5
       parent: 1
+    - type: Anchorable
+      flags: None
 - proto: WheatSeeds
   entities:
   - uid: 106
