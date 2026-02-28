@@ -12,5 +12,5 @@ public sealed partial class CCVars
     /// <summary>
     ///     Should NPCs pathfind when steering. For debug purposes.
     /// </summary>
-    public static readonly CVarDef<bool> NPCPathfinding = CVarDef.Create("npc.pathfinding", true);
+    public static readonly CVarDef<bool> NPCPathfinding = CVarDef.Create("npc.pathfinding", false);
 }
