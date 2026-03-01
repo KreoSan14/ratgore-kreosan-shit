@@ -370,5 +370,12 @@ Entries:
     id: 51
     time: '2026-02-20T12:09:49.0000000+00:00'
     url: https://github.com/ss14-art/ratgore/pull/47
+  - author: freycyik
+    changes:
+      - type: Add
+        message: Добавлено плата дронов в Т1 технологию
+    id: 52
+    time: '2026-03-01T11:42:51.0000000+00:00'
+    url: https://github.com/ss14-art/ratgore/pull/49
 Name: Rat
 Order: -1

@@ -33,3 +33,14 @@
     Silver: 250
     Steel: 300
     Gold: 100  
+
+- type: latheRecipe
+  id: DroneElectronicsCircuit
+  result: DroneElectronics
+  completetime: 1.5
+  materials:
+    Silver: 150
+    Steel: 200
+    Gold: 100 
+    BasicElectronics: 50
+    Copper: 50
