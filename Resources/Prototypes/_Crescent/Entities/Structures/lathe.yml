@@ -1626,6 +1626,7 @@
       - WeaponCaseShotgun
       - WeaponCaseGl
       - WeaponCaseAmmo
+      - DroneElectronicsCircuit
   - type: MaterialStorageMagnetPickup
     magnetEnabled: True
 
