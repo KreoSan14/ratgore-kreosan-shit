@@ -1,11 +1,11 @@
 meta:
   format: 7
   category: Grid
-  engineVersion: 260.2.0
+  engineVersion: 268.1.0
   forkId: ""
   forkVersion: ""
-  time: 01/30/2026 08:09:30
-  entityCount: 1262
+  time: 03/02/2026 15:43:58
+  entityCount: 1266
 maps: []
 grids:
 - 1
@@ -457,6 +457,16 @@ entities:
             1926: 0,28
             1960: -8,16
             1965: -8,18
+            2026: -9,3
+            2029: -8,1
+            2035: -7,14
+            2040: -6,10
+            2045: -6,11
+            2048: -5,0
+            2051: -2,-1
+            2059: 0,28
+            2093: -8,16
+            2098: -8,18
         - node:
             zIndex: 1
             id: LatticeCornerNW
@@ -593,6 +603,16 @@ entities:
             1929: 0,28
             1949: 8,16
             1954: 8,18
+            2001: 5,0
+            2006: 6,10
+            2011: 6,11
+            2014: 7,14
+            2017: 8,1
+            2023: 9,3
+            2054: 2,-1
+            2062: 0,28
+            2082: 8,16
+            2087: 8,18
         - node:
             zIndex: 1
             id: LatticeCornerSE
@@ -746,6 +766,19 @@ entities:
             1977: -5,31
             1983: -4,38
             1986: -3,40
+            2032: -8,9
+            2038: -6,10
+            2043: -6,11
+            2057: 0,28
+            2065: 0,29
+            2070: 1,30
+            2096: -8,18
+            2101: -8,19
+            2104: -7,20
+            2107: -6,25
+            2110: -5,31
+            2116: -4,38
+            2119: -3,40
         - node:
             zIndex: 1
             id: LatticeCornerSW
@@ -899,6 +932,19 @@ entities:
             1980: -1,30
             1995: 3,40
             1998: 4,38
+            2005: 6,10
+            2010: 6,11
+            2020: 8,9
+            2061: 0,28
+            2067: 0,29
+            2073: 5,31
+            2076: 6,25
+            2079: 7,20
+            2086: 8,18
+            2090: 8,19
+            2113: -1,30
+            2128: 3,40
+            2131: 4,38
         - node:
             id: LatticeEdgeE
           decals:
@@ -1171,6 +1217,28 @@ entities:
             1987: -1,32
             1989: 0,32
             1991: 1,32
+            2024: -9,3
+            2027: -8,1
+            2031: -8,9
+            2033: -7,14
+            2037: -6,10
+            2042: -6,11
+            2046: -5,0
+            2049: -2,-1
+            2056: 0,28
+            2064: 0,29
+            2069: 1,30
+            2091: -8,16
+            2095: -8,18
+            2100: -8,19
+            2103: -7,20
+            2106: -6,25
+            2109: -5,31
+            2115: -4,38
+            2118: -3,40
+            2120: -1,32
+            2122: 0,32
+            2124: 1,32
         - node:
             id: LatticeEdgeN
           decals:
@@ -1426,6 +1494,25 @@ entities:
             1951: 8,18
             1959: -8,16
             1964: -8,18
+            1999: 5,0
+            2003: 6,10
+            2008: 6,11
+            2012: 7,14
+            2015: 8,1
+            2021: 9,3
+            2025: -9,3
+            2028: -8,1
+            2034: -7,14
+            2039: -6,10
+            2044: -6,11
+            2047: -5,0
+            2050: -2,-1
+            2052: 2,-1
+            2058: 0,28
+            2080: 8,16
+            2084: 8,18
+            2092: -8,16
+            2097: -8,18
         - node:
             id: LatticeEdgeS
           decals:
@@ -1703,6 +1790,30 @@ entities:
             1984: -3,40
             1993: 3,40
             1996: 4,38
+            2002: 6,10
+            2007: 6,11
+            2018: 8,9
+            2030: -8,9
+            2036: -6,10
+            2041: -6,11
+            2055: 0,28
+            2063: 0,29
+            2068: 1,30
+            2071: 5,31
+            2074: 6,25
+            2077: 7,20
+            2083: 8,18
+            2088: 8,19
+            2094: -8,18
+            2099: -8,19
+            2102: -7,20
+            2105: -6,25
+            2108: -5,31
+            2111: -1,30
+            2114: -4,38
+            2117: -3,40
+            2126: 3,40
+            2129: 4,38
         - node:
             id: LatticeEdgeW
           decals:
@@ -1975,6 +2086,28 @@ entities:
             1992: 1,32
             1994: 3,40
             1997: 4,38
+            2000: 5,0
+            2004: 6,10
+            2009: 6,11
+            2013: 7,14
+            2016: 8,1
+            2019: 8,9
+            2022: 9,3
+            2053: 2,-1
+            2060: 0,28
+            2066: 0,29
+            2072: 5,31
+            2075: 6,25
+            2078: 7,20
+            2081: 8,16
+            2085: 8,18
+            2089: 8,19
+            2112: -1,30
+            2121: -1,32
+            2123: 0,32
+            2125: 1,32
+            2127: 3,40
+            2130: 4,38
         - node:
             color: '#FFFFFFFF'
             id: TechE
@@ -2570,25 +2703,55 @@ entities:
       shuttleName: Shuttle ALP-800
       shuttleUid: 1
     - type: SelfDeleteGrid
+- proto: AAAHardpointFixed
+  entities:
+  - uid: 1263
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -0.5,29.5
+      parent: 1
+    - type: DeviceLinkSink
+      links:
+      - 610
+    - type: Physics
+      canCollide: False
+  - uid: 1264
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 1.5,29.5
+      parent: 1
+    - type: DeviceLinkSink
+      links:
+      - 610
+    - type: Physics
+      canCollide: False
 - proto: AAAHardpointMediumEnergy
   entities:
-  - uid: 3
+  - uid: 2
     components:
     - type: Transform
       pos: -8.5,8.5
       parent: 1
     - type: Physics
       canCollide: False
-  - uid: 4
+  - uid: 3
     components:
     - type: Transform
       pos: 9.5,8.5
       parent: 1
     - type: Physics
       canCollide: False
-- proto: AAAHardpointSmallEnergy
-  entities:
-  - uid: 2
+  - uid: 4
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -5.5,24.5
+      parent: 1
+    - type: Physics
+      canCollide: False
+  - uid: 1256
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
@@ -2596,14 +2759,8 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
-  - uid: 5
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -5.5,24.5
-      parent: 1
-    - type: Physics
-      canCollide: False
+- proto: AAAHardpointSmallEnergy
+  entities:
   - uid: 6
     components:
     - type: Transform
@@ -5917,6 +6074,14 @@ entities:
     - type: Transform
       pos: -0.5,20.5
       parent: 1
+    - type: DeviceLinkSource
+      linkedPorts:
+        1263:
+        - - Group1
+          - Toggle
+        1264:
+        - - Group1
+          - Toggle
     - type: ContainerContainer
       containers:
         board: !type:Container
@@ -5952,6 +6117,14 @@ entities:
     - type: Transform
       pos: -0.5,18.5
       parent: 1
+    - type: TargetingConsole
+      cannonGroups:
+        all:
+        - 1252
+        - 1253
+        350cc 'Glare' Burst Laser:
+        - 1252
+        - 1253
 - proto: ConveyorBelt
   entities:
   - uid: 614
@@ -10294,47 +10467,65 @@ entities:
       parent: 1
 - proto: WeaponTurretAbsolution
   entities:
-  - uid: 1254
+  - uid: 5
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -5.5,24.5
+      parent: 1
+  - uid: 1252
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -8.5,8.5
       parent: 1
     - type: PointCannon
+      linkedConsoleIds:
+      - 613
       linkedConsoleId: 613
-  - uid: 1255
+  - uid: 1253
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 9.5,8.5
       parent: 1
     - type: PointCannon
+      linkedConsoleIds:
+      - 613
       linkedConsoleId: 613
-- proto: WeaponTurretRetribution
-  entities:
-  - uid: 1252
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -5.5,24.5
-      parent: 1
-  - uid: 1253
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -7.5,17.5
-      parent: 1
-  - uid: 1256
+  - uid: 1254
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 6.5,24.5
       parent: 1
-  - uid: 1257
+- proto: WeaponTurretBolter
+  entities:
+  - uid: 1265
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -0.5,29.5
+      parent: 1
+  - uid: 1266
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 1.5,29.5
+      parent: 1
+- proto: WeaponTurretStarburst
+  entities:
+  - uid: 1255
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 8.5,17.5
+      parent: 1
+  - uid: 1257
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -7.5,17.5
       parent: 1
 - proto: WindowReinforcedDirectional
   entities:
