@@ -302,3 +302,11 @@
   - type: ShipyardListing
     shuttles:
     - Cog
+    
+  id: CovetorMothershipComputer
+  parent: BaseMothershipComputer
+  name: covetor internal shipyard
+  components:
+  - type: ShipyardListing
+    shuttles:
+    - Peasant
