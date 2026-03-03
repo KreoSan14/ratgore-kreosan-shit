@@ -1,11 +1,13 @@
 using Content.Shared.Inventory;
+using Robust.Shared.GameStates; // Frontier
 
-namespace Content.Server.Storage.Components;
+namespace Content.Shared.Storage.Components; // Frontier: Server<Shared
 
 /// <summary>
 /// Applies an ongoing pickup area around the attached entity.
 /// </summary>
 [RegisterComponent, AutoGenerateComponentPause]
+[NetworkedComponent, AutoGenerateComponentState] // Frontier
 public sealed partial class MagnetPickupComponent : Component
 {
     [ViewVariables(VVAccess.ReadWrite), DataField("nextScan")]
@@ -21,7 +23,23 @@ public sealed partial class MagnetPickupComponent : Component
     [ViewVariables(VVAccess.ReadWrite), DataField("range")]
     public float Range = 1f;
 
-    // hullrot added,  if it being worn is actually required aka bypass slot flag requirement.
-    [ViewVariables(VVAccess.ReadWrite), DataField("requireWorn")]
-    public bool requireWorn = true;
+    // Frontier: togglable magnets
+    /// <summary>
+    /// Is the magnet currently enabled?
+    /// </summary>
+    [AutoNetworkedField, ViewVariables(VVAccess.ReadWrite), DataField]
+    public bool MagnetEnabled = true;
+
+    /// <summary>
+    /// Is the magnet currently enabled?
+    /// </summary>
+    [ViewVariables(VVAccess.ReadWrite), DataField]
+    public bool MagnetCanBeEnabled = true;
+
+    /// <summary>
+    /// Is the magnet currently enabled?
+    /// </summary>
+    [ViewVariables(VVAccess.ReadWrite), DataField]
+    public int MagnetTogglePriority = 3;
+    // End Frontier: togglable magnets
 }

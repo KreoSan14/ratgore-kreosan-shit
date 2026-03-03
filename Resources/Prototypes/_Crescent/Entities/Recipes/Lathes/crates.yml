@@ -20,8 +20,8 @@
   result: TradeGoodAlloys
   completetime: 2
   materials:
-    Steel: 10000
-    Plasma: 2500
+    Steel: 7500
+    Plasma: 5000
 
 - type: latheRecipe
   id: PlasmaCrate
@@ -37,7 +37,7 @@
   completetime: 2
   materials:
     Biomass: 75
-    Glass: 2500
+    Glass: 1500
 
 - type: latheRecipe
   id: FabricsCrate
@@ -53,6 +53,8 @@
   completetime: 2
   materials:
     RefinedScrapSteel: 12500
+    Gold: 2500
+    Silver: 2500
 
 - type: latheRecipe
   id: TitaniumScrapAlloyCrate
@@ -74,14 +76,14 @@
   result: TradeGoodSilks
   completetime: 2
   materials:
-    HideMothroach: 2500
+    HideMothroach: 1000
 
 - type: latheRecipe
   id: FillamentSilkCrate
   result: TradeGoodSilks
   completetime: 2
   materials:
-    SilkFilament: 37500
+    SilkFilament: 15000
 
 - type: latheRecipe
   id: AlcoholCrate
@@ -96,50 +98,55 @@
   result: TradeGoodAntibiotics
   completetime: 2
   materials:
-    Biomass: 100
+    Biomass: 75
+    Glass: 1500
 
 - type: latheRecipe
   id: CyberneticCrate
   result: TradeGoodCybernetics
   completetime: 2
   materials:
-    Steel: 7500
-    Glass: 2500
+    Steel: 5000
+    Glass: 1500
 
 - type: latheRecipe
   id: BadscrapCrate
   result: TradeGoodScrap
   completetime: 2
   materials:
-    ScrapLowGrade: 12500
+    ScrapLowGrade: 7500
 
 - type: latheRecipe
   id: GunpartsCrate
   result: TradeGoodGunparts
   completetime: 2
   materials:
-    Steel: 10000
+    Steel: 5000
+    Glass: 1500
 
 - type: latheRecipe
   id: Ammocrate
   result: TradeGoodAmmo
   completetime: 2
   materials:
-    Steel: 10000
+    Steel: 5000
+    Glass: 1500
 
 - type: latheRecipe
   id: Scopcrate
   result: TradeGoodScop
   completetime: 2
   materials:
-    Biomass: 100
+    Biomass: 75
+    Glass: 1500
 
 - type: latheRecipe
   id: UnionWeaponCrate
   result: TradeGoodUnionWeapon
   completetime: 2
   materials:
-    Steel: 10000
+    Steel: 5000
+    Glass: 1500
 
 - type: latheRecipe
   id: UnionArmorCrate
@@ -154,23 +161,76 @@
   completetime: 2
   materials:
     Biomass: 75
-    Glass: 2500
+    Glass: 1500
 
 - type: latheRecipe
   id: UnionBallisticsCrate
   result: TradeGoodUnionBallistic
   completetime: 2
   materials:
-    Steel: 10000
-    Uranium: 2500
+    Steel: 7500
+    Plasma: 5000
 
 - type: latheRecipe
   id: DrugCrate
   result: TradeGoodDrugs
   completetime: 2
   materials:
-    Galine: 2500
-    PlasmaIsotope: 2000
-    DeactivatedPhoron: 3000
+    Galine: 1500
+    PlasmaIsotope: 1000
+    DeactivatedPhoron: 2000
 
+- type: latheRecipe
+  id: FreeportScrappersLootbox
+  result: TradeGoodScrapersLootbox
+  completetime: 2
+  materials:
+    ScrapLowGrade: 7500
 
+- type: latheRecipe
+  id: UnionScrap
+  result: TradeGoodCommunardScrap
+  completetime: 2
+  materials:
+    ScrapLowGrade: 7500
+
+- type: latheRecipe
+  id: ImperialScrap
+  result: TradeGoodImperialScrap
+  completetime: 2
+  materials:
+    ScrapLowGrade: 7500
+
+- type: latheRecipe
+  id: ImperialArmor
+  result: TradeGoodImperialArmor
+  completetime: 2
+  materials:
+    Steel: 7500
+    Plasma: 5000
+
+- type: latheRecipe
+  id: FreeportValuableScrap
+  result: TradeGoodValuableScrapTFSC
+  completetime: 2
+  materials:
+    RefinedScrapSteel: 12500
+    Gold: 2500
+    Silver: 2500
+
+- type: latheRecipe
+  id: UnionQualitySalvage
+  result: TradeGoodUnionQualitySalvage
+  completetime: 2
+  materials:
+    RefinedScrapSteel: 12500
+    Gold: 2500
+    Silver: 2500
+- type: latheRecipe
+  id: ImperialQualitySalvage
+  result: TradeGoodImperialQualitySalvage
+  completetime: 2
+  materials:
+    RefinedScrapSteel: 12500
+    Gold: 2500
+    Silver: 2500

@@ -3,10 +3,10 @@
 #
 - type: vessel
   id: Amadeus
-  name: ПК Амедус
+  name: ПК Амадеус
   description: |
     Защищенный, легковооруженный оборонительный корвет.
-    LOADOUT: 3x 48mm "Shortbow SRM Rocket Systems, 5x 20mm 'Screamer' light carbine reapeater cannons, 1x 50mm 'Whistler' light autocannons
+    LOADOUT: 3x 48mm "Shortbow SRM Rocket Systems, 5x 20mm 'Screamer' light carbine reapeater cannons, 1x 50mm 'Striker' light autocannons
     MINIMUM CREW: 1x Pilot, 1x Gunner
   price: 125000
   category: Medium
@@ -15,7 +15,7 @@
 
 - type: gameMap
   id: Amadeus
-  mapName: 'Амедус'
+  mapName: 'ПК Амадеус'
   mapPath: /Maps/_Crescent/Shuttles/NCSP/amadeus.yml
   minPlayers: 0
   stations:
@@ -27,7 +27,7 @@
             sprite: _Crescent/ShipIcons/ifficons.rsi
             state: corvette
         - type: StationNameSetup
-          mapNameTemplate: 'Амедус {1}'
+          mapNameTemplate: 'ПК Амадеус {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

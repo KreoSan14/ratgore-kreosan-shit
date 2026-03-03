@@ -18,6 +18,8 @@
         map: [ "enum.AmmoVisualLayers.Base" ]
   - type: Appearance
   - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 0
   - type: EmitSoundOnLand
     sound:
       collection: ShellBulletBounce
@@ -151,7 +153,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 24 # 24 x 10 = 240
+        Piercing: 17
 
 - type: entity
   id: PelletShotgunSpread4g

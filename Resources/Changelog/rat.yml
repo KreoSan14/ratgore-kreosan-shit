@@ -356,5 +356,26 @@ Entries:
     id: 49
     time: '2026-02-13T12:05:56.0000000+00:00'
     url: https://github.com/ss14-art/ratgore/pull/40
+  - author: shad4338
+    changes:
+      - type: Add
+        message: В лобби и боевом режиме Интердайн играет новая музыка
+    id: 50
+    time: '2026-02-18T14:38:34.0000000+00:00'
+    url: https://github.com/ss14-art/ratgore/pull/45
+  - author: freycyik
+    changes:
+      - type: Tweak
+        message: уменьшено ХП у КПБ
+    id: 51
+    time: '2026-02-20T12:09:49.0000000+00:00'
+    url: https://github.com/ss14-art/ratgore/pull/47
+  - author: freycyik
+    changes:
+      - type: Add
+        message: Добавлено плата дронов в Т1 технологию
+    id: 52
+    time: '2026-03-01T11:42:51.0000000+00:00'
+    url: https://github.com/ss14-art/ratgore/pull/49
 Name: Rat
 Order: -1

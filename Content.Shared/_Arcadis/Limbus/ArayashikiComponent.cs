@@ -17,7 +17,7 @@ public sealed partial class ArayashikiComponent : Component
     public float TextErasedPercentage = 0.05f;
 
     [DataField, AutoNetworkedField]
-    public bool EraseCharacter = true;
+    public bool EraseUser = true;
 }
 
 // the slow buildup

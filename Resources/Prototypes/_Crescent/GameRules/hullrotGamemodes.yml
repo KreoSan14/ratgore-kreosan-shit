@@ -11,7 +11,7 @@
   showInVote: true
   description: Последние дни Тайпана. Длится 2-4 часа. Большая карта.
   rules:
-  - Adventure
+  - OverworldRemap
   - HullrotEventScheduler
 
 
@@ -550,3 +550,131 @@
         #gameMapID: AncientBattlefield
         #posX: -5500
         #posY: 5500
+
+
+### Low Pop Alternate Modes ###
+
+- type: gamePreset
+  id: PrimaryFactionsLowpop
+  name: DSM vs NCWL
+  showInVote: true
+  description: The last days of Taypan.
+  rules:
+  - PrimaryFactionsLowpop
+  - HullrotEventScheduler
+- type: entity
+  id: PrimaryFactionsLowpop
+  parent: BaseGameRule
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AdventureRule
+    gameMapsByID:
+      PortBalreska:
+        gameMapID: PortBalreska
+        posX: 0
+        posY: -8000
+        IFFColor: Orange
+        IFFFaction: NCWL
+      Countsman:
+        gameMapID: Countsman
+        posX: 0
+        posY: 8000
+        IFFColor: Purple
+        IFFFaction: DSM
+      Graveyard:
+        gameMapID: Graveyard
+        posX: -5500
+        posY: 5500
+      Craster:
+        gameMapID: Craster
+        posX: 0
+        posY: 0
+      Taypan1AsteroidBelt:
+        gameMapID: Taypan1AsteroidBelt
+        posX: 5500
+        posY: 5500
+      Taypan2AsteroidBelt:
+        gameMapID: Taypan2AsteroidBelt
+        posX: -5500
+        posY: -5500
+      TribalScrapyard:
+        gameMapID: TribalScrapyard
+        posX: 5500
+        posY: -5500
+
+- type: gamePreset
+  id: SecondaryFactionsLowpop
+  name: TFSC vs Gliess/SHI/TAP
+  showInVote: true
+  description: The last days of Taypan.
+  rules:
+  - SecondaryFactionsLowpop
+  - HullrotEventScheduler
+- type: entity
+  id: SecondaryFactionsLowpop
+  parent: BaseGameRule
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AdventureRule
+    gameMapsByID:
+      Dochenskaya:
+        gameMapID: Dochenskaya
+        posX: -9000
+        posY: 0
+        IFFColor: IndianRed
+        IFFFaction: TFSC
+      GliessSanto:
+        gameMapID: GliessSanto
+        posX: 7000
+        posY: -1000
+        IFFColor: White
+      Tatsumoto:
+        gameMapID: Tatsumoto
+        posX: 7000
+        posY: 1000
+        IFFColor: White
+        IFFFaction: SHI
+      TribalHideout:
+        gameMapID: TribalHideout
+        posX: 8000
+        posY: 0
+        IFFColor: White
+        IFFFaction: TAP
+      Jackal:
+        gameMapID: Jackal
+        posX: -8000
+        posY: 1000
+        IFFColor: IndianRed
+        IFFFaction: TFSC
+      Dawnbreaker:
+        gameMapID: Dawnbreaker
+        posX: -8000
+        posY: -1000
+        IFFColor: IndianRed
+        IFFFaction: TFSC
+      Graveyard:
+        gameMapID: Graveyard
+        posX: -5500
+        posY: 5500
+      Craster:
+        gameMapID: Craster
+        posX: 0
+        posY: 0
+      Taypan1AsteroidBelt:
+        gameMapID: Taypan1AsteroidBelt
+        posX: 5500
+        posY: 5500
+      Taypan2AsteroidBelt:
+        gameMapID: Taypan2AsteroidBelt
+        posX: -5500
+        posY: -5500
+      TribalScrapyard:
+        gameMapID: TribalScrapyard
+        posX: 5500
+        posY: -5500
+      Hayes:
+        gameMapID: Hayes
+        posX: -7000
+        posY: 0
+        IFFColor: IndianRed
+        IFFFaction: TFSC

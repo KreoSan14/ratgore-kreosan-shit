@@ -33,6 +33,7 @@ using Robust.Shared.Timing;
 using Robust.Shared.Utility;
 using Content.Server._Forge.Discord; // Forge-Change
 using Content.Server._Forge.Sponsors; // Forge-Change
+using Content.Server._Rat.JoinQueue;
 
 namespace Content.Server.Entry
 {
@@ -107,6 +108,7 @@ namespace Content.Server.Entry
                 IoCManager.Resolve<ServerInfoManager>().Initialize();
                 IoCManager.Resolve<DiscordAuthManager>().Initialize();
                 IoCManager.Resolve<ServerApi>().Initialize();
+                IoCManager.Resolve<JoinQueueManager>().Initialize();
 
                 _voteManager.Initialize();
                 _updateManager.Initialize();

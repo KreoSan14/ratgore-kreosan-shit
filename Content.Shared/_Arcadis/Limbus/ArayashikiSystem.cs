@@ -1,10 +1,13 @@
 using Content.Shared.Mind.Components;
+using Robust.Shared.Physics.Components;
+using Robust.Shared.Physics.Systems;
 using Robust.Shared.Timing;
 
 namespace Content.Shared._Arcadis.Limbus;
 
 public sealed partial class SharedArayashikiSystem : EntitySystem
 {
+    [Dependency] private readonly SharedPhysicsSystem _phys = default!;
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly SharedAppearanceSystem _appearanceSystem = default!;
 
@@ -18,6 +21,10 @@ public sealed partial class SharedArayashikiSystem : EntitySystem
 
     public void OnComponentStartup(EntityUid ent, BeingIncineratedComponent comp, ComponentStartup args)
     {
+        if (TryComp<PhysicsComponent>(ent, out var phys))
+        {
+            _phys.SetCanCollide(ent, false, true);
+        }
         EnsureComp<AppearanceComponent>(ent);
 
         _appearanceSystem.SetData(ent, ErasureVisuals.BeingErased, true);

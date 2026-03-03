@@ -38,6 +38,7 @@ using Robust.Shared.Replays;
 using Robust.Shared.Timing;
 using Content.Client._Forge.DiscordAuth; // Forge-Change
 using Content.Client._Forge.Sponsors; // Forge-Change
+using Content.Client._Rat.JoinQueue;
 
 namespace Content.Client.Entry
 {
@@ -75,6 +76,7 @@ namespace Content.Client.Entry
         [Dependency] private readonly DiscordAuthManager _discordAuth = default!;
         [Dependency] private readonly DebugMonitorManager _debugMonitorManager = default!;
         [Dependency] private readonly SponsorManager _sponsorMan = default!; // Forge-Change
+        [Dependency] private readonly JoinQueueManager _joinQueueManager = default!;
 
         public override void Init()
         {
@@ -168,6 +170,7 @@ namespace Content.Client.Entry
             _userInterfaceManager.SetActiveTheme(_configManager.GetCVar(CVars.InterfaceTheme));
             _documentParsingManager.Initialize();
             _discordAuth.Initialize();
+            _joinQueueManager.Initialize();
 
             _baseClient.RunLevelChanged += (_, args) =>
             {

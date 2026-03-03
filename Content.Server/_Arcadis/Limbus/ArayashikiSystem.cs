@@ -4,6 +4,7 @@ using Content.Server.DetailExaminable;
 using Content.Server.Forensics;
 using Content.Server.StationRecords.Systems;
 using Content.Shared._Arcadis.Limbus;
+using Content.Shared.Actions;
 using Content.Shared.Inventory;
 using Content.Shared.Mind.Components;
 using Content.Shared.Movement.Components;
@@ -12,7 +13,9 @@ using Content.Shared.StationRecords;
 using Content.Shared.Traits.Assorted.Components;
 using Content.Shared.Weapons.Melee.Events;
 using Microsoft.CodeAnalysis;
+using Robust.Server.GameObjects;
 using Robust.Server.Player;
+using Robust.Shared.Physics.Components;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
 using System.Linq;
@@ -27,12 +30,15 @@ public sealed partial class ArayashikiSystem : EntitySystem
     [Dependency] private readonly IChatManager _chat = default!;
     [Dependency] private readonly IPlayerManager _player = default!;
     [Dependency] private readonly StationRecordsSystem _stationRecords = default!;
+    [Dependency] private readonly ILogManager _logManager = default!;
+    private ISawmill _sawmill = default!;
 
     public override void Initialize()
     {
         base.Initialize();
 
         SubscribeLocalEvent<ArayashikiComponent, MeleeHitEvent>(OnMeleeHit);
+        _sawmill = _logManager.GetSawmill("ego");
     }
 
     public override void Update(float deltaTime)
@@ -40,7 +46,7 @@ public sealed partial class ArayashikiSystem : EntitySystem
         var enumerator = EntityQueryEnumerator<BeingIncineratedComponent>();
         while (enumerator.MoveNext(out var ent, out var comp))
         {
-            if (comp.ErasedIntensity >= 3.5)
+            if (comp.ErasedIntensity >= 2.5)
             {
                 if (_player.TryGetSessionByEntity(ent, out var session))
                 {
@@ -78,19 +84,20 @@ public sealed partial class ArayashikiSystem : EntitySystem
 
     public void OnMeleeHit(Entity<ArayashikiComponent> ent, ref MeleeHitEvent args)
     {
+        if (!args.IsHit)
+            return;
+
         foreach (var target in args.HitEntities)
         {
             EraseCharacterData(target, ent.Comp, true);
         }
 
-        EraseCharacterData(args.User, ent.Comp, false);
+        if (ent.Comp.EraseUser)
+            EraseCharacterData(args.User, ent.Comp, false);
     }
 
     private void EraseCharacterData(EntityUid target, ArayashikiComponent comp, bool doDeletion)
     {
-        if (!TryComp<MindContainerComponent>(target, out var _))
-            return;
-
         if (!EntityManager.TryGetComponent<MetaDataComponent>(target, out var metadata))
             return;
 
@@ -113,6 +120,34 @@ public sealed partial class ArayashikiSystem : EntitySystem
             for (uint i = 0; i < extendDescEraseAmount; i++)
             {
                 detail.Content = ErasingMeErasingYou(detail.Content);
+            }
+        }
+
+        if (TryComp<ActionsContainerComponent>(target, out var actions))
+        {
+            //var actionsCopy = new List<EntityUid>(actions.Container.ContainedEntities.Count);
+            //actionsCopy.AddRange(actions.Container.ContainedEntities); // Avoid a stupid condition
+            foreach (var action in actions.Container.ContainedEntities)
+            {
+                if (!EntityManager.TryGetComponent<MetaDataComponent>(action, out var actionMeta))
+                    continue;
+
+                var actionDescriptionEraseAmount = Math.Ceiling(actionMeta.EntityDescription.Length * comp.TextErasedPercentage);
+                var actionNameEraseAmount = Math.Ceiling(actionMeta.EntityName.Length * comp.TextErasedPercentage);
+
+                for (uint i = 0; i < actionDescriptionEraseAmount; i++)
+                {
+                    _meta.SetEntityDescription(action, ErasingMeErasingYou(actionMeta.EntityDescription));
+                }
+                for (uint i = 0; i < actionNameEraseAmount; i++)
+                {
+                    _meta.SetEntityName(action, ErasingMeErasingYou(actionMeta.EntityName));
+                }
+
+                if (!actionMeta.EntityName.Any(c => c != ' ') && !actionMeta.EntityDescription.Any(c => c != ' ') && actionMeta.EntityPrototype?.ID != "ActionCombatModeToggle")
+                {
+                    QueueDel(action);
+                }
             }
         }
 

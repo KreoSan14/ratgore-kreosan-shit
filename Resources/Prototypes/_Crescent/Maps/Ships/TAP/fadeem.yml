@@ -1,7 +1,7 @@
 - type: vessel
   id: Fadeem
-  name: TAP Fadeem
-  description: Old Thukker 'SPINE' carrier platform refit into an Izdari configuration.
+  name: ТАП Фадим
+  description: Старая платформа-носитель типа "СПАЙН" Туккеров, переоборудованная в конфигурацию Издари.
   price: 60000
   category: Large
   group: None
@@ -9,7 +9,7 @@
 
 - type: gameMap
   id: Fadeem
-  mapName: 'TAP Fadeem'
+  mapName: 'ТАП Фадим'
   mapPath: /Maps/_Crescent/Shuttles/TAP/fadeem.yml
   minPlayers: 0
   stations:
@@ -21,7 +21,7 @@
             sprite: _Crescent/ShipIcons/ifficons.rsi
             state: cruiser
         - type: StationNameSetup
-          mapNameTemplate: 'TAP Fadeem {1}'
+          mapNameTemplate: 'ТАП Фадим {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

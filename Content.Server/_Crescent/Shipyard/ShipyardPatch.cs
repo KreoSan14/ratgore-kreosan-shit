@@ -70,15 +70,12 @@ namespace Content.Server.Shipyard;
 
 public sealed partial class ShipyardSystem : SharedShipyardSystem
 {
-    [Dependency] private readonly IConfigurationManager _configManager = default!;
     [Dependency] private readonly IMapManager _mapManager = default!;
-    [Dependency] private readonly MapSystem _mapSystem = default!;
     [Dependency] private readonly CargoSystem _cargo = default!;
     [Dependency] private readonly DockingSystem _docking = default!;
     [Dependency] private readonly PricingSystem _pricing = default!;
     [Dependency] private readonly MetaDataSystem _metaData = default!;
     [Dependency] private readonly SharedMapSystem _mapping = default!;
-    [Dependency] private readonly DynamicCodeSystem _gridAcces = default!;
     [Dependency] private readonly AccessSystem _accessSystem = default!;
     [Dependency] private readonly AccessReaderSystem _access = default!;
     [Dependency] private readonly PopupSystem _popup = default!;
@@ -94,7 +91,6 @@ public sealed partial class ShipyardSystem : SharedShipyardSystem
     [Dependency] private readonly IAdminLogManager _adminLogger = default!;
     [Dependency] private readonly MindSystem _mind = default!;
     [Dependency] private readonly IGameTiming _timing = default!;
-    [Dependency] private readonly MetaDataSystem _metadata = default!;
     [Dependency] private readonly SharedHandsSystem _handsSystem = default!;
     [Dependency] private readonly CrescentHelperSystem _crescent = default!;
     [Dependency] private readonly DynamicCodeSystem _codes = default!;
@@ -287,7 +283,7 @@ public sealed partial class ShipyardSystem : SharedShipyardSystem
     {
         if (ShipyardMap != null && _mapManager.MapExists(ShipyardMap.Value))
             return;
-        _mapSystem.CreateMap(out var id);
+        _map.CreateMap(out var id);
         ShipyardMap = id;
 
         _mapManager.SetMapPaused(ShipyardMap.Value, false);
@@ -488,8 +484,8 @@ public sealed partial class ShipyardSystem : SharedShipyardSystem
         EntityUid product = EntityManager.SpawnAtPosition("ShuttleOwnershipChip", new EntityCoordinates(uid, 0, 0));
         var deedID = EnsureComp<ShuttleDeedComponent>(product);
         AssignShuttleDeedProperties(deedID, shuttle.Owner, name, player);
-        _metadata.SetEntityName(product, $"{MetaData(product).EntityName} - {deedID.ShuttleName} {deedID.ShuttleNameSuffix}");
-        _metadata.SetEntityDescription(product,
+        _metaData.SetEntityName(product, $"{MetaData(product).EntityName} - {deedID.ShuttleName} {deedID.ShuttleNameSuffix}");
+        _metaData.SetEntityDescription(product,
             $"{MetaData(product).EntityDescription} It is owned by {idCardComponent.FullName}.");
         var deedShuttle = EnsureComp<ShuttleDeedComponent>(shuttle.Owner);
         AssignShuttleDeedProperties(deedShuttle, shuttle.Owner, name, player);
@@ -1016,8 +1012,8 @@ public sealed partial class ShipyardSystem : SharedShipyardSystem
         EntityUid product = EntityManager.SpawnAtPosition("ShuttleOwnershipChip", new EntityCoordinates(uid, 0, 0));
         var deedID = EnsureComp<ShuttleDeedComponent>(product);
         AssignShuttleDeedProperties(deedID, shuttle.Owner, name,  user);
-        _metadata.SetEntityName(product, $"{MetaData(product).EntityName} - {deedID.ShuttleName} {deedID.ShuttleNameSuffix}");
-        _metadata.SetEntityDescription(product, $"{MetaData(product).EntityDescription} It is owned by {idCardComponent.FullName}.");
+        _metaData.SetEntityName(product, $"{MetaData(product).EntityName} - {deedID.ShuttleName} {deedID.ShuttleNameSuffix}");
+        _metaData.SetEntityDescription(product, $"{MetaData(product).EntityDescription} It is owned by {idCardComponent.FullName}.");
 
         var deedShuttle = EnsureComp<ShuttleDeedComponent>(shuttle.Owner);
         AssignShuttleDeedProperties(deedShuttle, shuttle.Owner, name, user);

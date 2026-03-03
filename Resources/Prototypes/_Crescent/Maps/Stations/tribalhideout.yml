@@ -1,6 +1,6 @@
 - type: gameMap
   id: TribalHideout
-  mapName: 'Tribal Hideout'
+  mapName: 'ТАП Племя'
   mapPath: /Maps/_Crescent/Stations/tribalhideout.yml
   minPlayers: 0
   stations:
@@ -10,7 +10,7 @@
         - type: BlockShipWeaponProjectileGrid
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Tribal Hideout'
+          mapNameTemplate: 'ТАП Племя'
         - type: Grammar
           attributes:
             proper: true

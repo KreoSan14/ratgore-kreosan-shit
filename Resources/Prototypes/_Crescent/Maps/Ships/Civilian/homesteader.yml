@@ -7,7 +7,7 @@
   description: |
     Корпус размера корвета начального уровня, «мастер на все руки», оснащён исследовательской лабораторией, медотсеком, кухней/баром и горнодобывающим отсеком.  
     МИНИМАЛЬНЫЙ ЭКИПАЖ: 1 пилот  
-  price: 50000
+  price: 70000
   category: Small
   group: Civilian
   path: /Maps/_Crescent/Shuttles/Civilian/homesteader.yml

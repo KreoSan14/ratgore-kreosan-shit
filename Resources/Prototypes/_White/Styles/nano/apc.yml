@@ -1,7 +1,0 @@
-- type: styleSheet
-  id: apc
-  typeDefinition:
-    PanelContainer: "Robust.Client.UserInterface.Controls.PanelContainer"
-    ContainerButton: "Robust.Client.UserInterface.Controls.ContainerButton"
-    ProgressBar: "Robust.Client.UserInterface.Controls.ProgressBar"
-    MenuButton: "Content.Client.UserInterface.Controls.MenuButton"

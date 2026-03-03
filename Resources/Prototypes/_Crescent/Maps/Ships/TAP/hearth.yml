@@ -3,8 +3,8 @@
 
 - type: vessel
   id: Hearth
-  name: Hearth
-  description: An ultralight interdictor shuttle with dual ion gatlings.
+  name: Харт
+  description: Сверхлегкий шаттл-перехватчик с двумя ионными скорострельными пушками.
   price: 90000
   category: Medium
   group: None
@@ -12,7 +12,7 @@
 
 - type: gameMap
   id: Hearth
-  mapName: 'Hearth'
+  mapName: 'Харт'
   mapPath: /Maps/_Crescent/Shuttles/TAP/hearth.yml
   minPlayers: 0
   stations:
@@ -20,7 +20,7 @@
       stationProto: StandardCrescentVessel
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Hearth {1}'
+          mapNameTemplate: 'Харт {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

@@ -31,6 +31,7 @@ using Content.Shared.Players.RateLimiting;
 using Content.Server._Forge.Discord; // Forge-Change
 using Content.Server._Forge.Sponsors; // Forge-Change
 using Content.Shared._Forge.Sponsors; // Forge-Change
+using Content.Server._Rat.JoinQueue;
 
 namespace Content.Server.IoC
 {
@@ -77,6 +78,7 @@ namespace Content.Server.IoC
             IoCManager.Register<DiscordAuthManager>(); // Forge-Change
             IoCManager.Register<SponsorManager>(); // Forge-Change
             IoCManager.Register<ISharedSponsorManager, SponsorManager>(); // Forge-Change
+            IoCManager.Register<JoinQueueManager>();
         }
     }
 }

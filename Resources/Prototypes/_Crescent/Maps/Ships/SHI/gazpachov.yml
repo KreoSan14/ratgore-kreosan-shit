@@ -5,12 +5,12 @@
   price: 52000
   category: Small
   group: Civilian
-  path: /Maps/_Rat/Shuttles/SHI/gazpachov.yml
+  path: /Maps/_Crescent/Shuttles/SHI/gazpachov.yml
 
 - type: gameMap
   id: gazpachov
   mapName: 'ТПШ Газпачов'
-  mapPath: /Maps/_Rat/Shuttles/SHI/gazpachov.yml
+  mapPath: /Maps/_Crescent/Shuttles/SHI/gazpachov.yml
   minPlayers: 0
   stations:
     gazpachov:

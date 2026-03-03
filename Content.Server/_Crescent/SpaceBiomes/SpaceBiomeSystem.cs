@@ -29,7 +29,7 @@ public sealed class SpaceBiomeSystem : EntitySystem
     //if false, biomes will only be selected by chunks and not by their actual distance to the player
     private const bool PreciseRange = true;
     private const int ChunkSize = 1000; //in meters
-    private const float UpdateInterval = 5; //in seconds
+    private const float UpdateInterval = 15; //in seconds
 
     private ISawmill _sawmill = default!; //used for logging | .2 2025
 

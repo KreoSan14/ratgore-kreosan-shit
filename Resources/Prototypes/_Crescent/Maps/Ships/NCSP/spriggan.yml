@@ -9,12 +9,12 @@
   price: 40000
   category: Small
   group: None
-  path: /Maps/_Rat/Shuttles/Civilian/exhumer.yml
+  path: /Maps/_Crescent/Shuttles/NCSP/spriggan.yml
 
 - type: gameMap
   id: Spriggan
   mapName: 'ТК Сприган'
-  mapPath: /Maps/_Rat/Shuttles/Civilian/exhumer.yml
+  mapPath: /Maps/_Crescent/Shuttles/NCSP/spriggan.yml
   minPlayers: 0
   stations:
     Spriggan:

@@ -36,11 +36,11 @@ public sealed class CrescentCVars : CVars
     /// How often point cannons will be updated, in ticks per second.
     /// </summary>
     public static readonly CVarDef<float> PointCannonUiTps =
-        CVarDef.Create("sc.pointcannons.ui_tps", 8.0f, CVar.SERVERONLY);
+        CVarDef.Create("sc.pointcannons.ui_tps", 10.0f, CVar.SERVERONLY);
 
     /// <summary>
     /// HULLROT: How often shuttle consoles will be updated, in ticks per second.
     /// </summary>
     public static readonly CVarDef<float> ShuttleConsoleUiTps =
-        CVarDef.Create("shuttle.console_tps", 4.0f, CVar.SERVERONLY);
+        CVarDef.Create("shuttle.console_tps", 10.0f, CVar.SERVERONLY);
 }

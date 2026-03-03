@@ -9,7 +9,7 @@
 
 - type: entity
   id: TestBiomeSource
-  name: тестовая зона
+  name: test source
   components:
   - type: SpaceBiomeSource
     biome: test
@@ -27,7 +27,7 @@
 
 - type: entity
   id: ImperialBiomeSource
-  name: Имперская зона
+  name: imperial source
   components:
   - type: SpaceBiomeSource
     biome: imperialbiome
@@ -44,7 +44,7 @@
 
 - type: entity
   id: HunterBiomeSource
-  name: Охотничья зона
+  name: hunter source
   components:
   - type: SpaceBiomeSource
     biome: hunterbiome
@@ -61,7 +61,7 @@
 
 - type: entity
   id: SyndicateBiomeSource
-  name: Зона Синдиката
+  name: syndicate source
   components:
   - type: SpaceBiomeSource
     biome: syndicatebiome
@@ -78,7 +78,7 @@
 
 - type: entity
   id: GraveyardBiomeSource
-  name: Зона кладбища
+  name: graveyard source
   components:
   - type: SpaceBiomeSource
     biome: graveyardbiome
@@ -95,7 +95,7 @@
 
 - type: entity
   id: CorpieBiomeSource
-  name: Корпоративная зона
+  name: corpie source
   components:
   - type: SpaceBiomeSource
     biome: corpiebiome
@@ -112,7 +112,7 @@
 
 - type: entity
   id: OrisBiomeSource
-  name: Зона Орис
+  name: oris source
   components:
   - type: SpaceBiomeSource
     biome: orisbiome
@@ -129,7 +129,7 @@
 
 - type: entity
   id: TaypanOneBiomeSource
-  name: Зона Тайпан-1
+  name: taypan one source
   components:
   - type: SpaceBiomeSource
     biome: taypanonebiome
@@ -146,7 +146,7 @@
 
 - type: entity
   id: WildBiomeSource
-  name: Дикая зона
+  name: wild source
   components:
   - type: SpaceBiomeSource
     biome: wildbiome
@@ -163,7 +163,7 @@
 
 - type: entity
   id: DebrisSource
-  name: Зона обломков
+  name: debris source
   components:
   - type: SpaceBiomeSource
     biome: debrisbiome
@@ -180,7 +180,7 @@
 
 - type: entity
   id: DeepWildBiomeSource
-  name: Глубокая дикая зона
+  name: deepwild source
   components:
   - type: SpaceBiomeSource
     biome: deepwildbiome
@@ -197,7 +197,7 @@
 
 - type: entity
   id: RuptureSource
-  name: Зона разлома
+  name: the rupture
   components:
   - type: SpaceBiomeSource
     biome: hadalbiome
@@ -216,7 +216,7 @@
 
 - type: entity
   id: ApproachSource
-  name: Зона подхода к луне
+  name: moon approach
   components:
   - type: SpaceBiomeSource
     biome: moonapproach
@@ -233,7 +233,7 @@
 
 - type: entity
   id: DeadspaceSource
-  name: Зона хадал мертвого пространства
+  name: hadal deadspace
   components:
   - type: SpaceBiomeSource
     biome: hadaldeadspace
@@ -253,7 +253,7 @@
 
 - type: entity
   id: BiomeScrapyardSource
-  name: Зона свалки
+  name: scrapyard source
   components:
   - type: SpaceBiomeSource
     biome: scrapyardbiome
@@ -270,7 +270,7 @@
 
 - type: entity
   id: BiomeAsteroidFieldSource
-  name: зона астероидного поля
+  name: asteroid field source
   components:
   - type: SpaceBiomeSource
     biome: asteroidbiome
@@ -287,7 +287,7 @@
 
 - type: entity
   id: BiomeGliessSource
-  name: зона подхода к ядру Тайпана
+  name: gliess approach source
   components:
   - type: SpaceBiomeSource
     biome: gliessbiome
@@ -304,7 +304,7 @@
 
 - type: entity
   id: BiomeTatsumotoSource
-  name: зона подхода Татсумото
+  name: tatsumoto approach source
   components:
   - type: SpaceBiomeSource
     biome: tatsumotobiome
@@ -321,7 +321,7 @@
 
 - type: entity
   id: BiomeBalreskaSource
-  name: зона подхода Марсовы
+  name: balreska approach source
   components:
   - type: SpaceBiomeSource
     biome: balreskabiome
@@ -413,4 +413,3 @@
   name: Taypan Wilds
   swapDuration: 2
   parallax: RatAbyssParallax
-  # HADAL DEADSPACE: 2400 - ATTACHED TO GLIESS SANTO AT 0,0 - RANGE INFINITE

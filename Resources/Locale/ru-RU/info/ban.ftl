@@ -67,8 +67,7 @@ ban-panel-weeks = Weeks
 ban-panel-months = Months
 ban-panel-years = Years
 ban-panel-permanent = Permanent
-ban-panel-ip-hwid-tooltip = Оставьте поле пустым и установите флажок ниже, чтобы использовать данные последнего подключения.
-ban-panel-ip-tooltip = БАН ПО IP СЛОМАН УЙДИ ОТСЮДА!!!
+ban-panel-ip-hwid-tooltip = Leave empty and check the checkbox below to use last connection's details
 ban-panel-severity = Severity:
 ban-panel-erase = Erase chat messages and player from round
 # Ban string

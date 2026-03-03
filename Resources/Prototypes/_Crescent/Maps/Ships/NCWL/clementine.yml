@@ -2,21 +2,21 @@
 # Discord: originally @fleshangel
 
 - type: vessel
-  id: Clementine
-  name: ЛРНП Клементин
+  id: Chelubey
+  name: ЛРНП Челубей
   description: Устаревший флагман флота Союза в Тайпане.
   price: 600000
   category: Large
   group: None
-  path: /Maps/_Crescent/Shuttles/NCWL/clementine.yml
+  path: /Maps/_Crescent/Shuttles/NCWL/chelubey.yml
 
 - type: gameMap
-  id: Clementine
-  mapName: 'ЛРНП Клементин'
-  mapPath: /Maps/_Crescent/Shuttles/NCWL/clementine.yml
+  id: Chelubey
+  mapName: 'ЛРНП Челубей'
+  mapPath: /Maps/_Crescent/Shuttles/NCWL/chelubey.yml
   minPlayers: 0
   stations:
-    Clementine:
+    Chelubey:
       stationProto: StandardCrescentVessel
       components:
         - type: VesselIcon
@@ -24,7 +24,7 @@
             sprite: _Crescent/ShipIcons/ifficons.rsi
             state: capital
         - type: StationNameSetup
-          mapNameTemplate: 'ЛРНП Клементин {1}'
+          mapNameTemplate: 'ЛРНП Челубей {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

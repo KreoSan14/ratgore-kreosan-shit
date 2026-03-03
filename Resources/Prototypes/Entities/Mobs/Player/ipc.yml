@@ -44,8 +44,8 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      119.999: Critical # TO make it almost impossible
-      120: Dead
+      99.999: Critical # TO make it almost impossible
+      100: Dead
     stateAlertDict:
       Alive: BorgHealth
       Critical: BorgCrit
@@ -62,9 +62,9 @@
           - !type:GibBehavior { }
   - type: SlowOnDamage
     speedModifierThresholds:
-      60: 0.75
-      90: 0.5
-      120: 0.3
+      50: 0.75
+      70: 0.5
+      100: 0.3
   - type: SiliconDownOnDead
   - type: Inventory
     templateId: ipc
@@ -109,6 +109,8 @@
   - type: OfferItem
   - type: LayingDown
   - type: Carriable
+  - type: Damageable
+    damageModifierSet: RatIpc
   - type: StatusIcon
     bounds: -0.5,-0.5,0.5,0.5
   - type: StepTriggerImmune

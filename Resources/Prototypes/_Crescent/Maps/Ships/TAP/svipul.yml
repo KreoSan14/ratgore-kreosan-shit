@@ -3,8 +3,8 @@
 
 - type: vessel
   id: Svipul
-  name: Svipul
-  description: An ultralight interdictor shuttle with dual ion gatlings.
+  name: Свипул
+  description: Сверхлегкий шаттл-перехватчик с двумя ионными скорострельными пушками.
   price: 15000
   category: Small
   group: None
@@ -12,7 +12,7 @@
 
 - type: gameMap
   id: Svipul
-  mapName: 'Svipul'
+  mapName: 'Свипул'
   mapPath: /Maps/_Crescent/Shuttles/TAP/svipul.yml
   minPlayers: 0
   stations:
@@ -20,7 +20,7 @@
       stationProto: StandardCrescentVessel
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Svipul {1}'
+          mapNameTemplate: 'Свипул {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

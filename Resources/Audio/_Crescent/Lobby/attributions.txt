@@ -5,3 +5,6 @@ leaving - Mountain Realm, Shadowlorn
 gamma - stalker gamma title theme
 receiver-atrophy - from receiver 2
 receiver-ascension - from receiver 2
+battleworn-rest - Trepang2 Bladekisser OST
+pause-that - Trepang2 OST
+load-up - Trepang2 OST

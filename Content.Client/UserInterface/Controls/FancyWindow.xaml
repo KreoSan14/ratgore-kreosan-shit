@@ -3,11 +3,11 @@
                       xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
                       MouseFilter="Stop"
                       MinWidth="200" MinHeight="150">
-    <PanelContainer StyleClasses="AngleRect" Name="WindowsPanelBackground" />
+    <PanelContainer StyleClasses="AngleRect" />
 
     <BoxContainer Orientation="Vertical">
         <Control>
-            <PanelContainer StyleClasses="WindowHeadingBackground" Name="WindowsHeadingBackground" />
+            <PanelContainer StyleClasses="WindowHeadingBackground" />
             <BoxContainer Margin="4 2 8 0" Orientation="Horizontal">
                 <Label Name="WindowTitle"
                        HorizontalExpand="True" VAlign="Center" StyleClasses="FancyWindowTitle" />
@@ -16,6 +16,7 @@
                                VerticalAlignment="Center" />
             </BoxContainer>
         </Control>
+        <PanelContainer StyleClasses="LowDivider" />
         <Control Access="Public" Name="ContentsContainer" Margin="0 2" RectClipContent="True" VerticalExpand="true" />
     </BoxContainer>
 </controls:FancyWindow>

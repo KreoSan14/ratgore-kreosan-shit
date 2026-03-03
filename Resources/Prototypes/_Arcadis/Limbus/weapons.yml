@@ -124,7 +124,7 @@
   description: die
   components:
   - type: Arayashiki
-    eraseCharacter: true
+    eraseUser: false
     erasurePerHit: 1
     textErasedPercentage: 1
 

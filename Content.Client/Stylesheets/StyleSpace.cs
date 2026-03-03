@@ -12,47 +12,40 @@ namespace Content.Client.Stylesheets
     {
         public static readonly Color SpaceRed = Color.FromHex("#9b2236");
 
-        public static readonly Color ButtonColorDefault = Color.FromHex("#464950");
-        public static readonly Color ButtonColorHovered = Color.FromHex("#575b61");
+        public static readonly Color ButtonColorDefault = Color.FromHex("#464966");
+        public static readonly Color ButtonColorHovered = Color.FromHex("#575b7f");
         public static readonly Color ButtonColorPressed = Color.FromHex("#3e6c45");
-        public static readonly Color ButtonColorDisabled = Color.FromHex("#292929");
+        public static readonly Color ButtonColorDisabled = Color.FromHex("#30313c");
 
-        public static readonly Color ButtonColorCautionDefault = Color.FromHex("#8F6A33");
-        public static readonly Color ButtonColorCautionHovered = Color.FromHex("#C0934E");
-        public static readonly Color ButtonColorCautionPressed = Color.FromHex("#E49F35");
-        public static readonly Color ButtonColorCautionDisabled = Color.FromHex("#28251F");
-
-        public static readonly Color ButtonColorDangerDefault = Color.FromHex("#7B2D2D");
-        public static readonly Color ButtonColorDangerHovered = Color.FromHex("#BD524B");
-        public static readonly Color ButtonColorDangerPressed = Color.FromHex("#C12525");
-        public static readonly Color ButtonColorDangerDisabled = Color.FromHex("#2F2020");
-
-        public static readonly Color NanoGold = Color.FromHex("#A88B5E");
-        public static readonly Color PanelDark = Color.FromHex("#1E1E22");
+        public static readonly Color ButtonColorCautionDefault = Color.FromHex("#ab3232");
+        public static readonly Color ButtonColorCautionHovered = Color.FromHex("#cf2f2f");
+        public static readonly Color ButtonColorCautionPressed = Color.FromHex("#3e6c45");
+        public static readonly Color ButtonColorCautionDisabled = Color.FromHex("#602a2a");
 
         public override Stylesheet Stylesheet { get; }
 
         public StyleSpace(IResourceCache resCache) : base(resCache)
         {
-            var notoSans10 = resCache.GetFont(
-                new[]
+            var notoSans10 = resCache.GetFont
+            (
+                new []
                 {
                     "/Fonts/NotoSans/NotoSans-Regular.ttf",
                     "/Fonts/NotoSans/NotoSansSymbols-Regular.ttf",
                     "/Fonts/NotoSans/NotoSansSymbols2-Regular.ttf"
                 },
-                10);
-
-            var notoSansBold16 = resCache.GetFont(
-                new[]
+                10
+            );
+            var notoSansBold16 = resCache.GetFont
+            (
+                new []
                 {
                     "/Fonts/NotoSans/NotoSans-Bold.ttf",
                     "/Fonts/NotoSans/NotoSansSymbols-Regular.ttf",
                     "/Fonts/NotoSans/NotoSansSymbols2-Regular.ttf"
                 },
-                16);
-
-            var textureInvertedTriangle = resCache.GetTexture("/Textures/Interface/Nano/inverted_triangle.svg.png");
+                16
+            );
 
             var progressBarBackground = new StyleBoxFlat
             {
@@ -66,19 +59,21 @@ namespace Content.Client.Stylesheets
             };
             progressBarForeground.SetContentMarginOverride(StyleBox.Margin.Vertical, 14.5f);
 
+            var textureInvertedTriangle = resCache.GetTexture("/Textures/Interface/Nano/inverted_triangle.svg.png");
+
             var tabContainerPanel = new StyleBoxTexture();
             tabContainerPanel.SetPatchMargin(StyleBox.Margin.All, 2);
 
-            var tabContainerBoxActive = new StyleBoxFlat { BackgroundColor = new Color(64, 64, 64) };
+            var tabContainerBoxActive = new StyleBoxFlat {BackgroundColor = new Color(64, 64, 64)};
             tabContainerBoxActive.SetContentMarginOverride(StyleBox.Margin.Horizontal, 5);
-            var tabContainerBoxInactive = new StyleBoxFlat { BackgroundColor = new Color(32, 32, 32) };
+            var tabContainerBoxInactive = new StyleBoxFlat {BackgroundColor = new Color(32, 32, 32)};
             tabContainerBoxInactive.SetContentMarginOverride(StyleBox.Margin.Horizontal, 5);
 
             Stylesheet = new Stylesheet(BaseRules.Concat(new StyleRule[]
             {
                 Element<Label>().Class(StyleClassLabelHeading)
                     .Prop(Label.StylePropertyFont, notoSansBold16)
-                    .Prop(Label.StylePropertyFontColor, NanoGold),
+                    .Prop(Label.StylePropertyFontColor, SpaceRed),
 
                 Element<Label>().Class(StyleClassLabelSubText)
                     .Prop(Label.StylePropertyFont, notoSans10)
@@ -87,7 +82,7 @@ namespace Content.Client.Stylesheets
                 Element<PanelContainer>().Class(ClassHighDivider)
                     .Prop(PanelContainer.StylePropertyPanel, new StyleBoxFlat
                     {
-                        BackgroundColor = NanoGold, ContentMarginBottomOverride = 2, ContentMarginLeftOverride = 2
+                        BackgroundColor = SpaceRed, ContentMarginBottomOverride = 2, ContentMarginLeftOverride = 2
                     }),
 
                 Element<PanelContainer>().Class(ClassLowDivider)
@@ -136,45 +131,29 @@ namespace Content.Client.Stylesheets
                     .Prop(Control.StylePropertyModulateSelf, ButtonColorDisabled),
 
                 // Colors for the caution buttons.
-                Element<ContainerButton>().Class(ContainerButton.StyleClassButton).Class(ButtonCaution)
+                Element<ContainerButton>().Class(ContainerButton.StyleClassButton).Class(ButtonDanger)
                     .Pseudo(ContainerButton.StylePseudoClassNormal)
                     .Prop(Control.StylePropertyModulateSelf, ButtonColorCautionDefault),
 
-                Element<ContainerButton>().Class(ContainerButton.StyleClassButton).Class(ButtonCaution)
+                Element<ContainerButton>().Class(ContainerButton.StyleClassButton).Class(ButtonDanger)
                     .Pseudo(ContainerButton.StylePseudoClassHover)
                     .Prop(Control.StylePropertyModulateSelf, ButtonColorCautionHovered),
 
-                Element<ContainerButton>().Class(ContainerButton.StyleClassButton).Class(ButtonCaution)
+                Element<ContainerButton>().Class(ContainerButton.StyleClassButton).Class(ButtonDanger)
                     .Pseudo(ContainerButton.StylePseudoClassPressed)
                     .Prop(Control.StylePropertyModulateSelf, ButtonColorCautionPressed),
 
-                Element<ContainerButton>().Class(ContainerButton.StyleClassButton).Class(ButtonCaution)
+                Element<ContainerButton>().Class(ContainerButton.StyleClassButton).Class(ButtonDanger)
                     .Pseudo(ContainerButton.StylePseudoClassDisabled)
                     .Prop(Control.StylePropertyModulateSelf, ButtonColorCautionDisabled),
 
-                // Colors for the danger buttons.
-                Element<ContainerButton>().Class(ContainerButton.StyleClassButton).Class(ButtonDanger)
-                    .Pseudo(ContainerButton.StylePseudoClassNormal)
-                    .Prop(Control.StylePropertyModulateSelf, ButtonColorDangerDefault),
-
-                Element<ContainerButton>().Class(ContainerButton.StyleClassButton).Class(ButtonDanger)
-                    .Pseudo(ContainerButton.StylePseudoClassHover)
-                    .Prop(Control.StylePropertyModulateSelf, ButtonColorDangerHovered),
-
-                Element<ContainerButton>().Class(ContainerButton.StyleClassButton).Class(ButtonDanger)
-                    .Pseudo(ContainerButton.StylePseudoClassPressed)
-                    .Prop(Control.StylePropertyModulateSelf, ButtonColorDangerPressed),
-
-                Element<ContainerButton>().Class(ContainerButton.StyleClassButton).Class(ButtonDanger)
-                    .Pseudo(ContainerButton.StylePseudoClassDisabled)
-                    .Prop(Control.StylePropertyModulateSelf, ButtonColorDangerDisabled),
 
                 Element<Label>().Class(ContainerButton.StyleClassButton)
                     .Prop(Label.StylePropertyAlignMode, Label.AlignMode.Center),
 
                 Element<PanelContainer>().Class(ClassAngleRect)
                     .Prop(PanelContainer.StylePropertyPanel, BaseAngleRect)
-                    .Prop(Control.StylePropertyModulateSelf, PanelDark),
+                    .Prop(Control.StylePropertyModulateSelf, Color.FromHex("#202030")),
 
                 Child()
                     .Parent(Element<Button>().Class(ContainerButton.StylePseudoClassDisabled))
@@ -215,6 +194,7 @@ namespace Content.Client.Stylesheets
                         new StyleProperty(TabContainer.StylePropertyTabStyleBox, tabContainerBoxActive),
                         new StyleProperty(TabContainer.StylePropertyTabStyleBoxInactive, tabContainerBoxInactive),
                     }),
+
             }).ToList());
         }
     }
