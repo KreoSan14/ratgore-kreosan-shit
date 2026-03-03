@@ -377,5 +377,24 @@ Entries:
     id: 52
     time: '2026-03-01T11:42:51.0000000+00:00'
     url: https://github.com/ss14-art/ratgore/pull/49
+  - author: freycyik
+    changes:
+      - type: Add
+        message: Добавлен кречет в верфь ЛРНП и тортурер в верфь БМС
+      - type: Tweak
+        message: Изменен Ловчий в лучшую пользу.
+      - type: Tweak
+        message: Уменьшена цена Ловчего
+      - type: Tweak
+        message: Увеличена цена Нанда
+      - type: Tweak
+        message: Изменены законы у Дронов
+      - type: Tweak
+        message: 'Цена лачужки уменьшена: 31000>24000'
+      - type: Remove
+        message: дуафтер на перезарядки корабельных пушек. Оставлено лишь маленький дуафтер для 300мм и 330мм
+    id: 53
+    time: '2026-03-03T15:59:45.0000000+00:00'
+    url: https://github.com/ss14-art/ratgore/pull/51
 Name: Rat
 Order: -1

@@ -142,6 +142,8 @@
   - GovernorDSM
   - AdvocatusDSM
   - ArchmaesterDSM
+  - RegentEmpireDSM # rat-change
+  - PretorianKnightDSM # rat-change
   editorHidden: false
 
 # - type: department

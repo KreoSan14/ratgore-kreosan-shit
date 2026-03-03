@@ -228,9 +228,12 @@
   - type: LanguageKnowledge
     speaks:
     - DroneTalk
+    - RobotTalk
     understands:
     - DroneTalk
     - TauCetiBasic
+    - RobotTalk
+    - Tradeband
   - type: TypingIndicator
     proto: robot
   - type: Speech

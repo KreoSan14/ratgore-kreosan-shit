@@ -13,6 +13,7 @@
     - Gargut
     - Hind
     - Vasinya
+    - Krechet
 
 - type: entity
   id: NCWLLightCarrierComputer
@@ -62,6 +63,7 @@
     - Praxis
     - Laelaps
     #- Dragoon
+    - Torturer
 
 - type: entity
   id: NemesisMothershipComputer
