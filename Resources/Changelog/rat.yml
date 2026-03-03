@@ -396,5 +396,14 @@ Entries:
     id: 53
     time: '2026-03-03T15:59:45.0000000+00:00'
     url: https://github.com/ss14-art/ratgore/pull/51
+  - author: shad4338
+    changes:
+      - type: Add
+        message: Все магазины были переведены
+      - type: Tweak
+        message: АК-379М и АКМС был повышен урон.
+    id: 54
+    time: '2026-03-03T16:01:34.0000000+00:00'
+    url: https://github.com/ss14-art/ratgore/pull/56
 Name: Rat
 Order: -1
