@@ -20,9 +20,9 @@
       damageContainer: StructuralInorganic
       damageModifierSet: StrongMetallic
     - type: RCDDeconstructable
-      cost: 6
-      delay: 8
-      fx: EffectRCDDeconstruct8
+      cost: 4
+      delay: 6
+      fx: EffectRCDDeconstruct6
     - type: Destructible
       thresholds:
       - trigger:
@@ -31,9 +31,6 @@
         behaviors:
         - !type:DoActsBehavior
           acts: ["Destruction"]
-      behaviors:
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
       - !type:PlaySoundBehavior
         sound:
           collection: MetalSlam
