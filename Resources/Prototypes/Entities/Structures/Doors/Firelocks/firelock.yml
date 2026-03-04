@@ -31,9 +31,6 @@
           behaviors:
             - !type:DoActsBehavior
               acts: ["Destruction"]
-            - !type:PlaySoundBehavior
-              sound:
-                collection: MetalSlam
     - type: Sprite
       sprite: Structures/Doors/Airlocks/Standard/firelock.rsi
       snapCardinals: true
