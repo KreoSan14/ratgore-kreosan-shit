@@ -200,22 +200,22 @@
   - type: Dispenser
     defaultItem: TradeDeedStub
     inventory:
-      TradeGoodScrap: TradeDeed10k
+      TradeGoodScrap: TradeDeed6k
       TradeGoodCommunardScrap: TradeDeedHigh
       TradeGoodImperialScrap: TradeDeedHigh
-      TradeGoodScop: TradeDeed10k
+      TradeGoodScop: TradeDeed6k
       TradeGoodUnionVodka: TradeDeedHigh
       TradeGoodWine: TradeDeedHigh
-      TradeGoodAmmo: TradeDeed10k
+      TradeGoodAmmo: TradeDeed6k
       TradeGoodUnionWeapon: TradeDeedHigh
       TradeGoodCybernetics: TradeDeedHigh
-      TradeGoodAlloys: TradeDeed20k
-      TradeGoodUnionBallistic: TradeDeed15k
-      TradeGoodImperialArmor: TradeDeed15k
-      TradeGoodGoodScrap: TradeDeed20k
-      TradeGoodUnionQualitySalvage: TradeDeed15k
-      TradeGoodImperialQualitySalvage: TradeDeed15k
-      TradeGoodSilks: TradeDeed15k
+      TradeGoodAlloys: TradeDeed15k
+      TradeGoodUnionBallistic: TradeDeed10k
+      TradeGoodImperialArmor: TradeDeed10k
+      TradeGoodGoodScrap: TradeDeed15k
+      TradeGoodUnionQualitySalvage: TradeDeed10k
+      TradeGoodImperialQualitySalvage: TradeDeed10k
+      TradeGoodSilks: TradeDeed10k
       TradeGoodFabrics: TradeDeed4500
       TradeGoodMiltech: TradeDeed4500
       TradeGoodAlcohol: TradeDeed4500
@@ -243,23 +243,23 @@
   - type: Dispenser
     defaultItem: TradeDeedStub
     inventory:
-      TradeGoodScrapersLootbox: TradeDeed10k
+      TradeGoodScrapersLootbox: TradeDeed6k
       TradeGoodCommunardScrap: TradeDeedHigh
       TradeGoodImperialScrap: TradeDeedHigh
-      TradeGoodAntibiotics: TradeDeed10k
+      TradeGoodAntibiotics: TradeDeed6k
       TradeGoodUnionVodka: TradeDeedHigh
       TradeGoodWine: TradeDeedHigh
-      TradeGoodGunparts: TradeDeed10k
+      TradeGoodGunparts: TradeDeed6k
       TradeGoodUnionWeapon: TradeDeedHigh
       TradeGoodCybernetics: TradeDeedHigh
-      TradeGoodPlasma: TradeDeed20k
-      TradeGoodUnionBallistic: TradeDeed15k
-      TradeGoodImperialArmor: TradeDeed15k
-      TradeGoodValuableScrapTFSC: TradeDeed20k
-      TradeGoodUnionQualitySalvage: TradeDeed15k
-      TradeGoodImperialQualitySalvage: TradeDeed15k
-      TradeGoodOrgans: TradeDeed20k
-      TradeGoodDrugs: TradeDeed20k
+      TradeGoodPlasma: TradeDeed15k
+      TradeGoodUnionBallistic: TradeDeed10k
+      TradeGoodImperialArmor: TradeDeed10k
+      TradeGoodValuableScrapTFSC: TradeDeed15k
+      TradeGoodUnionQualitySalvage: TradeDeed10k
+      TradeGoodImperialQualitySalvage: TradeDeed10k
+      TradeGoodOrgans: TradeDeed15k
+      TradeGoodDrugs: TradeDeed15k
       TradeGoodFabrics: TradeDeed4500
       TradeGoodMiltech: TradeDeed4500
       TradeGoodAlcohol: TradeDeed4500

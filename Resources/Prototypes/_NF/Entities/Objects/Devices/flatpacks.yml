@@ -124,7 +124,7 @@
   - type: Flatpack
     entity: SmallGyroscope
   - type: StaticPrice
-    price: 100
+    price: 500
 
 - type: entity
   parent: BaseNFFlatpack

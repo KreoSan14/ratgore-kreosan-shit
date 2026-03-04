@@ -215,6 +215,8 @@
     - state: overlay
       color: "#cec8ac"
     - state: icon-default
+  - type: StaticPrice
+    price: 2500
 
 - type: entity
   parent: BaseFlatpack

@@ -27,7 +27,7 @@
         enum.JukeboxUiKey.Key:
           type: JukeboxBoundUserInterface
   - type: StaticPrice
-    price: 2500
+    price: 300
 
 - type: entity
   id: SingingParasite
@@ -52,4 +52,4 @@
         enum.JukeboxUiKey.Key:
           type: JukeboxBoundUserInterface
   - type: StaticPrice
-    price: 2500
+    price: 300
