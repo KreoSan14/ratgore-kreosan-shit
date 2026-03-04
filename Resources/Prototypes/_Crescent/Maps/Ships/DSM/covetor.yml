@@ -17,7 +17,7 @@
   minPlayers: 0
   stations:
     Covetor:
-      stationProto: StandardCrescentCivilianVessel
+      stationProto: StandardCrescentStation
       components:
         - type: VesselIcon
           iffIcon:
