@@ -667,8 +667,8 @@
     ShipHull: 1000
 
 - type: latheRecipe
-  id: VorunaLPC
-  result: ShipVoucherVoruna
+  id: KhanLPC
+  result: ShipVoucherKhan
   completetime: 1
   materials:
     StarshipEngineComponents: 1000

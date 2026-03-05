@@ -260,7 +260,7 @@
   recipeUnlocks:
   - NemesisLPC
   - JanissaryLPC
-  - VorunaLPC
+  - KhanLPC
   - PerigaleLPC
 
 - type: technology

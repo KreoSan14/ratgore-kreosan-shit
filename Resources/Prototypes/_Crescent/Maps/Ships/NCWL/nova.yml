@@ -1,26 +1,26 @@
 # Author Info
-# Discord: @fleshangel
+# Discord: @eveerregeweenenblooommm
 
 - type: vessel
-  id: Rapier
-  name: NCWL Rapier
-  description: An ultralight communard converted bomber.
+  id: Nova
+  name: NCWL Nova
+  description: An ultralight communard autocannon platform.
   price: 10000
   category: Small
   group: None
-  path: /Maps/_Crescent/Shuttles/NCWL/rapier.yml
+  path: /Maps/_Crescent/Shuttles/NCWL/nova.yml
 
 - type: gameMap
-  id: Rapier
-  mapName: 'NCWL Rapier'
-  mapPath: /Maps/_Crescent/Shuttles/NCWL/rapier.yml
+  id: Nova
+  mapName: 'NCWL Nova'
+  mapPath: /Maps/_Crescent/Shuttles/NCWL/nova.yml
   minPlayers: 0
   stations:
-    Rapier:
+    Nova:
       stationProto: StandardCrescentVessel
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'NCWL Rapier {1}'
+          mapNameTemplate: 'NCWL Nova {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'
