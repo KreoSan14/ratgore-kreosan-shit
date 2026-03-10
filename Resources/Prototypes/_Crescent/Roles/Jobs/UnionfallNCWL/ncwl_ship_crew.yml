@@ -93,7 +93,7 @@
     eyes: ClothingEyesHudSecurity
     suitstorage: WeaponPistolT91
   inhand:
-    - BookUnionfallNCWLGuide
+    - UnionfallNCWLCadetNote
     - JetpackBlackFilled
   storage:
     back:

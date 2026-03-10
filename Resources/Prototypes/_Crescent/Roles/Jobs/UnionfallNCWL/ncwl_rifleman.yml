@@ -65,7 +65,7 @@
     gloves: ClothingHandsGlovesCombat
     eyes: ClothingEyesGlassesNCWL
   inhand:
-    - BookUnionfallNCWLGuide
+    - UnionfallNCWLCadetNote
     - JetpackBlackFilled
   storage:
     back:

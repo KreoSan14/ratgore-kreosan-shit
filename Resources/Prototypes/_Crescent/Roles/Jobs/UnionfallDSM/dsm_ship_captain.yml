@@ -6,6 +6,9 @@
   requirements:
     - !type:FactionRequirement
       factionID: "DSM"
+    - !type:CharacterSpeciesRequirement
+      species:
+        - Human
     - !type:CharacterOverallTimeRequirement
       min: 20000
     - !type:CharacterTraitRequirement
@@ -79,11 +82,11 @@
   id: UnionfallShipCaptainDSMGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitMilitaryCaptain
-    neck: ClothingNeckIFFCyan
+    neck: ClothingNeckCloakImperialGovernor
     back: ClothingBackpackDSM
     shoes: ClothingShoesBootsMagDSM
     head: ClothingHeadHatImperialPeakedCap
-    outerClothing: ClothingOuterCoatImperialParade
+    outerClothing: ClothingOuterHardsuitImperialCommand
     id: KnightPDA
     belt: ClothingBeltAssaultFilledCrew
     pocket1: DoubleEmergencyOxygenTankFilled

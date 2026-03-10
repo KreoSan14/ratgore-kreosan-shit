@@ -49,7 +49,7 @@ public sealed class UnionfallCapturePointSystem : EntitySystem
         Timer.Spawn(graceTime * 0.50, () => AnnouncementWarPeriodic(graceTime - graceTime * 0.50));
         Timer.Spawn(graceTime * 0.75, () => AnnouncementWarPeriodic(graceTime - graceTime * 0.75));
         Timer.Spawn(graceTime - TimeSpan.FromMinutes(1), AnnouncementWarAlmost);
-        Timer.Spawn(graceTime, AnnouncementWarGraceOver); // TODO: turn this into a cool 10 second countdown
+        Timer.Spawn(graceTime - TimeSpan.FromSeconds(10), AnnouncementWarGraceOver);
     }
 
     public override void Update(float frameTime)
@@ -59,19 +59,19 @@ public sealed class UnionfallCapturePointSystem : EntitySystem
         var query = EntityQueryEnumerator<UnionfallCapturePointComponent>();
         while (query.MoveNext(out var uid, out var capturepoint))
         {
-            capturepoint.GracePeriod -= frameTime; //we do it this way so we can VVedit in admin mode midgame
+            capturepoint.GracePeriod -= frameTime;
 
-            if (capturepoint.GracePeriod > 0f) //point is still in grace period
+            if (capturepoint.GracePeriod > 0f)
                 return;
 
-            if (capturepoint.CapturingFaction == null) //if nobody's capping it then don't do anything
+            if (capturepoint.CapturingFaction == null)
                 return;
-            else //someone is capping it rn
+            else
             {
-                capturepoint.CurrentCaptureProgress -= frameTime; //this is how the timer decreases
+                capturepoint.CurrentCaptureProgress -= frameTime;
             }
 
-            if (capturepoint.CurrentCaptureProgress <= 0) //capturing complete. TODO: NEED TO END THE ROUND SOMEHOW
+            if (capturepoint.CurrentCaptureProgress <= 0)
             {
                 _announcer.SendAnnouncement(_announcer.GetAnnouncementId("Fallback"), Filter.Broadcast(),
             capturepoint.CapturingFaction + " has secured the control point! The round is over.");
@@ -84,13 +84,13 @@ public sealed class UnionfallCapturePointSystem : EntitySystem
 
     private void OnActivatedInWorld(EntityUid uid, UnionfallCapturePointComponent component, ActivateInWorldEvent args)
     {
-        if (component.GracePeriod > 0) //grace period still active
+        if (component.GracePeriod > 0)
         {
             _popup.PopupEntity(Loc.GetString("capturepoint-grace-period-fail"), uid, args.User);
             return;
         }
 
-        if (!TryComp<HullrotFactionComponent>(args.User, out var comp)) //someone with no faction interacted with this. modified client only
+        if (!TryComp<HullrotFactionComponent>(args.User, out var comp))
             return;
         string faction = comp.Faction;
 
@@ -116,21 +116,21 @@ public sealed class UnionfallCapturePointSystem : EntitySystem
         if (args.Target is null)
             return;
 
-        if (!TryComp<HullrotFactionComponent>(args.User, out var comp)) //someone with no faction interacted with this. modified client only
+        if (!TryComp<HullrotFactionComponent>(args.User, out var comp))
             return;
         string faction = comp.Faction;
 
-        if (component.CapturingFaction == null) //faction now controls da point
+        if (component.CapturingFaction == null)
         {
             component.CapturingFaction = faction;
             _announcer.SendAnnouncement(_announcer.GetAnnouncementId("unionfallPointCapture"), Filter.Broadcast(),
                 faction + " has activated the control point! It will finish in " + float.Round(component.CurrentCaptureProgress).ToString() + " seconds.");
         }
-        else if (component.CapturingFaction != faction) //opposing faction touched control point
+        else if (component.CapturingFaction != faction)
         {
             component.CapturingFaction = faction;
-            component.CurrentCaptureProgress += component.CaptureTimeBonus; //takes longer since it switched sides
-            if (component.CurrentCaptureProgress > component.TimeToEnd) //cant go longer than this amount
+            component.CurrentCaptureProgress += component.CaptureTimeBonus;
+            if (component.CurrentCaptureProgress > component.TimeToEnd)
                 component.CurrentCaptureProgress = component.TimeToEnd;
             _announcer.SendAnnouncement(_announcer.GetAnnouncementId("unionfallPointCapture"), Filter.Broadcast(),
                 faction + " seized control of the control point! The time left is " + float.Round(component.CurrentCaptureProgress).ToString() + " seconds.");
@@ -140,12 +140,13 @@ public sealed class UnionfallCapturePointSystem : EntitySystem
     private void AnnouncementWarStart(TimeSpan time)
     {
         _announcer.SendAnnouncement(_announcer.GetAnnouncementId("unionfallBegin"), Filter.Broadcast(),
-                "HADAL STORM DETECTED - Emergency repulsion field deployed, estimated storm dispersion time: <" + time + ">...  Dispersion pattern confirms presence of a hostile fleet in the operating area.");
+                "HADAL STORM DETECTED - Emergency repulsion field deployed, estimated storm dispersion time: <" + time.ToString(@"hh\:mm\:ss") + ">...  Dispersion pattern confirms presence of a hostile fleet in the operating area.");
     }
+
     private void AnnouncementWarPeriodic(TimeSpan time)
     {
         _announcer.SendAnnouncement(_announcer.GetAnnouncementId("unionfallPeriodic"), Filter.Broadcast(),
-                "<" + time + "> until the Hadal storm disperses.");
+                "<" + time.ToString(@"hh\:mm\:ss") + "> until the Hadal storm disperses.");
     }
 
     private void AnnouncementWarAlmost()
@@ -153,9 +154,23 @@ public sealed class UnionfallCapturePointSystem : EntitySystem
         _announcer.SendAnnouncement(_announcer.GetAnnouncementId("unionfallAlmost"), Filter.Broadcast(),
                 "<00:01:00> LEFT UNTIL FULL HADAL STORM DISPERSION.");
     }
+
     private void AnnouncementWarGraceOver()
     {
-        _announcer.SendAnnouncement(_announcer.GetAnnouncementId("unionfallGraceOver"), Filter.Broadcast(),
+        for (int i = 10; i > 0; i--)
+        {
+            int countdown = i;
+            Timer.Spawn(TimeSpan.FromSeconds(10 - countdown), () =>
+            {
+                _announcer.SendAnnouncement(_announcer.GetAnnouncementId("unionfallCountdown"), Filter.Broadcast(),
+                    "HADAL STORM DISPERSING IN <00:00:" + countdown.ToString("D2") + ">...");
+            });
+        }
+
+        Timer.Spawn(TimeSpan.FromSeconds(10), () =>
+        {
+            _announcer.SendAnnouncement(_announcer.GetAnnouncementId("unionfallGraceOver"), Filter.Broadcast(),
                 "HADAL STORM HAS DISPERSED. Emergency dispersion field has been disabled. Long-Range radar readings confirm presence of hostile fleet, with interception course set to NanoTransen Vladzena Extraction Station");
+        });
     }
 }

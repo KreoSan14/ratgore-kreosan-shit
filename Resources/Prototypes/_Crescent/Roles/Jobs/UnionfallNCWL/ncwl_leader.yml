@@ -85,7 +85,7 @@
     id: NCWLFactionLeaderPDA
     ears: ClothingHeadsetNCWL
     shoes: ClothingShoesBootsMagNCWL
-    outerClothing: ClothingOuterArmorNCWLOpremeCarapace
+    outerClothing: ClothingOuterHardsuitNCWLPetya
     head: ClothingHeadHatNCWLBeretAdmiral
     belt: ClothingBeltNCWLPouchesFilledKommissar
     pocket1: DoubleEmergencyOxygenTankFilled
@@ -95,7 +95,6 @@
     gloves: ClothingHandsGlovesCombat
     eyes: ClothingEyesGlassesNCWL
   inhand:
-    - ClothingOuterHardsuitNCWLPetya
     - JetpackBlackFilled
   storage:
     back:

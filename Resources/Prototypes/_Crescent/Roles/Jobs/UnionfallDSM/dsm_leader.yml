@@ -6,6 +6,9 @@
   requirements:
     - !type:FactionRequirement
       factionID: "DSM"
+    - !type:CharacterSpeciesRequirement
+      species:
+        - Human
     - !type:CharacterWhitelistRequirement
     - !type:CharacterOverallTimeRequirement
       min: 20000
@@ -80,7 +83,7 @@
   id: UnionfallLeaderDSMGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitImperialGovernor
-    neck: ClothingNeckIFFCyan
+    neck: ClothingNeckCloakImperialCapelet
     back: ClothingBackpackDSM
     shoes: ClothingShoesBootsMagDSM
     head: ClothingHeadHatImperialBicorne

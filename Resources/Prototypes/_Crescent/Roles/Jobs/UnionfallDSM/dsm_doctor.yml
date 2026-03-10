@@ -61,7 +61,7 @@
     suitstorage: WeaponPistolNeoVolker
     back: ClothingBackpackSatchelMedical
   inhand:
-    - BookUnionfallDSMGuide
+    - UnionfallDSMCadetNote
     - JetpackBlackFilled
   storage:
     back:

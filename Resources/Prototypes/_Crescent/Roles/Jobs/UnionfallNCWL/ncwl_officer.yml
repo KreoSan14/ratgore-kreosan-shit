@@ -84,7 +84,7 @@
     id: NCWLHomeguardSquadCaptainPDA
     ears: ClothingHeadsetNCWL
     shoes: ClothingShoesBootsMagNCWL
-    outerClothing: ClothingOuterArmorNCWLCarapace
+    outerClothing: ClothingOuterHardsuitNCWLPetya
     head: ClothingHeadHatNCWLKommissarHat
     belt: ClothingBeltNCWLPouchesFilledKommissar
     pocket1: DoubleEmergencyOxygenTankFilled
@@ -94,7 +94,6 @@
     gloves: ClothingHandsGlovesCombat
     eyes: ClothingEyesGlassesNCWL
   inhand:
-    - ClothingOuterHardsuitNCWLInfantry
     - JetpackBlackFilled
   storage:
     back:

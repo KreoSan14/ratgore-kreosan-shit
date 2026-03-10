@@ -84,7 +84,7 @@
     id: NCWLHomeguardLeaderPDA
     ears: ClothingHeadsetNCWL
     shoes: ClothingShoesBootsMagNCWL
-    outerClothing: ClothingOuterCoatJacketJamrock
+    outerClothing: ClothingOuterHardsuitNCWLPetya
     head: ClothingHeadHatNCWLBeretAdmiral
     belt: ClothingBeltAssaultFilledCrew #looks better
     pocket1: DoubleEmergencyOxygenTankFilled

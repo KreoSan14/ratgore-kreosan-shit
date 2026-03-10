@@ -90,7 +90,7 @@
     outerClothing: ClothingOuterHardsuitImperialWorker
     suitstorage: WeaponPistolNeoVolker
   inhand:
-    - BookUnionfallDSMGuide
+    - UnionfallDSMCadetNote
     - JetpackBlackFilled
   storage:
     back:

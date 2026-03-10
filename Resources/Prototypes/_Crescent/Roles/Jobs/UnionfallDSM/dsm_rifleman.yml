@@ -59,7 +59,7 @@
     suitstorage: WeaponSniperDSMLegax
     eyes: ClothingEyesHudSecurity
   inhand:
-    - BookUnionfallDSMGuide
+    - UnionfallDSMCadetNote
     - JetpackBlackFilled
   storage:
     back:
