@@ -22,7 +22,7 @@
   - GliessianDeputy
   - Spacer
   - GliessianDockhand
-  editorHidden: true
+  editorHidden: false
 
 - type: department
   id: Command
@@ -107,18 +107,18 @@
   color: "#DC143C"
   weight: 90
   roles:
-  #- RingleaderNCSP
-  #- LieutenantNCSP
-  #- InfanteerNCSP
-  #- TechnicianNCSP
-  #- CoordinatorNCSP
-  #- RipperdocNCSP
-  #- TraumasecNCSP
+  - RingleaderNCSP
+  - LieutenantNCSP
+  - InfanteerNCSP
+  - TechnicianNCSP
+  - CoordinatorNCSP
+  - RipperdocNCSP
+  - TraumasecNCSP
   - OperativeNCSP
   - IntelligenceOfficerNCSP
   - CyberdawnTechNCSP
-  #- ForemanNCSP
-  #- ShipbreakerNCSP
+  - ForemanNCSP
+  - ShipbreakerNCSP
   editorHidden: false
 
 - type: department
@@ -166,8 +166,8 @@
   weight: 75
   roles:
   - ExecutiveSHI
-  #- BoardSHI
-  #- HighsecSHI
+  - BoardSHI
+  - HighsecSHI
   - CorpsecSHI
   - EmployeeSHI
   - MedtechSHI
