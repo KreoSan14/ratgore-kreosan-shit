@@ -58,12 +58,12 @@
     pocket2: ExGrenade
     ears: ClothingHeadsetNCWL
     id: NCWLHomeguardSoldatPDA
-    suitstorage: WeaponPistolT91
+    suitstorage: JetpackBlackFilled
     gloves: ClothingHandsGlovesCombat
     eyes: ClothingEyesGlassesNCWL
   inhand:
     - UnionfallNCWLCadetNote
-    - JetpackBlackFilled
+    
   storage:
     back:
     - ClothingMaskNCWLGasmask

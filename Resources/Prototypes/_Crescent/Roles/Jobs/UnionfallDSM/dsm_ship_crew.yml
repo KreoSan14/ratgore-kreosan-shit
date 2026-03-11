@@ -85,13 +85,14 @@
     id: LevymanPDA
     belt: ClothingBeltAssaultFilledCrew
     pocket1: DoubleEmergencyOxygenTankFilled
+    pocket2: WeaponPistolNeoVolker
     ears: ClothingHeadsetEmpire
     eyes: ClothingEyesHudSecurity
     outerClothing: ClothingOuterHardsuitImperialWorker
-    suitstorage: WeaponPistolNeoVolker
+    suitstorage: JetpackBlackFilled
   inhand:
     - UnionfallDSMCadetNote
-    - JetpackBlackFilled
+    
   storage:
     back:
     - ClothingMaskImperialCombatGasmask

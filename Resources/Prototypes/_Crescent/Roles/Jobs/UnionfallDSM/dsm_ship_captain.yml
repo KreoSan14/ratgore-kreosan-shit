@@ -91,13 +91,14 @@
     id: KnightPDA
     belt: ClothingBeltAssaultFilledCrew
     pocket1: DoubleEmergencyOxygenTankFilled
+    pocket2: WeaponPistolNeoVolker
+    suitstorage: JetpackBlackFilled
     ears: ClothingHeadsetEmpire
     eyes: ClothingEyesHudSecurity
   inhand:
-    - JetpackBlackFilled
+    - UnionfallDSMShipCaptainNote
   storage:
     back:
-    - ClothingMaskImperialCombatGasmask
-    - WeaponPistolNeoVolker
-    - HandHeldMassScannerEE
-    - CrowbarRed
+      - ClothingMaskImperialCombatGasmask
+      - HandHeldMassScannerEE
+      - CrowbarRed

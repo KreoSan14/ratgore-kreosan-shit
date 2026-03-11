@@ -87,19 +87,18 @@
     head: ClothingHeadHatNCWLBeret
     belt: ClothingBeltAssaultFilledCrew #drips better
     pocket1: DoubleEmergencyOxygenTankFilled
+    pocket2: WeaponPistolT91
     back: ClothingBackpackNCWL
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitNCWLEngi
     eyes: ClothingEyesHudSecurity
-    suitstorage: WeaponPistolT91
+    suitstorage: JetpackBlackFilled
 
   inhand:
     - UnionfallNCWLCadetNote
-    - JetpackBlackFilled
-    
+
   storage:
     back:
-    - ClothingMaskNCWLGasmask
-    - WeaponPistolT91
-    - HandHeldMassScannerEE
-    - CrowbarRed
+     - ClothingMaskNCWLGasmask
+     - HandHeldMassScannerEE
+     - CrowbarRed

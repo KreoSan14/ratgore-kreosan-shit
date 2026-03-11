@@ -53,11 +53,11 @@
     pocket2: ExGrenade
     ears: ClothingHeadsetEmpire
     id: LevymanPDA
-    suitstorage: WeaponSniperDSMLegax
+    suitstorage: JetpackBlackFilled
     eyes: ClothingEyesHudSecurity
   inhand:
     - UnionfallDSMCadetNote
-    - JetpackBlackFilled
+    
   storage:
     back:
     - ClothingMaskImperialCombatGasmask
