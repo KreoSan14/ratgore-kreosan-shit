@@ -263,7 +263,12 @@ public sealed partial class OverwatchWindow : FancyWindow
             AnnouncementTarget.AddItem(squad.Value, squad.Key);
         }
 
-        AnnouncementTarget.SelectId(AnnouncementTargetAllId);
+        var selection = currentSelection is { } id &&
+                    (id == AnnouncementTargetAllId || _availableSquads.ContainsKey(id))
+        ? id
+        : AnnouncementTargetAllId;
+
+    AnnouncementTarget.SelectId(selection);
     }
 
     /// <summary>

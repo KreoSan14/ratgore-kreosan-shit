@@ -394,6 +394,13 @@ public sealed class OverwatchSystem : EntitySystem
     /// </summary>
     private void OnSendAnnouncement(Entity<OverwatchConsoleComponent> ent, ref OverwatchSendMessageAnnouncement args)
     {
+        if (args.Actor is not { Valid: true } actor)
+            return;
+
+        var userFaction = GetUserFaction(actor);
+        if (string.IsNullOrEmpty(userFaction) || userFaction != ent.Comp.Faction)
+            return;
+
         if (string.IsNullOrEmpty(args.Message))
             return;
 
@@ -418,10 +425,10 @@ public sealed class OverwatchSystem : EntitySystem
                     continue;
             }
 
-            if (TryComp<ActorComponent>(member, out var actor) && actor.PlayerSession != null)
+            if (TryComp<ActorComponent>(member, out var memberActor) && memberActor.PlayerSession != null)
             {
-                recipients.Add(actor.PlayerSession);
-                RaiseNetworkEvent(new OverwatchAnnouncementEvent(args.Message, targetName, overwatchTitle, color), actor.PlayerSession);
+                recipients.Add(memberActor.PlayerSession);
+                RaiseNetworkEvent(new OverwatchAnnouncementEvent(args.Message, targetName, overwatchTitle, color), memberActor.PlayerSession);
             }
         }
 
@@ -465,6 +472,10 @@ public sealed class OverwatchSystem : EntitySystem
     private void OnViewCamera(Entity<OverwatchConsoleComponent> ent, ref OverwatchViewCameraMessage args)
     {
         if (args.Actor is not { Valid: true } actor)
+            return;
+
+        var userFaction = GetUserFaction(actor);
+        if (string.IsNullOrEmpty(userFaction) || userFaction != ent.Comp.Faction)
             return;
 
         var target = GetEntity(args.Target);
