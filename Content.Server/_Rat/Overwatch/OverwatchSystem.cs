@@ -167,13 +167,6 @@ public sealed class OverwatchSystem : EntitySystem
     {
         if (args.User is not { Valid: true } user)
             return;
-
-        var userFaction = GetUserFaction(user);
-        if (string.IsNullOrEmpty(userFaction) || userFaction != ent.Comp.Faction)
-        {
-            args.Cancel();
-            return;
-        }
     }
 
     /// <summary>
@@ -310,10 +303,6 @@ public sealed class OverwatchSystem : EntitySystem
         if (args.Actor is not { Valid: true } actor)
             return;
 
-        var userFaction = GetUserFaction(actor);
-        if (string.IsNullOrEmpty(userFaction) || userFaction != ent.Comp.Faction)
-            return;
-
         var created = _squadSystem.CreateSquad(ent.Comp.Faction, args.SquadName);
         if (created)
         {
@@ -329,10 +318,6 @@ public sealed class OverwatchSystem : EntitySystem
         if (args.Actor is not { Valid: true } actor)
             return;
 
-        var userFaction = GetUserFaction(actor);
-        if (string.IsNullOrEmpty(userFaction) || userFaction != ent.Comp.Faction)
-            return;
-
         if (_squadSystem.RemoveSquad(ent.Comp.Faction, args.SquadId))
         {
             RefreshData(ent);
@@ -345,10 +330,6 @@ public sealed class OverwatchSystem : EntitySystem
     private void OnAssignSquad(Entity<OverwatchConsoleComponent> ent, ref OverwatchAssignSquadMessage args)
     {
         if (args.Actor is not { Valid: true } actor)
-            return;
-
-        var userFaction = GetUserFaction(actor);
-        if (string.IsNullOrEmpty(userFaction) || userFaction != ent.Comp.Faction)
             return;
 
         var player = GetEntity(args.Player);
@@ -373,10 +354,6 @@ public sealed class OverwatchSystem : EntitySystem
         if (args.Actor is not { Valid: true } actor)
             return;
 
-        var userFaction = GetUserFaction(actor);
-        if (string.IsNullOrEmpty(userFaction) || userFaction != ent.Comp.Faction)
-            return;
-
         var player = GetEntity(args.Player);
         if (!player.Valid)
             return;
@@ -395,10 +372,6 @@ public sealed class OverwatchSystem : EntitySystem
     private void OnSendAnnouncement(Entity<OverwatchConsoleComponent> ent, ref OverwatchSendMessageAnnouncement args)
     {
         if (args.Actor is not { Valid: true } actor)
-            return;
-
-        var userFaction = GetUserFaction(actor);
-        if (string.IsNullOrEmpty(userFaction) || userFaction != ent.Comp.Faction)
             return;
 
         if (string.IsNullOrEmpty(args.Message))
@@ -474,10 +447,6 @@ public sealed class OverwatchSystem : EntitySystem
         if (args.Actor is not { Valid: true } actor)
             return;
 
-        var userFaction = GetUserFaction(actor);
-        if (string.IsNullOrEmpty(userFaction) || userFaction != ent.Comp.Faction)
-            return;
-
         var target = GetEntity(args.Target);
         if (!TryComp<HullrotFactionComponent>(target, out var factionComp) ||
             factionComp.Faction != ent.Comp.Faction ||
@@ -528,10 +497,6 @@ public sealed class OverwatchSystem : EntitySystem
     private void OnStopWatching(Entity<OverwatchConsoleComponent> ent, ref OverwatchStopWatchingMessage args)
     {
         if (args.Actor is not { Valid: true } actor)
-            return;
-
-        var userFaction = GetUserFaction(actor);
-        if (string.IsNullOrEmpty(userFaction) || userFaction != ent.Comp.Faction)
             return;
 
         if (TryComp<RatOverwatchWatchingComponent>(actor, out var watchingComp) && watchingComp.Watching.HasValue)
@@ -714,17 +679,6 @@ public sealed class OverwatchSystem : EntitySystem
 
         else if (!hasOpenUi)
             _cacheInvalidationTimer = 0;
-    }
-
-    /// <summary>
-    /// Получает фракцию игрока.
-    /// </summary>
-    private string? GetUserFaction(EntityUid user)
-    {
-        if (!TryComp<HullrotFactionComponent>(user, out var factionComp))
-            return null;
-
-        return factionComp.Faction;
     }
 
     /// <summary>
