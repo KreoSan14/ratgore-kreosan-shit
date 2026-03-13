@@ -12,7 +12,7 @@ public sealed partial class CCVars
     ///     unnaturally "slow" explosions.
     /// </remarks>
     public static readonly CVarDef<int> ExplosionTilesPerTick =
-        CVarDef.Create("explosion.tiles_per_tick", 100, CVar.SERVERONLY);
+        CVarDef.Create("explosion.tiles_per_tick", 50, CVar.SERVERONLY);
 
     /// <summary>
     ///     Upper limit on the size of an explosion before physics-throwing is disabled.
@@ -23,7 +23,7 @@ public sealed partial class CCVars
     ///     incrementally.
     /// </remarks>
     public static readonly CVarDef<int> ExplosionThrowLimit =
-        CVarDef.Create("explosion.throw_limit", 400, CVar.SERVERONLY);
+        CVarDef.Create("explosion.throw_limit", 0, CVar.SERVERONLY);
 
     /// <summary>
     ///     If this is true, explosion processing will pause the NodeGroupSystem to pause updating.
