@@ -421,5 +421,12 @@ Entries:
     id: 56
     time: '2026-03-06T11:32:48.0000000+00:00'
     url: https://github.com/ss14-art/ratgore/pull/57
+  - author: Ko-mp-otik
+    changes:
+      - type: Remove
+        message: Убрано веселье!
+    id: 57
+    time: '2026-03-13T07:10:01.0000000+00:00'
+    url: https://github.com/ss14-art/ratgore/pull/62
 Name: Rat
 Order: -1
