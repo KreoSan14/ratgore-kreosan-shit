@@ -31,7 +31,7 @@
 
 - type: entity
   parent: MaterialBase
-  id: Gunpowder
+  id: HullrotGunpowder
   name: Gunpowder
   description: A stabilized energetic compound used as propellant in low-yield weapon systems.
   components:
@@ -52,8 +52,8 @@
     - Energetics
 
 - type: entity
-  id: Gunpowder1
-  parent: Gunpowder
+  id: HullrotGunpowder1
+  parent: HullrotGunpowder
   suffix: Single
   components:
     - type: Stack

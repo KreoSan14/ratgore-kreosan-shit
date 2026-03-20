@@ -1,6 +1,6 @@
 - type: latheRecipe
   id: GunpowderCraft
-  result: Gunpowder1
+  result: HullrotGunpowder1
   completetime: 2
   materials:
     Carbon: 100
