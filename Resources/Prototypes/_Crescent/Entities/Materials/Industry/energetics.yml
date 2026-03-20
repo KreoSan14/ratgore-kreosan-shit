@@ -49,7 +49,7 @@
     size: Tiny
   - type: Tag
     tags:
-    - Energetics
+    - RawMaterial
 
 - type: entity
   id: HullrotGunpowder1
@@ -79,7 +79,7 @@
     size: Tiny
   - type: Tag
     tags:
-    - Energetics
+    - RawMaterial
 
 - type: entity
   id: OrdnanceCompound1

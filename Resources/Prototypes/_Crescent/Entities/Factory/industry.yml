@@ -18,8 +18,6 @@
       collection: Welder
       params:
         variation: 0.125
-    idleState: blastfurnaceinactive
-    runningState: blastfurnaceactive
     recipes:
       - CharcoalFromWood
       - FurnaceGold

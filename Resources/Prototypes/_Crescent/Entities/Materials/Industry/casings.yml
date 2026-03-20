@@ -36,7 +36,7 @@
     - state: infantrybox
   - type: PhysicalComposition
     materialComposition:
-      SmallGaugeCasing: 250
+      LightGaugeCasing: 250
 
 - type: entity
   id: MediumGaugeCasings
