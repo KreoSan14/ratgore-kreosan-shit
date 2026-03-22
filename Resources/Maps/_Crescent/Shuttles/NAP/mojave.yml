@@ -7995,8 +7995,8 @@ entities:
       fixedRotation: False
     - type: NamedModules
       buttonNames:
-      - Toggle 50mm 'Whistler'
-      - Fire 95mm 'Arbalest'
+      - Toggle 35mm Front
+      - Toggle 20mm Front
       - Toggle Gun Shutters
       - Empty Module
       - Empty Module
