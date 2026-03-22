@@ -41,8 +41,8 @@ VERSION = os.environ.get("GITHUB_SHA")
 RELEASE_DIR = "release"
 
 # Конфигурация для вашего форка
-ROBUST_CDN_URL = "https://cdn.ss14.art/"
-FORK_ID = "ratgore14"
+ROBUST_CDN_URL = "https://cdn.corvaxforge.ru/"
+FORK_ID = "ratgore"
 
 def main():
     log("=" * 80, "INFO")
