@@ -435,5 +435,12 @@ Entries:
     id: 58
     time: '2026-03-15T13:42:12.0000000+00:00'
     url: https://github.com/ss14-art/ratgore/pull/68
+  - author: Ko-mp-otik
+    changes:
+      - type: Tweak
+        message: Веселье так и не возвращено!
+    id: 59
+    time: '2026-03-23T12:14:47.0000000+00:00'
+    url: https://github.com/ss14-art/ratgore/pull/65
 Name: Rat
 Order: -1
