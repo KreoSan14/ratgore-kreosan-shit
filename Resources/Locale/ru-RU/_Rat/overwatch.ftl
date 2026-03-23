@@ -39,7 +39,7 @@ overwatch-member-status-alive = Жив
 overwatch-member-status-ssd = SSD
 overwatch-member-status-dead = Мёртв
 overwatch-member-status-unknown = Неизвестно
-overwatch-member-coordinates = ({ $x }, { $y })
+overwatch-member-coordinates = ({ $x }; { $y })
 overwatch-member-coordinates-none = —
 
 overwatch-stop-watching-button = Остановить наблюдение
@@ -79,3 +79,24 @@ ent-GSCOverwatchComputer = консоль overwatch «ЧЕРНАЯ СЕТЬ»
     .desc = Консоль системы наблюдения «ЧЕРНАЯ СЕТЬ» GSC. Децентрализованная сеть наблюдения для независимых операторов.
 ent-CDOverwatchComputer = консоль overwatch «ЧЕРНАЯ СЕТЬ»
     .desc = Консоль системы наблюдения «ЧЕРНАЯ СЕТЬ» CD. Децентрализованная сеть наблюдения для независимых операторов.
+
+ent-BaseOverwatchClipboard = цифровой планшет overwatch
+    .desc = Громоздкий цифровой планшет, содержащий информацию о членах фракции. При таком количестве компрометирующих документов его следует беречь.
+ent-DSMOverwatchClipboard = цифровой планшет overwatch «ОКО КАЙЗЕРА»
+    .desc = { ent-BaseOverwatchClipboard.desc }
+ent-NCWLOverwatchClipboard = цифровой планшет overwatch «ДОЗОРНЫЙ»
+    .desc = { ent-BaseOverwatchClipboard.desc }
+ent-SHIOverwatchClipboard = цифровой планшет overwatch «C.A.S.S.I.E.»
+    .desc = { ent-BaseOverwatchClipboard.desc }
+ent-TAPOverwatchClipboard = цифровой планшет overwatch «ЗВЕЗДНЫЙ ШЁПОТ»
+    .desc = { ent-BaseOverwatchClipboard.desc }
+ent-IPMOverwatchClipboard = цифровой планшет overwatch «ЧЕРНАЯ СЕТЬ»
+    .desc = { ent-BaseOverwatchClipboard.desc }
+ent-SAWOverwatchClipboard = цифровой планшет overwatch «ЧЕРНАЯ СЕТЬ»
+    .desc = { ent-BaseOverwatchClipboard.desc }
+ent-GSCOverwatchClipboard = цифровой планшет overwatch «ЧЕРНАЯ СЕТЬ»
+    .desc = { ent-BaseOverwatchClipboard.desc }
+ent-CDOverwatchClipboard = цифровой планшет overwatch «ЧЕРНАЯ СЕТЬ»
+    .desc = { ent-BaseOverwatchClipboard.desc }
+
+overwatch-clipboard-computer-verb-text = Переключить меню overwatch

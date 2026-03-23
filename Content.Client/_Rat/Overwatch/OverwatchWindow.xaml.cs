@@ -58,6 +58,13 @@ public sealed partial class OverwatchWindow : FancyWindow
         StopWatchingButton.OnPressed += _ =>
         {
             _ui?.StopWatching();
+
+            foreach (var row in _memberRows.Values)
+            {
+                row.SetWatching(false);
+            }
+
+            _watchingStateCache.Clear();
             StopWatchingButton.Visible = false;
         };
 
@@ -140,8 +147,11 @@ public sealed partial class OverwatchWindow : FancyWindow
             if (row != selectedRow)
             {
                 row.SetWatching(false);
+                _watchingStateCache[row.Member] = false;
             }
         }
+
+        StopWatchingButton.Visible = true;
     }
 
     /// <summary>
@@ -550,6 +560,11 @@ public sealed class OverwatchMemberRow : BoxContainer
     /// Флаг текущего состояния наблюдения за участником.
     /// </summary>
     public bool IsWatching { get; private set; }
+
+    /// <summary>
+    /// Сущность участника.
+    /// </summary>
+    public NetEntity Member => _member;
 
     /// <summary>
     /// Селектор отрядов для назначения участника.
