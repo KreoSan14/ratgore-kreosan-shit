@@ -141,6 +141,10 @@ public sealed class DegradeableArmorSystem : EntitySystem
             ));
         }
 
+        msg.PushNewline();
+        var armorMaterial = Loc.GetString($"armor-degradation-{component.armorType.ToString().ToLower()}");
+        msg.AddMarkup(Loc.GetString("armor-material-examine", ("material", armorMaterial)));
+
         return msg;
     }
     private void OnInit(EntityUid uid, DegradeableArmorComponent component, ref MapInitEvent args)
