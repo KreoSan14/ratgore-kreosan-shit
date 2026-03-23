@@ -32,7 +32,7 @@
     color: "#B87411"
 
 - type: entity
-  id: ShuttleSmallLightSodium
+  id: ShuttleLightbulbSodium
   suffix: Sodium
   parent: PoweredSmallLightEmpty
   components:
