@@ -575,8 +575,8 @@
     proto: CartridgeHeavyPistol
     fireCost: 100
   - type: Battery
-    maxCharge: 2500
-    startingCharge: 2500
+    maxCharge: 2000
+    startingCharge: 2000
   - type: BatterySelfRecharger
     autoRecharge: true
     autoRechargeRate: 25

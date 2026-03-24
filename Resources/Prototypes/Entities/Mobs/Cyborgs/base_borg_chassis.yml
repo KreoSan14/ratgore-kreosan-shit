@@ -380,8 +380,8 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      100: Critical
-      200: Dead
+      90: Critical
+      190: Dead
   - type: Vocal
     sounds:
       Unsexed: UnisexSiliconSyndicate
