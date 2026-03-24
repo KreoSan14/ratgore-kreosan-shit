@@ -449,5 +449,14 @@ Entries:
     id: 60
     time: '2026-03-24T11:35:42.0000000+00:00'
     url: https://github.com/ss14-art/ratgore/pull/75
+  - author: Gorox
+    changes:
+      - type: Add
+        message: Добавлен звук при полной поломке брони.
+      - type: Add
+        message: Теперь тип материала брони отображается в ее описании.
+    id: 61
+    time: '2026-03-24T11:35:52.0000000+00:00'
+    url: https://github.com/ss14-art/ratgore/pull/73
 Name: Rat
 Order: -1
