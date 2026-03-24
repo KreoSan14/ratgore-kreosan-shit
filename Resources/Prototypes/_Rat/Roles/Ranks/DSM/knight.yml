@@ -2,16 +2,16 @@
   id: RatRankKnightSenior
   name: Магистр
   prefix: Магистр
-  paygrade: Р3
+  paygrade: K3
 
 - type: rank
   id: RatRankKnightMiddle
   name: Баннерет
   prefix: Баннерет
-  paygrade: Р2
+  paygrade: K2
 
 - type: rank
   id: RatRankKnightJunior
   name: Сир
   prefix: Сир
-  paygrade: Р1
+  paygrade: K1

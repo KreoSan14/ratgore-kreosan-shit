@@ -4,6 +4,10 @@
   description: job-description-ncwl-kommissar
   playTimeTracker: JobHomeguardLeaderNCWL
   ranks:
+    RatRankKommissarLead:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobHomeguardLeaderNCWL
+      min: 108000 # 30 hours
     RatRankKommissarSenior:
     - !type:CharacterPlaytimeRequirement
       tracker: JobHomeguardLeaderNCWL
@@ -11,7 +15,7 @@
     RatRankKommissarMiddle:
     - !type:CharacterPlaytimeRequirement
       tracker: JobHomeguardLeaderNCWL
-      min: 360000 # 10 hours
+      min: 36000 # 10 hours
     RatRankKommissarJunior: []
   weight: 101
   startingGear: OverseerNCWLGear

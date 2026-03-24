@@ -4,23 +4,35 @@
   description: job-description-ncwl-partisan
   playTimeTracker: JobHomeguardSoldatNCWL
   ranks:
-    RatRankPartisanHead:
+    RatRankNCWLEnlistedTop:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobHomeguardSoldatNCWL
+      min: 252000 # 70 hours
+    RatRankNCWLEnlistedBased:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobHomeguardSoldatNCWL
+      min: 216000 # 60 hours
+    RatRankNCWLEnlistedHigh:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobHomeguardSoldatNCWL
+      min: 180000 # 50 hours
+    RatRankNCWLEnlistedLead:
     - !type:CharacterPlaytimeRequirement
       tracker: JobHomeguardSoldatNCWL
       min: 144000 # 40 hours
-    RatRankPartisanLead:
+    RatRankNCWLEnlistedSenior:
     - !type:CharacterPlaytimeRequirement
       tracker: JobHomeguardSoldatNCWL
       min: 108000 # 30 hours
-    RatRankPartisanSenior:
+    RatRankNCWLEnlistedMiddle:
     - !type:CharacterPlaytimeRequirement
       tracker: JobHomeguardSoldatNCWL
       min: 72000 # 20 hours
-    RatRankPartisanMiddle:
+    RatRankNCWLEnlistedJunior:
     - !type:CharacterPlaytimeRequirement
       tracker: JobHomeguardSoldatNCWL
-      min: 360000 # 10 hours
-    RatRankPartisanJunior: []
+      min: 36000 # 10 hours
+    RatRankNCWLEnlistedNovice: []
   weight: 97
   startingGear: SoldatNCWLGear
   alwaysUseSpawner: true

@@ -4,15 +4,15 @@
   description: job-description-ncwl-mvd-officer
   playTimeTracker: JobMVDOfficerNCWL
   ranks:
-    RatRankMVDOfficerSenior:
+    RatRankKommissarMiddle:
     - !type:CharacterPlaytimeRequirement
       tracker: JobMVDOfficerNCWL
       min: 72000 # 20 hours
-    RatRankMVDOfficerMiddle:
+    RatRankKommissarJunior:
     - !type:CharacterPlaytimeRequirement
       tracker: JobMVDOfficerNCWL
-      min: 360000 # 10 hours
-    RatRankMVDOfficerJunior: []
+      min: 36000 # 10 hours
+    RatRankKommissarNovice: []
   weight: 100
   startingGear: MVDOfficerNCWLGear
   alwaysUseSpawner: true

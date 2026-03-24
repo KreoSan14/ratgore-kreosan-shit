@@ -3,6 +3,16 @@
   name: job-name-governor
   description: job-description-governor
   playTimeTracker: JobGovernorDSM
+  ranks:
+    RatRankNobleArchduke:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobGovernorDSM
+      min: 72000 # 20 hours
+    RatRankNobleDukeAdmiral:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobGovernorDSM
+      min: 36000 # 10 hours
+    RatRankNobleMarkgraf: []
   weight: 100
   startingGear: GovernorGear
   alwaysUseSpawner: true

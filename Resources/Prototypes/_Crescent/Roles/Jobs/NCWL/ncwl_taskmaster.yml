@@ -4,15 +4,15 @@
   description: job-description-ncwl-industry-taskmaster
   playTimeTracker: JobEngineeringLeaderNCWL
   ranks:
-    RatRankTaskmasterSenior:
+    RatRankNCWLOfficerSenior:
     - !type:CharacterPlaytimeRequirement
       tracker: JobEngineeringLeaderNCWL
       min: 72000 # 20 hours
-    RatRankTaskmasterMiddle:
+    RatRankNCWLOfficerMiddle:
     - !type:CharacterPlaytimeRequirement
       tracker: JobEngineeringLeaderNCWL
-      min: 360000 # 10 hours
-    RatRankTaskmasterJunior: []
+      min: 36000 # 10 hours
+    RatRankNCWLOfficerJunior: []
   weight: 94
   startingGear: IndustryTaskmasterNCWLGear
   alwaysUseSpawner: true

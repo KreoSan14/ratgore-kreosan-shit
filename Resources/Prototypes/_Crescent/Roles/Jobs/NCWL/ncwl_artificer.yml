@@ -4,15 +4,31 @@
   description: job-description-ncwl-industry-artificer
   playTimeTracker: JobEngineeringWorkerNCWL
   ranks:
-    RatRankArtificerSenior:
+    RatRankNCWLEnlistedTop:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobEngineeringWorkerNCWL
+      min: 216000 # 60 hours
+    RatRankNCWLEnlistedBased:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobEngineeringWorkerNCWL
+      min: 180000 # 50 hours
+    RatRankNCWLEnlistedHigh:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobEngineeringWorkerNCWL
+      min: 144000 # 40 hours
+    RatRankNCWLEnlistedLead:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobEngineeringWorkerNCWL
+      min: 108000 # 30 hours
+    RatRankNCWLEnlistedSenior:
     - !type:CharacterPlaytimeRequirement
       tracker: JobEngineeringWorkerNCWL
       min: 72000 # 20 hours
-    RatRankArtificerMiddle:
+    RatRankNCWLEnlistedMiddle:
     - !type:CharacterPlaytimeRequirement
       tracker: JobEngineeringWorkerNCWL
-      min: 360000 # 10 hours
-    RatRankArtificerJunior: []
+      min: 36000 # 10 hours
+    RatRankNCWLEnlistedJunior: []
   weight: 93
   startingGear: ArtificerNCWLGear
   alwaysUseSpawner: true

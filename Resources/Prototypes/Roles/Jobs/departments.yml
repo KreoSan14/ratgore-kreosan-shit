@@ -89,6 +89,7 @@
   roles:
   - CommandantNCWL
   - KommissarNCWL
+  - MVDOfficerNCWL
   - MVDGruntNCWL
   - FleetkapitanNCWL
   - PartisanNCWL
@@ -142,8 +143,8 @@
   - GovernorDSM
   - AdvocatusDSM
   - ArchmaesterDSM
-  - RegentEmpireDSM # rat-change
-  - PretorianKnightDSM # rat-change
+  # - RegentEmpireDSM # rat-change | To Odleer: DELETE LATER
+  # - PretorianKnightDSM # rat-change | To Odleer: DELETE LATER
   editorHidden: false
 
 # - type: department

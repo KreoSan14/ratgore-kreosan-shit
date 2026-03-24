@@ -4,15 +4,31 @@
   description: job-description-ncwl-fleetkapitan
   playTimeTracker: JobHomeguardSquadCaptainNCWL
   ranks:
-    RatRankFleetkapitanSenior:
+    RatRankNCWLOfficerTop:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobHomeguardSquadCaptainNCWL
+      min: 216000 # 60 hours
+    RatRankNCWLOfficerHigher:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobHomeguardSquadCaptainNCWL
+      min: 180000 # 50 hours
+    RatRankNCWLOfficerHigh:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobHomeguardSquadCaptainNCWL
+      min: 144000 # 40 hours
+    RatRankNCWLOfficerLead:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobHomeguardSquadCaptainNCWL
+      min: 108000 # 30 hours
+    RatRankNCWLOfficerSenior:
     - !type:CharacterPlaytimeRequirement
       tracker: JobHomeguardSquadCaptainNCWL
       min: 72000 # 20 hours
-    RatRankFleetkapitanMiddle:
+    RatRankNCWLOfficerMiddle:
     - !type:CharacterPlaytimeRequirement
       tracker: JobHomeguardSquadCaptainNCWL
-      min: 360000 # 10 hours
-    RatRankFleetkapitanJunior: []
+      min: 36000 # 10 hours
+    RatRankNCWLOfficerJunior: []
   weight: 98
   startingGear: CaptainNCWLGear
   alwaysUseSpawner: true

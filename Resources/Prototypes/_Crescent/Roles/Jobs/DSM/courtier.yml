@@ -4,23 +4,27 @@
   description: job-description-courtier
   playTimeTracker: JobCourtierDSM
   ranks:
-    RatRankCourtierHead:
+    RatRankNobleDuke:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobCourtierDSM
+      min: 180000 # 50 hours
+    RatRankNobleMarquis:
     - !type:CharacterPlaytimeRequirement
       tracker: JobCourtierDSM
       min: 144000 # 40 hours
-    RatRankCourtierLead:
+    RatRankNobleCount:
     - !type:CharacterPlaytimeRequirement
       tracker: JobCourtierDSM
       min: 108000 # 30 hours
-    RatRankCourtierSenior:
+    RatRankNobleViscount:
     - !type:CharacterPlaytimeRequirement
       tracker: JobCourtierDSM
       min: 72000 # 20 hours
-    RatRankCourtierMiddle:
+    RatRankNobleBaron:
     - !type:CharacterPlaytimeRequirement
       tracker: JobCourtierDSM
-      min: 360000 # 10 hours
-    RatRankCourtierJunior: []
+      min: 36000 # 10 hours
+    RatRankNoblePatrician: []
   weight: 52
   startingGear: CourtierGear
   alwaysUseSpawner: true

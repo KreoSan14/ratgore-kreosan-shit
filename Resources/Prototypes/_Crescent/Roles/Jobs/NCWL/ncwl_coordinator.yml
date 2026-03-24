@@ -4,15 +4,15 @@
   description: job-description-ncwl-worker-overboss
   playTimeTracker: JobLogisticLeaderNCWL
   ranks:
-    RatRankOverbossSenior:
+    RatRankNCWLOfficerSenior:
     - !type:CharacterPlaytimeRequirement
       tracker: JobLogisticLeaderNCWL
       min: 72000 # 20 hours
-    RatRankOverbossMiddle:
+    RatRankNCWLOfficerMiddle:
     - !type:CharacterPlaytimeRequirement
       tracker: JobLogisticLeaderNCWL
-      min: 360000 # 10 hours
-    RatRankOverbossJunior: []
+      min: 36000 # 10 hours
+    RatRankNCWLOfficerJunior: []
   weight: 92
   startingGear: DockmasterNCWLGear
   alwaysUseSpawner: true
@@ -22,7 +22,7 @@
   canBeAntag: false
   requirements:
     - !type:CharacterOverallTimeRequirement
-      min: 20000
+      min: 28800
     - !type:FactionRequirement
       factionID: "NCWL"
     - !type:CharacterSpeciesRequirement

@@ -7,19 +7,19 @@ job-name-utility-ipc = NT Engineer IPC
 
 job-name-ncwl-faction-leader = Генерал
 job-name-ncwl-kommissar = Комиссар
-job-name-ncwl-mvd-officer = Курсант комиссариата # удалили
-job-name-ncwl-mvd-grunt = Помощник Комиссара
+job-name-ncwl-mvd-officer = Курсант комиссариата
+job-name-ncwl-mvd-grunt = Сотрудник МВД
 job-name-ncwl-fleetkapitan = Офицер Флота
-job-name-ncwl-partisan = Ополченец
-job-name-ncwl-industry-taskmaster = Старший Техник
+job-name-ncwl-partisan = Гвардеец
+job-name-ncwl-industry-taskmaster = Старший инженер
 job-name-ncwl-industry-artificer = Инженер
-job-name-ncwl-medical-director = Главный Врач
+job-name-ncwl-medical-director = Главный врач
 job-name-ncwl-artificer = Исследователь # удалили
-job-name-ncwl-worker-overboss = Координатор
+job-name-ncwl-worker-overboss = Бригадир
 job-name-ncwl-worker-dockhand = Грузчик
 job-name-ncwl-medical-doctor = Санитар
 job-name-ncwl-coordinator = Координатор Союза # удалили
-job-name-ncwl-newbie = Рабочий Союза
+job-name-ncwl-newbie = Рабочий
 
 # syndicate
 
@@ -43,7 +43,7 @@ ghost-role-information-syndicate-cyborg-saboteur-name-c = CS 3201 Sun Wukong Com
 
 job-name-freeholder = Колон
 job-name-levyman = Легионер
-job-name-knight = Рыцарь-командор
+job-name-knight = Рыцарь-баннерет
 job-name-ritter = Рыцарь-прелат
 job-name-courtier = Придворный
 job-name-ministerlabor = Министр Промышленности
@@ -100,8 +100,8 @@ job-name-servile = Слуга Аль'Сеик
 job-name-antiquarian = Антиквар Издари
 
 # ath
-job-name-kommandant = Контр-адмирал
-job-name-leutnant = Лейтнант
+job-name-kommandant = Коммандант
+job-name-leutnant = Флот-офицер
 job-name-soldat = Егерь
 job-name-sanitatATH = Санитат
 job-name-kanoneer = Канонир
@@ -110,7 +110,7 @@ job-name-oberartz = Оберарцт
 job-name-logistat = Логиститат Маршаллие
 job-name-handels = Хандельс
 job-name-forscher = Форшер
-job-name-chirurgeon = Хирург
+job-name-chirurgeon = Хирургеон
 job-name-vorarbeiter = Форарбайтер
 job-name-arbeiter = Арбайтер
 

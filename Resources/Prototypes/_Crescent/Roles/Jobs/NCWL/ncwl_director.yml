@@ -4,15 +4,15 @@
   description: job-description-ncwl-medical-director
   playTimeTracker: JobMedicalLeaderNCWL
   ranks:
-    RatRankDirectorSenior:
+    RatRankNCWLOfficerSenior:
     - !type:CharacterPlaytimeRequirement
       tracker: JobMedicalLeaderNCWL
       min: 72000 # 20 hours
-    RatRankDirectorMiddle:
+    RatRankNCWLOfficerMiddle:
     - !type:CharacterPlaytimeRequirement
       tracker: JobMedicalLeaderNCWL
-      min: 360000 # 10 hours
-    RatRankDirectorJunior: []
+      min: 36000 # 10 hours
+    RatRankNCWLOfficerJunior: []
   weight: 96
   startingGear: DirectorNCWLGear
   alwaysUseSpawner: true

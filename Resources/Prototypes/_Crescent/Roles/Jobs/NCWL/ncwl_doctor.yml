@@ -4,15 +4,31 @@
   description: job-description-ncwl-medical-doctor
   playTimeTracker: JobMedicalWorkerNCWL
   ranks:
-    RatRankDoctorSenior:
+    RatRankNCWLEnlistedTop:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobMedicalWorkerNCWL
+      min: 216000 # 60 hours
+    RatRankNCWLEnlistedBased:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobMedicalWorkerNCWL
+      min: 180000 # 50 hours
+    RatRankNCWLEnlistedHigh:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobMedicalWorkerNCWL
+      min: 144000 # 40 hours
+    RatRankNCWLEnlistedLead:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobMedicalWorkerNCWL
+      min: 108000 # 30 hours
+    RatRankNCWLEnlistedSenior:
     - !type:CharacterPlaytimeRequirement
       tracker: JobMedicalWorkerNCWL
       min: 72000 # 20 hours
-    RatRankDoctorMiddle:
+    RatRankNCWLEnlistedMiddle:
     - !type:CharacterPlaytimeRequirement
       tracker: JobMedicalWorkerNCWL
-      min: 360000 # 10 hours
-    RatRankDoctorJunior: []
+      min: 36000 # 10 hours
+    RatRankNCWLEnlistedJunior: []
   weight: 95
   startingGear: DoctorNCWLGear
   alwaysUseSpawner: true

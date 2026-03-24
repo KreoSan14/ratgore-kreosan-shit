@@ -4,15 +4,35 @@
   description: job-description-ncwl-newbie
   playTimeTracker: JobWorkerNCWL
   ranks:
-    RatRankWorkerSenior:
+    RatRankNCWLEnlistedTop:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobWorkerNCWL
+      min: 252000 # 70 hours
+    RatRankNCWLEnlistedBased:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobWorkerNCWL
+      min: 216000 # 60 hours
+    RatRankNCWLEnlistedHigh:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobWorkerNCWL
+      min: 180000 # 50 hours
+    RatRankNCWLEnlistedLead:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobWorkerNCWL
+      min: 144000 # 40 hours
+    RatRankNCWLEnlistedSenior:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobWorkerNCWL
+      min: 108000 # 30 hours
+    RatRankNCWLEnlistedMiddle:
     - !type:CharacterPlaytimeRequirement
       tracker: JobWorkerNCWL
       min: 72000 # 20 hours
-    RatRankWorkerMiddle:
+    RatRankNCWLEnlistedJunior:
     - !type:CharacterPlaytimeRequirement
       tracker: JobWorkerNCWL
-      min: 360000 # 10 hours
-    RatRankWorkerJunior: []
+      min: 36000 # 10 hours
+    RatRankNCWLEnlistedNovice: []
   weight: 1
   startingGear: WorkerNCWLGear
   alwaysUseSpawner: true

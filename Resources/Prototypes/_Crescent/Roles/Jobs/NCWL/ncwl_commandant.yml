@@ -4,15 +4,15 @@
   description: job-description-ncwl-faction-leader
   playTimeTracker: JobFactionLeaderNCWL
   ranks:
-    RatRankCommandantSenior:
+    RatRankNCWLCommandSenior:
     - !type:CharacterPlaytimeRequirement
       tracker: JobFactionLeaderNCWL
       min: 72000 # 20 hours
-    RatRankCommandantMiddle:
+    RatRankNCWLCommandMiddle:
     - !type:CharacterPlaytimeRequirement
       tracker: JobFactionLeaderNCWL
-      min: 360000 # 10 hours
-    RatRankCommandantJunior: []
+      min: 36000 # 10 hours
+    RatRankNCWLCommandJunior: []
   weight: 102
   startingGear: CommandantNCWLGear
   alwaysUseSpawner: true

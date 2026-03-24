@@ -4,15 +4,31 @@
   description: job-description-ncwl-worker-dockhand
   playTimeTracker: JobLogisticWorkerNCWL
   ranks:
-    RatRankDockhandSenior:
+    RatRankNCWLEnlistedTop:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobLogisticWorkerNCWL
+      min: 216000 # 60 hours
+    RatRankNCWLEnlistedBased:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobLogisticWorkerNCWL
+      min: 180000 # 50 hours
+    RatRankNCWLEnlistedHigh:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobLogisticWorkerNCWL
+      min: 144000 # 40 hours
+    RatRankNCWLEnlistedLead:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobLogisticWorkerNCWL
+      min: 108000 # 30 hours
+    RatRankNCWLEnlistedSenior:
     - !type:CharacterPlaytimeRequirement
       tracker: JobLogisticWorkerNCWL
       min: 72000 # 20 hours
-    RatRankDockhandMiddle:
+    RatRankNCWLEnlistedMiddle:
     - !type:CharacterPlaytimeRequirement
       tracker: JobLogisticWorkerNCWL
-      min: 360000 # 10 hours
-    RatRankDockhandJunior: []
+      min: 36000 # 10 hours
+    RatRankNCWLEnlistedJunior: []
   weight: 91
   startingGear: DockhandNCWLGear
   alwaysUseSpawner: true
