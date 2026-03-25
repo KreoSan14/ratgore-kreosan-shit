@@ -26,6 +26,7 @@ public sealed class ChatFilterManager
     [Dependency] private readonly IAdminManager _adminManager = default!;
     [Dependency] private readonly ILocalizationManager _loc = default!;
     [Dependency] private readonly IGameTiming _timing = default!;
+    [Dependency] private readonly IServerNetManager _netManager = default!;
     private readonly Dictionary<NetUserId, Queue<(string Message, TimeSpan Timestamp)>> _messageHistory = new();
     private const int MaxRepeatedMessages = 3;
     private const int MessageHistorySize = 5;
@@ -76,7 +77,7 @@ public sealed class ChatFilterManager
         {"ниггера", "афроса"},
         {"ниггеру", "афросу"},
         {"нигером", "афросом"},
-        {"ниггорм", "афросом"},
+        {"ниггером", "афросом"},
         {"нигера", "афроса"},
         {"нигеру", "афросу"},
         {"нига", "афро"},
@@ -491,7 +492,13 @@ public sealed class ChatFilterManager
     };
 
     public void Initialize()
-    { }
+    {
+        _netManager.Disconnect += OnPlayerDisconnect;
+    }
+    private void OnPlayerDisconnect(object? sender, NetDisconnectedArgs e)
+    {
+        _messageHistory.Remove(e.Channel.UserId);
+    }
 
     public string FilterMessage(string message)
     {
