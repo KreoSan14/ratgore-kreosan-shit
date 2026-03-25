@@ -47,7 +47,7 @@ public sealed class BerserkerImplantSystem : SharedBerserkerImplantSystem
 
     private void OnAttach(Entity<BerserkerImplantActiveComponent> ent, ref LocalPlayerAttachedEvent args)
     {
-        _overlayManager.RemoveOverlay(_overlay);
+        _overlayManager.AddOverlay(_overlay);
     }
 
     private void OnDetach(Entity<BerserkerImplantActiveComponent> ent, ref LocalPlayerDetachedEvent args)

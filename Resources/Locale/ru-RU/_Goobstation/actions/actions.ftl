@@ -11,5 +11,5 @@ action-berserker-desc = Переключает имплант "Сердце бе
 # Sandevistan Overload Popups
 sandevistan-overload-1 = Ваше сердце бешено стучит в груди.
 sandevistan-overload-2 = Ваше тело с трудом справляется с нагрузкой.
-sandevistan-overload-3 = Ваше тело не в состояние выдержать такую нагрузку.
+sandevistan-overload-3 = Ваше тело не в состоянии выдержать такую нагрузку.
 sandevistan-overload-4 = Ваше тело начинает сдавать.

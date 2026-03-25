@@ -50,6 +50,10 @@ public sealed class TrailOverlay : Overlay
             if (trail.TrailData.Count == 0)
                 continue;
 
+            var trailDataSnapshot = new List<TrailData>(trail.TrailData);
+            if (trailDataSnapshot.Count == 0)
+                continue;
+
             var (position, rotation) = _transform.GetWorldPositionRotation(xform, xformQuery);
 
             if (trail.Shader != null && _protoMan.TryIndex<ShaderPrototype>(trail.Shader, out var shaderProto))
@@ -73,8 +77,9 @@ public sealed class TrailOverlay : Overlay
             else
                 handle.UseShader(null);
 
-            if (trail.RenderedEntity != null)
+            if (trail.RenderedEntity != null && !_entManager.Deleted(trail.RenderedEntity.Value))
             {
+                var renderedEntity = trail.RenderedEntity.Value;
                 Direction? direction = null;
                 var rot = rotation;
                 if (trail.RenderedEntityRotationStrategy == RenderedEntityRotationStrategy.Trail)
@@ -83,12 +88,12 @@ public sealed class TrailOverlay : Overlay
                     direction = dirRot.GetCardinalDir();
                 }
                 else if (trail.RenderedEntityRotationStrategy == RenderedEntityRotationStrategy.RenderedEntity)
-                    rot = _transform.GetWorldRotation(trail.RenderedEntity.Value);
+                    rot = _transform.GetWorldRotation(renderedEntity);
 
-                if (spriteQuery.TryComp(trail.RenderedEntity.Value, out var sprite))
+                if (spriteQuery.TryComp(renderedEntity, out var sprite))
                 {
                     handle.SetTransform(Matrix3x2.Identity);
-                    foreach (var data in trail.TrailData)
+                    foreach (var data in trailDataSnapshot)
                     {
                         if (data.Color.A <= 0.01f || data.Scale <= 0.01f || data.MapId != args.MapId)
                             continue;
@@ -120,14 +125,14 @@ public sealed class TrailOverlay : Overlay
                 handle.SetTransform(Matrix3x2.Identity);
                 if (xform.MapID == args.MapId)
                 {
-                    var start = trail.TrailData[^1].Position;
+                    var start = trailDataSnapshot[^1].Position;
                     DrawTrailLine(start, position, trail.Color, trail.Scale, bounds, handle);
                 }
 
-                for (var i = 1; i < trail.TrailData.Count; i++)
+                for (var i = 1; i < trailDataSnapshot.Count; i++)
                 {
-                    var data = trail.TrailData[i];
-                    var prevData = trail.TrailData[i - 1];
+                    var data = trailDataSnapshot[i];
+                    var prevData = trailDataSnapshot[i - 1];
 
                     if (data.MapId == args.MapId && prevData.MapId == args.MapId)
                         DrawTrailLine(prevData.Position, data.Position, data.Color, data.Scale, bounds, handle);
@@ -138,7 +143,7 @@ public sealed class TrailOverlay : Overlay
 
             var textureSize = _sprite.Frame0(trail.Sprite).Size;
             var pos = -(Vector2) textureSize / 2f / EyeManager.PixelsPerMeter;
-            foreach (var data in trail.TrailData)
+            foreach (var data in trailDataSnapshot)
             {
                 if (data.Color.A <= 0.01f || data.Scale <= 0.01f || data.MapId != args.MapId)
                     continue;
