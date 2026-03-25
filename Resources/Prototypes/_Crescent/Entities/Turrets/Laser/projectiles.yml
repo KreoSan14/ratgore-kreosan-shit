@@ -87,7 +87,7 @@
     color: blue
     energy: 0.5
   - type: TimedDespawn
-    lifetime: 14 #2800
+    lifetime: 3 #501
   - type: Sprite
     sprite: _Crescent/Objects/Turrets/Ammunition/Projectiles/lasers.rsi
     layers:

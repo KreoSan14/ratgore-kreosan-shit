@@ -436,7 +436,7 @@
       zeroVisible: true
     - type: Gun
       fireOnDropChance: 0
-      projectileSpeed: 120
+      projectileSpeed: 100
       fireRate: 0.25
       selectedMode: FullAuto
       availableModes:
@@ -494,7 +494,7 @@
       zeroVisible: true
     - type: Gun
       fireOnDropChance: 0
-      projectileSpeed: 110
+      projectileSpeed: 100
       fireRate: 0.2
       selectedMode: FullAuto
       availableModes:

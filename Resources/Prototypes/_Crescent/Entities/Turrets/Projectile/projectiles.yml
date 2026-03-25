@@ -20,7 +20,7 @@
     color: orange
     energy: 0.5
   - type: TimedDespawn
-    lifetime: 14 #1960
+    lifetime: 3 #501
   - type: Sprite
     sprite: _NF/Objects/SpaceArtillery/pdtcasing.rsi
     layers:
@@ -56,7 +56,7 @@
     color: orange
     energy: 0.5
   - type: TimedDespawn
-    lifetime: 14 #1960
+    lifetime: 3 #501
   - type: Sprite
     sprite: _NF/Objects/SpaceArtillery/pdtcasing.rsi
     layers:
@@ -119,7 +119,7 @@
     color: orange
     energy: 0.5
   - type: TimedDespawn
-    lifetime: 15 #1800
+    lifetime: 7 #749
   - type: Sprite
     sprite: _NF/Objects/SpaceArtillery/pdtcasing.rsi
     layers:
@@ -128,7 +128,7 @@
 
 - type: entity
   id: Bullet35mmHE
-  name: 35mm High Explosive projectile
+  name: 35mm High Explosive projectile #DONTUSE
   description: Uh oh.
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
@@ -221,7 +221,7 @@
     color: orange
     energy: 0.5
   - type: TimedDespawn
-    lifetime: 16 #2240
+    lifetime: 10 #1500
   - type: Sprite
     sprite: _NF/Objects/SpaceArtillery/pdtcasing.rsi
     layers:
@@ -256,7 +256,7 @@
     color: orange
     energy: 0.5
   - type: TimedDespawn
-    lifetime: 16 #2240m
+    lifetime: 10 #1500
   - type: Sprite
     sprite: _NF/Objects/SpaceArtillery/pdtcasing.rsi
     layers:
@@ -291,7 +291,7 @@
     color: orange
     energy: 0.5
   - type: TimedDespawn
-    lifetime: 16 #2240m
+    lifetime: 10 #1500
   - type: Sprite
     sprite: _NF/Objects/SpaceArtillery/pdtcasing.rsi
     layers:
@@ -416,7 +416,7 @@
         Structural: 350
         Piercing: 150
   - type: TimedDespawn
-    lifetime: 20 #4000m
+    lifetime: 10 #2000m
   - type: Sprite
     sprite: _NF/Objects/SpaceArtillery/630_armorpiercing_shell_casing.rsi
     layers:
@@ -451,7 +451,7 @@
         Structural: 750
         Piercing: 250
   - type: TimedDespawn
-    lifetime: 20 #4000m
+    lifetime: 10 #2000m
   - type: Sprite
     sprite: _NF/Objects/SpaceArtillery/630_armorpiercing_shell_casing.rsi
     layers:
@@ -484,7 +484,7 @@
         Structural: 250
         Piercing: 250
   - type: TimedDespawn
-    lifetime: 20 #4000m
+    lifetime: 10 #2000m
   - type: Sprite
     sprite: _NF/Objects/SpaceArtillery/630_armorpiercing_shell_casing.rsi
     layers:

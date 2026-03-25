@@ -31,7 +31,7 @@
     - type: Gun
       fireOnDropChance: 0
       fireRate: 6
-      projectileSpeed: 140
+      projectileSpeed: 167
       selectedMode: FullAuto
       availableModes:
         - FullAuto
@@ -67,7 +67,7 @@
 
 - type: entity
   parent: BaseTurretShipgun
-  id: WeaponTurretSmallMachinegunNCWL
+  id: WeaponTurretSmallMachinegunNCWL #DONTUSE
   suffix: Machinegun, Small Ballistics
   name: Homeguard 20mm 'Warthog' Rotary Cannon
   description: A light and reliable gatling system based on the 20mm 'Screamer' for both point defense and offensive purposes. It's relatively low fire rate negates overheating. It's large magazine doesnt require frequent loading. Upgraded with a heavier barrel for better accuracy and features internal reinforcements.
@@ -224,7 +224,7 @@
     - type: MagazineAmmoProvider
     - type: Gun
       fireOnDropChance: 0
-      projectileSpeed: 120
+      projectileSpeed: 107
       fireRate: 3
       selectedMode: FullAuto
       availableModes:
@@ -358,7 +358,7 @@
                 collection: MetalGlassBreak
     - type: Gun
       fireOnDropChance: 0
-      projectileSpeed: 140
+      projectileSpeed: 150
       fireRate: 4
       selectedMode: FullAuto
       availableModes:

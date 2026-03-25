@@ -305,7 +305,7 @@
         Structural: 400
         Blunt: 200
   - type: TimedDespawn
-    lifetime: 20 #3200
+    lifetime: 16 #2480
   - type: Sprite
     sprite: _Crescent/Objects/Turrets/Ammunition/Projectiles/arbalest.rsi
     layers:
@@ -374,7 +374,7 @@
         Structural: 500
         Blunt: 200
   - type: TimedDespawn
-    lifetime: 23 #3450m
+    lifetime: 16 #2480
   - type: Sprite
     sprite: _Crescent/Objects/Turrets/Ammunition/Projectiles/arbalest.rsi
     layers:
@@ -443,7 +443,7 @@
         Structural: 750
         Blunt: 200
   - type: TimedDespawn
-    lifetime: 14 #2520
+    lifetime: 16 #2480
   - type: Sprite
     sprite: _Crescent/Objects/Turrets/Ammunition/Projectiles/arbalest.rsi
     layers:
@@ -514,7 +514,7 @@
         Structural: 1000
         Blunt: 200
   - type: TimedDespawn
-    lifetime: 17 #2040m
+    lifetime: 40 #2040m
   - type: Sprite
     sprite: _Crescent/Objects/Turrets/Ammunition/Projectiles/gargoyle.rsi
     layers:
@@ -583,7 +583,7 @@
         Structural: 1000
         Blunt: 200
   - type: TimedDespawn
-    lifetime: 21 #2310m
+    lifetime: 40 #2040m
   - type: Sprite
     sprite: _Crescent/Objects/Turrets/Ammunition/Projectiles/gargoyle.rsi
     layers:
@@ -654,7 +654,7 @@
         Structural: 2000
         Blunt: 500
   - type: TimedDespawn
-    lifetime: 30 #6000m
+    lifetime: 25 #5000
   - type: Sprite
     sprite: _Crescent/Objects/Turrets/Ammunition/Projectiles/catapult.rsi
     layers:
