@@ -976,11 +976,11 @@
     Biomass: 3
 
 - type: latheRecipe
-  id: InterdyneSandevistanInterdyne
-  result: OrganHeartSandevistan
+  id: InterdyneBerserkerInterdyne
+  result: OrganHeartBerserker
   completetime: 1.5
   materials:
-    BasicMechatronics: 500
-    AdvancedElectronics: 1500
-    Gold: 500
+    BasicMechatronics: 1000
+    AdvancedElectronics: 1000
+    Silver: 500
     Biomass: 10

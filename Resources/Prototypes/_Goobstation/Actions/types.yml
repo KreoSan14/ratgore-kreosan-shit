@@ -46,3 +46,18 @@
     icon: { sprite: _Goobstation/Objects/Misc/sandevistan.rsi, state: icon }
     itemIconStyle: NoItem
     event: !type:ToggleSandevistanEvent
+
+- type: entity
+  id: ActionActivateBerserkerImplant
+  name: action-berserker-name
+  description: action-berserker-desc
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: InstantAction
+    event: !type:ActivateBerserkerImplantActionEvent
+    checkCanInteract: false
+    useDelay: 40
+    icon: { sprite: _Goobstation/Objects/Misc/berserker_heart.rsi, state: icon }
+    itemIconStyle: NoItem
+    sound: !type:SoundPathSpecifier
+      path: /Audio/_Goobstation/Misc/berserker-implant-activate.ogg

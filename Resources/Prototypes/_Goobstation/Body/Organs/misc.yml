@@ -15,3 +15,20 @@
     difficulty: 4
     recipes:
       - InterdyneSandevistanInterdyne
+
+- type: entity
+  parent: OrganHumanHeart
+  id: OrganHeartBerserker
+  name: IPM TT-91 Berserker heart
+  description: A next-gen combat circulatory core that allows the user to enter a berserk state, greatly increasing their speed and reflexes for a short time at the cost of endurance and some pain resistance. Highly illegal.
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Objects/Misc/berserker_heart.rsi
+    state: icon
+  - type: OrganActions
+    actions:
+    - ActionActivateBerserkerImplant
+  - type: ReverseEngineering # SectorCrescent
+    difficulty: 4
+    recipes:
+      - InterdyneBerserkerInterdyne
