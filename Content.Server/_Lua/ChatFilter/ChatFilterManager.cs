@@ -15,7 +15,9 @@ using Robust.Shared.Timing;
 using System.Linq;
 using System.Text.RegularExpressions;
 
+#pragma warning disable IDE1006
 namespace Content.Server._Lua.ChatFilter;
+#pragma warning restore IDE1006
 
 public sealed class ChatFilterManager
 {
@@ -388,20 +390,20 @@ public sealed class ChatFilterManager
         {"получали бан без причины"},
         {"бан без причины"},
         {"без причины бан"},
-        {"АРАЙЗ"},
-        {"ARAIZ"},
-        {"ARAЙZ"},
-        {"А Р А Й З"},
-        {"A R A I Z"},
+        {"арайз"},
+        {"araiz"},
+        {"araйz"},
+        {"а р а й з"},
+        {"a r a i z"},
         {"fucked by"},
         {"плотная от"},
         {"от плотная"},
-        {"UNF"},
-        {"U N F"},
-        {"CSH"},
-        {"C S H"},
-        {"КСШ"},
-        {"К С Ш"},
+        {"unf"},
+        {"u n f"},
+        {"csh"},
+        {"c s h"},
+        {"ксш"},
+        {"к с ш"},
         {"дискорд сервер"},
         {"сервер дискорд"},
         {"другой сервер"},
