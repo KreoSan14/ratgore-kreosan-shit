@@ -1,7 +1,7 @@
 - type: entity
   id: CMVendorBundleRiflemanApparelNCWL
-  name: base rifleman ncwl
-  description: basic rifleman ncwl
+  name: базовое снаряжение лрнп
+  description: базовое снаряжение ЛРНП. Включает в себя ГПС, джетпак, магнитные сапоги и остальное.
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -18,8 +18,8 @@
 
 - type: entity
   id: CMVendorBundleRiflemanApparelDSM
-  name: base rifleman ncwl
-  description: basic rifleman ncwl
+  name: базовое снаряжение бмс
+  description: базовое снаряжение БМС. Включает в себя ГПС, джетпак, магнитные сапоги и остальное.
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
