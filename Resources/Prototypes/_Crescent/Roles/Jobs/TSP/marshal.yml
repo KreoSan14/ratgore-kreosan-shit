@@ -6,11 +6,11 @@
   ranks:
     RatRankCMMMarshalHigh:
     - !type:CharacterPlaytimeRequirement
-      tracker: JobDeputyMarshalCMM
+      tracker: JobMarshalCMM
       min: 72000 # 20 hours
     RatRankCMMMarshalLead:
     - !type:CharacterPlaytimeRequirement
-      tracker: JobDeputyMarshalCMM
+      tracker: JobMarshalCMM
       min: 36000 # 10 hours
     RatRankCMMMarshalSenior: []
   weight: 39

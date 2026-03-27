@@ -4,7 +4,6 @@
   description: job-description-ordnanceman
   playTimeTracker: JobOrdnancemanCMM
   ranks:
-      min: 144000 # 40 hours
     RatRankCMMMinutemanThird:
     - !type:CharacterPlaytimeRequirement
       tracker: JobOrdnancemanCMM
