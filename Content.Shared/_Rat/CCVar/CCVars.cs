@@ -11,7 +11,7 @@ namespace Content.Shared._Rat.CCVar
         /// Включена ли автоматическая очистка мусора.
         /// </summary>
         public static readonly CVarDef<bool> TrashCleanupEnabled =
-            CVarDef.Create("trash.cleanup_enabled", true, CVar.SERVERONLY);
+            CVarDef.Create("trash.cleanup_enabled", false, CVar.SERVERONLY);
 
         /// <summary>
         /// Интервал в секундах между очистками мусора.
@@ -29,6 +29,6 @@ namespace Content.Shared._Rat.CCVar
         /// Включение/отключение автоматического удаления мелких гридов.
         /// </summary>
         public static readonly CVarDef<bool> AutoGridCleanupEnabled =
-            CVarDef.Create("shuttle.grid_cleanup_enabled", true, CVar.SERVERONLY | CVar.ARCHIVE);
+            CVarDef.Create("shuttle.grid_cleanup_enabled", false, CVar.SERVERONLY | CVar.ARCHIVE);
     }
 }
