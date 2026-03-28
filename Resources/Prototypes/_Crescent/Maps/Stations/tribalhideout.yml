@@ -20,7 +20,11 @@
           overflowJobs: []
           availableJobs:
             ProphetTAP: [ 1, 1 ]
+            AcolyteTAP: [ 3, 3 ]
+            TinkererTAP: [ 1, 1 ]
+            TechminerTAP: [ 3, 3 ]
+            HangarTechTAP: [ 2, 2 ]
             DraugrTAP: [ 1, 1 ]
-            ServileTAP: [ 2, 2 ]
-            BeltrunnerTAP: [ 1, 1 ]
+            ServileTAP: [ 3, 3 ]
+            BeltrunnerTAP: [ 3, 3 ]
             Antiquarian: [ 1, 1 ]

@@ -3,6 +3,16 @@
   name: job-name-deputymarshal
   description: job-description-deputymarshal
   playTimeTracker: JobDeputyMarshalCMM
+  ranks:
+    RatRankCMMMarshalMiddle:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobDeputyMarshalCMM
+      min: 72000 # 20 hours
+    RatRankCMMMarshalJunior:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobDeputyMarshalCMM
+      min: 36000 # 10 hours
+    RatRankCMMMinutemanTop: []
   weight: 32
   startingGear: DeputyMarshalGear
   alwaysUseSpawner: true
@@ -25,8 +35,13 @@
   special:
   - !type:AddComponentSpecial
     components:
-      - type: ChatRank
-        rank: crescent-rank-2ic
+      - type: LanguageAdder
+        addSpoken:
+          - American
+          - Tradeband
+        addUnderstood:
+          - American
+          - Tradeband
   access:
   - Command
   - Maintenance

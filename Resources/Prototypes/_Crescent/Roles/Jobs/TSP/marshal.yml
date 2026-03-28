@@ -3,6 +3,16 @@
   name: job-name-marshal
   description: job-description-marshal
   playTimeTracker: JobMarshalCMM
+  ranks:
+    RatRankCMMMarshalHigh:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobMarshalCMM
+      min: 72000 # 20 hours
+    RatRankCMMMarshalLead:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobMarshalCMM
+      min: 36000 # 10 hours
+    RatRankCMMMarshalSenior: []
   weight: 39
   startingGear: MarshalGear
   alwaysUseSpawner: true
@@ -23,8 +33,13 @@
   special:
   - !type:AddComponentSpecial
     components:
-      - type: ChatRank
-        rank: crescent-rank-marshallie
+      - type: LanguageAdder
+        addSpoken:
+          - American
+          - Tradeband
+        addUnderstood:
+          - American
+          - Tradeband
   access:
   - Command
   - Maintenance
@@ -46,6 +61,7 @@
     gloves: ClothingHandsGlovesCombat
     belt: ClothingBeltMinutemanPouches
     pocket1: WeaponRevolverSnubnose
+    pocket2: RatRubberStampCMMMarshal
     id: MarshalPDA
     ears: ClothingHeadsetCMM
     outerClothing: ClothingOuterArmorCMMCarapace

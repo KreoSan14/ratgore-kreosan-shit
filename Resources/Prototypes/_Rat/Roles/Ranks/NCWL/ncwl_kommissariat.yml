@@ -3,13 +3,13 @@
 - type: rank
   id: RatRankKommissarLead
   name: Главный комиссар
-  prefix: Гл. Комиссар
+  prefix: Гл. комиссар
   paygrade: K5
 
 - type: rank
   id: RatRankKommissarSenior
   name: Старший комиссар
-  prefix: Ст. Комиссар
+  prefix: Ст. комиссар
   paygrade: K4
 
 - type: rank
@@ -21,7 +21,7 @@
 - type: rank
   id: RatRankKommissarJunior
   name: Младший комиссар
-  prefix: Мл. Комиссар
+  prefix: Мл. комиссар
   paygrade: K2
 
 - type: rank
@@ -53,5 +53,5 @@
 - type: rank
   id: RatRankMVDGruntJunior
   name: Младший милиционер МВД
-  prefix: Мл. Милиционер
+  prefix: Мл. милиционер
   paygrade: MVD1

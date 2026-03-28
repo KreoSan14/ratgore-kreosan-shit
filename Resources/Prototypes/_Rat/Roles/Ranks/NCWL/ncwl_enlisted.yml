@@ -1,7 +1,7 @@
 - type: rank
   id: RatRankNCWLEnlistedTop
   name: Старший прапорщик
-  prefix: Ст. Прап.
+  prefix: Ст. прап.
   paygrade: E8
 
 - type: rank
@@ -19,7 +19,7 @@
 - type: rank
   id: RatRankNCWLEnlistedLead
   name: Старший сержант
-  prefix: Ст. Серж.
+  prefix: Ст. серж.
   paygrade: E5
 
 - type: rank
@@ -31,7 +31,7 @@
 - type: rank
   id: RatRankNCWLEnlistedMiddle
   name: Младший сержант
-  prefix: Мл. Сержант
+  prefix: Мл. серж.
   paygrade: E3
 
 - type: rank

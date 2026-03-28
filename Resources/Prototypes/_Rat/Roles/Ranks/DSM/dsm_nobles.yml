@@ -5,8 +5,8 @@
   paygrade: N7
 
 - type: rank
-  id: RatRankNobleDukeAdmiral
-  name: Герцог
+  id: RatRankNobleGrandDuke
+  name: Великий герцог
   prefix: Лорд-адмирал
   paygrade: N6
 
@@ -19,7 +19,7 @@
 - type: rank
   id: RatRankNobleMarkgraf
   name: Маркграф
-  prefix: Лорд-адмирал
+  prefix: Маркграф
   paygrade: N5
 
 - type: rank

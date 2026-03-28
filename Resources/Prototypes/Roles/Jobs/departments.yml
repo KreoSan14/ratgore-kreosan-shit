@@ -198,15 +198,15 @@
   weight: 55
   roles:
   - ProphetTAP
-  # - AcolyteTAP
-  # - TinkererTAP
-  # - TechminerTAP
-  # - HangarTechTAP
+  - AcolyteTAP
+  - TinkererTAP
+  - TechminerTAP
+  - HangarTechTAP
   - Antiquarian
   - BeltrunnerTAP
   - DraugrTAP
   - ServileTAP
-  editorHidden: true
+  editorHidden: false
 
 - type: department
   id: ATH
@@ -227,7 +227,7 @@
   - ChirurgeonATH
   - VorarbeiterATH
   - ArbeiterATH
-  editorHidden: true # i just like to see them for the numbers , SPCR 2025
+  editorHidden: true
   primary: false
 
   # CONSCRIPT

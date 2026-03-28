@@ -3,6 +3,24 @@
   name: job-name-minuteman
   description: job-description-minuteman
   playTimeTracker: JobMinutemanCMM
+  ranks:
+    RatRankCMMMinutemanLead:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobMinutemanCMM
+      min: 144000 # 40 hours
+    RatRankCMMMinutemanSenior:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobMinutemanCMM
+      min: 108000 # 30 hours
+    RatRankCMMMinutemanMiddle:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobMinutemanCMM
+      min: 72000 # 20 hours
+    RatRankCMMMinutemanJunior:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobMinutemanCMM
+      min: 36000 # 10 hours
+    RatRankCMMMinutemanNovice: []
   weight: 26
   startingGear: MinutemanGear
   alwaysUseSpawner: true
@@ -23,8 +41,13 @@
   special:
   - !type:AddComponentSpecial
     components:
-      - type: ChatRank
-        rank: crescent-rank-minuteman
+      - type: LanguageAdder
+        addSpoken:
+          - American
+          - Tradeband
+        addUnderstood:
+          - American
+          - Tradeband
   access:
   - Command
   - Maintenance

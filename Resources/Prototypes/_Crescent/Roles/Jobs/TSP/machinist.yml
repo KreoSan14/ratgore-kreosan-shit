@@ -3,6 +3,24 @@
   name: job-name-machinist
   description: job-description-machinist
   playTimeTracker: JobMachinistCMM
+  ranks:
+    RatRankCMMMinutemanLead:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobMachinistCMM
+      min: 144000 # 40 hours
+    RatRankCMMMinutemanSenior:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobMachinistCMM
+      min: 108000 # 30 hours
+    RatRankCMMMinutemanMiddle:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobMachinistCMM
+      min: 72000 # 20 hours
+    RatRankCMMMinutemanJunior:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobMachinistCMM
+      min: 36000 # 10 hours
+    RatRankCMMMinutemanNovice: []
   weight: 22
   startingGear: MachinistGear
   alwaysUseSpawner: true
@@ -21,8 +39,13 @@
   special:
   - !type:AddComponentSpecial
     components:
-      - type: ChatRank
-        rank: crescent-rank-machinist
+      - type: LanguageAdder
+        addSpoken:
+          - American
+          - Tradeband
+        addUnderstood:
+          - American
+          - Tradeband
   access:
   - Command
   - Maintenance

@@ -29,3 +29,8 @@ ent-RatRubberStampShinoharaAlt = { ent-RubberStampShinohara }
     .desc = { ent-RubberStampShinohara.desc }
 ent-RatRubberStampShinoharaCorps = печать агента ликвидации
     .desc = Печать Агента корпоративной Ликвидации, для проставления печатей на рассторгнутых контрактах.
+
+ent-RatRubberStampCMMMarshal = печать колониального маршала
+    .desc = Печать маршала, для проставления печатей на важных документах и законах.
+ent-RatRubberStampCMM = печать командования минитменов
+    .desc = Печать минитменов, для проставления печатей на важных документах.

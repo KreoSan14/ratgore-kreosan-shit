@@ -3,6 +3,20 @@
   name: job-name-watchmaster
   description: job-description-watchmaster
   playTimeTracker: JobWatchmasterCMM
+  ranks:
+    RatRankCMMMinutemanTop:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobWatchmasterCMM
+      min: 108000 # 30 hours
+    RatRankCMMMinutemanFirst:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobWatchmasterCMM
+      min: 72000 # 20 hours
+    RatRankCMMMinutemanSecond:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobWatchmasterCMM
+      min: 36000 # 10 hours
+    RatRankCMMMinutemanThird: []
   weight: 28
   startingGear: WatchmasterGear
   alwaysUseSpawner: true
@@ -25,8 +39,13 @@
   special:
   - !type:AddComponentSpecial
     components:
-      - type: ChatRank
-        rank: crescent-rank-watchmaster
+      - type: LanguageAdder
+        addSpoken:
+          - American
+          - Tradeband
+        addUnderstood:
+          - American
+          - Tradeband
   access:
   - Command
   - Maintenance

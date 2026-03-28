@@ -197,3 +197,30 @@
   - type: Sprite
     sprite: _Rat/Objects/Misc/stamps.rsi
     state: stamp-shi-corp
+
+# region CMM
+- type: entity
+  name: colonial marshal rubber stamp
+  parent: RubberStampBase
+  id: RatRubberStampCMMMarshal
+  suffix: DO NOT MAP
+  components:
+  - type: Stamp
+    stampedName: rat-stamp-name-tsfc-colonial-marshal
+    stampedColor: "#063971"
+    stampState: "paper_stamp-cmo"
+  - type: Sprite
+    state: stamp-cmo
+
+- type: entity
+  name: minuteman command rubber stamp
+  parent: RubberStampBase
+  id: RatRubberStampCMM
+  suffix: DO NOT MAP
+  components:
+  - type: Stamp
+    stampedName: rat-stamp-name-tsfc-minutemen-command
+    stampedColor: "#003457"
+    stampState: "paper_stamp-cmo"
+  - type: Sprite
+    state: stamp-cmo

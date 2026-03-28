@@ -32,3 +32,5 @@ rat-stamp-name-shinohara-corpsec = Агент ликвидации
 # TAP
 
 # CMM
+rat-stamp-name-tsfc-colonial-marshal = Колониальный маршал
+rat-stamp-name-tsfc-minutemen-command = Командование минитменов
