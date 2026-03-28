@@ -375,15 +375,12 @@ public sealed partial class ShuttleMapControl : BaseShuttleControl
             Entity<MapGridComponent> grid = (gridObj.Entity, mapGrid);
             IFFComponent? iffComp = null;
 
-            // Hide IFF-hidden and mass-cloaked grids from the FTL map entirely
+            // Rudimentary IFF for now, if IFF hiding on then we don't show on the map at all
             if (grid.Owner != _shuttleEntity &&
-                EntManager.TryGetComponent(grid, out iffComp))
+                EntManager.TryGetComponent(grid, out iffComp) &&
+                (iffComp.Flags & IFFFlags.Hide) != 0x0)
             {
-                var isHidden = (iffComp.Flags & IFFFlags.Hide) != 0x0;
-                if (isHidden)
-                {
-                    continue;
-                }
+                continue;
             }
 
             var gridColor = _shuttles.GetIFFColor(grid, self: _shuttleEntity == grid.Owner, component: iffComp);
