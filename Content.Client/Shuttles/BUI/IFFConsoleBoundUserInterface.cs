@@ -24,8 +24,6 @@ public sealed class IFFConsoleBoundUserInterface : BoundUserInterface
         _window = this.CreateWindow<IFFConsoleWindow>();
         _window.ShowIFF += SendIFFMessage;
         _window.ShowVessel += SendVesselMessage;
-        _window.MassCloak += SendMassCloakMessage;
-        _window.MassCloakRangeChanged += SendMassCloakMessage;
         _window.ColorSelected += SendColorMessage;
         _window.OpenCenteredLeft();
     }
@@ -53,25 +51,6 @@ public sealed class IFFConsoleBoundUserInterface : BoundUserInterface
         SendMessage(new IFFShowVesselMessage()
         {
             Show = obj,
-        });
-    }
-
-    private void SendMassCloakMessage(bool enabled)
-    {
-        // Keep a default until the server sends the attached state.
-        SendMessage(new IFFSetMassCloakMessage()
-        {
-            Enabled = enabled,
-            Range = 20f,
-        });
-    }
-
-    private void SendMassCloakMessage(float range)
-    {
-        SendMessage(new IFFSetMassCloakMessage()
-        {
-            Enabled = true,
-            Range = range,
         });
     }
 

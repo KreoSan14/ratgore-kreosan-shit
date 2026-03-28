@@ -130,7 +130,7 @@ public abstract partial class SharedShuttleSystem : EntitySystem
             return true;
         }
 
-        // Mass cloaked ships are still visible (as masses) to ships within the field
+        // Hide it entirely.
         return (iffComp.Flags & IFFFlags.Hide) == 0x0;
     }
 

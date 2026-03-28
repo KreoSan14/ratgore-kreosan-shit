@@ -17,15 +17,6 @@
             </BoxContainer>
             <Label Name="ShowHeat"></Label>
 
-            <Label Name="MassCloakLabel" Text="Mass Cloak" HorizontalExpand="True" StyleClasses="StatusFieldTitle" />
-            <BoxContainer Orientation="Horizontal" MinWidth="120">
-                <Button Name="MassCloakOnButton" Text="Enable" StyleClasses="OpenRight" />
-                <Button Name="MassCloakOffButton" Text="Disable" StyleClasses="OpenLeft" />
-            </BoxContainer>
-            <Label Text="Range (20-500)" HorizontalExpand="True"/>
-            <Slider Name="MassCloakRangeSlider" MinValue="20" MaxValue="500" Value="20" HorizontalExpand="True" />
-            <Label Name="MassCloakRangeValue" Text="20" HorizontalAlignment="Center" />
-
             <Label Name="ColorSelectionLabel" Text="COLOR PICKING"
                 HorizontalExpand="True" HorizontalAlignment="Center" Margin="0 6 0 2" StyleClasses="StatusFieldTitle" />
             <Control />

@@ -202,17 +202,35 @@ public sealed partial class ShuttleSystem : SharedShuttleSystem
             existList.Add(gridUid);
         }
 
+        // Remove mass cloaking from grids that are no longer in range
         foreach (var gridUid in existList)
         {
             if (!toCloak.Contains(gridUid))
             {
                 RemComp<MassCloakComponent>(gridUid);
+                // Also clear the IFF hide flag
+                if (TryComp(gridUid, out IFFComponent? iff))
+                {
+                    iff.Flags &= ~IFFFlags.Hide;
+                    Dirty(gridUid, iff);
+                }
             }
         }
 
+        // Add mass cloaking to grids in range
         foreach (var gridUid in toCloak)
         {
             EnsureComp<MassCloakComponent>(gridUid);
+            // Also set the IFF hide flag (create IFF component if needed)
+            if (!TryComp(gridUid, out IFFComponent? iff))
+            {
+                iff = AddComp<IFFComponent>(gridUid);
+            }
+            if (iff != null)
+            {
+                iff.Flags |= IFFFlags.Hide;
+                Dirty(gridUid, iff);
+            }
         }
     }
 

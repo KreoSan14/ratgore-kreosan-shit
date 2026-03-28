@@ -367,8 +367,6 @@ public sealed partial class ShuttleMapControl : BaseShuttleControl
             }
         }
 
-        var selfMassCloaked = EntManager.HasComponent<MassCloakComponent>(_shuttleEntity);
-
         foreach (var mapObj in viewportObjects)
         {
             if (mapObj is not GridMapObject gridObj || !EntManager.TryGetComponent(gridObj.Entity, out MapGridComponent? mapGrid))
@@ -377,17 +375,18 @@ public sealed partial class ShuttleMapControl : BaseShuttleControl
             Entity<MapGridComponent> grid = (gridObj.Entity, mapGrid);
             IFFComponent? iffComp = null;
 
-            // Rudimentary IFF for now, if IFF hiding on then we don't show on the map at all
-            if (!selfMassCloaked && grid.Owner != _shuttleEntity &&
-                EntManager.TryGetComponent(grid, out iffComp) &&
-                (iffComp.Flags & IFFFlags.Hide) != 0x0)
+            // Hide IFF-hidden and mass-cloaked grids from the FTL map entirely
+            if (grid.Owner != _shuttleEntity &&
+                EntManager.TryGetComponent(grid, out iffComp))
             {
-                continue;
+                var isHidden = (iffComp.Flags & IFFFlags.Hide) != 0x0;
+                if (isHidden)
+                {
+                    continue;
+                }
             }
 
-            var gridColor = selfMassCloaked
-                ? Color.Gray
-                : _shuttles.GetIFFColor(grid, self: _shuttleEntity == grid.Owner, component: iffComp);
+            var gridColor = _shuttles.GetIFFColor(grid, self: _shuttleEntity == grid.Owner, component: iffComp);
             var existingVerts = _verts.GetOrNew(gridColor);
             var existingEdges = _edges.GetOrNew(gridColor);
 
@@ -415,19 +414,10 @@ public sealed partial class ShuttleMapControl : BaseShuttleControl
 
             // Text
             string? displayText;
-            if (selfMassCloaked)
-            {
-                // Mass cloak view: show other ships by mass, no IFF label.
-                var mass = iffComp?.Mass ?? 0f;
-                displayText = grid.Owner == _shuttleEntity ? _shuttles.GetIFFLabel(grid, self: true, component: iffComp) : $"{mass:0.0}";
-            }
-            else
-            {
-                if (iffComp != null && (iffComp.Flags & IFFFlags.HideLabel) != 0x0)
-                    continue;
+            if (iffComp != null && (iffComp.Flags & IFFFlags.HideLabel) != 0x0)
+                continue;
 
-                displayText = _shuttles.GetIFFLabel(grid, self: true, component: iffComp);
-            }
+            displayText = _shuttles.GetIFFLabel(grid, self: true, component: iffComp);
 
             if (string.IsNullOrEmpty(displayText))
                 continue;

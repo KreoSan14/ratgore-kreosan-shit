@@ -145,21 +145,19 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
             var gridBody = bodyQuery.GetComponent(gUid);
             EntManager.TryGetComponent<IFFComponent>(gUid, out var iff);
 
-            if (!selfMassCloaked && !ShuttlesSys.CanDraw(gUid, gridBody, iff))
+            if (!ShuttlesSys.CanDraw(gUid, gridBody, iff))
                 return;
 
-            var labelName = selfMassCloaked
-                ? $"{(iff?.Mass ?? 0f):0.0}"
-                : ShuttlesSys.GetIFFLabel(gUid, self: false, iff);
+            var labelName = ShuttlesSys.GetIFFLabel(gUid, self: false, iff);
 
-            var shouldDrawIFF = selfMassCloaked || (ShowIFF && labelName != null && labelName != "grid");
+            var shouldDrawIFF = ShowIFF && labelName != null && labelName != "grid";
             if (IFFFilter != null)
             {
                 shouldDrawIFF &= IFFFilter(gUid, gComp, iff);
             }
             var gridMatrix = TransformSys.GetWorldMatrix(gUid);
             var matty = Matrix3x2.Multiply(gridMatrix, selfWorldMatrixInvert);
-            var color = selfMassCloaked ? Color.Gray : ShuttlesSys.GetIFFColor(gUid, self: false, iff);
+            var color = ShuttlesSys.GetIFFColor(gUid, self: false, iff);
             shipData data;
             if (!gridData.ContainsKey(gUid))
             {
