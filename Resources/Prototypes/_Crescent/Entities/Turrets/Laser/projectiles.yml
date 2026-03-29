@@ -119,10 +119,6 @@
     energy: 0.5
   - type: TimedDespawn
     lifetime: 5.9 #1062
-  - type: ProjectileSpread
-    proto: BulletRetribution
-    count: 9
-    spread: 3
   - type: Sprite
     sprite: _Crescent/Objects/Turrets/Ammunition/Projectiles/lasers.rsi
     layers:
