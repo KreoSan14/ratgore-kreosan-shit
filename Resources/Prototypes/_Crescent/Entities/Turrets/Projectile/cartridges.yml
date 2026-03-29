@@ -9,7 +9,7 @@
       - Cartridge
       - Cartridge15mm
   - type: CartridgeAmmo
-    deleteOnSpawn: false
+    deleteOnSpawn: true
     proto: Bullet15mmBase
   - type: Sprite
     sprite: _Crescent/Objects/Turrets/Ammunition/Cartridge/harvester.rsi
