@@ -41,10 +41,10 @@
 - type: damageModifierSet #Solid, Shuttle and Reinforced Shuttle Wall
   id: StructuralMetallic
   coefficients:
-    Blunt: 0.5
+    Blunt: 1.0
     Slash: 0.1
     Piercing: 0.1
-    Shock: 1.5
+    Shock: 1.0
     Heat: 1.0
     Structural: 1.0
   flatReductions:

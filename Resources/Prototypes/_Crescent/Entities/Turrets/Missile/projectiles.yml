@@ -305,7 +305,7 @@
         Structural: 600
         Blunt: 200
   - type: TimedDespawn
-    lifetime: 21.7 #2495
+    lifetime: 41.6 #2496
   - type: Sprite
     sprite: _Crescent/Objects/Turrets/Ammunition/Projectiles/arbalest.rsi
     layers:
@@ -326,10 +326,10 @@
     color: Red
   - type: HeatSeeking
     rotationSpeed: 10
-    acceleration: 50
-    topSpeed: 180
+    acceleration: 10
+    topSpeed: 150
     fieldOfView: 20
-    defaultSeekingRange: 1500
+    defaultSeekingRange: 2000
     guidanceAlgorithm: PredictiveGuidance
   - type: Fixtures
     fixtures:
@@ -514,7 +514,7 @@
         Structural: 1000
         Blunt: 200
   - type: TimedDespawn
-    lifetime: 40 #4000
+    lifetime: 66.6 #3996
   - type: Sprite
     sprite: _Crescent/Objects/Turrets/Ammunition/Projectiles/gargoyle.rsi
     layers:
@@ -534,11 +534,11 @@
     visualType: SquareReticle
     color: Red
   - type: HeatSeeking
-    rotationSpeed: 5 #very slow we'll see how it works..
-    acceleration: 25
-    topSpeed: 120
+    rotationSpeed: 20
+    acceleration: 20
+    topSpeed: 130
     fieldOfView: 25
-    defaultSeekingRange: 2000
+    defaultSeekingRange: 3000
     guidanceAlgorithm: PurePursuit
   - type: Fixtures
     fixtures:
@@ -677,7 +677,7 @@
     rotationSpeed: 8
     acceleration: 10
     topSpeed: 200
-    fieldOfView: 10
+    fieldOfView: 25
     defaultSeekingRange: 5000
     guidanceAlgorithm: PredictiveGuidance
   - type: Fixtures

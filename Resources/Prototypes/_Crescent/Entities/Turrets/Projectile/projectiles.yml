@@ -13,7 +13,7 @@
     ignoreWeaponGrid: true
     damage:
       types:
-        Structural: 4
+        Structural: 6
         Piercing: 50
   - type: PointLight
     radius: 3.5
@@ -376,7 +376,7 @@
         Structural: 950
         Piercing: 300
   - type: TimedDespawn
-    lifetime: 20 #2000m
+    lifetime: 13.3 #1995
   - type: Sprite
     sprite: _NF/Objects/SpaceArtillery/630_armorpiercing_shell_casing.rsi
     layers:
