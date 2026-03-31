@@ -3,7 +3,7 @@
 
 - type: vessel
   id: Nova
-  name: NCWL Nova
+  name: ЛРНП Нова
   description: An ultralight communard autocannon platform.
   price: 10000
   category: Small
@@ -12,7 +12,7 @@
 
 - type: gameMap
   id: Nova
-  mapName: 'NCWL Nova'
+  mapName: 'ЛРНП Нова'
   mapPath: /Maps/_Crescent/Shuttles/NCWL/nova.yml
   minPlayers: 0
   stations:
@@ -20,7 +20,7 @@
       stationProto: StandardCrescentVessel
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'NCWL Nova {1}'
+          mapNameTemplate: 'ЛРНП Нова {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'
