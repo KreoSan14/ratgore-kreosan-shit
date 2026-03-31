@@ -40,6 +40,12 @@
         posY: 2000
         IFFColor: White
         IFFFaction: SHI
+      Refuge:
+        gameMapID: Refuge
+        posX: -4142
+        posY: 4629
+        IFFColor: Green
+        IFFFaction: SRM
       Dochenskaya:
         gameMapID: Dochenskaya
         posX: 7500
