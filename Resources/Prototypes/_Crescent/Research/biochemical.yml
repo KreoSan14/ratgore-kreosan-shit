@@ -114,7 +114,7 @@
   id: AutoinjectorsBiochemical
   name: research-technology-biochemical-autoinjectors
   icon:
-    sprite: _Crescent\Objects\Autoinjectors\kaiser.rsi
+    sprite: _Crescent/Objects/Autoinjectors/kaiser.rsi
     state: medipen
   discipline: Biochemical
   tier: 3
