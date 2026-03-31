@@ -1,15 +1,17 @@
-# - type: reaction
-#  id: LotophagoiOil
-#  reactants:
-#    SpaceDrugs:
-#      amount: 1
-#    Cognizine:
-#      amount: 1
-#    Plasma:
-#      amount: 5
-#      catalyst: true
-#  products:
-#    LotophagoiOil: 1
+- type: reaction
+  id: LotophagoiOil
+  reactants:
+    SpaceDrugs:
+      amount: 1
+    THC:
+      amount: 1
+    Beer:
+      amount: 1
+    Plasma:
+      amount: 5
+      catalyst: true
+  products:
+    LotophagoiOil: 3
 
 - type: reaction
   id: CreateNormalityCrystal
@@ -23,8 +25,8 @@
       amount: 5 # DeltaV - Change from 10 to 5 to fit the guidebook recipe
     Blood:
       amount: 5 # DeltaV - Change from 10 to 5 to fit the guidebook recipe
-    Ectoplasm:
-      amount: 5 # DeltaV - Make Normality Crystals need only 5 Ectoplasm, was 10.
+    Omnizine:
+      amount: 5 # Ratgore - Changed due to inability to acquire Ectoplasm in hullrot at all
     Plasma:
       amount: 5 # DeltaV - Change from 10 to 5 to fit the guidebook recipe
       catalyst: true

@@ -515,5 +515,14 @@ Entries:
     id: 68
     time: '2026-03-29T12:14:20.0000000+00:00'
     url: https://github.com/ss14-art/ratgore/pull/91
+  - author: ReWAFFlution
+    changes:
+      - type: Add
+        message: Добавлен Монитор Чанков
+      - type: Fix
+        message: Исправлен Фильтр Чата
+    id: 69
+    time: '2026-03-31T11:48:49.0000000+00:00'
+    url: https://github.com/ss14-art/ratgore/pull/97
 Name: Rat
 Order: -1

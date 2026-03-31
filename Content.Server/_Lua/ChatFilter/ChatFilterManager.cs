@@ -14,12 +14,13 @@ using Robust.Shared.Player;
 using Robust.Shared.Timing;
 using System.Linq;
 using System.Text.RegularExpressions;
+using Robust.Shared.Enums;
 
 #pragma warning disable IDE1006
 namespace Content.Server._Lua.ChatFilter;
 #pragma warning restore IDE1006
 
-public sealed class ChatFilterManager
+public sealed class ChatFilterManager : IPostInjectInit
 {
     [Dependency] private readonly IPlayerManager _playerManager = default!;
     [Dependency] private readonly IEntityManager _entityManager = default!;
@@ -35,6 +36,14 @@ public sealed class ChatFilterManager
     private static readonly TimeSpan MessageHistoryTimeout = TimeSpan.FromSeconds(10);
     private static readonly Regex SingleWordRegex = new(@"^(\w+)$", RegexOptions.Compiled);
     private static readonly Regex WordBoundaryRegex = new(@"\b(\w+)\b", RegexOptions.Compiled);
+
+    void IPostInjectInit.PostInject()
+    { _playerManager.PlayerStatusChanged += OnPlayerStatusChanged; }
+    private void OnPlayerStatusChanged(object? sender, SessionStatusEventArgs e)
+    {
+        if (e.NewStatus != SessionStatus.Disconnected) return;
+        _messageHistory.Remove(e.Session.UserId);
+    }
 
     private static readonly Dictionary<string, string> WordReplacements = new()
     {
@@ -288,10 +297,10 @@ public sealed class ChatFilterManager
         {"админа мамаша"},
         {"мать админа"},
         {"админа мать"},
-        {"zov"},
-        {"з о в"},
-        {"гойда"},
-        {"г о й д а"},
+        // {"zov"},
+        // {"з о в"},
+        // {"гойда"},
+        // {"г о й д а"}, // П.С. Игроки просили, но я осуждаю любые формы пропаганды войны и насилия.
         {"слава гитлеру"},
         {"гитлеру слава"},
         {"гитлеру 1слава"},
@@ -375,9 +384,6 @@ public sealed class ChatFilterManager
         {"z4fuhshqv3"},
         {"ecwipse"},
         {"cwient"},
-        {"это не ддос"},
-        {"не ддос это"},
-        {"ддос не это"},
         {"discowd.gg"},
         {"discord.gg"},
         {"дискорд.гг"},
@@ -385,11 +391,6 @@ public sealed class ChatFilterManager
         {"экспвойты всяческие"},
         {"экспл0йты"},
         {"эксплойты"},
-        {"сталкивались с халатностью администрации"},
-        {"халатность администрации"},
-        {"получали бан без причины"},
-        {"бан без причины"},
-        {"без причины бан"},
         {"арайз"},
         {"araiz"},
         {"araйz"},
@@ -404,15 +405,6 @@ public sealed class ChatFilterManager
         {"c s h"},
         {"ксш"},
         {"к с ш"},
-        {"дискорд сервер"},
-        {"сервер дискорд"},
-        {"другой сервер"},
-        {"лучший сервер"},
-        {"играю на другом"},
-        {"другой проект"},
-        {"наш проект"},
-        {"наш сервер"},
-        {"мой сервер"},
         {"админы даун"},
         {"даун админ"},
         {"админы уебаны"},
@@ -422,14 +414,8 @@ public sealed class ChatFilterManager
         {"говноадмины"},
         {"говно админы"},
         {"админы говно"},
-        {"рейд на сервер"},
         {"рейдим сервер"},
         {"сервер рейдим"},
-        {"набег"},
-        {"набегатор"},
-        {"набегаторы"},
-        {"набег на"},
-        {"на набег"},
         {"устроим набег"},
         {"набег устроим"},
         {"идём на набег"},
@@ -445,6 +431,11 @@ public sealed class ChatFilterManager
         {"ты ебанный нпс"},
         {"ебанный нпс ты"},
         {"ты нпс"},
+        {"discord.gg"},
+        {"дискорд.гг"},
+        {"disc0rd.gg"},
+        {"d1scord.gg"},
+        {"dscd"},
         {"dscrd gg"},
         {"d1scord gg"},
         {"disc0rd gg"},
@@ -463,6 +454,24 @@ public sealed class ChatFilterManager
         {"сын шаболды"},
         {"шаболды сын"},
         {"педалька"},
+        {"пзс"},
+        {"п з с"},
+        {"пзc"},
+        {"п з c"},
+        {"卐"}, // Я осуждаю нацизм. Fuck it.
+        {"卍"},
+        {"ꖦ" },
+        {"ᛋᛋ"},
+        {"robusterhome"},
+        {"t.me/robusterhome"},
+        {"dobriykaban"},
+        {"FuDMkNtFaX"},
+        {"flat earth" },
+        {"flаt еаrth" },
+        {"путин"},
+        {"марсей"},
+        {"мaрсей" },
+        {"ср сквад"}
     };
 
     private static readonly List<Regex> ProhibitedPatterns = new()
@@ -583,8 +592,14 @@ public sealed class ChatFilterManager
         history.Enqueue((normalized, currentTime));
         while (history.Count > MessageHistorySize) history.Dequeue();
         if (history.Count < MaxRepeatedMessages) return false;
-        var lastMessages = history.TakeLast(MaxRepeatedMessages).ToList();
-        return lastMessages.All(m => m.Message == normalized);
+        string? a = null, b = null, c = null;
+        foreach (var entry in history)
+        {
+            a = b;
+            b = c;
+            c = entry.Message;
+        }
+        return a == normalized && b == normalized && c == normalized;
     }
 
     private void LogAndNotify(EntityUid source, string message)
