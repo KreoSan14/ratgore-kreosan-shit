@@ -533,5 +533,12 @@ Entries:
     id: 70
     time: '2026-03-31T11:50:11.0000000+00:00'
     url: https://github.com/ss14-art/ratgore/pull/93
+  - author: freycyik
+    changes:
+      - type: Add
+        message: Добавлены ухудшенные в два раза автоинжекторы интердайна всем фракциям. Изучаются как Т3 технология и делаются в микрокузне
+    id: 71
+    time: '2026-04-01T13:12:14.0000000+00:00'
+    url: https://github.com/ss14-art/ratgore/pull/95
 Name: Rat
 Order: -1
