@@ -162,6 +162,17 @@
   - StoreCategorySRMAmmo
 
 - type: listing
+  id: StoreListingSRMSniperAmmo
+  name: Ящик магазинов к снайперской винтовки
+  description: Ящик с нексколькими магазинами для снайперской винтовки АВР-Н Император.
+  icon: { sprite: _Crescent/Ammunition/conscript_ammo_box.rsi, state: base }
+  productEntity: CrateSRMSniperMag
+  cost:
+    PietySRM: 1
+  categories:
+  - StoreCategorySRMAmmo
+
+- type: listing
   id: StoreListingSRMSumimotoLow
   name: Партия маломощных боеприпасов "Сумимото"
   description: Партия ракет малой мощности "Сумимото".
