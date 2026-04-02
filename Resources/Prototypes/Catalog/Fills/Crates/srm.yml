@@ -211,7 +211,7 @@
 - type: entity
   id: CrateSRMShotgunAMMOShipment
   parent: CrateGenericSteel
-  name: IRM DA-13 Reno Shipment
+  name: Shotgun Shell Boxes Shipment
   description: A crate with six shotgun shell boxes. Special for The Hunt!
   components:
   - type: StorageFill
