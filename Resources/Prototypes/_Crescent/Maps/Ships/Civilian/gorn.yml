@@ -1,0 +1,37 @@
+# Author Info
+# Discord: [okhrimm]
+
+- type: vessel
+  id: Gorn
+  name: ГПИ Горн
+  description: |
+    Промышленное судно небольшого размера. «Горн» отличается от стандартных добывающих шаттлов мощной буровой системой, наличием системы обработкой полезных ископаемых а так же повышенной маневренностью.
+    СНАРЯЖЕНИЕ: 2x ТПШ 250с "Экскаватор" кинетический импульсатор
+    МИНИМАЛЬНЫЙ ЭКИПАЖ: 1 пилот
+  price: 34000
+  category: Small
+  group: Civilian
+  path: /Maps/_Crescent/Shuttles/Civilian/gorn.yml
+
+- type: gameMap
+  id: Gorn
+  mapName: 'ГПИ Горн'
+  mapPath: /Maps/_Crescent/Shuttles/Civilian/gorn.yml
+  minPlayers: 0
+  stations:
+    Gorn:
+      stationProto: StandardCrescentExpeditionVessel
+      components:
+        - type: VesselIcon
+          iffIcon:
+            sprite: _Crescent/ShipIcons/ifficons.rsi
+            state: civilian
+        - type: StationNameSetup
+          mapNameTemplate: 'ГПИ Горн {1}'
+          nameGenerator:
+           !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: VesselDesignation
+          designation: vessel-designation-mining
+        - type: VesselDescription
+          description: Добро пожаловать в ваш личный шахтерский рай.
