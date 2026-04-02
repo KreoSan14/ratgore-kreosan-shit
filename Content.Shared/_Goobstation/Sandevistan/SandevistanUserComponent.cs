@@ -42,7 +42,7 @@ public sealed partial class SandevistanUserComponent : Component
     public float LoadPerActiveSecond = 1f;
 
     [DataField]
-    public float LoadPerInactiveSecond = -0.15f;
+    public float LoadPerInactiveSecond = -0.10f;
 
     [DataField]
     public SortedDictionary<SandevistanState, FixedPoint2> Thresholds = new()
@@ -64,7 +64,7 @@ public sealed partial class SandevistanUserComponent : Component
     {
         DamageDict = new Dictionary<string, FixedPoint2>
         {
-            { "Blunt", 15 },
+            { "Blunt", 20 },
         },
     };
 

@@ -8,9 +8,9 @@
       - type: OniDamageModifier
         modifiers:
           coefficients:
-            Blunt: 1.25
-            Slash: 1.35
-            Piercing: 1.25
+            Blunt: 1.15
+            Slash: 1.25
+            Piercing: 1.15
   requirements:
     - !type:CharacterSpeciesRequirement
       species:
@@ -33,9 +33,9 @@
       - type: OniDamageModifier
         modifiers:
           coefficients:
-            Blunt: 1.25
-            Slash: 1.25
-            Piercing: 1.35
+            Blunt: 1.15
+            Slash: 1.15
+            Piercing: 1.25
   requirements:
     - !type:CharacterSpeciesRequirement
       species:
@@ -57,9 +57,9 @@
       - type: OniDamageModifier
         modifiers:
           coefficients:
-            Blunt: 1.30
-            Slash: 1.30
-            Piercing: 1.30
+            Blunt: 1.20
+            Slash: 1.20
+            Piercing: 1.20
   requirements:
     - !type:CharacterSpeciesRequirement
       species:
