@@ -203,6 +203,7 @@ namespace Content.Client.Options.UI.Tabs
             var isTTSVolumeSame =
                 Math.Abs(TTSVolumeSlider.Value - _cfg.GetCVar(ArtCVars.TTSVolume) * 100f / ContentAudioSystem.TTSMultiplier) < 0.01f; // Art-TTS
 
+            var isTTSSoundsSame = TTSSoundsCheckBox.Pressed == _cfg.GetCVar(CCVars.TTSSoundsEnabled);
             var isAmbientSoundsSame = (int)AmbienceSoundsSlider.Value == _cfg.GetCVar(CCVars.MaxAmbientSources);
             var isCombatSame = CombatMusicCheckBox.Pressed == _cfg.GetCVar(CCVars.CombatMusicEnabled);
             var isLobbySame = LobbyMusicCheckBox.Pressed == _cfg.GetCVar(CCVars.LobbyMusicEnabled);
@@ -213,7 +214,7 @@ namespace Content.Client.Options.UI.Tabs
             var isEverythingSame = isMasterVolumeSame && isMidiVolumeSame && isAmbientVolumeSame && isCombatMusicVolumeSame
                 && isAmbientMusicVolumeSame && isAmbientSoundsSame && isCombatSame && isLobbySame && isRestartSoundsSame && isEventSame
                 && isAnnouncerDisableMultipleSoundsSame && isAdminSoundsSame && isLobbyVolumeSame
-                && isInterfaceVolumeSame && isAnnouncerVolumeSame;
+                && isInterfaceVolumeSame && isAnnouncerVolumeSame && isTTSVolumeSame && isTTSSoundsSame;
             ApplyButton.Disabled = isEverythingSame;
             ResetButton.Disabled = isEverythingSame;
             MasterVolumeLabel.Text =
