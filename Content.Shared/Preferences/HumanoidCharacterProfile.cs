@@ -1,5 +1,6 @@
 using System.Linq;
 using System.Text.RegularExpressions;
+using Content.Shared._Art.TTS; // Art-TTS
 using Content.Shared.CCVar;
 using Content.Shared.Clothing.Loadouts.Prototypes;
 using Content.Shared.Clothing.Loadouts.Systems;
@@ -91,6 +92,11 @@ public sealed partial class HumanoidCharacterProfile : ICharacterProfile
     [DataField]
     public Sex Sex { get; private set; } = Sex.Male;
 
+    // Art-TTS Start
+    [DataField]
+    public string Voice { get; set; } = SharedHumanoidAppearanceSystem.DefaultVoice;
+    // Art-TTS End
+
     [DataField]
     public Gender Gender { get; private set; } = Gender.Male;
 
@@ -154,6 +160,7 @@ public sealed partial class HumanoidCharacterProfile : ICharacterProfile
         float width,
         int age,
         Sex sex,
+        string voice, // Art-TTS
         Gender gender,
         string? displayPronouns,
         string? stationAiName,
@@ -183,6 +190,7 @@ public sealed partial class HumanoidCharacterProfile : ICharacterProfile
         Width = width;
         Age = age;
         Sex = sex;
+        Voice = voice; // Art-TTS
         Gender = gender;
         DisplayPronouns = displayPronouns;
         StationAiName = stationAiName;
@@ -215,6 +223,7 @@ public sealed partial class HumanoidCharacterProfile : ICharacterProfile
             other.Width,
             other.Age,
             other.Sex,
+            other.Voice, // Art-TTS
             other.Gender,
             other.DisplayPronouns,
             other.StationAiName,
@@ -313,12 +322,19 @@ public sealed partial class HumanoidCharacterProfile : ICharacterProfile
                 break;
         }
 
+        // Art-TTS Start
+        var voiceId = random.Pick(prototypeManager
+        .EnumeratePrototypes<TTSVoicePrototype>()
+        .Where(o => CanHaveVoice(o, sex)).ToArray()).ID;
+        // Art-TTS End
+
         var name = GetName(species, gender);
 
         return new HumanoidCharacterProfile()
         {
             Name = name,
             Sex = sex,
+            Voice = voiceId, // Art-TTS
             Age = age,
             Gender = gender,
             Species = species,
@@ -343,6 +359,10 @@ public sealed partial class HumanoidCharacterProfile : ICharacterProfile
 
     // EE - Contractors Change End
     public HumanoidCharacterProfile WithSex(Sex sex) => new(this) { Sex = sex };
+
+    // Art-TTS Start
+    public HumanoidCharacterProfile WithVoice(string voice) => new(this) { Voice = voice };
+    // Art-TTS End
     public HumanoidCharacterProfile WithGender(Gender gender) => new(this) { Gender = gender };
 
     public HumanoidCharacterProfile WithDisplayPronouns(string? displayPronouns) =>
@@ -445,6 +465,7 @@ public string Summary =>
             && Name == other.Name
             && Age == other.Age
             && Sex == other.Sex
+            && Voice == other.Voice // Art-TTS
             && Gender == other.Gender
             && Species == other.Species
             // EE - Contractors Change Start
@@ -631,7 +652,22 @@ public string Summary =>
 
         _loadoutPreferences.Clear();
         _loadoutPreferences.UnionWith(loadouts);
+        // Art-TTS Start
+        prototypeManager.TryIndex<TTSVoicePrototype>(Voice, out var voice);
+        if (voice == null || !CanHaveVoice(voice, Sex))
+            Voice = SharedHumanoidAppearanceSystem.DefaultSexVoice[sex];
+        // Art-TTS End
     }
+
+    // Art-TTS Start
+    public static bool CanHaveVoice(TTSVoicePrototype voice, Sex sex)
+    {
+        return voice.RoundStart
+        && (sex == Sex.Unsexed
+        || voice.Sex == sex
+        || voice.Sex == Sex.Unsexed);
+    }
+    // Art-TTS End
 
     public ICharacterProfile Validated(ICommonSession session, IDependencyCollection collection)
     {
@@ -668,6 +704,7 @@ public string Summary =>
         hashCode.Add(Lifepath);
         hashCode.Add(Age);
         hashCode.Add((int) Sex);
+        hashCode.Add(Voice); // Art-TTS
         hashCode.Add((int) Gender);
         hashCode.Add(Appearance);
         hashCode.Add((int) SpawnPriority);

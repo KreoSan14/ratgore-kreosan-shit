@@ -1,3 +1,4 @@
+using Content.Server._Art.TTS; // Art-TTS
 using Content.Server._Lua.ChatFilter; // Lua
 using Content.Server.Administration;
 using Content.Server.Administration.Logs;
@@ -81,6 +82,7 @@ namespace Content.Server.IoC
             IoCManager.Register<SponsorManager>(); // Forge-Change
             IoCManager.Register<ISharedSponsorManager, SponsorManager>(); // Forge-Change
             IoCManager.Register<JoinQueueManager>();
+            IoCManager.Register<TTSManager>(); // Art-TTS
         }
     }
 }
