@@ -257,7 +257,7 @@
   id: StoreListingSRMStimpack
   name: Инъектор гиперзина
   description: Инъектор гиперзина, полученный по тайным каналам связи с чёрного рынка.
-  icon: { sprite: Objects/Specific/Medical/stimpen.rsi, state: icon }
+  icon: { sprite: Objects/Specific/Medical/medipen.rsi, state: stimpen }
   productEntity: Stimpack
   cost:
     PietySRM: 1
@@ -268,7 +268,7 @@
   id: StoreListingSRMKaiserAutoinjector
   name: Автоинъектор "Кайзер"
   description: Крайне мощный боевой наркотик, полученный нелегальным путём через агентов охоты.
-  icon: { sprite: _Crescent/Objects/Autoinjectors/kaiser.rsi/medipen.png, state: icon }
+  icon: { sprite: _Crescent/Objects/Autoinjectors/kaiser.rsi, state: medipen }
   productEntity: KaiserAutoinjector
   cost:
     PietySRM: 12
@@ -279,7 +279,7 @@
   id: StoreListingSRMMechanites
   name: Инъектор механитов
   description: Химический коктейль из механитов, предназначенный для локализации вокруг повреждённых частей тела на субмолекулярном уровне.
-  icon: { sprite: _Crescent/Objects/Autoinjectors/mechanites.rsi/medipen.png, state: icon }
+  icon: { sprite: _Crescent/Objects/Autoinjectors/mechanites.rsi, state: medipen }
   productEntity: MechaniteAutoinjector
   cost:
     PietySRM: 2
