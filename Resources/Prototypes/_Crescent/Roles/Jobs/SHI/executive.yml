@@ -8,6 +8,7 @@
   alwaysUseSpawner: true
   requireAdminNotify: true
   icon: "JobIconExecutive"
+  whitelisted: true # Rat
   supervisors: job-supervisors-shi
   canBeAntag: false
   requirements:

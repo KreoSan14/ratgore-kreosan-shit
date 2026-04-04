@@ -17,6 +17,7 @@
   startingGear: TenderGear
   alwaysUseSpawner: true
   requireAdminNotify: false
+  whitelisted: true # Rat
   icon: "JobIconTender"
   supervisors: job-supervisors-srm-hunters
   canBeAntag: false

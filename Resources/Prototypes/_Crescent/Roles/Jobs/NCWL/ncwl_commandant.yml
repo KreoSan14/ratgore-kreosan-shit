@@ -16,6 +16,7 @@
   weight: 102
   startingGear: CommandantNCWLGear
   alwaysUseSpawner: true
+  whitelisted: true # Rat
   requireAdminNotify: false
   icon: "JobIconNCWLFactionLeader"
   supervisors: job-supervisors-highcomm

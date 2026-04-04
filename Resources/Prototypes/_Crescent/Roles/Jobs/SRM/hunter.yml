@@ -28,6 +28,7 @@
   weight: 3
   startingGear: HunterGear
   alwaysUseSpawner: true
+  whitelisted: true # Rat
   requireAdminNotify: false
   icon: "JobIconHunter"
   supervisors: job-supervisors-srm-hunters

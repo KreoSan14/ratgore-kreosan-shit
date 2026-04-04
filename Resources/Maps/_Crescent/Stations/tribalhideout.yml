@@ -18455,7 +18455,7 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 9.5,5.5
       parent: 1
-- proto: ComputerIFFSyndicate
+- proto: ComputerMassCloak
   entities:
   - uid: 673
     components:
@@ -18463,10 +18463,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 9.5,4.5
       parent: 1
-    - type: IFFConsole
-      heatDissipation: 0
-      heatGeneration: 0
-      heatCapacity: 1000000
 - proto: ComputerShipyardCrescent
   entities:
   - uid: 674

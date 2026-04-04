@@ -15411,19 +15411,14 @@ entities:
       rot: 3.141592653589793 rad
       pos: -9.5,-19.5
       parent: 1
-- proto: ComputerIFFPOI
+- proto: ComputerMassCloak
   entities:
   - uid: 1302
     components:
-    - type: MetaData
-      name: refuge IFF computer
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 0.5,8.5
       parent: 1
-    - type: IFFConsole
-      heatGeneration: 0
-      heatCapacity: 3
 - proto: ComputerPalletConsoleNFVeryLowMarket
   entities:
   - uid: 1303

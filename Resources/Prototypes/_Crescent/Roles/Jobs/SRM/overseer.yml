@@ -16,6 +16,7 @@
   weight: 100
   startingGear: OverseerGear
   alwaysUseSpawner: true
+  whitelisted: true # Rat
   requireAdminNotify: false
   icon: "JobIconOverseer"
   supervisors: job-supervisors-srm-overseer

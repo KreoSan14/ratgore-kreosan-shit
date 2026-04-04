@@ -6,6 +6,7 @@
   weight: 12
   startingGear: RingleaderGear
   alwaysUseSpawner: true
+  whitelisted: true # Rat
   requireAdminNotify: true
   icon: "JobIconSyndieRingleader"
   supervisors: You're the defacto leader of the Taypani Free Stations Coalition, whether by charm or by firepower. You answer to money and personal interests.

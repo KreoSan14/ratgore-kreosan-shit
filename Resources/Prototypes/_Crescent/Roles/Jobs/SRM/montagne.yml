@@ -16,6 +16,7 @@
   weight: 99
   startingGear: MontagneGear
   alwaysUseSpawner: true
+  whitelisted: true # Rat
   requireAdminNotify: false
   icon: "JobIconMontagne"
   supervisors: job-supervisors-srm-leaders
