@@ -28,7 +28,7 @@
             MontagneSRM: [ 1, 1 ]
             HunterSRM: [ 4, 4 ]
             TenderSRM: [ 1, 1 ]
-            AcolyteSRM: [ 5, 5 ]
+            AcolyteSRM: [ 3, 3 ]
 
 - type: gameMap
   id: GliessSanto
