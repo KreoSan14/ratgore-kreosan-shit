@@ -37,6 +37,13 @@ public abstract partial class SharedEntityStorageComponent : Component
     public int Capacity = 30;
 
     /// <summary>
+    /// Maximum number of mobs (entities with BodyComponent) that can be stored.
+    /// -1 means no mob-specific limit (uses general Capacity).
+    /// </summary>
+    [DataField, ViewVariables(VVAccess.ReadWrite)]
+    public int MaxMobCount = -1;
+
+    /// <summary>
     /// Whether or not the entity still has collision when open
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
