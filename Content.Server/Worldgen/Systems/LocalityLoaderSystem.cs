@@ -33,8 +33,7 @@ public sealed class LocalityLoaderSystem : BaseWorldSystem
             {
                 for (var j = -1; j < 2 && !done; j++)
                 {
-                    if (!controller.Chunks.TryGetValue(coords + (i, j), out var chunk))
-                        continue;
+                    var chunk = GetOrCreateChunk(coords + (i, j), xform.MapUid!.Value, controller);
                     if (!loadedQuery.TryGetComponent(chunk, out var loaded) || loaded.Loaders is null)
                         continue;
 

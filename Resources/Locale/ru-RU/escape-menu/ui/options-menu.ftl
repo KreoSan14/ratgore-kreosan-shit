@@ -206,7 +206,6 @@ ui-options-function-window-close-all = Закрыть все окна
 ui-options-function-window-close-recent = Закрыть последнее окно
 ui-options-function-show-escape-menu = Показать игровое меню
 ui-options-function-escape-context = Закрыть окно или показать игровое меню
-ui-options-function-open-chunk-monitor = Открыть монитор чанков
 
 ui-options-function-take-screenshot = Сделать скриншот
 ui-options-function-take-screenshot-no-ui = Сделать скриншот (без интерфейса)

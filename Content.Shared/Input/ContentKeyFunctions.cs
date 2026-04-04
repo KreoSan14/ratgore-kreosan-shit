@@ -50,7 +50,6 @@ namespace Content.Shared.Input
         public static readonly BoundKeyFunction OpenTileSpawnWindow = "OpenTileSpawnWindow";
         public static readonly BoundKeyFunction OpenDecalSpawnWindow = "OpenDecalSpawnWindow";
         public static readonly BoundKeyFunction OpenAdminMenu = "OpenAdminMenu";
-        public static readonly BoundKeyFunction OpenChunkMonitor = "OpenChunkMonitor"; // Lua
         public static readonly BoundKeyFunction TakeScreenshot = "TakeScreenshot";
         public static readonly BoundKeyFunction TakeScreenshotNoUI = "TakeScreenshotNoUI";
         public static readonly BoundKeyFunction ToggleFullscreen = "ToggleFullscreen";

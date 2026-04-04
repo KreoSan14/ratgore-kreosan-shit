@@ -1,5 +1,4 @@
-﻿using Content.Server._Lua.Administration.UI;
-using Content.Server.Worldgen.Systems;
+﻿using Content.Server.Worldgen.Systems;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 
@@ -9,7 +8,7 @@ namespace Content.Server.Worldgen.Components;
 ///     This is used for controlling overall world loading, containing an index of all chunks in the map.
 /// </summary>
 [RegisterComponent]
-[Access(typeof(WorldControllerSystem), typeof(LocalityLoaderSystem), typeof(ChunkMonitorEui))]
+[Access(typeof(WorldControllerSystem))]
 public sealed partial class WorldControllerComponent : Component
 {
     /// <summary>
