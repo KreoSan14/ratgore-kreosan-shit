@@ -918,6 +918,9 @@
   - type: Tag
     tags:
     - Multitool
+    storedSprite:
+      sprite: _Crescent/Objects/Tools/New_Tools/handyman.rsi
+      state: Handyman-screw
   - type: Prying
     enabled: false
   - type: Tool
