@@ -563,5 +563,14 @@ Entries:
     id: 74
     time: '2026-04-04T10:29:58.0000000+00:00'
     url: https://github.com/ss14-art/ratgore/pull/104
+  - author: Gorox
+    changes:
+      - type: Add
+        message: Добавлен режим стримера. Игрок с включенным режимом стримера не видит плохих слов, запрещенных на твиче.
+      - type: Tweak
+        message: Плохие слова больше не заменяются для людей без режима стримера
+    id: 75
+    time: '2026-04-05T10:26:19.0000000+00:00'
+    url: https://github.com/ss14-art/ratgore/pull/106
 Name: Rat
 Order: -1
