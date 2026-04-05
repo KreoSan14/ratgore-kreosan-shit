@@ -267,8 +267,8 @@
           ents: []
     - type: Gun
       fireOnDropChance: 0
-      projectileSpeed: 160
-      fireRate: 1.2
+      projectileSpeed: 60
+      fireRate: 0.2
       selectedMode: FullAuto
       availableModes:
         - FullAuto
@@ -318,7 +318,7 @@
           ents: []
     - type: Gun
       fireOnDropChance: 0
-      projectileSpeed: 180
+      projectileSpeed: 115
       fireRate: 1.5
       selectedMode: FullAuto
       availableModes:
@@ -428,8 +428,8 @@
       zeroVisible: true
     - type: Gun
       fireOnDropChance: 0
-      projectileSpeed: 120
-      fireRate: 0.25
+      projectileSpeed: 60
+      fireRate: 0.1
       selectedMode: FullAuto
       availableModes:
         - FullAuto
@@ -485,7 +485,7 @@
       zeroVisible: true
     - type: Gun
       fireOnDropChance: 0
-      projectileSpeed: 110
+      projectileSpeed: 100
       fireRate: 0.2
       selectedMode: FullAuto
       availableModes:
@@ -542,8 +542,8 @@
           ents: []
     - type: Gun
       fireOnDropChance: 0
-      projectileSpeed: 200
-      fireRate: 0.35
+      projectileSpeed: 60
+      fireRate: 0.1
       selectedMode: FullAuto
       availableModes:
         - FullAuto
@@ -551,8 +551,7 @@
     - type: BallisticAmmoProvider
       cycleable: false
       capacity: 3
-      fillWithDoAfter: true
-      fillDelay: 2
+      fillWithDoAfter: false
       proto: Cartridge95mmRocketNCWL
       whitelist:
         tags:
