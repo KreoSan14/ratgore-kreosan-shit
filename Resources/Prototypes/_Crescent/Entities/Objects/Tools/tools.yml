@@ -57,7 +57,6 @@
       path: /Audio/Items/wirecutter.ogg
   - type: Item
     sprite: _Crescent/Objects/Tools/New_Tools/wirecutter.rsi
-    storedRotation: -90
   - type: ToolTileCompatible
   - type: PhysicalComposition
     materialComposition:
@@ -915,6 +914,7 @@
     state: Handyman-screw
   - type: Item
     size: Normal
+    sprite: _Crescent/Objects/Tools/New_Tools/handyman.rsi
   - type: Tag
     tags:
     - Multitool
