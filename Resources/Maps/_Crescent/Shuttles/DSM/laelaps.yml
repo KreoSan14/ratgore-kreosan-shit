@@ -4,7 +4,7 @@ meta:
   engineVersion: 268.1.0
   forkId: ""
   forkVersion: ""
-  time: 03/29/2026 02:42:39
+  time: 04/02/2026 19:27:15
   entityCount: 1157
 maps: []
 grids:
@@ -577,6 +577,17 @@ entities:
             2519: 0,29
             2527: 1,29
             2540: -1,29
+            2594: -9,3
+            2597: -8,1
+            2603: -7,14
+            2608: -6,10
+            2613: -6,11
+            2616: -5,0
+            2619: -2,-1
+            2627: 0,28
+            2635: 0,29
+            2643: 1,29
+            2656: -1,29
         - node:
             zIndex: 1
             id: LatticeCornerNW
@@ -775,6 +786,17 @@ entities:
             2522: 0,29
             2530: 1,29
             2543: -1,29
+            2569: 5,0
+            2574: 6,10
+            2579: 6,11
+            2582: 7,14
+            2585: 8,1
+            2591: 9,3
+            2622: 2,-1
+            2630: 0,28
+            2638: 0,29
+            2646: 1,29
+            2659: -1,29
         - node:
             zIndex: 1
             id: LatticeCornerSE
@@ -970,6 +992,17 @@ entities:
             2546: -1,30
             2551: -4,38
             2554: -3,40
+            2600: -8,9
+            2606: -6,10
+            2611: -6,11
+            2625: 0,28
+            2633: 0,29
+            2641: 1,29
+            2649: 1,30
+            2654: -1,29
+            2662: -1,30
+            2667: -4,38
+            2670: -3,40
         - node:
             zIndex: 1
             id: LatticeCornerSW
@@ -1165,6 +1198,17 @@ entities:
             2548: -1,30
             2563: 3,40
             2566: 4,38
+            2573: 6,10
+            2578: 6,11
+            2588: 8,9
+            2629: 0,28
+            2637: 0,29
+            2645: 1,29
+            2651: 1,30
+            2658: -1,29
+            2664: -1,30
+            2679: 3,40
+            2682: 4,38
         - node:
             id: LatticeEdgeE
           decals:
@@ -1547,6 +1591,25 @@ entities:
             2555: -1,32
             2557: 0,32
             2559: 1,32
+            2592: -9,3
+            2595: -8,1
+            2599: -8,9
+            2601: -7,14
+            2605: -6,10
+            2610: -6,11
+            2614: -5,0
+            2617: -2,-1
+            2624: 0,28
+            2632: 0,29
+            2640: 1,29
+            2648: 1,30
+            2653: -1,29
+            2661: -1,30
+            2666: -4,38
+            2669: -3,40
+            2671: -1,32
+            2673: 0,32
+            2675: 1,32
         - node:
             id: LatticeEdgeN
           decals:
@@ -1910,6 +1973,24 @@ entities:
             2518: 0,29
             2526: 1,29
             2539: -1,29
+            2567: 5,0
+            2571: 6,10
+            2576: 6,11
+            2580: 7,14
+            2583: 8,1
+            2589: 9,3
+            2593: -9,3
+            2596: -8,1
+            2602: -7,14
+            2607: -6,10
+            2612: -6,11
+            2615: -5,0
+            2618: -2,-1
+            2620: 2,-1
+            2626: 0,28
+            2634: 0,29
+            2642: 1,29
+            2655: -1,29
         - node:
             id: LatticeEdgeS
           decals:
@@ -2243,6 +2324,22 @@ entities:
             2552: -3,40
             2561: 3,40
             2564: 4,38
+            2570: 6,10
+            2575: 6,11
+            2586: 8,9
+            2598: -8,9
+            2604: -6,10
+            2609: -6,11
+            2623: 0,28
+            2631: 0,29
+            2639: 1,29
+            2647: 1,30
+            2652: -1,29
+            2660: -1,30
+            2665: -4,38
+            2668: -3,40
+            2677: 3,40
+            2680: 4,38
         - node:
             id: LatticeEdgeW
           decals:
@@ -2625,6 +2722,25 @@ entities:
             2560: 1,32
             2562: 3,40
             2565: 4,38
+            2568: 5,0
+            2572: 6,10
+            2577: 6,11
+            2581: 7,14
+            2584: 8,1
+            2587: 8,9
+            2590: 9,3
+            2621: 2,-1
+            2628: 0,28
+            2636: 0,29
+            2644: 1,29
+            2650: 1,30
+            2657: -1,29
+            2663: -1,30
+            2672: -1,32
+            2674: 0,32
+            2676: 1,32
+            2678: 3,40
+            2681: 4,38
         - node:
             color: '#FFFFFFFF'
             id: TechE
@@ -4170,7 +4286,7 @@ entities:
     - type: ApcPowerReceiver
       powerLoad: 1000
     - type: Battery
-      startingCharge: 363.78284
+      startingCharge: 240.95561
     - type: ApcPowerReceiverBattery
       enabled: True
 - proto: Bed
@@ -6099,14 +6215,14 @@ entities:
     - type: TargetingConsole
       cannonGroups:
         all:
+        - 162
         - 163
         - 164
-        - 162
-        95mm 'Arbalest' Medium Missile System:
-        - 163
-        - 162
         330mm 'Catapult' Cruise Missile Platform:
         - 164
+        95mm 'Arbalest' Medium Missile System:
+        - 162
+        - 163
 - proto: ConveyorBelt
   entities:
   - uid: 526
@@ -10230,32 +10346,34 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 4.5,4.5
       parent: 1
-- proto: WeaponTurretSmallLaserPD
+- proto: WeaponTurretRetribution
   entities:
   - uid: 1147
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -6.5,21.5
+      rot: 3.141592653589793 rad
+      pos: 7.5,21.5
       parent: 1
-    - type: PointCannon
-      linkedConsoleId: 525
     - type: ApcPowerReceiver
-      powerLoad: 5
+      powerLoad: 1000
     - type: Battery
-      startingCharge: 0
+      startingCharge: 965.1624
+    - type: ApcPowerReceiverBattery
+      enabled: True
   - uid: 1148
     components:
     - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 7.5,21.5
+      rot: 3.141592653589793 rad
+      pos: -6.5,21.5
       parent: 1
-    - type: PointCannon
-      linkedConsoleId: 525
     - type: ApcPowerReceiver
-      powerLoad: 5
+      powerLoad: 1000
     - type: Battery
-      startingCharge: 0
+      startingCharge: 960.66187
+    - type: ApcPowerReceiverBattery
+      enabled: True
+- proto: WeaponTurretSmallLaserPD
+  entities:
   - uid: 1149
     components:
     - type: Transform
