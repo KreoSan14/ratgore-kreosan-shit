@@ -172,7 +172,7 @@
 
 - type: entity
   name: SHI-UA SH-13Lvr blaster 18.5g
-  parent: [BaseItem, BaseGunWieldable, StreeCredRedeemable]
+  parent: [BaseItem, BaseGunWieldable]
   id: WeaponShotgunBlaster
   description: A large and very oddly designed lever-action shotgun fed by 18.5 gauge clips. Designed and manfucatured by United Arsenal for Shinoharas BudgetArms line.
   components:
@@ -264,7 +264,7 @@
 
 - type: entity
   name: SHI M135 Double-Barrel 12g
-  parent: [BaseWeaponShotgun, BaseGunWieldable, StreeCredRedeemable]
+  parent: [BaseWeaponShotgun, BaseGunWieldable]
   id: WeaponShotgunSHIDoubleBarreled4g
   description: A cheap, oversized shotgun. Manufactured by Shinora for their BudgetArms line. Chambered in 12g shells.
   components:
