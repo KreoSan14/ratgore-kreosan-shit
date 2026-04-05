@@ -371,13 +371,13 @@
     tags:
     - Crowbar
   - type: Sprite
-    sprite: \_Crescent\Objects\Tools\New_Tools\halligan.rsi
+    sprite: \Objects\Tools\New_Tools\halligan.rsi
     state: icon
   - type: Item
-    sprite: \_Crescent\Objects\Tools\New_Tools\halligan.rsi
+    sprite: \Objects\Tools\New_Tools\halligan.rsi
     size: Huge
     storedSprite:
-      sprite: \_Crescent\Objects\Tools\New_Tools\halligan.rsi
+      sprite: \Objects\Tools\New_Tools\halligan.rsi
       state: icon
   - type: MeleeWeapon
     wideAnimationRotation: -135
@@ -458,13 +458,13 @@
     tags:
     - Crowbar
   - type: Sprite
-    sprite: \_Crescent\Objects\Tools\New_Tools\willyjack.rsi
+    sprite: \Objects\Tools\New_Tools\willyjack.rsi
     state: icon
   - type: Item
-    sprite: \_Crescent\Objects\Tools\New_Tools\willyjack.rsi
+    sprite: \Objects\Tools\New_Tools\willyjack.rsi
     size: Huge
     storedSprite:
-      sprite: \_Crescent\Objects\Tools\New_Tools\willyjack.rsi
+      sprite: \Objects\Tools\New_Tools\willyjack.rsi
       state: icon
   - type: MeleeWeapon
     wideAnimationRotation: -135
@@ -652,10 +652,10 @@
     tags:
     - Powerdrill
   - type: Sprite
-    sprite: \_Crescent\Objects\Tools\New_Tools\drill.rsi
+    sprite: \Objects\Tools\New_Tools\drill.rsi
     state: drill_screw
   - type: Item
-    sprite: \_Crescent\Objects\Tools\New_Tools\drill.rsi
+    sprite: \Objects\Tools\New_Tools\drill.rsi
     size: Small
     state: drill_screw
   - type: Tool
@@ -668,7 +668,7 @@
     entries:
       - behavior: Screwing
         sprite:
-          sprite: \_Crescent\Objects\Tools\New_Tools\drill.rsi
+          sprite: \Objects\Tools\New_Tools\drill.rsi
           state: drill_screw
         useSound:
           path: /Audio/Items/drill_use.ogg
@@ -676,7 +676,7 @@
           path: /Audio/Items/change_drill.ogg
       - behavior: Anchoring
         sprite:
-          sprite: \_Crescent\Objects\Tools\New_Tools\drill.rsi
+          sprite: \Objects\Tools\New_Tools\drill.rsi
           state: drill_bolt
         useSound:
           path: /Audio/Items/drill_use.ogg
@@ -952,7 +952,7 @@
     entries:
       - behavior: Screwing
         sprite:
-          sprite: \_Crescent\Objects\Tools\New_Tools\handyman.rsi
+          sprite: \Objects\Tools\New_Tools\handyman.rsi
           state: Handyman-screw
           useSound:
             collection: Screwdriver
@@ -960,7 +960,7 @@
           path: /Audio/SimpleStation14/Items/Handling/disk_pickup.ogg
       - behavior: Cutting
         sprite:
-          sprite: \_Crescent\Objects\Tools\New_Tools\handyman.rsi
+          sprite: \Objects\Tools\New_Tools\handyman.rsi
           state: Handyman-cutters
         useSound:
           path: /Audio/Items/wirecutter.ogg
@@ -968,7 +968,7 @@
           path: /Audio/SimpleStation14/Items/Handling/disk_pickup.ogg
       - behavior: Cutting
         sprite:
-          sprite: \_Crescent\Objects\Tools\New_Tools\handyman.rsi
+          sprite: \Objects\Tools\New_Tools\handyman.rsi
           state: Handyman-knife
         useSound:
           path: /Audio/Items/wirecutter.ogg
@@ -1031,13 +1031,13 @@
   description: Part of the Shinoharas latest civilian tools line, Basic Assembly. This device is built to emit terahertz radiation to detect wires beneath walls and floors.
   components:
   - type: Sprite
-    sprite: \_Crescent\Objects\Tools\New_Tools\t-ray.rsi
+    sprite: \Objects\Tools\New_Tools\t-ray.rsi
     layers:
     - state: "t-ray-off"
       map: ["base"]
   - type: TrayScanner
   - type: Item
-    sprite: \_Crescent\Objects\Tools\New_Tools\t-ray.rsi
+    sprite: \Objects\Tools\New_Tools\t-ray.rsi
   - type: Appearance
   - type: GenericVisualizer
     visuals:
@@ -1064,7 +1064,7 @@
     - Pickaxe
     - ItemPickaxe
   - type: Sprite
-    sprite: \_Crescent\Objects\Tools\New_Tools\pickaxe.rsi
+    sprite: _Crescent\Objects\Tools\New_Tools\pickaxe.rsi
     state: icon
   - type: MeleeWeapon
     attackRate: 1
@@ -1097,7 +1097,7 @@
     shape:
     - 0,0,2,0
     - 1,1,1,2
-    sprite: \_Crescent\Objects\Tools\New_Tools\pickaxe.rsi
+    sprite: _Crescent\Objects\Tools\New_Tools\pickaxe.rsi
     storedRotation: -45
   - type: UseDelay
   - type: StaticPrice
@@ -1200,7 +1200,7 @@
       - state: inhand-right-light
         shader: unshaded
   - type: Sprite
-    sprite: \_Crescent\Objects\Tools\New_Tools\flashlight.rsi
+    sprite: \Objects\Tools\New_Tools\flashlight.rsi
     layers:
       - state: flashlight
       - state: flashlight-overlay
@@ -1222,7 +1222,7 @@
     soundHit:
       collection: MetalThud
   - type: Item
-    sprite: \_Crescent\Objects\Tools\New_Tools\flashlight.rsi
+    sprite: \Objects\Tools\New_Tools\flashlight.rsi
   - type: PointLight
     enabled: false
     radius: 8
