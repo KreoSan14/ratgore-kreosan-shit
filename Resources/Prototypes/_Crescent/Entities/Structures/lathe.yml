@@ -637,6 +637,9 @@
       - LargeMissileHardpointFlatpack
       - MediumMissileHardpointFlatpack
       - SmallMissileHardpointFlatpack
+      - SmallEnergyHardpointFlatpack #tap additions, dont know where else to put em
+      - SmallHybridHardpointFlatpack
+      - MediumHybridHardpointFlatpack #tap additions end
       - WeaponTurretSmallMachinegunFlatpack
       - WeaponTurretMediumMachinegunFlatpack
       - WeaponTurretSmallArtilleryFlatpack
@@ -1630,7 +1633,17 @@
       - NaiserAutoinjector
       - JV102AutoInjector
       - ExileminusAutoinjector
-      - FallAutoinjector 
+      - FallAutoinjector
+      # Military Research Recipes - TAP Research
+      - BaseWeaponTurretRetributionFlatpack
+      - BaseWeaponTurretAbsolutionFlatpack
+      - BaseWeaponTurretStarburstFlatpack
+      - BaseWeaponTurretBolterFlatpack
+      - WeaponShotgunHarba
+      - CompositionC4
+      - FlatpackComputerDroneControl
+      - FlatpackDroneController
+      - ThrusterHighImpulseTAP
   - type: MaterialStorageMagnetPickup
     magnetEnabled: True
 

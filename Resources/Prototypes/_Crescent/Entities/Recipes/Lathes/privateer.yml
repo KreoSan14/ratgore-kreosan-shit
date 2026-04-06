@@ -758,6 +758,49 @@
     Steel: 1500
     Copper: 500
 
+- type: latheRecipe
+  id: MediumHybridHardpointFlatpack
+  result: MediumHybridHardpointFlatpack
+  completetime: 1.5
+  materials:
+    AdvancedMechatronics: 500
+    BasicElectronics: 1000
+    Steel: 3000
+    Copper: 1000
+    Gold: 500
+    Silver: 500
+
+- type: latheRecipe
+  id: MediumEnergyHardpointFlatpack
+  result: MediumEnergyHardpointFlatpack
+  completetime: 1.5
+  materials:
+    AdvancedMechatronics: 500
+    BasicElectronics: 1000
+    Steel: 3000
+    Copper: 1000
+    Gold: 500
+    Silver: 500
+
+- type: latheRecipe
+  id: SmallEnergyHardpointFlatpack
+  result: SmallEnergyHardpointFlatpack
+  completetime: 1.5
+  materials:
+    BasicMechatronics: 500
+    BasicElectronics: 500
+    Steel: 1500
+    Copper: 500
+
+- type: latheRecipe
+  id: SmallHybridHardpointFlatpack
+  result: SmallHybridHardpointFlatpack
+  completetime: 1.5
+  materials:
+    BasicMechatronics: 500
+    BasicElectronics: 500
+    Steel: 1500
+    Copper: 500
 
 - type: latheRecipe
   id: EinsteinFlatpack
