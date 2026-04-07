@@ -1,0 +1,173 @@
+# SHI Ranks
+## SHI - Executive
+- type: rank
+  id: RatRankSHIExecutiveTop
+  name: Исполнительный директор
+  prefix: Исп. директор
+  paygrade: SHI-E6
+
+- type: rank
+  id: RatRankSHIExecutiveHigh
+  name: Секториальный директор
+  prefix: Сект. директор
+  paygrade: SHI-E5
+
+- type: rank
+  id: RatRankSHIExecutiveLead
+  name: Директор
+  prefix: Директор
+  paygrade: SHI-E4
+
+- type: rank
+  id: RatRankSHIExecutiveSenior
+  name: Заместитель директора
+  prefix: Зам. директора
+  paygrade: SHI-E3
+
+- type: rank
+  id: RatRankSHIExecutiveMiddle
+  name: Секториальный менеджер
+  prefix: Сект. менеджер
+  paygrade: SHI-E2
+
+- type: rank
+  id: RatRankSHIExecutiveJunior
+  name: Менеджер
+  prefix: Менеджер
+  paygrade: SHI-E1
+
+## SHI - Board
+- type: rank
+  id: RatRankSHIBoardFirst
+  name: Главный корпоративный исполнитель
+  prefix: Гл. исполнитель
+  paygrade: SHI-B8
+
+- type: rank
+  id: RatRankSHIBoardSecond
+  name: Руководитель отдела корпорации
+  prefix: Руководитель
+  paygrade: SHI-B7
+
+- type: rank
+  id: RatRankSHIBoardThird
+  name: Заместитель руководителя отдела корпорации
+  prefix: Зам. руковод.
+  paygrade: SHI-B6
+
+- type: rank
+  id: RatRankSHIBoardHigh
+  name: Супервайзер корпорации
+  prefix: Супервайзер
+  paygrade: SHI-B5
+
+- type: rank
+  id: RatRankSHIBoardLead
+  name: Исполнительный специалист корпорации
+  prefix: Исп.-спец.
+  paygrade: SHI-B4
+
+- type: rank
+  id: RatRankSHIBoardSenior
+  name: Старший корпоративный исполнитель
+  prefix: Ст. исполнитель
+  paygrade: SHI-B3
+
+- type: rank
+  id: RatRankSHIBoardMiddle
+  name: Корпоративный исполнитель
+  prefix: Исполнитель
+  paygrade: SHI-B2
+
+- type: rank
+  id: RatRankSHIBoardJunior
+  name: Младший корпоративный исполнитель
+  prefix: Мл. исполнитель
+  paygrade: SHI-B1
+
+## SHI - MedTech
+- type: rank
+  id: RatRankSHIMedTechLead
+  name: Ведущий исследователь корпорации
+  prefix: Вед. иссл.
+  paygrade: SHI-R4
+
+- type: rank
+  id: RatRankSHIMedTechHigh
+  name: Старший исследователь корпорации
+  prefix: Ст. иссл.
+  paygrade: SHI-R3
+
+- type: rank
+  id: RatRankSHIMedTechMiddle
+  name: Исследователь корпорации
+  prefix: Исследователь
+  paygrade: SHI-R2
+
+- type: rank
+  id: RatRankSHIMedTechJunior
+  name: Младший исследователь корпорации
+  prefix: Мл. иссл.
+  paygrade: SHI-R1
+
+## SHI - Workers
+- type: rank
+  id: RatRankSHIWorkerLead
+  name: Ведущий сотрудник корпорации
+  prefix: Вед. сотрудник
+  paygrade: SHI-W4
+
+- type: rank
+  id: RatRankSHIWorkerHigh
+  name: Старший сотрудник корпорации
+  prefix: Ст. сотрудник
+  paygrade: SHI-W3
+
+- type: rank
+  id: RatRankSHIWorkerMiddle
+  name: Сотрудник корпорации
+  prefix: Сотрудник
+  paygrade: SHI-W2
+
+- type: rank
+  id: RatRankSHIWorkerJunior
+  name: Корпоративный стажёр
+  prefix: Стажёр
+  paygrade: SHI-W1
+
+# SHI - CorpSec
+- type: rank
+  id: RatRankSHICorpSecChief
+  name: Начальник корпоративной службы безопасности
+  prefix: Начальник
+  paygrade: SHI-S6
+
+- type: rank
+  id: RatRankSHICorpSecHigh
+  name: Руководитель отдела корпоративной службы безопасности
+  prefix: Рук. отд. охраны
+  paygrade: SHI-S5
+
+- type: rank
+  id: RatRankSHICorpSecLead
+  name: Ведущий сотрудник корпоративной службы безопасности
+  prefix: Вед. сотр. охраны
+  paygrade: SHI-CS4
+
+- type: rank
+  id: RatRankSHICorpSecSenior
+  name: Старший сотрудник корпоративной службы безопасности
+  prefix: Ст. сотр. охраны
+  paygrade: SHI-CS3
+
+- type: rank
+  id: RatRankSHICorpSecMiddle
+  name: Сотрудник корпоративной службы безопасности
+  prefix: Сотр. охраны
+  paygrade: SHI-CS2
+
+- type: rank
+  id: RatRankSHICorpSecJunior
+  name: Кадет корпоративной службы безопасности
+  prefix: Кадет
+  paygrade: SHI-CS1
