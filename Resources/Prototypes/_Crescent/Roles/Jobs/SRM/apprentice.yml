@@ -22,8 +22,6 @@
   supervisors: job-supervisors-srm-apprentice
   canBeAntag: false
   requirements:
-    - !type:CharacterOverallTimeRequirement
-      min: 21600
     - !type:FactionRequirement
       factionID: "SRM"
     - !type:CharacterSpeciesRequirement
