@@ -100,8 +100,8 @@
     Plasma: 40
 
 - type: latheRecipe
-  id: BaseWeaponTurretAbsolutionFlatpack
-  result: BaseWeaponTurretAbsolutionFlatpack
+  id: BaseWeaponTurretGlareFlatpack
+  result: BaseWeaponTurretGlareFlatpack
   category: Devices
   completetime: 42
   materials:

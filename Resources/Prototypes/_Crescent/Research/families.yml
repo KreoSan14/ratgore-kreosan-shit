@@ -73,7 +73,7 @@
   cost: 20000
   recipeUnlocks:
     - BaseWeaponTurretRetributionFlatpack
-    - BaseWeaponTurretAbsolutionFlatpack
+    - BaseWeaponTurretGlareFlatpack
     - BaseWeaponTurretStarburstFlatpack
     - BaseWeaponTurretBolterFlatpack
 

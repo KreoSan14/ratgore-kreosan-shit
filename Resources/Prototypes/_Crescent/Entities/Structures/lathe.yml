@@ -1636,7 +1636,7 @@
       - FallAutoinjector
       # Military Research Recipes - TAP Research
       - BaseWeaponTurretRetributionFlatpack
-      - BaseWeaponTurretAbsolutionFlatpack
+      - BaseWeaponTurretGlareFlatpack
       - BaseWeaponTurretStarburstFlatpack
       - BaseWeaponTurretBolterFlatpack
       - WeaponShotgunHarba
