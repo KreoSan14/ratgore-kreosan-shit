@@ -16,6 +16,7 @@
   weight: 100
   startingGear: OverseerGear
   alwaysUseSpawner: true
+  whitelisted: true # Rat
   requireAdminNotify: false
   icon: "JobIconOverseer"
   supervisors: job-supervisors-srm-overseer
@@ -27,8 +28,6 @@
     - !type:CharacterSpeciesRequirement
       species:
         - Human
-    - !type:CharacterOverallTimeRequirement
-      min: 500000
     - !type:SexRequirement
       sex: Male
     - !type:CharacterTraitRequirement
@@ -80,3 +79,8 @@
     pocket2: RomaineBible
     belt: ClothingBeltAssault
     back: ClothingBackpackSRM
+  storage:
+    back:
+      - PietyRedeemableHigh
+      - PietyRedeemableHigh
+      - PietyRedeemableHigh

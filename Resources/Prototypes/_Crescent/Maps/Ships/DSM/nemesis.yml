@@ -18,6 +18,9 @@
   stations:
     Nemesis:
       stationProto: StandardCrescentStation
+      gridComponents:
+        - type: MapIcon
+          iconType: Shuttle
       components:
         - type: VesselIcon
           iffIcon:

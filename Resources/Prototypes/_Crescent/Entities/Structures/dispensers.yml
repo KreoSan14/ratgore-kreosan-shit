@@ -364,7 +364,7 @@
   - type: Dispenser
     defaultItem: HuntersPermit
     inventory:
-      NCWLIDCardFactionLeader: SpaceCash30000
+      NCWLIDCardFactionLeader: SpaceCash50000
       NCWLIDCardHomeguardLeader: SpaceCash30000
       NCWLIDCardMVDLeader: SpaceCash30000
       NCWLIDCardMVDGrunt: SpaceCash20000
@@ -402,18 +402,31 @@
       DSMIDCardKnight: SpaceCash20000
       DSMIDCardCourtier: SpaceCash20000
       DSMIDCardAdjutant: SpaceCash30000
-      DSMIDCardGovernor: SpaceCash30000
+      DSMIDCardGovernor: SpaceCash50000
       SHIIDCardExecutive: SpaceCash30000
       SHIIDCardBoard: SpaceCash30000
       SHIIDCardCorpSec: SpaceCash15000
       SHIIDCardHighSec: SpaceCash20000
       SHIIDCardEmployee: SpaceCash5000
       SHIIDCardMedtech: SpaceCash10000
+      CMMIDCardMarshal: SpaceCash30000
+      CMMIDCardDeputyMarshal: SpaceCash25000
+      CMMIDCardWatchmaster: SpaceCash20000
+      CMMIDCardOrdnanceman: SpaceCash15000
+      CMMIDCardPhysician: SpaceCash10000
+      CMMIDCardMachinist: SpaceCash10000
+      CMMIDCardMinuteman: SpaceCash10000
       GliessIDCardDockmaster: SpaceCash30000
       DockhandIDCard: SpaceCash10000
       GliessIDCardSheriff: SpaceCash30000
       GliessIDCardDeputy: SpaceCash10000
       SpacerIDCard: SpaceCash5000
+      TAPIDCardProphet: SpaceCash30000
+      TAPIDCardAcolyte: SpaceCash10000
+      TAPIDCardTinkerer: SpaceCash20000
+      TAPIDCardServile: SpaceCash15000
+      TAPIDCardHangarTech: SpaceCash15000
+      TAPIDCardTechminer: SpaceCash10000
       IDCardAntiquarian: SpaceCash20000
       TAPIDCardBeltrunner: SpaceCash15000
       TAPIDCardDraugr: SpaceCash15000
@@ -423,6 +436,7 @@
       HeadMoth: PietyRedeemableHigh
       HeadReptilian: PietyRedeemable
       HeadVoidborn: PietyRedeemableHigh
+      HeadOni: PietyRedeemableHigh
   - type: Sprite
     sprite: _Crescent/Structures/hunter.rsi
     layers:

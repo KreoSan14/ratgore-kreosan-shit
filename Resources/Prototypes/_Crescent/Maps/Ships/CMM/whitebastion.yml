@@ -18,6 +18,9 @@
   stations:
     WhiteBastion:
       stationProto: FlagshipCrescentVessel
+      gridComponents:
+        - type: MapIcon
+          iconType: Shuttle
       components:
         - type: StationNameSetup
           mapNameTemplate: 'TSP White Bastion {1}'

@@ -81,6 +81,7 @@
   - type: ShipyardListing
     shuttles:
     - Exhumer
+    - Gorn
     - Homesteader
     - Comet
     - Kite

@@ -245,12 +245,20 @@ public abstract class SharedEntityStorageSystem : EntitySystem
         var ev = new StorageBeforeCloseEvent(entities, new());
         RaiseLocalEvent(uid, ref ev);
         var count = 0;
+        var mobCount = 0;
         foreach (var entity in ev.Contents)
         {
             if (!ev.BypassChecks.Contains(entity))
             {
                 if (!CanInsert(entity, uid, component))
                     continue;
+            }
+
+            if (component.MaxMobCount >= 0 && HasComp<BodyComponent>(entity))
+            {
+                if (mobCount >= component.MaxMobCount)
+                    continue;
+                mobCount++;
             }
 
             if (!AddToContents(entity, uid, component))
@@ -315,6 +323,18 @@ public abstract class SharedEntityStorageSystem : EntitySystem
 
         if (component.Contents.ContainedEntities.Count >= component.Capacity)
             return false;
+
+        if (component.MaxMobCount >= 0 && HasComp<BodyComponent>(toInsert))
+        {
+            var mobCount = 0;
+            foreach (var ent in component.Contents.ContainedEntities)
+            {
+                if (HasComp<BodyComponent>(ent))
+                    mobCount++;
+            }
+            if (mobCount >= component.MaxMobCount)
+                return false;
+        }
 
         return CanFit(toInsert, container, component);
     }

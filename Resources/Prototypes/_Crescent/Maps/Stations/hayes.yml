@@ -6,6 +6,9 @@
   stations:
     Hayes:
       stationProto: StandardCrescentStation
+      gridComponents:
+        - type: MapIcon
+          iconType: Station
       components:
         - type: StationNameSetup
           mapNameTemplate: 'БИ Эпитафия'

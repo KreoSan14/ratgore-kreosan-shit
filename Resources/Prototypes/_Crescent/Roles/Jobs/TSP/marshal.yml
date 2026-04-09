@@ -16,6 +16,7 @@
   weight: 39
   startingGear: MarshalGear
   alwaysUseSpawner: true
+  whitelisted: true # Rat
   requireAdminNotify: false
   icon: "JobIconMarshal"
   supervisors: job-supervisors-cmm-marshal

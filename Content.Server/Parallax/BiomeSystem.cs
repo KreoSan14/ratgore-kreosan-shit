@@ -75,8 +75,6 @@ public sealed partial class BiomeSystem : SharedBiomeSystem
     private readonly Dictionary<BiomeComponent,
         Dictionary<string, HashSet<Vector2i>>> _markerChunks = new();
 
-    private readonly List<Vector2i> _unloadChunksBuffer = new();
-    private readonly List<(Vector2i, Tile)> _unloadTilesBuffer = new();
     public override void Initialize()
     {
         base.Initialize();
@@ -406,9 +404,9 @@ public sealed partial class BiomeSystem : SharedBiomeSystem
 
         var enumerator = new ChunkIndicesEnumerator(loadArea.Translated(worldPos - halfLayer), layer.Size);
 
-        var lay = _markerChunks[biome].GetOrNew(layer.ID);
         while (enumerator.MoveNext(out var chunkOrigin))
         {
+            var lay = _markerChunks[biome].GetOrNew(layer.ID);
             lay.Add(chunkOrigin.Value * layer.Size);
         }
     }
@@ -867,21 +865,16 @@ public sealed partial class BiomeSystem : SharedBiomeSystem
     private void UnloadChunks(BiomeComponent component, EntityUid gridUid, MapGridComponent grid, int seed)
     {
         var active = _activeChunks[component];
-        _unloadChunksBuffer.Clear();
+        List<(Vector2i, Tile)>? tiles = null;
 
         foreach (var chunk in component.LoadedChunks)
         {
-            if (!active.Contains(chunk))
-                _unloadChunksBuffer.Add(chunk);
-        }
+            if (active.Contains(chunk) || !component.LoadedChunks.Remove(chunk))
+                continue;
 
-        if (_unloadChunksBuffer.Count == 0)
-            return;
-
-        // Unload NOW!
-        foreach (var chunk in _unloadChunksBuffer)
-        {
-            UnloadChunk(component, gridUid, grid, chunk, seed, _unloadTilesBuffer);
+            // Unload NOW!
+            tiles ??= new List<(Vector2i, Tile)>(ChunkSize * ChunkSize);
+            UnloadChunk(component, gridUid, grid, chunk, seed, tiles);
         }
     }
 
@@ -892,7 +885,7 @@ public sealed partial class BiomeSystem : SharedBiomeSystem
     {
         // Reverse order to loading
         component.ModifiedTiles.TryGetValue(chunk, out var modified);
-        modified ??= _tilePool.Get();
+        modified ??= new HashSet<Vector2i>();
 
         // Delete decals
         foreach (var (dec, indices) in component.LoadedDecals[chunk])
@@ -978,16 +971,7 @@ public sealed partial class BiomeSystem : SharedBiomeSystem
 
         if (modified.Count == 0)
         {
-            if (component.ModifiedTiles.Remove(chunk, out var toReturn))
-            {
-                toReturn.Clear();
-                _tilePool.Return(toReturn);
-            }
-            else
-            {
-                modified.Clear();
-                _tilePool.Return(modified);
-            }
+            component.ModifiedTiles.Remove(chunk);
         }
         else
         {

@@ -18,6 +18,9 @@
   stations:
     Hearth:
       stationProto: StandardCrescentVessel
+      gridComponents:
+        - type: MapIcon
+          iconType: Shuttle
       components:
         - type: StationNameSetup
           mapNameTemplate: 'Харт {1}'

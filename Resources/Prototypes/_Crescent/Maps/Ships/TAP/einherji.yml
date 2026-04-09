@@ -20,6 +20,9 @@
   stations:
     Einherji:
       stationProto: StandardCrescentVessel
+      gridComponents:
+        - type: MapIcon
+          iconType: Shuttle
       components:
         - type: StationNameSetup
           mapNameTemplate: 'Эйнхери {1}'

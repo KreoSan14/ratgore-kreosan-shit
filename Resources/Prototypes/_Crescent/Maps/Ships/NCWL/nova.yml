@@ -18,6 +18,9 @@
   stations:
     Nova:
       stationProto: StandardCrescentVessel
+      gridComponents:
+        - type: MapIcon
+          iconType: Shuttle
       components:
         - type: StationNameSetup
           mapNameTemplate: 'ЛРНП Нова {1}'

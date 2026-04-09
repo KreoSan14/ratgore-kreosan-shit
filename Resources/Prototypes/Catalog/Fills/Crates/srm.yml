@@ -13,14 +13,14 @@
   id: CrateSRMBeetleSMG
   parent: CrateGenericSteel
   name: Beetle SMG Shipment
-  description: A shipment containing two Beetle SMGs and four spare magazines, stamped with the emblem of the Hunter's Pride Merchant's Guild.
+  description: A shipment containing two Beetle SMGs and six spare magazines, stamped with the emblem of the Hunter's Pride Merchant's Guild.
   components:
   - type: StorageFill
     contents:
       - id: WeaponSubMachineGunBeetle
         amount: 2
       - id: MagazinePistolSubMachineGun
-        amount: 4
+        amount: 6
 
 - type: entity
   id: CrateSRMMedkit
@@ -57,6 +57,30 @@
       - id: WeaponRifleHunter
         amount: 1
       - id: MagazineRifle
+        amount: 4
+
+- type: entity
+  id: CrateSRMImperatorIRM
+  parent: CrateGenericSteel
+  name: IRM AVR-H Imperator Shipment
+  description: A shipment containing a IRM AVR-H Imperator sniper rifle and three magazines, stamped with the emblem of the Hunter's Pride Merchant's Guild.
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponSniperImperator
+        amount: 1
+      - id: MagazineAntiMateriel
+        amount: 3
+
+- type: entity
+  id: CrateSRMSterilizer
+  parent: CrateGenericSteel
+  name: HP FLM-21Min Sterilizer Shipment
+  description: A shipment containing a two HP FLM-21Min Sterilizer flamethrowers, stamped with the emblem of the Hunter's Pride Merchant's Guild.
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponHPSterilizerFlamethrower
         amount: 2
 
 - type: entity
@@ -123,6 +147,101 @@
         amount: 1
       - id: HandheldHealthAnalyzer
         amount: 2
+
+- type: entity
+  id: CrateSRMNLHuntSupplies
+  parent: CrateGenericSteel
+  name: Hunt Supplies Shipment
+  description: Enough supplies to set up your hunt for slaves!
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxFlashbang
+        amount: 2
+      - id: BoxTeargasGrenades
+        amount: 1
+      - id: Bola
+        amount: 6
+      - id: Stunbaton
+        amount: 2
+      - id: RiotBulletShield
+        amount: 2
+      - id: RiotLaserShield
+        amount: 1
+
+- type: entity
+  id: CrateSRMBolaShipment
+  parent: CrateGenericSteel
+  name: Bola Supplies Shipment
+  description: A crate full of bola. Fascinating!
+  components:
+  - type: StorageFill
+    contents:
+      - id: Bola
+        amount: 8
+      - id: BolaEnergy
+        amount: 2
+
+- type: entity
+  id: CrateSRMDisablerShipment
+  parent: CrateGenericSteel
+  name: Disabler Shipment
+  description: A crate full of disablers. Fascinating!
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponDisabler
+        amount: 2
+      - id: WeaponDisablerSMG
+        amount: 1
+
+- type: entity
+  id: CrateSRMRenoShotgunShipment
+  parent: CrateGenericSteel
+  name: IRM DA-13 Reno Shipment
+  description: A crate with two IRM DA-13 Reno shotguns and four shell boxes. Special for The Hunt!
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponShotgunReno
+        amount: 2
+      - id: BoxLethalshot
+        amount: 4
+
+- type: entity
+  id: CrateSRMShotgunAMMOShipment
+  parent: CrateGenericSteel
+  name: Shotgun Shell Boxes Shipment
+  description: A crate with six shotgun shell boxes. Special for The Hunt!
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxLethalshot
+        amount: 6
+
+- type: entity
+  id: CrateSRMDominatorLMGShipment
+  parent: CrateGenericSteel
+  name: IRM DA-12S Dominion Shipment
+  description: A crate with IRM DA-12S Dominion LMG and two ammo boxes. Special for The Hunt!
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponLightMachineGunDSMDominion
+        amount: 1
+      - id: MagazineLightRifleBox
+        amount: 2
+
+- type: entity
+  id: CrateSRMLMGAmmoShipment
+  parent: CrateGenericSteel
+  name: LMG Ammo Shipment
+  description: A crate with four LMG ammo boxes. Special for The Hunt!
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineLightRifleBox
+        amount: 4
 
 - type: entity
   id: CrateSRMIncendiaryGrenade
@@ -273,9 +392,20 @@
   id: CrateSRMRifleMag
   parent: CrateGenericSteel
   name: Rifle Magazine Shipment
-  description: A shipment containing of 7.62x51mm rifle magazines, the crate has clearly seen better days.
+  description: A shipment containing 7.62x51mm rifle magazines, the crate has clearly seen better days.
   components:
   - type: StorageFill
     contents:
       - id: MagazineRifle
         amount: 6
+
+- type: entity
+  id: CrateSRMSniperMag
+  parent: CrateGenericSteel
+  name: Sniper Rifle Magazine Shipment
+  description: A shipment containing 15.2x169mm sniper rifle magazines, the crate has clearly seen better days.
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineAntiMateriel
+        amount: 4

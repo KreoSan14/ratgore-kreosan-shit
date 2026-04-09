@@ -32,7 +32,7 @@
   icon: { sprite: _Crescent/Objects/Misc/lpcchip.rsi, state: icon }
   productEntity: ShipVoucherSpider
   cost:
-    PietySRM: 20
+    PietySRM: 10
   categories:
   - StoreCategorySRMLPC
 
@@ -150,7 +150,7 @@
   icon: { sprite: Clothing/Eyes/Goggles/nightvision.rsi, state: icon }
   productEntity: ClothingEyesNightVisionGoggles
   cost:
-    PietySRM: 8
+    PietySRM: 10
   categories:
   - StoreCategorySRMSupport
 
@@ -161,7 +161,7 @@
   icon: { sprite: Clothing/Eyes/Goggles/medical_nightvision.rsi, state: icon }
   productEntity: ClothingEyesNightVisionMedicalGoggles
   cost:
-    PietySRM: 10
+    PietySRM: 12
   categories:
   - StoreCategorySRMSupport
 
@@ -172,7 +172,7 @@
   icon: { sprite: Clothing/Eyes/Goggles/security_nightvision.rsi, state: icon }
   productEntity: ClothingEyesNightVisionSecurityGoggles
   cost:
-    PietySRM: 10
+    PietySRM: 12
   categories:
   - StoreCategorySRMSupport
 
@@ -205,7 +205,7 @@
   icon: { sprite: Objects/Specific/Medical/healthanalyzer.rsi, state: icon }
   productEntity: HandheldHealthAnalyzer
   cost:
-    PietySRM: 0
+    PietySRM: 1
   categories:
   - StoreCategorySRMSupport
 
@@ -216,7 +216,40 @@
   icon: { sprite: Objects/Consumable/Food/bay_food.rsi, state: meatmre }
   productEntity: BoxMRE
   cost:
-    PietySRM: 0
+    PietySRM: 1
+  categories:
+  - StoreCategorySRMSupport
+
+- type: listing
+  id: StoreListingSRMHuntSupplies
+  name: Припасы для охоты
+  description: Ящик, набитый до отвала различным полезным для охоты снаряжением. Кажется, его собирали с любовью.
+  icon: { sprite: _Nuclear14/Structures/Storage/Crates/woodencrates.rsi, state: army_crate }
+  productEntity: CrateSRMNLHuntSupplies
+  cost:
+    PietySRM: 8
+  categories:
+  - StoreCategorySRMSupport
+
+- type: listing
+  id: StoreListingSRMBolaShipment
+  name: Ящик с болой
+  description: Партия с несколькими обычными и парой энергобол для эффективного отлова рабов... я имел ввиду реквизиции активов!
+  icon: { sprite: _Nuclear14/Structures/Storage/Crates/woodencrates.rsi, state: army_crate }
+  productEntity: CrateSRMBolaShipment
+  cost:
+    PietySRM: 3
+  categories:
+  - StoreCategorySRMSupport
+
+- type: listing
+  id: StoreListingSRMDisablerShipment
+  name: Ящик дизайблеров
+  description: Ящик с несколькими дизейплерами и дизейблер-пулемётом. Если кому-то не хватило в оружейке, жадины!
+  icon: { sprite: _Nuclear14/Structures/Storage/Crates/woodencrates.rsi, state: army_crate }
+  productEntity: CrateSRMDisablerShipment
+  cost:
+    PietySRM: 3
   categories:
   - StoreCategorySRMSupport
 

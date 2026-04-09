@@ -207,7 +207,7 @@ public sealed partial class CCVars
     /// Whether shuttle impacts should do anything beyond produce a sound.
     /// </summary>
     public static readonly CVarDef<bool> ImpactEnabled =
-        CVarDef.Create("shuttle.impact.enabled", false, CVar.SERVERONLY);
+        CVarDef.Create("shuttle.impact.enabled", true, CVar.SERVERONLY);
 
     /// <summary>
     /// Minimum impact inertia to trigger special shuttle impact behaviors when impacting slower than MinimumImpactVelocity.

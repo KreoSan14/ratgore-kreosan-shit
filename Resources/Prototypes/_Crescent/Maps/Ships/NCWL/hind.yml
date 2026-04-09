@@ -21,6 +21,9 @@
   stations:
     Hind:
       stationProto: StandardCrescentVessel
+      gridComponents:
+        - type: MapIcon
+          iconType: Shuttle
       components:
         - type: StationNameSetup
           mapNameTemplate: 'ЛРНП Нанд {1}'

@@ -17,6 +17,9 @@
   stations:
     Lockjaw:
       stationProto: StandardCrescentVessel 
+      gridComponents:
+        - type: MapIcon
+          iconType: Shuttle
       components: 
         - type: StationNameSetup
           mapNameTemplate: 'ПК Трицепс {1}' 

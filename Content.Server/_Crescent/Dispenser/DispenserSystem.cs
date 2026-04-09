@@ -1,19 +1,27 @@
-using Content.Shared.Crescent.Dispenser;  
-using Content.Shared.Interaction;  
-using Content.Shared.Inventory.VirtualItem;  
-using Content.Shared.Popups;  
-using Robust.Shared.Audio.Systems;  
-using Robust.Shared.Prototypes;  
-  
-namespace Content.Server.Crescent.Dispenser;  
-  
-public sealed class DispenserSystem : SharedDispenserSystem  
-{  
-    [Dependency] private readonly SharedAudioSystem _audioSystem = default!;  
-    [Dependency] private readonly SharedVirtualItemSystem _virtualItemSystem = default!;  
-    [Dependency] private readonly StationTradeMarketSystem _marketSystem = default!;  
-    [Dependency] private readonly Stack.StackSystem _stackSystem = default!;  
-    [Dependency] private readonly SharedPopupSystem _popup = default!;  
+using Content.Server._Rat.Mind;
+using Content.Server.Body.Components;
+using Content.Shared._Rat.Mind;
+using Content.Shared.Body.Part;
+using Content.Shared.Body.Systems;
+using Content.Shared.Crescent.Dispenser;
+using Content.Shared.Interaction;
+using Content.Shared.Inventory.VirtualItem;
+using Content.Shared.Mind;
+using Content.Shared.Popups;
+using Robust.Shared.Audio.Systems;
+using Robust.Shared.Prototypes;
+
+namespace Content.Server.Crescent.Dispenser;
+
+public sealed class DispenserSystem : SharedDispenserSystem
+{
+    [Dependency] private readonly SharedAudioSystem _audioSystem = default!;
+    [Dependency] private readonly SharedVirtualItemSystem _virtualItemSystem = default!;
+    [Dependency] private readonly StationTradeMarketSystem _marketSystem = default!;
+    [Dependency] private readonly Stack.StackSystem _stackSystem = default!;
+    [Dependency] private readonly SharedPopupSystem _popup = default!;
+    [Dependency] private readonly SharedBodySystem _bodySystem = default!;
+    [Dependency] private readonly SharedMindSystem _mindSystem = default!;
   
     public override void Initialize()  
     {  
@@ -43,17 +51,31 @@ public sealed class DispenserSystem : SharedDispenserSystem
         if (args.Handled || component.Dispensing)  
             return;  
   
-        EntityUid used;  
-        if (TryComp<VirtualItemComponent>(args.Used, out var virtualItem))  
-            used = virtualItem.BlockingEntity;  
-        else  
-            used = args.Used;  
-  
-        if (!TryPrototype(used, out var prototype))  
-        {  
-            _audioSystem.PlayPvs(component.DenySound, uid);  
-            return;  
-        }  
+        EntityUid used;
+        if (TryComp<VirtualItemComponent>(args.Used, out var virtualItem))
+            used = virtualItem.BlockingEntity;
+        else
+            used = args.Used;
+
+        // Check if the dispenser is HuntersBounty and validate the head
+        if (TryComp<MetaDataComponent>(uid, out var meta) &&
+            meta.EntityPrototype?.ID == "HuntersBounty")
+        {
+            if (HasComp<BodyPartComponent>(used) && !IsValidBountyHead(used))
+            {
+                _popup.PopupEntity(
+                    Loc.GetString("hunters-bounty-invalid-head"),
+                    uid, args.User, PopupType.MediumCaution);
+                _audioSystem.PlayPvs(component.DenySound, uid);
+                return;
+            }
+        }
+
+        if (!TryPrototype(used, out var prototype))
+        {
+            _audioSystem.PlayPvs(component.DenySound, uid);
+            return;
+        }
 
         if (component.DynamicInventory.TryGetValue(prototype.ID, out var baseAmount))  
         {  
@@ -144,6 +166,37 @@ public sealed class DispenserSystem : SharedDispenserSystem
             Spawn(itemId, Transform(uid).Coordinates);  
     }  
   
+    /// <summary>
+    ///     Checks if the given entity is a valid severed head with HadMindComponent.
+    ///     A valid head must:
+    ///     1. Have a BodyPartComponent with PartType = Head
+    ///     2. Not be attached to a body (Body is null)
+    ///     3. Have HadMindComponent (was once player-controlled)
+    /// </summary>
+    private bool IsValidBountyHead(EntityUid entity)
+    {
+        // Must have BodyPartComponent and be a Head
+        if (!TryComp<BodyPartComponent>(entity, out var bodyPart) ||
+            bodyPart.PartType != BodyPartType.Head)
+        {
+            return false;
+        }
+
+        // Must be detached from a body (severed)
+        if (bodyPart.Body != null)
+        {
+            return false;
+        }
+
+        // Must have had a mind at some point (was player-controlled)
+        if (!HasComp<HadMindComponent>(entity))
+        {
+            return false;
+        }
+
+        return true;
+    }
+
     public override void Update(float frameTime)  
     {  
         base.Update(frameTime);  

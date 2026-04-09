@@ -7,6 +7,7 @@
   startingGear: ProphetGear
   alwaysUseSpawner: true
   requireAdminNotify: true
+  whitelisted: true # Rat
   icon: "JobIconProphet"
   supervisors: job-supervisors-prophet
   canBeAntag: false

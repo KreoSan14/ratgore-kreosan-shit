@@ -18,6 +18,9 @@
   stations:
     Lodka:
       stationProto: StandardCrescentVessel
+      gridComponents:
+        - type: MapIcon
+          iconType: Shuttle
       components:
         - type: StationNameSetup
           mapNameTemplate: 'ЛРНП Лодка {1}'

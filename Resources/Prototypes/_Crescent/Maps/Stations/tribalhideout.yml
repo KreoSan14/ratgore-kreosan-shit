@@ -8,6 +8,8 @@
       stationProto: StandardCrescentStation
       gridComponents:
         - type: BlockShipWeaponProjectileGrid
+        - type: MapIcon
+          iconType: Station
       components:
         - type: StationNameSetup
           mapNameTemplate: 'ТАП Племя'

@@ -17,10 +17,6 @@
             <cc:CommandButton Command="adminlogs" Text="{Loc admin-player-actions-window-admin-logs}"/>
             <cc:CommandButton Command="faxui" Text="{Loc admin-player-actions-window-admin-fax}"/>
             <cc:CommandButton Command="timetransferpanel" Text="{Loc admin-player-actions-window-time-transfer}"/>
-            <!-- Lua -->
-            <cc:CommandButton Command="chunkmonitor"
-                    Text="{Loc admin-player-actions-window-chunk-monitor}"/>
-            <!-- Lua -->
         </GridContainer>
     </BoxContainer>
 </Control>

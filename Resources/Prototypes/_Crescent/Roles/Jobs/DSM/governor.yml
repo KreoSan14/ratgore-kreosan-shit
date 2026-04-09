@@ -17,6 +17,7 @@
   startingGear: GovernorGear
   alwaysUseSpawner: true
   requireAdminNotify: true
+  whitelisted: true # Rat
   icon: "JobIconImperialGovernor"
   supervisors: job-supervisors-imperial
   canBeAntag: false

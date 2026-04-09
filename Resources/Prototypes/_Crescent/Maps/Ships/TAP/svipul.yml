@@ -18,6 +18,9 @@
   stations:
     Svipul:
       stationProto: StandardCrescentVessel
+      gridComponents:
+        - type: MapIcon
+          iconType: Shuttle
       components:
         - type: StationNameSetup
           mapNameTemplate: 'Свипул {1}'

@@ -99,3 +99,13 @@
   - type: DeviceLinkSink
     ports:
       - FillbotAnyItem
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+    receiveFrequencyId: BasicDevice
+  - type: WirelessNetworkConnection
+    range: 1000
+  - type: DeviceLinkSource
+    ports:
+      - SpaceArtilleryDetectedFiring
+      - SpaceArtilleryDetectedMalfunction
+      - SpaceArtilleryDetectedSafetyChange

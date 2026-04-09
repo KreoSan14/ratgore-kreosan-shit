@@ -17,13 +17,12 @@
   startingGear: TenderGear
   alwaysUseSpawner: true
   requireAdminNotify: false
+  whitelisted: true # Rat
   icon: "JobIconTender"
   supervisors: job-supervisors-srm-hunters
   canBeAntag: false
   requirements:
     - !type:CharacterWhitelistRequirement
-    - !type:CharacterOverallTimeRequirement
-      min: 57600
     - !type:FactionRequirement
       factionID: "SRM"
     - !type:CharacterSpeciesRequirement
@@ -57,9 +56,11 @@
         addSpoken:
           - LowImperial
           - Saintspact
+          - Tradeband
         addUnderstood:
           - LowImperial
           - Saintspact
+          - Tradeband
       - type: InnatePsionicPowers
         powersToAdd:
           - TelepathyPower

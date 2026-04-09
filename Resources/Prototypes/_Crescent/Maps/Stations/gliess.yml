@@ -9,6 +9,8 @@
       gridComponents:
         - type: BlockShipWeaponProjectileGrid
         - type: PreventPilot
+        - type: MapIcon
+          iconType: Station
       components:
         - type: VesselIcon
           iffIcon:
@@ -45,6 +47,8 @@
           iffIcon:
             sprite: _Crescent/ShipIcons/ifficons.rsi
             state: outpost
+        - type: MapIcon
+          iconType: Station
       components:
         - type: StationNameSetup
           mapNameTemplate: 'Глисс Санто'

@@ -18,6 +18,9 @@
   stations:
     Vasinya:
       stationProto: StandardCrescentVessel
+      gridComponents:
+        - type: MapIcon
+          iconType: Shuttle
       components:
         - type: StationNameSetup
           mapNameTemplate: 'ЛРНП Вася {1}'

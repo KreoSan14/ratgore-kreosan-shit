@@ -18,6 +18,9 @@
   stations:
     Sabre:
       stationProto: StandardCrescentVessel
+      gridComponents:
+        - type: MapIcon
+          iconType: Shuttle
       components:
         - type: StationNameSetup
           mapNameTemplate: 'ЛРНП Сабля {1}'

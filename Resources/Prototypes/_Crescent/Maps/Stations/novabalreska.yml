@@ -13,6 +13,8 @@
           iffIcon:
             sprite: _Crescent/ShipIcons/ifficons.rsi
             state: outpost
+        - type: MapIcon
+          iconType: Station
       components:
         - type: StationNameSetup
           mapNameTemplate: 'ЛРНП Марсова'

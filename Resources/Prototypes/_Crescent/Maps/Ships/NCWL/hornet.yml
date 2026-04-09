@@ -18,6 +18,9 @@
   stations:
     HornetDrone:
       stationProto: StandardCrescentVessel
+      gridComponents:
+        - type: MapIcon
+          iconType: Shuttle
       components:
         - type: StationNameSetup
           mapNameTemplate: 'NCWL Hornet {1}'

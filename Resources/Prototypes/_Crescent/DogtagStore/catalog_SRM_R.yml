@@ -32,7 +32,7 @@
   icon: { sprite: _Crescent/Clothing/SRM/Belt/sheath.rsi, state: sheath-sabre }
   productEntity: ClothingBeltSheathKhopeshFilled
   cost:
-    PietySRM: 15
+    PietySRM: 25
   categories:
   - StoreCategorySRMWeapons
 
@@ -43,7 +43,7 @@
   icon: { sprite: _Crescent/Clothing/SRM/Belt/sheath.rsi, state: sheath-sabre }
   productEntity: CrateSRMDuelingKhopesh
   cost:
-    PietySRM: 2
+    PietySRM: 3
   categories:
   - StoreCategorySRMWeapons
 
@@ -54,7 +54,7 @@
   icon: { sprite: _Crescent/Objects/Weapons/Guns/hunter.rsi, state: icon }
   productEntity: CrateSRMHunterDMR
   cost:
-    PietySRM: 4
+    PietySRM: 3
   categories:
   - StoreCategorySRMWeapons
 
@@ -70,13 +70,57 @@
   - StoreCategorySRMWeapons
 
 - type: listing
+  id: StoreListingSRMImperatorSR
+  name: АВР-Н Император
+  description: Имперская крупнокалиберная снайперская винтовка. Использует крупный патрон 15,2×169 мм, поставляется с боеприпасами.
+  icon: { sprite: _Crescent/Objects/Weapons/Guns/imperator.rsi, state: icon }
+  productEntity: CrateSRMImperatorIRM
+  cost:
+    PietySRM: 7
+  categories:
+  - StoreCategorySRMWeapons
+
+- type: listing
+  id: StoreListingSRMSterilizerFT
+  name: ГО Стерилизатор
+  description: Компактный огнемёт производства Гордости Охотника. Идеально подходит для сжигания тел и ксеносов.
+  icon: { sprite: _Crescent/Objects/Weapons/Guns/sterilizer.rsi, state: icon }
+  productEntity: CrateSRMSterilizer
+  cost:
+    PietySRM: 3
+  categories:
+  - StoreCategorySRMWeapons
+
+- type: listing
+  id: StoreListingSRMReno
+  name: ДА-13 Рено
+  description: Имперское самозарядное ружьё, идеально подходящее для ближнего боя. Два по цене одного.
+  icon: { sprite: _Crescent/Objects/Weapons/Guns/reno.rsi, state: icon }
+  productEntity: CrateSRMRenoShotgunShipment
+  cost:
+    PietySRM: 1
+  categories:
+  - StoreCategorySRMWeapons
+
+- type: listing
+  id: StoreListingSRMDominion
+  name: ДА-12С Доминатор
+  description: Имперский ручной пулемёт. Идёт в комплекте с двумя магазинами.
+  icon: { sprite: _Crescent/Objects/Weapons/Guns/dominion.rsi, state: icon }
+  productEntity: CrateSRMDominatorLMGShipment
+  cost:
+    PietySRM: 10
+  categories:
+  - StoreCategorySRMWeapons
+
+- type: listing
   id: StoreListingSRMLauncher
   name: Украденная поставка SHI LAM-17 84mm
   description: Одноразовая ракетница SHI LAM-17 84mm, повреждённая при транспортировки... эффективность варьируется. От двух в одной партии.
   icon: { sprite: _Crescent/Objects/Weapons/Guns/disposablerpg.rsi, state: icon }
   productEntity: CrateSRMLauncher
   cost:
-    PietySRM: 4
+    PietySRM: 6
   categories:
   - StoreCategorySRMWeapons
 
@@ -129,11 +173,44 @@
   - StoreCategorySRMAmmo
 
 - type: listing
+  id: StoreListingSRMShotgunAmmoBox
+  name: Коробка дробовых патрон
+  description: Коробка дробовых патрон, подходящая к большинству ружий, поставляется с несколькими комплектами.
+  icon: { sprite: _Crescent/Objects/Weapons/Ammunition/Magazine/7.62mm_mag.rsi, state: icon }
+  productEntity: CrateSRMRifleMag
+  cost:
+    PietySRM: 1
+  categories:
+  - StoreCategorySRMAmmo
+
+- type: listing
+  id: StoreListingSRMLMGAmmoBox
+  name: Короб для ручного пулемёта 5.56x45mm
+  description: Короб для ручного пулемёта и совместимого огнестрельного оружия калибра 5.56x45 мм. Несколько магазинов поставляются в комплекте.
+  icon: { sprite: _Crescent/Objects/Weapons/Ammunition/Magazine/7.62mm_mag.rsi, state: icon }
+  productEntity: CrateSRMRifleMagUranium
+  cost:
+    PietySRM: 2
+  categories:
+  - StoreCategorySRMAmmo
+
+- type: listing
   id: StoreListingSRMSlugthrower
   name: Slugthrower Ammunition Shipment
   description: A shipment of slugthrower ammunition for use in slugthrower turrets.
   icon: { sprite: _Crescent/Ammunition/conscript_ammo_box.rsi, state: base }
   productEntity: CrateSlugthrowerAmmo
+  cost:
+    PietySRM: 1
+  categories:
+  - StoreCategorySRMAmmo
+
+- type: listing
+  id: StoreListingSRMSniperAmmo
+  name: 6-зарядный магазин 15.2x169 мм
+  description: Ящик с нексколькими магазинами для снайперской винтовки АВР-Н Император.
+  icon: { sprite: _Crescent/Objects/Weapons/Ammunition/Magazine/15.2mm_mag.rsi, state: base }
+  productEntity: CrateSRMSniperMag
   cost:
     PietySRM: 1
   categories:
@@ -172,7 +249,7 @@
   icon: { sprite: _Crescent/Clothing/SRM/OuterClothing/hardsuitelite.rsi, state: icon }
   productEntity: ClothingOuterHardsuitHunterElite
   cost:
-    PietySRM: 15
+    PietySRM: 20
   categories:
   - StoreCategorySRMSuits
 

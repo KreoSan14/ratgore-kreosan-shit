@@ -18,6 +18,9 @@
   stations:
     Bhaalgorn:
       stationProto: StandardCrescentVessel
+      gridComponents:
+        - type: MapIcon
+          iconType: Shuttle
       components:
         - type: StationNameSetup
           mapNameTemplate: 'Балгорн {1}'

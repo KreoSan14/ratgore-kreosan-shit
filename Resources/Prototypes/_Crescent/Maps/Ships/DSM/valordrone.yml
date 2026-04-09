@@ -15,6 +15,9 @@
   stations:
     ValorDrone:
       stationProto: StandardCrescentVessel
+      gridComponents:
+        - type: MapIcon
+          iconType: Shuttle
       components:
         - type: StationNameSetup
           mapNameTemplate: 'DSM Valor {1}'

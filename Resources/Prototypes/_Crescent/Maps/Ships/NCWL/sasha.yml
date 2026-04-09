@@ -18,6 +18,9 @@
   stations:
     Sasha:
       stationProto: StandardCrescentVessel
+      gridComponents:
+        - type: MapIcon
+          iconType: Shuttle
       components:
       - type: StationNameSetup
         mapNameTemplate: 'ЛРНП Саша {1}'

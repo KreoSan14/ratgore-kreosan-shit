@@ -1,13 +1,15 @@
 - type: gameMap
   id: AuroraImperialis
-  mapName: 'БМС Aurora Imperialis'
-  mapPath: /Maps/_Rat/Stations/auroraİmperialis.yml # taleryn-version
+  mapName: 'БМС Аврора'
+  mapPath: /Maps/_Rat/Stations/aurora.yml # taleryn-version
   minPlayers: 0
   stations:
     AuroraImperialis:
       stationProto: StandardCrescentStation
       gridComponents:
         - type: BlockShipWeaponProjectileGrid
+        - type: MapIcon
+          iconType: Station
       components:
         - type: VesselIcon
           iffIcon:

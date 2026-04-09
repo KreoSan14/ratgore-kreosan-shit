@@ -1,6 +1,7 @@
 using System.IO;
 using System.Linq;
 using System.Numerics;
+using Content.Shared._Art.TTS;
 using Content.Shared._EE.Contractors.Prototypes;
 using Content.Shared.Decals;
 using Content.Shared.Examine;
@@ -23,6 +24,7 @@ using Robust.Shared.Serialization.Markdown;
 using Robust.Shared.Utility;
 using YamlDotNet.RepresentationModel;
 using Content.Shared._EE.GenderChange;
+using Content.Shared.Turrets;
 
 namespace Content.Shared.Humanoid;
 
@@ -55,6 +57,18 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
 
     [ValidatePrototypeId<LifepathPrototype>]
     public const string DefaultLifepath = "Spacer";
+
+    // Art-TTS Start
+    public const string DefaultVoice = "zeus_dota_2";
+
+    public static readonly Dictionary<Sex, string> DefaultSexVoice = new()
+    {
+        { Sex.Male, "zeus_dota_2" },
+        { Sex.Female, "lina_dota_2" },
+        { Sex.Unsexed, "gman" },
+    };
+    // Art-TTS End
+
 
     public override void Initialize()
     {
@@ -312,6 +326,26 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
             Dirty(uid, humanoid);
     }
 
+    // Art-TTS Start
+    // ReSharper disable once InconsistentNaming
+    public void SetTTSVoice(
+        EntityUid uid,
+        ProtoId<TTSVoicePrototype> voiceId,
+        bool sync = true,
+        HumanoidAppearanceComponent? humanoid = null)
+    {
+        if (!TryComp<TTSComponent>(uid, out var comp)
+            || !Resolve(uid, ref humanoid))
+            return;
+
+        humanoid.Voice = voiceId;
+        comp.VoicePrototype = voiceId;
+
+        if (sync)
+            Dirty(uid, humanoid);
+    }
+    // Art-TTS End
+
     /// <summary>
     ///     Set the height of a humanoid mob
     /// </summary>
@@ -386,6 +420,7 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
 
         SetSpecies(uid, profile.Species, false, humanoid);
         SetSex(uid, profile.Sex, false, humanoid);
+        SetTTSVoice(uid, profile.Voice, false, humanoid); // Art-TTS
         humanoid.EyeColor = profile.Appearance.EyeColor;
         var ev = new EyeColorInitEvent();
         RaiseLocalEvent(uid, ref ev);

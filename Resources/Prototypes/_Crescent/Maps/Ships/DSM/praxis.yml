@@ -5,7 +5,7 @@
     С миниатюрным крылом Медицина/Наука, сложными инструментами для извлечения и сервисным модулем для длительных экспедиций, эти суда часто работают на странствующих Писцах или используются малыми кланами независимых Писцов, которые часто живут прямо на борту.
     LOADOUT: 4x 200cc 'Retribution' small laser gatling
     MINIMUM CREW: 1x Captain, 1x Gunner, 1x Scribe Researcher
-  price: 135000
+  price: 210000
   category: Medium
   group: None
   path: /Maps/_Crescent/Shuttles/DSM/praxis.yml
@@ -18,6 +18,9 @@
   stations:
     Praxis:
       stationProto: StandardCrescentVessel
+      gridComponents:
+        - type: MapIcon
+          iconType: Shuttle
       components:
         - type: VesselIcon
           iffIcon:

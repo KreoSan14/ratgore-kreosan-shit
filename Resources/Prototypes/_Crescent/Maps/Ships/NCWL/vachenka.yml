@@ -18,6 +18,9 @@
   stations:
     Vachenka:
       stationProto: StandardCrescentVessel
+      gridComponents:
+        - type: MapIcon
+          iconType: Shuttle
       components:
         - type: StationNameSetup
           mapNameTemplate: 'NCWL Vachenka {1}'
