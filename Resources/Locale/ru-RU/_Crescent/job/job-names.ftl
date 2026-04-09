@@ -70,10 +70,10 @@ job-name-overseer = Надзиратель охоты
 
 job-name-executive = Даймё
 job-name-board = Помощник даймё
-job-name-corpsec = Агент корпоративной безопасности
-job-name-highsec = Агент корпоративной ликвидации
+job-name-corpsec = Агент службы безопасности
+job-name-highsec = Агент службы ликвидации
 job-name-boardhr = Специалист по кадрам
-job-name-hos-shi = Начальник корпоративной безопасности
+job-name-hos-shi = Начальник службы безопасности
 job-name-employee = Клерк
 job-name-medtech = Исследователь МедТех
 
