@@ -27,16 +27,3 @@
        - ClothingNeckCloakHedgeknightCapelet
        - ClothingNeckCloakImperialCapelet
 
-#- type: entity
-#  parent: ClothingNeckBase
-#  id: ClothingNeckCloakWarlord
-#  name: syndicate warlords's cloak
-#  description: An ornamental cape worn by the local warlord of the Syndicate.
-#  components:
-#  - type: Sprite
-#    sprite: _Crescent/Clothing/Syndicate/Neck/neckreat.rsi
-#  - type: Clothing
-#    sprite: _Crescent/Clothing/Syndicate/Neck/neckreat.rsi
-#  - type: ReverseEngineering # Sector Crescent
-#    recipes:
-#      - ClothingNeckCloakRingleader

@@ -11,20 +11,6 @@
     - !type:CharacterJobRequirement
       jobs:
         - RingleaderNCSP
-
-#- type: loadout
-#  id: LoadoutNeckTFSCCloakWarlord
-#  category: Neck
-#  exclusive: true
-#  cost: 0
-#  items:
-#    - ClothingNeckCloakWarlord
-#  requirements:
-#    - !type:CharacterItemGroupRequirement
-#      group: LoadoutNeck
-#    - !type:CharacterJobRequirement
-#      jobs:
-#        - RingleaderNCSP
  
 - type: loadout
   id: LoadoutNeckTFSCCloakHedgeknightCapelet
