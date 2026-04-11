@@ -25,7 +25,6 @@
   supervisors: job-supervisors-ncwl-kommissar
   canBeAntag: false
   requirements:
-    - !type:CharacterWhitelistRequirement
     - !type:CharacterOverallTimeRequirement
       min: 30000
     - !type:CharacterDepartmentTimeRequirement

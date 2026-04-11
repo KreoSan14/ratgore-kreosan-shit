@@ -29,7 +29,6 @@
       inverted: true
       species:
         - Voidborn
-    - !type:CharacterWhitelistRequirement
     - !type:CharacterOverallTimeRequirement
       min: 18000
     - !type:CharacterDepartmentTimeRequirement
@@ -109,7 +108,6 @@
       inverted: true
       species:
         - Voidborn
-    - !type:CharacterWhitelistRequirement
     - !type:CharacterOverallTimeRequirement
       min: 14400
     - !type:CharacterDepartmentTimeRequirement

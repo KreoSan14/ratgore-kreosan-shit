@@ -29,7 +29,6 @@
   supervisors: job-supervisors-shi
   canBeAntag: false
   requirements:
-    - !type:CharacterWhitelistRequirement
     - !type:CharacterOverallTimeRequirement
       min: 35000
     - !type:CharacterDepartmentTimeRequirement
@@ -104,7 +103,6 @@
       inverted: true
       species:
         - Voidborn
-    - !type:CharacterWhitelistRequirement
     - !type:CharacterOverallTimeRequirement
       min: 35000
     - !type:CharacterDepartmentTimeRequirement
