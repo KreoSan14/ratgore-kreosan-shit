@@ -32,9 +32,6 @@
     - !type:CharacterWhitelistRequirement
     - !type:CharacterOverallTimeRequirement
       min: 18000
-    - !type:CharacterDepartmentTimeRequirement
-      department: SHI
-      min: 108000 # 30 hours
     - !type:FactionRequirement
       factionID: "SHI"
     - !type:CharacterTraitRequirement
