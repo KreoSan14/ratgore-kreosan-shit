@@ -343,7 +343,7 @@
   id: StoreListingGSCInfanteermk2
   name: Bulwark MK.III Infanteer
   description: An advanced battlesuit manufactured by Stukov Industies and provided to GSC at a discount.
-  icon: { sprite: /Textures/_Crescent/Clothing/Syndicate/OuterClothing/syndicatesbg2.rsi, state: icon }
+  icon: { sprite: /Textures/_Crescent/Clothing/Syndicate/OuterClothing/syndicatesbulwar.rsi, state: icon }
   productEntity: ClothingOuterHardsuitSyndicateBulwar
   cost:
     PlunderGSC: 10
