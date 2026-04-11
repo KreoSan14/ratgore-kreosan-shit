@@ -153235,7 +153235,7 @@ entities:
       pos: 14.5,32.5
       parent: 1
     - type: ShipShieldEmitter
-      damageLimit: 300000
+      damageLimit: 60000
 - proto: ShinoharaBudgetVendor
   entities:
   - uid: 14097
@@ -169790,7 +169790,7 @@ entities:
   - uid: 16731
     components:
     - type: MetaData
-      name: БМС Aurora Imperialis
+      name: БМС Аврора
     - type: Transform
       pos: 0.5,1.5
       parent: 1
