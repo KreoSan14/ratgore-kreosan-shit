@@ -1,7 +1,7 @@
 - type: gameMap
   id: Dawnbreaker
-  mapName: 'ТК Секира'
-  mapPath: /Maps/_Crescent/Stations/dawnbreaker.yml
+  mapName: 'ТК Анвил'
+  mapPath: /Maps/_Rat/Stations/byblik.yml # Rat-change
   minPlayers: 0
   stations:
     Dawnbreaker:
@@ -12,7 +12,7 @@
           iconType: Station
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'ТК Секира'
+          mapNameTemplate: 'ТК Анвил'
         - type: VesselDesignation
           designation: vessel-designation-headquarters
         - type: VesselMusic
