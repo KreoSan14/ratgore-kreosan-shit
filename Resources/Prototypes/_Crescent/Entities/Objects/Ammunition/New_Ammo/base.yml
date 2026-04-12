@@ -1,0 +1,33 @@
+- type: entity
+  id: BaseCrescentCartridge
+  parent: BaseCartridge
+  abstract: true
+  components:
+
+- type: entity
+  abstract: true
+  parent: BaseMagazineBox
+  id: CrescentIntermediaryAmmoBoxGeneric
+  name: INEEDMOREINTERMEDIARYBOOLETS
+  components:
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - CartridgeLightRifle
+    proto: CartridgeLightRifle
+    capacity: 60
+  - type: Item
+    size: Small
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Boxes/light_rifle.rsi
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+  - type: StaticPrice
+    price: 0

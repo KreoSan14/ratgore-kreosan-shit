@@ -1,0 +1,63 @@
+- type: entity
+  id: CrescentCartridge_5.56x45mm
+  name: cartridge (5.56x45mm)
+  parent: BaseCrescentCartridge
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - CrescentCartridge_5.56x45mm
+  - type: CartridgeAmmo
+    proto: CrescentBullet_5.56x45mm
+  - type: Sprite
+    sprite: _Crescent\Objects\Weapons\Ammunition\New_Ammo\Casings\5.56x45.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 100
+  - type: EmitSoundOnLand
+    sound:
+      collection: MediumBulletBounce
+  - type: EmitSoundOnCollide
+    sound:
+      collection: MediumBulletBounce
+
+- type: entity
+  id: CrescentBullet_5.56x45mm
+  name: bullet (5.56x45mm)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 1000 # DEAAAR ERMAAAAC IF YOU DO NOT FIX THIS CHAOS WILL RAIN DOWN AND TTK SHALL PLUMMET BECAUSE I FELT LIKE MAKING IT DO 1K
+    harmorPenetration: 30
+    stoppingPower: 4
+
+
+
+- type: entity
+  parent: CrescentIntermediaryAmmoBoxGeneric
+  id: CrescentIntermediaryAmmoBox_5.56x45mm
+  name: ammunition box (5.56x45mm)
+  components:
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - CrescentCartridge_5.56x45mm
+    proto: CrescentCartridge_5.56x45mm
+    capacity: 60
+  - type: Item
+    size: Small
+  - type: Sprite
+    sprite: _Crescent\Objects\Weapons\Ammunition\New_Ammo\Boxes\Intermediary.rsi
+  - type: MagazineVisuals
+    magState: mag
+    steps: 6
+    zeroVisible: false
