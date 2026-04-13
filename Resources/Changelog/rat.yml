@@ -648,5 +648,14 @@ Entries:
     id: 81
     time: '2026-04-11T12:07:18.0000000+00:00'
     url: https://github.com/ss14-art/ratgore/pull/127
+  - author: Ko-mp-otik
+    changes:
+      - type: Add
+        message: ТК Анвил by [okhrimm](https://github.com/okhrimm)
+      - type: Remove
+        message: ТК секира
+    id: 82
+    time: '2026-04-13T14:06:04.0000000+00:00'
+    url: https://github.com/ss14-art/ratgore/pull/131
 Name: Rat
 Order: -1
