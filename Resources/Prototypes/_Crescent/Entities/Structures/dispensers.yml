@@ -107,7 +107,6 @@
   - type: Anchorable
     flags:
     - None
-  - type: StationTradeMarket
   - type: Dispenser
     defaultItem: TradeDeedStub
     dynamicInventory:
@@ -153,7 +152,6 @@
   name: imperial cargo turn-in chute
   description: A machine with piping systems that lead into the bowels of the ship, accepting export goods for trade deeds.
   components:
-  - type: StationTradeMarket
   - type: Dispenser
     defaultItem: TradeDeedStub
     dynamicInventory:
@@ -199,7 +197,6 @@
   name: Freeporter cargo turn-in chute
   description: A machine with piping systems that lead into the bowels of the ship, accepting export goods.
   components:
-  - type: StationTradeMarket
   - type: Dispenser
     defaultItem: TradeDeedStub
     dynamicInventory:
@@ -243,7 +240,6 @@
   name: Newport cargo turn-in chute
   description: A machine with piping systems that lead into the bowels of the ship, accepting export goods for trade deeds.
   components:
-  - type: StationTradeMarket
   - type: Dispenser
     defaultItem: TradeDeedStub
     dynamicInventory:
