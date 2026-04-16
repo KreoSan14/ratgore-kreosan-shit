@@ -42,12 +42,12 @@
         IFFFaction: SHI
       Refuge:
         gameMapID: Refuge
-        posX: 0
-        posY: 0
+        posX: -3000
+        posY: 7000
         IFFColor: Green
         IFFFaction: SRM
-        randomOffsetX: 3000
-        randomOffsetY: 3000
+        randomOffsetX: 2000
+        randomOffsetY: 2000
       Dochenskaya:
         gameMapID: Dochenskaya
         posX: 6000
@@ -74,12 +74,12 @@
         IFFFaction: TFSC
       TribalHideout:
         gameMapID: TribalHideout
-        posX: 0
-        posY: 0
+        posX: 2000
+        posY: -7000
         IFFColor: White
         IFFFaction: TAP
-        randomOffsetX: 3000
-        randomOffsetY: 3000
+        randomOffsetX: 2000
+        randomOffsetY: 2000
       Deepbelt:
         gameMapID: Deepbelt
         posX: 0
