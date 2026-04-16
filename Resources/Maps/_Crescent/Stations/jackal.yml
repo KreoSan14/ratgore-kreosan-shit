@@ -23356,7 +23356,7 @@ entities:
     - type: Transform
       pos: 5.4633274,-18.278032
       parent: 1
-- proto: Multitool
+- proto: CrescentMultitool
   entities:
   - uid: 2619
     components:
@@ -26649,7 +26649,7 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 7.5,33.5
       parent: 1
-- proto: ToolboxMechanicalFilled
+- proto: ToolboxMechanicalCrescentFilled
   entities:
   - uid: 3123
     components:
@@ -26689,7 +26689,7 @@ entities:
     - type: Transform
       pos: 8.5,9.5
       parent: 1
-- proto: VendingMachineEngivend
+- proto: VendingMachineCrescentEngivend
   entities:
   - uid: 3129
     components:
@@ -26731,7 +26731,7 @@ entities:
     - type: Transform
       pos: -10.5,-26.5
       parent: 1
-- proto: VendingMachineYouTool
+- proto: VendingMachineCrescentYouTool
   entities:
   - uid: 3135
     components:
