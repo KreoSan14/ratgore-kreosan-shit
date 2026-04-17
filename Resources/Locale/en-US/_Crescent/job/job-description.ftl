@@ -114,7 +114,7 @@ job-description-arbeiter = The industrial life blood of the Authoritat. Follow t
 
 
 # misc
-
+job-description-vagrant = Be an independent nomad of Taypan. Survive and keep your head low.
 job-description-spacer = Be an independent citizen of Taypan.
 job-description-gliess-sheriff = Maintain law and order on Gliess Santo. Organize your militia, and protect the independent civilians of Taypan.
 job-description-gliess-deputy = Assist the Sheriff in keeping the law. Defend independent spacers and maintain peace with much bigger fish.
@@ -175,7 +175,7 @@ job-description-ncwl-conscript-event = Conscript from the NCWL ground forces mil
 job-description-ncwl-conscript-event-SMG = Conscript from the NCWL ground forces militia. Armed with an SMG and a dream.
 job-description-ncwl-spetsnaz-event-SMG = Operator from the 109th Chengridz Special Operations Forces. Given the best equipment the Union has to offer. Let no one stand in your way.
 job-description-ncwl-spetsnaz-event = Operator from the 209th Chengridz Special Operations Forces. Given the best equipment the Union has to offer. Let your aim be true.
-job-description-ncwl-spetsnaz-event-kapitan = Commissioned officer from the 209th Chengridz Special Operations Forces. Given the best equipment and the best men the Union has to offer. Let your way of life prove righteous. 
+job-description-ncwl-spetsnaz-event-kapitan = Commissioned officer from the 209th Chengridz Special Operations Forces. Given the best equipment and the best men the Union has to offer. Let your way of life prove righteous.
 job-description-dsm-conscript-event = Conscript from the Imperial Shield Ground Forces. Armed with a semi automatic rifle and the strongest of loyalties.
 job-description-dsm-conscript-event-SMG = Conscript from the Imperial Shield Ground Forces. Armed with an SMG and the strongest of loyalties.
 job-description-dsm-specops-event = Kommando from the 4th Imperial Shield's special operating forces. Given access to the most advanced stockpiled equipment. Bring honor to your house.

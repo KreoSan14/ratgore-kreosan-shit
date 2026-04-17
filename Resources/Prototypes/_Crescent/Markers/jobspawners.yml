@@ -821,6 +821,18 @@
       - state: passenger
 
 - type: entity
+  id: SpawnPointVagrant
+  parent: SpawnPointJobBase
+  name: Vagrant
+  components:
+  - type: SpawnPoint
+    job_id: Vagrant
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
+- type: entity
   id: SpawnPointDockhand
   parent: SpawnPointJobBase
   name: Dockhand

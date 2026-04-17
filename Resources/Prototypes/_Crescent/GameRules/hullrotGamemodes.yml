@@ -145,6 +145,10 @@
         gameMapID: AncientBattlefield
         posX: -5500
         posY: 6500
+      IronRing:
+        gameMapID: IronRing
+        posX: -3000
+        posY: 4290
 
 
 ### Low Pop Alternate Modes ###

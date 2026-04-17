@@ -24,7 +24,7 @@
         - type: Grammar
           attributes:
             proper: true
-        #- type: StationJobs
-          #overflowJobs: []
-          #availableJobs:
-            #Vagrant: [ 20, 20 ]
+        - type: StationJobs
+          overflowJobs: []
+          availableJobs:
+            Vagrant: [ 3, 3 ]

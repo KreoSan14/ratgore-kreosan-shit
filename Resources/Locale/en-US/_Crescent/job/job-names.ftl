@@ -112,7 +112,7 @@ job-name-vorarbeiter = Vorarbeiter
 job-name-arbeiter = Arbeiter
 
 # misc
-
+job-name-vagrant = Vagrant
 job-name-antiquarian = Izdari Antiquarian
 job-name-spacer = Spacer
 job-name-gliess-dockhand = Gliessian Dockhand
