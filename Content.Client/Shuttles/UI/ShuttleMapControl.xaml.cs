@@ -199,6 +199,30 @@ public sealed partial class ShuttleMapControl : BaseShuttleControl
         }
     }
 
+    // Rat-start
+    private void DrawRatZones(DrawingHandleScreen handle)
+    {
+        if (ViewingMap == MapId.Nullspace)
+            return;
+
+        var matty = Matrix3Helpers.CreateInverseTransform(Offset, Angle.Zero);
+
+        var worldCenter = new MapCoordinates(Vector2.Zero, ViewingMap);
+
+        var centerRelativePos = Vector2.Transform(worldCenter.Position, matty);
+        centerRelativePos = centerRelativePos with { Y = -centerRelativePos.Y };
+        var centerUiPos = ScalePosition(centerRelativePos);
+
+        var redZoneRadius = 650f * MinimapScale;
+        var greenZoneRadius1 = 3950f * MinimapScale;
+        var greenZoneRadius2 = 4350f * MinimapScale;
+
+        handle.DrawCircle(centerUiPos, redZoneRadius, new Color(255, 0, 0, 50), false);
+        handle.DrawCircle(centerUiPos, greenZoneRadius1, new Color(0, 255, 0, 50), false);
+        handle.DrawCircle(centerUiPos, greenZoneRadius2, new Color(0, 255, 0, 50), false);
+    }
+    // Rat-end
+
     /// <summary>
     /// Gets the map objects that intersect the viewport.
     /// </summary>
