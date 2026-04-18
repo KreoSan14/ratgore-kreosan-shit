@@ -245,10 +245,10 @@
   items:
     - LunchboxGenericFilledRandom
   requirements:
-    # - !type:CharacterSpeciesRequirement
-    #   inverted: true
-    #   species:
-    #     - Plasmaman
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Plasmaman
 
 # Survival boxes
 - type: loadout
