@@ -48,19 +48,17 @@
   - type: ExplosionResistance
     damageCoefficient: 0.6
   - type: DegradeableArmor
-    armorMaxHealth: 600
-    armorType: Metallic
-    armorRepair: PlasteelPlate
+    armorMaxHealth: 100
+    armorType: Plastic
+    armorRepair: SteelPlate
     initialModifiers:
       flatReductions:
         Blunt: 15
         Slash: 15
-        Piercing: 40
-        Heat: 25
-        Caustic: 15
+        Piercing: 36
   - type: ClothingSpeedModifier
-    walkModifier: 0.9
-    sprintModifier: 0.9
+    walkModifier: 0.90
+    sprintModifier: 0.90
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitFishbed
   - type: StaticPrice
