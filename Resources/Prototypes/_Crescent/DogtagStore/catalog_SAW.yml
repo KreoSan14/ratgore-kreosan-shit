@@ -419,17 +419,6 @@
   - StoreCategorySAWships
 
 - type: listing
-  id: StoreListingSAWThanapod
-  name: SAW Thanapod LPC
-  description: A Shipfitters original design of a cruiser-sized mining barge.
-  icon: { sprite: _Crescent/Objects/Misc/lpcchip.rsi, state: icon }
-  productEntity: ShipVoucherThanapod
-  cost:
-    ScrapSAW: 30
-  categories:
-  - StoreCategorySAWships
-
-- type: listing
   id: StoreListingSAWHyena
   name: SAW Hyena LPC
   description: A converted and outdated Covetor-class mining barge, perfect for modification.
