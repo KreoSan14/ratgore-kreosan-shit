@@ -43,6 +43,7 @@
   access:
   - Command
   - Empire
+  - EmpireNoble
   - Maintenance
   - ScribesGuild
   - Archmaester
