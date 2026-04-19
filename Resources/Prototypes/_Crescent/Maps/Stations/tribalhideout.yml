@@ -19,4 +19,4 @@
         - type: StationJobs
           overflowJobs: []
           availableJobs:
-            Vagrant: [ 2, 2 ]
+            Vagrant: [ 3, 3]
