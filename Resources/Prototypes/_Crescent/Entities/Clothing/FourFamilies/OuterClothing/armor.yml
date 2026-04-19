@@ -25,8 +25,8 @@
         Slash: 15
         Piercing: 36
   - type: ClothingSpeedModifier
-    walkModifier: 0.90
-    sprintModifier: 0.90
+    walkModifier: 1
+    sprintModifier: 1
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitDraugr
   - type: StaticPrice
@@ -63,8 +63,8 @@
         Slash: 15
         Piercing: 36
   - type: ClothingSpeedModifier
-    walkModifier: 0.90
-    sprintModifier: 0.90
+    walkModifier: 1
+    sprintModifier: 1
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitArabet
   - type: StaticPrice
@@ -95,8 +95,8 @@
         Slash: 15
         Piercing: 36
   - type: ClothingSpeedModifier
-    walkModifier: 0.90
-    sprintModifier: 0.90
+    walkModifier: 1
+    sprintModifier: 1
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitIzdari
   - type: StaticPrice
@@ -133,8 +133,8 @@
         Slash: 15
         Piercing: 36
   - type: ClothingSpeedModifier
-    walkModifier: 0.90
-    sprintModifier: 0.90
+    walkModifier: 1
+    sprintModifier: 1
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitThukker
   - type: StaticPrice

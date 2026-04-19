@@ -655,7 +655,7 @@
       - BaseWeaponTurretShortbowFlatpack
       - BaseWeaponTurretAzimuthFlatpack
       - BaseWeaponTurretArbalestFlatpack
-      - WeaponDonorPlasmaCutter
+      # - WeaponDonorPlasmaCutter
       - RCDRecharging
       - KineticMachete
       - BreachingHammer
