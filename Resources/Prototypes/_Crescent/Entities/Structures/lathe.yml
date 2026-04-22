@@ -1658,6 +1658,7 @@
       - ClothingOuterHardsuitCybersunDreadnoughtCyberdawn
   - type: MaterialStorageMagnetPickup
     magnetEnabled: True
+    range: 0.3
 
   - type: Machine
     board: MicroforgeCircuitboard
@@ -1729,6 +1730,9 @@
   - type: Anchorable
     flags:
     - Anchorable
+  - type: MaterialStorageMagnetPickup
+    magnetEnabled: False
+    range: 0.3
 
 #organs
 
