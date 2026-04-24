@@ -702,5 +702,12 @@ Entries:
     id: 87
     time: '2026-04-24T02:59:14.0000000+00:00'
     url: https://github.com/ss14-art/ratgore/pull/149
+  - author: ReWAFFlution
+    changes:
+      - type: Remove
+        message: Фильтр чата вырезан.
+    id: 88
+    time: '2026-04-24T09:27:03.0000000+00:00'
+    url: https://github.com/ss14-art/ratgore/pull/152
 Name: Rat
 Order: -1
